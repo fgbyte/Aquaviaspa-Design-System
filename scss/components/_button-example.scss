@@ -1,0 +1,8 @@
+@use '../globals';
+//example component
+
+.button-example {
+    padding: 2rem, 4rem;
+    color: globals.$black;
+    background-color: globals.$background;
+}
