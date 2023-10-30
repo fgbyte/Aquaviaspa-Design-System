@@ -1,11 +1,14 @@
-//Vars & Resets
-@use 'globals';
+//aquí tiene que usarse necesariamente @import, @use es para components y mixins
+
+//Vars & Resets -> siempre antes del framework
+@import 'globals';
 
 //Frameworks
-@use 'config';
+@import 'config';
 
 //Fonts
-@use 'fonts';
+@import 'fonts';
+
 
 //Pages
-@use 'pages/home';
+@import 'pages/home';
