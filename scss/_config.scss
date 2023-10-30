@@ -1,4 +1,5 @@
 //IMPORT BOOTSTRAP 5
-@use '../node_modules/bootstrap/scss/bootstrap.scss';
+//aquí tiene que usarse necesariamente @import, @use es para components y mixins
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 //otros utility
