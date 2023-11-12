@@ -27,25 +27,31 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../assets/fonts/Raleway-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 
-  
-  @font-face {
-    font-family: 'Raleway';
-    src: url('../assets/fonts/Raleway-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-  }
+//Configurar Fuentes
+h1 {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 42px;
 
-
- //Configurar Fuentes
-  h1 {
-    font-family: Raleway;
+  span {
     font-weight: 600;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 86px;
+  }
 }

@@ -11893,7 +11893,16 @@ textarea.form-control-lg {
 }
 h1, .h1 {
   font-family: Raleway;
+  font-weight: normal;
+  font-size: 42px;
+}
+h1 span, .h1 span {
   font-weight: 600;
+}
+@media (min-width: 992px) {
+  h1, .h1 {
+    font-size: 86px;
+  }
 }
 
 .button-example {
