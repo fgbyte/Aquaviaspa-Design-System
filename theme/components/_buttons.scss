@@ -1,0 +1,12 @@
+@use "../globals";
+
+.btn-cta {
+  width: 322px;
+  height: 48px;
+  border: none;
+
+  @include media-breakpoint-up(lg) {
+    width: 352px;
+    height: 60px;
+  }
+}
