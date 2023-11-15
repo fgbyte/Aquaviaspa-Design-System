@@ -11917,4 +11917,12 @@ h1 span, .h1 span {
   }
 }
 
+.link {
+  color: red;
+  background-color: blue;
+}
+.link--white {
+  background-color: black;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { link1, link2, link3 } from '../theme/components/links/links.stories'
+
+
+<Meta title="Components/Links" />
+
+# Link
+
+<Canvas>
+ <Story name="Primary">
+  {() => link1
+  }
+ </Story>
+</Canvas>
+
+# Link White
+
+<Canvas>
+ <Story name="Link White">
+  {() => link2
+  }
+ </Story>
+</Canvas>
+
+# Link Arrow
+
+<Canvas>
+ <Story name="Link Arrow">
+  {() => link3
+  }
+ </Story>
+</Canvas>
