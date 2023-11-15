@@ -1,5 +1,6 @@
 import '/dist/css/main.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+import '/dist/js/bootstrap.bundle.min.js';
+import '/dist/js/main.js';
 
 
 /** @type { import('@storybook/html').Preview } */
