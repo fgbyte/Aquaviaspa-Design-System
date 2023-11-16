@@ -1,9 +1,17 @@
+@use '../../globals';
+
 .link {
-    color: red;
-    background-color: blue;
+    background-color: globals.$secondary;
+    color: $white;
+    text-decoration: none;
 
     &--white {
-        background-color: black;
+        background-color: globals.$primary;
+        color: globals.$secondary;
+
+        &:hover {
+            color: $white;
+        }
     }
 
 }

@@ -1,16 +1,27 @@
-//Custom vars
-$primary: #BAEFF284;
-$black: #222;
-$yellow: #FFB525;
+//* Global VARS
 
-
-
-
+//Custom colors
+$cyan: #94F0F5;
+$darkCyan: #BAEFF2;
+$white: #fff;
+$darkWhite: #F7F7F7;
+$beige: #EFEDE9;
+$gray: #464646;
+$grayOff: #C7C6BE;
+$blackGradient: #111111;
+$grayGradient: #545454;
+$grayText: #575757;
+$black: #000;
 
 
 
 //Bootstrap vars rewritten
+$primary: $cyan;
+$secondary: $gray;
+$info: $beige;
+$light: $white;
 $font-family-base: 'Raleway';
+$link-color: $black;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
