@@ -11891,9 +11891,21 @@ textarea.form-control-lg {
   font-weight: 800;
   font-style: normal;
 }
+blockquote {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 42px;
+}
+@media (min-width: 992px) {
+  blockquote {
+    font-size: 86px;
+  }
+}
+
 h1, .h1 {
   font-family: Raleway;
   font-weight: 600;
+  font-size: 36px;
 }
 @media (min-width: 992px) {
   h1, .h1 {
@@ -11904,10 +11916,11 @@ h1, .h1 {
 h2, .h2 {
   font-family: Raleway;
   font-weight: 400;
+  font-size: 36px;
 }
 @media (min-width: 992px) {
   h2, .h2 {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
@@ -11915,6 +11928,7 @@ h3, .h3 {
   font-family: Raleway;
   font-weight: 500;
   text-transform: uppercase;
+  font-size: 28px;
 }
 @media (min-width: 992px) {
   h3, .h3 {
@@ -11925,6 +11939,7 @@ h3, .h3 {
 h4, .h4 {
   font-family: Raleway;
   font-weight: 500;
+  font-size: 28px;
 }
 @media (min-width: 992px) {
   h4, .h4 {
@@ -11935,11 +11950,7 @@ h4, .h4 {
 p {
   font-family: Raleway;
   font-weight: 400;
-}
-@media (min-width: 992px) {
-  p {
-    font-size: 18px;
-  }
+  font-size: 18px;
 }
 
 .btn-cta {

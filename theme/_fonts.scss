@@ -46,10 +46,20 @@
 
 
 //! Configurar Fuentes
+blockquote {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 42px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 86px;
+  }
+}
+
 h1 {
   font-family: Raleway;
   font-weight: 600;
-  // font-size: 48px;
+  font-size: 36px;
 
   @include media-breakpoint-up(lg) {
     font-size: 58px;
@@ -59,10 +69,10 @@ h1 {
 h2 {
   font-family: Raleway;
   font-weight: 400;
-  // font-size: 48px;
+  font-size: 36px;
 
   @include media-breakpoint-up(lg) {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
@@ -70,7 +80,7 @@ h3 {
   font-family: Raleway;
   font-weight: 500;
   text-transform: uppercase;
-  // font-size: 48px;
+  font-size: 28px;
 
   @include media-breakpoint-up(lg) {
     font-size: 42px;
@@ -80,7 +90,7 @@ h3 {
 h4 {
   font-family: Raleway;
   font-weight: 500;
-  // font-size: 48px;
+  font-size: 28px;
 
   @include media-breakpoint-up(lg) {
     font-size: 38px;
@@ -90,8 +100,5 @@ h4 {
 p {
   font-family: Raleway;
   font-weight: 400;
-  // font-size: 48px;
-  @include media-breakpoint-up(lg) {
     font-size: 18px;
-  }
 }
