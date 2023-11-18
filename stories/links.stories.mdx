@@ -1,10 +1,10 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import { link1, link2, link3 } from '../theme/components/links/links.stories'
+import { link1, link2, link3, link4, link5, link6, link7 } from '../theme/components/links/links.stories'
 
 
 <Meta title="Components/Links" />
 
-# Link
+## Link
 
 <Canvas>
  <Story name="Primary">
@@ -13,20 +13,58 @@ import { link1, link2, link3 } from '../theme/components/links/links.stories'
  </Story>
 </Canvas>
 
-# Link White
+## Link White
 
-<Canvas>
- <Story name="Link White">
+<Canvas className="bg-secondary">
+ <Story  name="Link White">
   {() => link2
   }
  </Story>
 </Canvas>
 
-# Link Arrow
+## Link Menu
 
 <Canvas>
- <Story name="Link Arrow">
+ <Story name="Link Menu">
   {() => link3
+  }
+ </Story>
+</Canvas>
+
+## Link Menu Uppercase
+
+<Canvas>
+ <Story name="Link Menu Uppercase">
+  {() => link4
+  }
+ </Story>
+</Canvas>
+
+## Link Menu Arrow
+
+<Canvas>
+ <Story name="Link Menu Arrow">
+  {() => link5
+  }
+ </Story>
+</Canvas>
+
+
+## Link Menu Arrow Uppercase
+
+<Canvas>
+ <Story name="Link Menu Arrow Uppercase">
+  {() => link6
+  }
+ </Story>
+</Canvas>
+
+
+## Link Menu Arrow Grow
+
+<Canvas>
+ <Story name="Link Menu Arrow Grow">
+  {() => link7
   }
  </Story>
 </Canvas>

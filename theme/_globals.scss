@@ -13,13 +13,22 @@ $grayGradient: #545454;
 $grayText: #575757;
 $black: #000;
 
+//Transition Delay (tiempo default de las transitions)
+$delay: 0.4s;
 
+//Font Weights
+$textLight: 300;
+$textRegular: 400;
+$textMedium: 500;
+$textSemibold: 600;
+$textBold: 700;
+$textExtraBold: 800;
 
 //Bootstrap vars rewritten
 $primary: $cyan;
 $secondary: $gray;
 $info: $beige;
-$light: $white;
+$danger: $grayOff;
 $font-family-base: 'Raleway';
 $link-color: $black;
 $grid-breakpoints: (
