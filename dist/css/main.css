@@ -12038,4 +12038,39 @@ p {
   margin-left: 8.5px;
 }
 
+.dropdown-toggle {
+  text-decoration: none;
+  text-transform: none;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.dropdown-toggle img {
+  margin-left: 10px;
+  transition: transform 0.4s;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  margin-top: 8px;
+  padding: 30px;
+}
+
+.dropdown:hover img {
+  transition: transform 0.4s;
+  transform: rotate(90deg);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
 /*# sourceMappingURL=main.css.map */
