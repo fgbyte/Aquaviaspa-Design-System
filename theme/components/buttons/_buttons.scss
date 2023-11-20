@@ -7,14 +7,14 @@
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: white;
+  transition: all $delay linear;
+  color: $white;
   padding: 18px 26px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: $textExtraBold;
   font-family: Raleway;
-  border: 1px solid white;
+  border: 1px solid $white;
   letter-spacing: 1.82px;
   background: transparent;
 
@@ -24,8 +24,8 @@
     margin-bottom: -1px;
     height: 1px;
     width: 30px;
-    background: white;
-    transition: all 0.15s linear;
+    background: $white;
+    transition: all $delay linear;
 
     @include media-breakpoint-up(lg) {
       width: 36px;
@@ -33,14 +33,15 @@
   }
 
   & .btn-cta__arrow-svg {
-    stroke: white;
+    stroke: $white;
+    transition: all $delay linear;
   }
 
   &:hover {
-    color: black;
-    background: #94F0F5 0% 0% no-repeat padding-box;
+    color: $black;
+    background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
-    border: 1px solid #94F0F5;
+    border: 1px solid $cyan;
     padding: 18px 40px;
     margin: 0 -14px;
 
@@ -52,7 +53,7 @@
     }
 
     & .btn-cta__arrow-svg {
-      stroke: black;
+      stroke: $black;
     }
   }
 
@@ -67,22 +68,22 @@
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: white;
+  transition: all $delay linear;
+  color: $white;
   padding: 20px 18px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: $textExtraBold;
   font-family: Raleway;
-  border: 1px solid white;
+  border: 1px solid $white;
   letter-spacing: 1.82px;
   background: transparent;
 
   &:hover {
 
-    background: #94F0F5 0% 0% no-repeat padding-box;
+    background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
-    border: 1px solid #94F0F5;
+    border: 1px solid $cyan;
 
   }
 
@@ -101,22 +102,22 @@
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: black;
+  transition: all $delay linear;
+  color: $black;
   padding: 20px 18px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: $textExtraBold;
   font-family: Raleway;
-  border: 1px solid black;
+  border: 1px solid $black;
   letter-spacing: 1.82px;
   background: transparent;
 
   &:hover {
 
-    background: #94F0F5 0% 0% no-repeat padding-box;
+    background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
-    border: 1px solid #94F0F5;
+    border: 1px solid $cyan;
 
   }
 
@@ -134,22 +135,22 @@
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: white;
+  transition: all $delay linear;
+  color: $white;
   padding: 20px 18px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: $textExtraBold;
   font-family: Raleway;
-  border: 1px solid #464646;
+  border: 1px solid $gray;
   letter-spacing: 1.82px;
-  background: #464646 0% 0% no-repeat padding-box;
+  background: $gray 0% 0% no-repeat padding-box;
 
   &:hover {
-    color: black;
-    background: #94F0F5 0% 0% no-repeat padding-box;
+    color: $black;
+    background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
-    border: 1px solid #94F0F5;
+    border: 1px solid $cyan;
 
   }
 
@@ -168,16 +169,16 @@
   justify-content: center;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: black;
+  transition: all $delay linear;
+  color: $black;
   padding: 12px 18px;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: $textExtraBold;
   font-family: Raleway;
-  border: 1px solid #94F0F5;
+  border: 1px solid $cyan;
   letter-spacing: 1.82px;
-  background: #94F0F5 0% 0% no-repeat padding-box;
+  background: $cyan 0% 0% no-repeat padding-box;
 
   @include media-breakpoint-up(lg) {
     font-size: 14px;

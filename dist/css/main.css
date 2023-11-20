@@ -11960,14 +11960,14 @@ p {
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: white;
+  transition: all 0.4s linear;
+  color: #fff;
   padding: 18px 26px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
   font-family: Raleway;
-  border: 1px solid white;
+  border: 1px solid #fff;
   letter-spacing: 1.82px;
   background: transparent;
 }
@@ -11977,8 +11977,8 @@ p {
   margin-bottom: -1px;
   height: 1px;
   width: 30px;
-  background: white;
-  transition: all 0.15s linear;
+  background: #fff;
+  transition: all 0.4s linear;
 }
 @media (min-width: 992px) {
   .btn-cta .btn-cta__arrow {
@@ -11986,10 +11986,11 @@ p {
   }
 }
 .btn-cta .btn-cta__arrow-svg {
-  stroke: white;
+  stroke: #fff;
+  transition: all 0.4s linear;
 }
 .btn-cta:hover {
-  color: black;
+  color: #000;
   background: #94F0F5 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
   border: 1px solid #94F0F5;
@@ -12001,7 +12002,7 @@ p {
   background: rgb(0, 0, 0);
 }
 .btn-cta:hover .btn-cta__arrow-svg {
-  stroke: black;
+  stroke: #000;
 }
 @media (min-width: 992px) {
   .btn-cta {
@@ -12015,14 +12016,14 @@ p {
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: white;
+  transition: all 0.4s linear;
+  color: #fff;
   padding: 20px 18px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
   font-family: Raleway;
-  border: 1px solid white;
+  border: 1px solid #fff;
   letter-spacing: 1.82px;
   background: transparent;
 }
@@ -12043,14 +12044,14 @@ p {
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: black;
+  transition: all 0.4s linear;
+  color: #000;
   padding: 20px 18px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
   font-family: Raleway;
-  border: 1px solid black;
+  border: 1px solid #000;
   letter-spacing: 1.82px;
   background: transparent;
 }
@@ -12071,8 +12072,8 @@ p {
   width: fit-content;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: white;
+  transition: all 0.4s linear;
+  color: #fff;
   padding: 20px 18px;
   text-transform: uppercase;
   font-size: 12px;
@@ -12083,7 +12084,7 @@ p {
   background: #464646 0% 0% no-repeat padding-box;
 }
 .btn-gray:hover {
-  color: black;
+  color: #000;
   background: #94F0F5 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
   border: 1px solid #94F0F5;
@@ -12101,8 +12102,8 @@ p {
   justify-content: center;
   height: fit-content;
   border: none;
-  transition: all 0.15s linear;
-  color: black;
+  transition: all 0.4s linear;
+  color: #000;
   padding: 12px 18px;
   text-transform: uppercase;
   font-size: 12px;
@@ -12189,6 +12190,111 @@ p {
 .link-menu-arrow--lang span img {
   margin: 0px;
   margin-left: 8.5px;
+}
+
+.link-arrow-grow {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+}
+.link-arrow-grow:hover div .link__arrow {
+  width: 55px;
+}
+.link-arrow-grow:hover span {
+  border-bottom: 2px solid #000;
+}
+.link-arrow-grow span {
+  border-bottom: 2px solid transparent;
+  transition: color 0.4s, border-bottom-color 0.4s;
+}
+.link-arrow-grow .container-arrow {
+  position: absolute;
+  left: 100%;
+  top: 4px;
+}
+.link-arrow-grow div .link__arrow {
+  position: relative;
+  margin-right: -6.6px;
+  margin-bottom: -1px;
+  height: 1px;
+  width: 30px;
+  background-color: #000;
+  transition: all 0.4s linear;
+}
+@media (min-width: 992px) {
+  .link-arrow-grow div .link__arrow {
+    width: 36px;
+  }
+}
+@media (min-width: 992px) {
+  .link-arrow-grow {
+    font-size: 18px;
+  }
+}
+
+.link__arrow-svg {
+  stroke: #000;
+}
+
+.link-arrow-grow-white {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  color: #fff;
+}
+.link-arrow-grow-white:hover div .link__arrow-white {
+  width: 55px;
+}
+.link-arrow-grow-white:hover span {
+  border-bottom: 2px solid #fff;
+}
+.link-arrow-grow-white span {
+  border-bottom: 2px solid transparent;
+  transition: color 0.4s, border-bottom-color 0.4s;
+}
+.link-arrow-grow-white .container-arrow-white {
+  position: absolute;
+  left: 100%;
+  top: 4px;
+}
+.link-arrow-grow-white div .link__arrow-white {
+  position: relative;
+  margin-right: -6.6px;
+  margin-bottom: -1px;
+  height: 1px;
+  width: 30px;
+  background-color: #fff;
+  transition: all 0.4s linear;
+}
+@media (min-width: 992px) {
+  .link-arrow-grow-white div .link__arrow-white {
+    width: 36px;
+  }
+}
+@media (min-width: 992px) {
+  .link-arrow-grow-white {
+    font-size: 18px;
+  }
+}
+
+.link__arrow-svg-white {
+  stroke: #fff;
 }
 
 .dropdown {
