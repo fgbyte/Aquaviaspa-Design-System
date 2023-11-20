@@ -12038,23 +12038,27 @@ p {
   margin-left: 8.5px;
 }
 
-.dropdown-toggle {
+.dropdown {
+  width: fit-content;
+}
+.dropdown .dropdown-toggle {
   text-decoration: none;
   text-transform: none;
   font-size: 18px;
   padding-bottom: 8px;
 }
-.dropdown-toggle img {
+.dropdown .dropdown-toggle img {
   margin-left: 10px;
   transition: transform 0.4s;
 }
-
-.dropdown-menu {
+.dropdown .dropdown-toggle::after {
+  content: none;
+}
+.dropdown .dropdown-menu {
   border-radius: 0px;
   margin-top: 8px;
   padding: 30px;
 }
-
 .dropdown:hover img {
   transition: transform 0.4s;
   transform: rotate(90deg);
@@ -12062,15 +12066,13 @@ p {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
-.dropdown-item {
+.dropdown .dropdown-item {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
 }
-
-.dropdown-toggle::after {
-  content: none;
+.dropdown .dropdown-item:hover {
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

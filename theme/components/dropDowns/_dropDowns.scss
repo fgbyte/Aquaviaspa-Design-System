@@ -1,41 +1,48 @@
 @use "../../globals";
 
-.dropdown-toggle {
-  text-decoration: none;
-  text-transform: none;
-  font-size: 18px;
-  padding-bottom: 8px;
+.dropdown {
+  width: fit-content;
 
-  img {
-    margin-left: 10px;
-    transition: transform $delay;
+  .dropdown-toggle {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 18px;
+    padding-bottom: 8px;
 
+    img {
+      margin-left: 10px;
+      transition: transform $delay;
+    }
+
+    &::after {
+      content: none;
+    }
   }
-}
 
-.dropdown-menu {
-  border-radius: 0px;
-  margin-top: 8px;
-  padding: 30px;
-}
-
-.dropdown:hover {
-  img {
-    transition: transform $delay;
-    transform: rotate(90deg);
+  .dropdown-menu {
+    border-radius: 0px;
+    margin-top: 8px;
+    padding: 30px;
   }
-  
+
+  &:hover {
+    img {
+      transition: transform $delay;
+      transform: rotate(90deg);
+    }
+
     .dropdown-menu {
-    display: block;
+      display: block;
+    }
   }
-}
 
-.dropdown-item {
-  color: globals.$white;
-  font-size: 18px;
-  font-weight: $textSemibold;
-}
+  .dropdown-item {
+    color: globals.$white;
+    font-size: 18px;
+    font-weight: $textSemibold;
 
-.dropdown-toggle::after {
-  content: none;
+    &:hover {
+      color: globals.$black;
+    }
+  }
 }
