@@ -12031,6 +12031,7 @@ p {
   background: #94F0F5 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
   border: 1px solid #94F0F5;
+  color: #000;
 }
 @media (min-width: 992px) {
   .btn-ficha-home {

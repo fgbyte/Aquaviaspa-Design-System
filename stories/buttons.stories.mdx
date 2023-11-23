@@ -1,10 +1,10 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import { btn1 } from '../theme/components/buttons/buttons.stories'
+import { btn1, btn2, btn3, btn4, btn5 } from '../theme/components/buttons/buttons.stories'
 
 
 <Meta title="Components/Buttons" />
 
-# Button
+# Button Primary
 
 <Canvas>
  <Story name="Primary">
@@ -12,3 +12,42 @@ import { btn1 } from '../theme/components/buttons/buttons.stories'
   }
  </Story>
 </Canvas>
+
+# Button Secondary
+
+<Canvas>
+ <Story name="Button Secondary">
+  {() => btn2
+  }
+ </Story>
+</Canvas>
+
+# Button CTA
+
+<Canvas className="bg-secondary">
+ <Story name="Button CTA">
+  {() => btn3
+  }
+ </Story>
+</Canvas>
+
+
+# Button CTA-sm
+
+<Canvas className="bg-secondary">
+ <Story name="Button CTA sm">
+  {() => btn4
+  }
+ </Story>
+</Canvas>
+
+
+# Button Fixed-sm
+
+<Canvas>
+ <Story name="Button Fixed-sm">
+  {() => btn5
+  }
+ </Story>
+</Canvas>
+
