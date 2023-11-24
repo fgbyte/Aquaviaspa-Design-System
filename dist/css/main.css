@@ -12335,4 +12335,57 @@ p {
   color: #000;
 }
 
+.dropdown-maps {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/dist/assets/icons/dropdown-maps-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 95%;
+  background-color: transparent;
+  width: 326px;
+  padding: 18px 16px;
+  border: solid 0.5px #A5A5A5;
+  text-decoration: none;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .dropdown-maps {
+    width: 180px;
+    background-position-x: 90%;
+  }
+}
+.dropdown-maps .dropdown-menu {
+  border-radius: 0px;
+  font-size: 18px;
+  background-color: transparent;
+  align-self: start;
+}
+
+.dropdown-card summary {
+  background-color: #464646;
+  color: white;
+  padding: 18px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-card summary::marker {
+  content: "";
+}
+.dropdown-card summary::after {
+  content: url("/dist/assets/icons/dropdown-card-arrow.svg");
+  color: #fff;
+}
+.dropdown-card ul {
+  padding-left: 0px;
+}
+.dropdown-card ul li::marker {
+  content: "";
+}
+
 /*# sourceMappingURL=main.css.map */

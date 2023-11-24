@@ -46,3 +46,70 @@
     }
   }
 }
+
+.dropdown-maps {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("/dist/assets/icons/dropdown-maps-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 95%;
+  background-color: transparent;
+  width: 326px;
+  padding: 18px 16px;
+  border: solid 0.5px $grayBorder;
+  text-decoration: none;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-breakpoint-up(lg) {
+    width: 180px;
+    background-position-x: 90%;
+  }
+
+  .dropdown-menu {
+    border-radius: 0px;
+    // padding: 18px 16px;
+    font-size: 18px;
+    background-color: transparent;
+    align-self: start;
+  }
+}
+
+.dropdown-card {
+  summary {
+    background-color: $secondary;
+    color: white;
+    padding: 18px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // TODO: font-size & li
+
+    &::marker {
+      content: "";
+    }
+    &::after {
+      content: url("/dist/assets/icons/dropdown-card-arrow.svg");
+      color: $white;
+    }
+  }
+
+  ul {
+    padding-left: 0px;
+
+    li::marker {
+      content: "";
+    }
+    li {
+      // TODO: squares, switch bg gray/white
+    }
+
+  }
+
+
+}
