@@ -56,7 +56,7 @@
   background-position: center;
   background-position-x: 95%;
   background-color: transparent;
-  width: 326px;
+  // width: 326px;
   padding: 18px 16px;
   border: solid 0.5px $grayBorder;
   text-decoration: none;
@@ -87,8 +87,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    // TODO: font-size & li
+    font-size: 18px;
+    font-weight: $textMedium;
 
     &::marker {
       content: "";
@@ -102,14 +102,50 @@
   ul {
     padding-left: 0px;
 
-    li::marker {
-      content: "";
-    }
     li {
-      // TODO: squares, switch bg gray/white
-    }
+      padding: 28px 28px 15px 28px;
+      gap: 10px;
+      display: flex;
 
+      &::marker {
+        content: "";
+      }
+      &::before {
+        content: url("/dist/assets/icons/dropdown-card__Li__square.svg");
+        margin-top: 10px;
+      }
+
+      div {
+        font-size: 16px;
+        p {
+          font-weight: $textBold;
+          color: $grayText;
+          margin-bottom: 1.6px;
+        }
+        span {
+          font-weight: $textRegular;
+        }
+      }
+    }
   }
 
+  summary::after {
+    transform: rotate(0deg);
+  }
 
+  .details-inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease-in-out;
+  }
+  
+  &[open] {
+    .details-inner {
+      max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
+    }
+    summary::after {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
 }
