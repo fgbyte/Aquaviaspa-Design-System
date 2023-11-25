@@ -12346,6 +12346,23 @@ p {
   overflow: hidden;
   transition: all 0.4s linear;
   padding: 20px 50px;
+  text-decoration: none;
+  /* &:hover {
+
+    &::before {
+      rotate: 45deg;
+    }
+  } */
+  /* &:hover p {
+    opacity: 1;
+    height: 160px;
+
+    @include media-breakpoint-up(sm) {
+      opacity: 1;
+      height: auto;
+
+    }
+  } */
 }
 .card-category-blog::before {
   content: url(/dist/assets/icons/bx-plus-white.svg);
@@ -12361,9 +12378,6 @@ p {
   .card-category-blog::before {
     display: none;
   }
-}
-.card-category-blog:hover::before {
-  rotate: 45deg;
 }
 .card-category-blog::after {
   content: "";
@@ -12388,6 +12402,7 @@ p {
   color: #fff;
   z-index: 2;
   max-width: 400;
+  margin-top: auto;
 }
 .card-category-blog p {
   position: relative;
@@ -12438,15 +12453,60 @@ p {
   visibility: visible;
   opacity: 1;
 }
-.card-category-blog:hover p {
-  opacity: 1;
-  height: 160px;
+
+.card-map {
+  display: flex;
+  gap: 8px;
+  background-color: #fff;
+  padding: 16px 16px;
+  text-decoration: none;
+  width: 368px;
+  height: 196px;
+  border: none;
+  transition: all 0.4s linear;
 }
-@media (min-width: 576px) {
-  .card-category-blog:hover p {
-    opacity: 1;
-    height: auto;
-  }
+.card-map .card-map__img {
+  width: 20px;
+  height: auto;
+  margin-bottom: auto;
+}
+.card-map .card-map__description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+.card-map .card-map__description h3, .card-map .card-map__description .h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: none;
+}
+.card-map .card-map__description h3 span, .card-map .card-map__description .h3 span {
+  font-size: 17px;
+}
+.card-map .card-map__description h4, .card-map .card-map__description .h4 {
+  font-size: 14px;
+}
+.card-map .card-map__description .card-map__description--span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+  padding: 2px 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.card-map .card-map__description p {
+  font-size: 14px;
+  line-height: 1;
+  margin: 4px 0px;
+}
+.card-map .card-map__description .card-map__description--bottom p {
+  font-weight: 700;
+}
+.card-map:hover {
+  background-color: #EDEDED;
 }
 
 /*# sourceMappingURL=main.css.map */
