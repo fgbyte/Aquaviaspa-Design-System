@@ -103,3 +103,22 @@ export const drop4 = `
   </div>
 </details>
 `
+
+export const drop5 = `
+<div class="dropdown dropdown-lang">
+<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  España
+  <img src="/dist/assets/icons/link-menu-arrow--lang-arrow.svg">
+</a>
+<ul class="dropdown-menu dropdown-menu__lang">
+  <li><a class="dropdown-item" href="#">United Kingdom</a></li>
+  <li><a class="dropdown-item" href="#">France</a></li>
+  <li><a class="dropdown-item" href="#">Belgique</a></li>
+  <li><a class="dropdown-item" href="#">Deutschland</a></li>
+  <li><a class="dropdown-item" href="#">Italia</a></li>
+  <li><a class="dropdown-item" href="#">Nederland</a></li>
+  <li><a class="dropdown-item" href="#">Global (English)</a></li>
+  <li><a class="dropdown-item" href="#">Global (Français)</a></li>
+</ul>
+</div>
+`
