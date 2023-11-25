@@ -12307,6 +12307,10 @@ p {
   font-size: 18px;
   padding-bottom: 8px;
 }
+.dropdown .dropdown-toggle[aria-expanded=true] img {
+  transition: transform 0.4s;
+  transform: rotate(90deg);
+}
 .dropdown .dropdown-toggle img {
   margin-left: 10px;
   transition: transform 0.4s;
@@ -12318,13 +12322,6 @@ p {
   border-radius: 0px;
   margin-top: 8px;
   padding: 30px;
-}
-.dropdown:hover img {
-  transition: transform 0.4s;
-  transform: rotate(90deg);
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
 }
 .dropdown .dropdown-item {
   color: #fff;
@@ -12414,14 +12411,74 @@ p {
 .dropdown-card .details-inner {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s ease-in-out;
 }
 .dropdown-card[open] .details-inner {
   max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
+  transition: max-height 2s ease-in-out;
 }
 .dropdown-card[open] summary::after {
   transform: rotate(180deg);
-  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-podemos summary {
+  background-color: #575757;
+  color: white;
+  font-size: 29px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 140px;
+}
+@media (min-width: 992px) {
+  .dropdown-podemos summary {
+    height: 184px;
+    font-size: 38px;
+  }
+}
+.dropdown-podemos summary::marker {
+  content: "";
+}
+.dropdown-podemos summary::after {
+  content: url("/dist/assets/icons/dropdown-podemos-triangle.svg");
+  position: absolute;
+  bottom: -20px;
+}
+.dropdown-podemos .details-inner {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease;
+  background-color: #575757;
+  color: #fff;
+}
+.dropdown-podemos[open] summary::after {
+  display: none;
+}
+.dropdown-podemos[open] .details-inner {
+  max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
+  transition: max-height 2s ease-in-out;
+}
+
+.dropdown-lang .dropdown-toggle {
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12.5px;
+}
+.dropdown-lang .dropdown-toggle::before {
+  content: url("/dist/assets/icons/link-menu-arrow--lang.svg");
+}
+.dropdown-lang .dropdown-menu {
+  padding: 8px 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dropdown-lang .dropdown-item {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */

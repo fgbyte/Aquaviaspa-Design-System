@@ -9,6 +9,13 @@
     font-size: 18px;
     padding-bottom: 8px;
 
+    &[aria-expanded="true"] {
+      img {
+        transition: transform $delay;
+        transform: rotate(90deg);
+      }
+    }
+
     img {
       margin-left: 10px;
       transition: transform $delay;
@@ -23,17 +30,6 @@
     border-radius: 0px;
     margin-top: 8px;
     padding: 30px;
-  }
-
-  &:hover {
-    img {
-      transition: transform $delay;
-      transform: rotate(90deg);
-    }
-
-    .dropdown-menu {
-      display: block;
-    }
   }
 
   .dropdown-item {
@@ -131,21 +127,100 @@
 
   summary::after {
     transform: rotate(0deg);
+    // transition: transform $delay ease-in-out;
   }
 
   .details-inner {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 2s ease-in-out;
+    
   }
-  
+
   &[open] {
     .details-inner {
       max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
+      //TODO: hacer que se abra suavemente siempre
+      transition: max-height 2s ease-in-out;
     }
     summary::after {
       transform: rotate(180deg);
-      transition: transform 0.3s ease-in-out;
     }
+  }
+}
+
+.dropdown-podemos {
+  summary {
+    background-color: $grayText;
+    color: white;
+    // padding: 18px 16px;
+    font-size: 29px;
+    font-weight: $textMedium;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 140px;
+
+    @include media-breakpoint-up(lg) {
+      height: 184px;
+      font-size: 38px;
+    }
+
+    &::marker {
+      content: "";
+    }
+
+    &::after {
+      content: url("/dist/assets/icons/dropdown-podemos-triangle.svg");
+      position: absolute;
+      bottom: -20px;
+    }
+  }
+
+  .details-inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease;
+    background-color: $grayText;
+    color: $white;
+  }
+
+  &[open] {
+    summary::after {
+      display: none;
+    }
+    .details-inner {
+      max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
+      //TODO: hacer que se abra suavemente siempre
+      transition: max-height 2s ease-in-out;
+    }
+  }
+}
+
+.dropdown-lang {
+  .dropdown-toggle {
+    font-size: 13px;
+    font-weight: $textMedium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12.5px;
+
+    &::before {
+      content: url("/dist/assets/icons/link-menu-arrow--lang.svg");
+    }
+  }
+
+  .dropdown-menu {
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .dropdown-item {
+    color: $black;
+    font-size: 13px;
+    font-weight: $textMedium;
   }
 }
