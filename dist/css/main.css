@@ -12605,4 +12605,30 @@ p {
   background-color: #EDEDED;
 }
 
+/* card-menu--filters/Menu Lateral */
+.card-menu-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: fit-content;
+  align-items: center;
+}
+.card-menu-filters .card-menu-filters__img {
+  background-image: url(/dist/assets/img/card1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 114px;
+  height: 114px;
+  border: solid 4px transparent;
+  transition: all 0.4s linear;
+}
+.card-menu-filters .card-menu-filters__img:hover {
+  border: solid 4px #464646;
+}
+.card-menu-filters span {
+  font-size: 13px;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=main.css.map */

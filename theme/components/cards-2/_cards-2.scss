@@ -180,8 +180,9 @@
     margin: auto 20px;
 
   }
-  &:hover h4{
-   text-decoration: underline;
+
+  &:hover h4 {
+    text-decoration: underline;
   }
 
   & p {
@@ -347,4 +348,40 @@
   &:hover {
     background-color: #EDEDED;
   }
+}
+
+
+/* card-menu--filters/Menu Lateral */
+
+.card-menu-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: fit-content;
+  align-items: center;
+
+  & .card-menu-filters__img {
+    background-image: url(/dist/assets/img/card1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 114px;
+    height: 114px;
+
+    border: solid 4px transparent;
+
+    transition: all $delay linear;
+
+
+    &:hover {
+      border: solid 4px $gray;
+    }
+  }
+
+  & span {
+    font-size: 13px;
+    font-family: $font-family-base;
+    font-weight: $textSemibold;
+  }
+
+
 }
