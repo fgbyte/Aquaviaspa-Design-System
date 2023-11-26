@@ -71,7 +71,7 @@
     font-size: 32px;
     color: $white;
     z-index: 2;
-    max-width: 400;
+    max-width: 400px;
     margin-top: auto;
   }
 
@@ -79,7 +79,7 @@
 
     position: relative;
     font-size: 16px;
-    max-width: 400;
+    max-width: 400px;
     color: $white;
     z-index: 2;
     opacity: 0;
@@ -117,6 +117,7 @@
     transition: all $delay linear;
     z-index: 2;
     margin: 30px 0px;
+    padding-top: 70px;
 
     @include media-breakpoint-up(sm) {
       width: 130px;
@@ -150,6 +151,126 @@
 
 //card-category-blog-fin//
 
+
+
+//card-category-blog-lite
+
+.card-category-blog-lite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  min-height: 319px;
+  min-width: 349px;
+  overflow: hidden;
+  transition: all $delay linear;
+  text-decoration: none;
+  max-width: 462px;
+
+
+  & h4 {
+    position: relative;
+    font-size: 32px;
+    color: $black;
+    font-weight: $textRegular;
+    z-index: 2;
+    margin-top: auto;
+    margin: auto 20px;
+
+  }
+  &:hover h4{
+   text-decoration: underline;
+  }
+
+  & p {
+    position: relative;
+    font-size: 16px;
+    color: $white;
+    z-index: 2;
+    opacity: 1;
+    transition: all $delay linear;
+    color: $black;
+    margin: auto 20px;
+
+  }
+
+  & .card-category-blog-lite__container {
+    position: relative;
+    transition: all $delay linear;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  & .card-category-blog-lite__bg {
+    background-image: url(/dist/assets/img/card1.png);
+    position: relative;
+    inset: 0;
+    background-size: cover;
+    transition: all $delay linear;
+    width: 100%;
+    height: 100%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all $delay linear;
+      bottom: 0;
+
+    }
+
+  }
+
+  &:hover .card-category-blog-lite__container .card-category-blog-lite__bg {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all $delay linear;
+      background: #000000 0% 0% no-repeat padding-box;
+      opacity: 0.34;
+      bottom: 0;
+
+    }
+  }
+
+  & .card-category-blog-lite__plus {
+    position: relative;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    width: 80px;
+    transition: all $delay linear;
+    z-index: 2;
+    margin: auto;
+    padding: 120px 0;
+
+    @include media-breakpoint-up(sm) {
+      width: 130px;
+      display: block;
+
+    }
+  }
+
+
+  &:hover .card-category-blog-lite__bg {
+    transform: scale(1.1);
+  }
+
+  &:hover .card-category-blog-lite__plus {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+}
+
+//card-category-blog-lite-fin//
 
 .card-map {
   display: flex;
