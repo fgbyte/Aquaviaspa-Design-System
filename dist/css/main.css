@@ -12631,4 +12631,69 @@ p {
   font-weight: 600;
 }
 
+/* card-transform--lg/Home */
+.card-transform {
+  background-image: url(/dist/assets/img/home-hero.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 50%;
+  height: 600px;
+  transition: all 0.4s linear;
+  overflow: hidden;
+}
+.card-transform .card-transform__card-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 500px;
+  height: 100%;
+  margin-left: 120px;
+  padding: 20px 80px;
+  transition: all 0.4s linear;
+  color: #fff;
+  overflow: hidden;
+}
+.card-transform .card-transform__card-inside .card-transform__card-inside--img {
+  width: 117px;
+  height: auto;
+  align-self: center;
+  justify-self: start;
+  margin-bottom: auto;
+  margin-top: 60px;
+  opacity: 0;
+}
+.card-transform .card-transform__card-inside h3, .card-transform .card-transform__card-inside .h3 {
+  font-size: 58px;
+  text-transform: none;
+}
+.card-transform .card-transform__card-inside p {
+  font-size: 20px;
+  font-weight: 400;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.card-transform .card-transform__card-inside a {
+  margin-bottom: 28px;
+  margin-top: 28px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+.card-transform:hover .card-transform__card-inside .card-transform__card-inside--img {
+  max-height: 300px;
+  opacity: 1;
+}
+.card-transform:hover .card-transform__card-inside p {
+  max-height: 300px;
+  opacity: 0.8;
+}
+.card-transform:hover {
+  width: 100%;
+}
+.card-transform:hover .card-transform__card-inside {
+  background-color: rgba(0, 0, 0, 0.421);
+}
+
 /*# sourceMappingURL=main.css.map */
