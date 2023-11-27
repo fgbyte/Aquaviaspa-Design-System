@@ -1,2 +1,28 @@
 @use "../../globals";
 
+.card-spa {
+  width: 327px;
+//   height: 400px;
+  background-color: $white;
+
+  img {
+    width: 327px;
+    height: 328px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px;
+
+    h3 {
+        font-size: 32px;
+        font-weight: $textSemibold;
+        margin: 0px;
+        text-transform: capitalize;
+    }
+    p {
+        margin: 0px;
+    }
+  }
+}

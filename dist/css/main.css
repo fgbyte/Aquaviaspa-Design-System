@@ -12481,4 +12481,27 @@ p {
   font-weight: 500;
 }
 
+.card-spa {
+  width: 327px;
+  background-color: #fff;
+}
+.card-spa img {
+  width: 327px;
+  height: 328px;
+}
+.card-spa__text {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+}
+.card-spa__text h3, .card-spa__text .h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0px;
+  text-transform: capitalize;
+}
+.card-spa__text p {
+  margin: 0px;
+}
+
 /*# sourceMappingURL=main.css.map */
