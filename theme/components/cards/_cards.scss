@@ -1,2 +1,49 @@
 @use "../../globals";
 
+.card-spa {
+  text-decoration: none;
+  width: 327px;
+//   height: 400px;
+  background-color: $white;
+
+  @include media-breakpoint-up(lg) {
+    width: 461px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &__text {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h3 {
+        font-size: 32px;
+        font-weight: $textSemibold;
+        margin: 0px;
+        text-transform: capitalize;
+    }
+
+    .card-spa__details {
+      display: flex;
+      justify-content: space-between;
+      p {
+          font-size: 16px;
+          font-weight: $textRegular;
+          color: $grayText;
+          margin: 0px;
+      }
+
+      &--price {
+        align-self: end;
+        p {
+          color: $black;
+          font-weight: $textBold;
+        }
+      }
+    }
+  }
+}
