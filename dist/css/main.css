@@ -12523,6 +12523,81 @@ p {
   color: #000;
   font-weight: 700;
 }
+.card-spa .card-spa__img {
+  display: block;
+}
+.card-spa .card-spa__img--hover {
+  display: none;
+}
+.card-spa:hover .card-spa__img {
+  display: none;
+}
+.card-spa:hover .card-spa__img--hover {
+  display: block;
+}
+
+.card-accesorios {
+  text-decoration: none;
+  background-color: #fff;
+  width: 327px;
+  overflow: hidden;
+}
+.card-accesorios__container {
+  width: 100%;
+}
+.card-accesorios__container--bg {
+  width: 327px;
+}
+.card-accesorios__container--bg img {
+  transition: all 0.4s linear;
+  width: 100%;
+}
+.card-accesorios__container .card-accesorios__container--bg {
+  position: relative;
+}
+.card-accesorios__container .card-accesorios__container--bg::after {
+  content: url("/dist/assets/icons/bx-plus-accesorios.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.card-accesorios__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px 22px 22px 34px;
+}
+.card-accesorios__text h4, .card-accesorios__text .h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0px;
+}
+@media (min-width: 992px) {
+  .card-accesorios__text h4, .card-accesorios__text .h4 {
+    font-weight: 500;
+  }
+}
+.card-accesorios__text img {
+  width: 21px;
+  height: 21px;
+  align-self: end;
+}
+@media (min-width: 992px) {
+  .card-accesorios__text img {
+    display: none;
+  }
+}
+.card-accesorios:hover .card-accesorios__container--bg img {
+  transition: all 0.4s linear;
+  z-index: 1;
+  filter: brightness(0.75);
+}
+.card-accesorios:hover .card-accesorios__container--bg::after {
+  opacity: 1;
+}
 
 .card-category-blog {
   display: flex;
@@ -12680,15 +12755,15 @@ p {
   color: #000;
   margin: auto 20px;
 }
-.card-category-blog-lite .card-category-blog-lite__container {
+.card-category-blog-lite__container {
   position: relative;
   transition: all 0.4s linear;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.card-category-blog-lite .card-category-blog-lite__bg {
-  background-image: url(/dist/assets/img/card1.png);
+.card-category-blog-lite__bg {
+  background-image: url("/dist/assets/img/card1.png");
   position: relative;
   inset: 0;
   background-size: cover;
@@ -12696,7 +12771,7 @@ p {
   width: 100%;
   height: 100%;
 }
-.card-category-blog-lite .card-category-blog-lite__bg::after {
+.card-category-blog-lite__bg::after {
   content: "";
   position: absolute;
   width: 100%;

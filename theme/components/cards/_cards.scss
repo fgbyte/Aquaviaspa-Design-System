@@ -3,7 +3,7 @@
 .card-spa {
   text-decoration: none;
   width: 327px;
-//   height: 400px;
+  //   height: 400px;
   background-color: $white;
 
   @include media-breakpoint-up(lg) {
@@ -21,20 +21,20 @@
     gap: 10px;
 
     h3 {
-        font-size: 32px;
-        font-weight: $textSemibold;
-        margin: 0px;
-        text-transform: capitalize;
+      font-size: 32px;
+      font-weight: $textSemibold;
+      margin: 0px;
+      text-transform: capitalize;
     }
 
     .card-spa__details {
       display: flex;
       justify-content: space-between;
       p {
-          font-size: 16px;
-          font-weight: $textRegular;
-          color: $grayText;
-          margin: 0px;
+        font-size: 16px;
+        font-weight: $textRegular;
+        color: $grayText;
+        margin: 0px;
       }
 
       &--price {
@@ -43,6 +43,99 @@
           color: $black;
           font-weight: $textBold;
         }
+      }
+    }
+  }
+
+  .card-spa__img {
+    display: block;
+
+    &--hover {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .card-spa__img {
+      display: none;
+
+      &--hover {
+        display: block;
+      }
+    }
+  }
+}
+
+.card-accesorios {
+  text-decoration: none;
+  background-color: $white;
+  width: 327px;
+  overflow: hidden;
+
+  &__container {
+    width: 100%;
+
+    &--bg {
+      width: 327px;
+
+      img {
+        transition: all $delay linear;
+        width: 100%;
+      }
+    }
+    .card-accesorios__container--bg {
+      position: relative;
+
+      &::after {
+        content: url("/dist/assets/icons/bx-plus-accesorios.svg");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity $delay linear;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 28px 22px 22px 34px;
+
+    h4 {
+      font-size: 22px;
+      font-weight: $textSemibold;
+      margin: 0px;
+
+      @include media-breakpoint-up(lg) {
+        font-weight: $textMedium;
+      }
+    }
+
+    img {
+      width: 21px;
+      height: 21px;
+      align-self: end;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+  }
+
+  &:hover {
+    .card-accesorios__container--bg {
+      img {
+        transition: all $delay linear;
+        // transform: scale(1.1);
+        z-index: 1;
+        filter: brightness(0.75);
+      }
+
+      &::after {
+        opacity: 1;
       }
     }
   }
