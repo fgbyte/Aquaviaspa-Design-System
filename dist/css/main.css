@@ -12493,6 +12493,12 @@ p {
 }
 .card-spa img {
   width: 100%;
+  height: 328px;
+}
+@media (min-width: 992px) {
+  .card-spa img {
+    height: 462px;
+  }
 }
 .card-spa__text {
   padding: 28px 24px;

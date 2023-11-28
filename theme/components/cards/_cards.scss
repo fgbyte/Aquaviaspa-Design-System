@@ -12,6 +12,10 @@
 
   img {
     width: 100%;
+    height: 328px;
+    @include media-breakpoint-up(lg) {
+      height: 462px;
+    }
   }
 
   &__text {
