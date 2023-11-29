@@ -287,7 +287,7 @@
   img {
     width: 55px;
     height: 55px;
-    
+
     @include media-breakpoint-up(lg) {
       width: 64px;
       height: 64px;
@@ -298,6 +298,56 @@
     font-size: 12px;
     @include media-breakpoint-up(lg) {
       font-size: 15px;
+    }
+  }
+}
+
+.card-prestaciones-menu {
+  background: transparent linear-gradient(0deg, #111111 0%, #545454 100%) 0% 0% no-repeat padding-box;
+  padding: 30px 50px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 150px 55px 120px 55px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h4 {
+      font-size: 36px;
+      font-weight: $textMedium;
+      margin: 0;
+      @include media-breakpoint-up(lg) {
+        font-size: 42px;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: $textRegular;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include media-breakpoint-down (lg) {
+      display: none;
     }
   }
 }
