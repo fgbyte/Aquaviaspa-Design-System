@@ -81,6 +81,11 @@
 
 
 .dropdown-card {
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 464px;
+  }
   summary {
     background-color: $secondary;
     color: white;
@@ -97,6 +102,10 @@
     &::after {
       content: url("/dist/assets/icons/dropdown-card-arrow.svg");
       color: $white;
+
+      @include media-breakpoint-up(lg) {
+        content: "";
+      }
     }
   }
 
@@ -138,6 +147,7 @@
   .details-inner {
     max-height: 0;
     overflow: hidden;
+    transition: all 2s linear;
     
   }
 
@@ -145,7 +155,7 @@
     .details-inner {
       max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
       //TODO: hacer que se abra suavemente siempre
-      transition: max-height 2s ease-in-out;
+      transition: all 2s linear;
     }
     summary::after {
       transform: rotate(180deg);

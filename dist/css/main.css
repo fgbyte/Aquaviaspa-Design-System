@@ -12362,6 +12362,14 @@ p {
   align-self: start;
 }
 
+.dropdown-card {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .dropdown-card {
+    max-width: 464px;
+  }
+}
 .dropdown-card summary {
   background-color: #464646;
   color: white;
@@ -12378,6 +12386,11 @@ p {
 .dropdown-card summary::after {
   content: url("/dist/assets/icons/dropdown-card-arrow.svg");
   color: #fff;
+}
+@media (min-width: 992px) {
+  .dropdown-card summary::after {
+    content: "";
+  }
 }
 .dropdown-card ul {
   padding-left: 0px;
@@ -12411,10 +12424,11 @@ p {
 .dropdown-card .details-inner {
   max-height: 0;
   overflow: hidden;
+  transition: all 2s linear;
 }
 .dropdown-card[open] .details-inner {
   max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
-  transition: max-height 2s ease-in-out;
+  transition: all 2s linear;
 }
 .dropdown-card[open] summary::after {
   transform: rotate(180deg);
