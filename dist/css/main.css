@@ -12488,7 +12488,7 @@ p {
 }
 @media (min-width: 992px) {
   .card-spa {
-    width: 461px;
+    width: 465px;
   }
 }
 .card-spa img {
@@ -12497,7 +12497,7 @@ p {
 }
 @media (min-width: 992px) {
   .card-spa img {
-    height: 462px;
+    height: 465px;
   }
 }
 .card-spa__text {
@@ -12599,9 +12599,70 @@ p {
 .card-accesorios:hover .card-accesorios__container--bg img {
   transition: all 0.4s linear;
   z-index: 1;
-  filter: brightness(0.75);
+  filter: brightness(0.7);
 }
 .card-accesorios:hover .card-accesorios__container--bg::after {
+  opacity: 1;
+}
+
+.card-option {
+  width: 325px;
+  height: 355px;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .card-option {
+    width: 465px;
+    height: 470px;
+  }
+}
+.card-option img {
+  width: 100%;
+  height: 270px;
+  transition: all 0.4s linear;
+}
+@media (min-width: 992px) {
+  .card-option img {
+    height: 385px;
+  }
+}
+.card-option .btn-blue--asistente {
+  text-decoration: none;
+  background-color: #EFEDE9;
+  border: none;
+  text-transform: none;
+  font-size: 22px;
+  font-weight: 600;
+  height: 85px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .card-option .btn-blue--asistente {
+    font-size: 28px;
+  }
+}
+.card-option .btn-blue--asistente:hover {
+  background-color: #94F0F5;
+}
+.card-option .card-option__container {
+  position: relative;
+}
+.card-option .card-option__container::after {
+  content: url("/dist/assets/icons/card-option__container__check.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.card-option:hover .card-option__container img {
+  transition: all 0.4s linear;
+  transform: scale(1.1);
+  z-index: 1;
+  filter: brightness(0.7);
+}
+.card-option:hover .card-option__container::after {
   opacity: 1;
 }
 
