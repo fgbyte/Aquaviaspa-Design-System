@@ -211,3 +211,93 @@
     }
   }
 }
+
+.card-faq {
+  // background-color: $white; //quitar
+  padding: 60px 0px;
+  border-top: solid 0.5px #878787;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include media-breakpoint-up(lg) {
+    gap: 55px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 23.5px;
+    align-items: center;
+
+    img {
+      width: 68px;
+      height: 70px;
+      @include media-breakpoint-up(lg) {
+        width: 90px;
+        height: 93px;
+      }
+    }
+
+    h4 {
+      font-size: 30px;
+      font-weight: $textMedium;
+      color: $black;
+      margin: 0;
+      margin-top: 10px;
+      @include media-breakpoint-up(lg) {
+        font-size: 52px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: $textMedium;
+    @include media-breakpoint-up(lg) {
+      font-size: 22px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0px;
+
+      @include media-breakpoint-up(lg) {
+        gap: 18px;
+      }
+
+      li {
+        &::marker {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+.card-faq-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  img {
+    width: 55px;
+    height: 55px;
+    
+    @include media-breakpoint-up(lg) {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  a {
+    font-size: 12px;
+    @include media-breakpoint-up(lg) {
+      font-size: 15px;
+    }
+  }
+}
