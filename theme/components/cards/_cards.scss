@@ -303,7 +303,10 @@
 }
 
 .card-prestaciones-menu {
-  background: transparent linear-gradient(0deg, #111111 0%, #545454 100%) 0% 0% no-repeat padding-box;
+  width: 100%;
+  height: 410px;
+  background: transparent linear-gradient(0deg, #111111 0%, #545454 100%) 0% 0%
+    no-repeat padding-box;
   padding: 30px 50px;
   color: $white;
   display: flex;
@@ -311,15 +314,16 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
+  @include media-breakpoint-up(special) {
+    width: 50%;
+    height: 620px;
+    padding: 150px 55px 120px 55px;
+  }
 
   &__container {
     display: flex;
     flex-direction: column;
     gap: 60px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    padding: 150px 55px 120px 55px;
   }
 
   &__text {
@@ -346,8 +350,126 @@
     flex-direction: column;
     gap: 20px;
 
-    @include media-breakpoint-down (lg) {
+    @include media-breakpoint-down(lg) {
       display: none;
+    }
+  }
+}
+
+.card-prestaciones {
+  width: 100%;
+  height: 410px;
+  position: relative;
+  z-index: 1;
+  @include media-breakpoint-up(special) {
+    width: 50%;
+    height: 620px;
+
+    // ANIMAR AL HACER HOVER
+    &:hover {
+      .card-prestaciones__sub {
+        transition: all $delay linear;
+        height: 70%;
+      }
+      .card-prestaciones__text {
+        overflow: hidden;
+        gap: 65px;
+        p {
+          font-weight: $textBold;
+          span {
+            display: block;
+          }
+          // margin-top: -90px;
+        }
+        .card-prestaciones__text-plus {
+          display: none;
+        }
+        .link-arrow-grow {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 40%;
+    @include media-breakpoint-up(lg) {
+      height: 65%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__sub {
+    width: 100%;
+    height: 60%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    gap: 22px;
+    padding: 30px 20px 20px 30px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    @include media-breakpoint-up(lg) {
+      padding: 50px 30px 30px 50px;
+      flex-direction: row;
+      gap: 50px;
+      transition: all $delay linear;
+      height: 35%;
+    }
+
+    img {
+      width: 109px;
+      height: 63px;
+      @include media-breakpoint-down(lg) {
+        width: 150px;
+        height: 86px;
+      }
+    }
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include media-breakpoint-up(lg) {
+      // padding-top: 30px;
+    }
+
+    p {
+      margin: 0px;
+      font-size: 16px;
+      max-width: 75%;
+      span {
+        font-weight: $textRegular;
+        display: none;
+      }
+    }
+
+    a {
+      align-self: end;
+      img {
+        width: 20px;
+        height: 20px;
+        @include media-breakpoint-up(lg) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .link-arrow-grow {
+      font-size: 16px;
+      font-weight: $textMedium;
+      display: none;
+      margin-right: 25%;
     }
   }
 }
