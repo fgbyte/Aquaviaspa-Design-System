@@ -315,6 +315,7 @@
   align-items: center;
   justify-content: center;
   @include media-breakpoint-up(special) {
+    //TODO: poner width: 100% para usar en modules
     width: 50%;
     height: 620px;
     padding: 150px 55px 120px 55px;
@@ -362,6 +363,7 @@
   position: relative;
   z-index: 1;
   @include media-breakpoint-up(special) {
+    //TODO: poner width: 100% para usar en modules
     width: 50%;
     height: 620px;
 
@@ -379,7 +381,6 @@
           span {
             display: block;
           }
-          // margin-top: -90px;
         }
         .card-prestaciones__text-plus {
           display: none;
@@ -472,4 +473,8 @@
       margin-right: 25%;
     }
   }
+}
+
+.card-prestaciones-lite {
+  
 }
