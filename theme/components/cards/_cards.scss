@@ -315,7 +315,7 @@
   align-items: center;
   justify-content: center;
   @include media-breakpoint-up(special) {
-    //TODO: poner width: 100% para usar en modules
+    //TODO: poner width y height: 100% para usar en modules
     width: 50%;
     height: 620px;
     padding: 150px 55px 120px 55px;
@@ -363,14 +363,14 @@
   position: relative;
   z-index: 1;
   @include media-breakpoint-up(special) {
-    //TODO: poner width: 100% para usar en modules
+    //TODO: poner width y height: 100% para usar en modules para que tomen el alto y ancho de la grid asignada
     width: 50%;
     height: 620px;
 
     // ANIMAR AL HACER HOVER
     &:hover {
       .card-prestaciones__sub {
-        transition: all $delay linear;
+        transition: all $delay ease-in-out;
         height: 70%;
       }
       .card-prestaciones__text {
@@ -417,8 +417,8 @@
     position: absolute;
     bottom: 0px;
     z-index: 2;
-    @include media-breakpoint-up(lg) {
-      padding: 50px 30px 30px 50px;
+    @include media-breakpoint-up(special) {
+      padding: 9.2% 6% 6% 9.2%;
       flex-direction: row;
       gap: 50px;
       transition: all $delay linear;
@@ -440,9 +440,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @include media-breakpoint-up(lg) {
-      // padding-top: 30px;
-    }
+    
 
     p {
       margin: 0px;
@@ -476,5 +474,114 @@
 }
 
 .card-prestaciones-lite {
+  width: 100%;
+  height: 410px;
+  position: relative;
+  z-index: 1;
+  //TODO: poner width y height: 100% para usar en modules
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+    height: 515px;
+
+    // ANIMAR AL HACER HOVER
+    &:hover {
+      .card-prestaciones-lite__sub {
+        transition: all $delay ease-in-out;
+        height: 70%;
+        margin-top: 0px;
+      }
+      .card-prestaciones-lite__text {
+        overflow: hidden;
+        gap: 10px;
+        p {
+          font-weight: $textBold;
+          span {
+            display: block;
+          }
+        }
+
+        .link-arrow-grow {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 40%;
+    @include media-breakpoint-up(lg) {
+      height: 65%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__sub {
+    width: 100%;
+    height: 60%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    padding: 30px 20px 20px 30px;
+    @include media-breakpoint-up(lg) {
+      padding: 15% 6% 6% 9.2%;
+      flex-direction: row;
+      gap: 50px;
+      transition: all $delay linear;
+      height: 35%;
+
+      &__logo {
+        position: absolute;
+        top: -22px;
+        left: 9.2%;
+      }
+    }
+
+    &__logo {
+      width: fit-content;
+      height: fit-content;
+    }
+
+  }
+  &__text {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   
+    p {
+      margin: 0px;
+      font-size: 16px;
+      max-width: 90%;
+      span {
+        font-weight: $textRegular;
+        display: none;
+      }
+    }
+  
+    a {
+      align-self: end;
+      img {
+        width: 20px;
+        height: 20px;
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+      }
+    }
+  
+    .link-arrow-grow {
+      font-size: 16px;
+      font-weight: $textMedium;
+      display: none;
+      margin-right: 25%;
+    }
+  }
 }
