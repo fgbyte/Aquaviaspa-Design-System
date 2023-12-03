@@ -14352,4 +14352,140 @@ p {
   }
 }
 
+.search-container {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .search-container {
+    width: 470;
+  }
+}
+.search-container input {
+  height: 44px;
+  background-color: #EDEDED;
+  border: none;
+  padding-right: 40px;
+  padding-left: 4px;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 400;
+  font-family: "Raleway";
+}
+.search-container input:focus-visible {
+  border: none;
+  outline: none;
+}
+.search-container img {
+  position: absolute;
+  top: 27%;
+  right: 15;
+}
+
+.search-container-withe {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .search-container-withe {
+    width: 470;
+  }
+}
+.search-container-withe input {
+  height: 44px;
+  border: 0.5px solid #A5A5A5;
+  padding-right: 40px;
+  padding-left: 4px;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 400;
+  font-family: "Raleway";
+}
+.search-container-withe input:focus-visible {
+  border: 0.5px solid #A5A5A5;
+  outline: none;
+}
+.search-container-withe img {
+  position: absolute;
+  top: 27%;
+  right: 15;
+}
+
+.form-full {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  max-width: 920px;
+}
+.form-full label span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.form-full .form-full__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-full .form-full__container label input {
+  background-color: #EDEDED;
+  border: none;
+  height: 44px;
+  padding-left: 4px;
+}
+.form-full .form-full__container label input:focus-visible {
+  border: none;
+  outline: none;
+}
+@media (min-width: 992px) {
+  .form-full .form-full__container {
+    gap: 28px;
+    flex-direction: row;
+  }
+}
+.form-full label .form-full__select {
+  text-align: center;
+  height: 44px;
+  background-color: #EDEDED;
+  border: none;
+}
+.form-full label .form-full__textarea {
+  background-color: #EDEDED;
+  border: none;
+  height: 200px;
+  resize: none;
+}
+.form-full .form-full__checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .form-full .form-full__checkbox p {
+    display: flex;
+    align-items: center;
+  }
+}
+.form-full .form-full__checkbox input[type=checkbox] {
+  width: 19px;
+  height: 19px;
+  margin-right: 8px;
+}
+.form-full .btn-ficha {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .form-full .btn-ficha {
+    width: 450px;
+  }
+}
+.form-full p {
+  max-width: 100%;
+  font-size: 14px;
+}
+.form-full .form-full__terms {
+  max-width: 379px;
+}
+
 /*# sourceMappingURL=main.css.map */
