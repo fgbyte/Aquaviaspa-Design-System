@@ -407,7 +407,7 @@
 
   &__sub {
     width: 100%;
-    height: 60%;
+    min-height: 60%;
     background-color: $white;
     display: flex;
     flex-direction: column;
@@ -422,7 +422,8 @@
       flex-direction: row;
       gap: 50px;
       transition: all $delay linear;
-      height: 35%;
+      min-height: 35%;
+      height: 35.1%;
     }
 
     img {
@@ -522,7 +523,7 @@
 
   &__sub {
     width: 100%;
-    height: 60%;
+    min-height: 60%;
     background-color: $white;
     display: flex;
     flex-direction: column;
@@ -531,11 +532,12 @@
     z-index: 2;
     padding: 30px 20px 20px 30px;
     @include media-breakpoint-up(lg) {
-      padding: 15% 6% 6% 9.2%;
+      padding: 10% 6% 6% 9.2%;
       flex-direction: row;
       gap: 50px;
       transition: all $delay linear;
-      height: 35%;
+      min-height: 35%;
+      height: 35.1%;
 
       &__logo {
         position: absolute;

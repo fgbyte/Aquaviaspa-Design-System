@@ -13794,7 +13794,7 @@ p {
 }
 .card-prestaciones__sub {
   width: 100%;
-  height: 60%;
+  min-height: 60%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -13810,7 +13810,8 @@ p {
     flex-direction: row;
     gap: 50px;
     transition: all 0.4s linear;
-    height: 35%;
+    min-height: 35%;
+    height: 35.1%;
   }
 }
 .card-prestaciones__sub img {
@@ -13903,7 +13904,7 @@ p {
 }
 .card-prestaciones-lite__sub {
   width: 100%;
-  height: 60%;
+  min-height: 60%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -13914,11 +13915,12 @@ p {
 }
 @media (min-width: 992px) {
   .card-prestaciones-lite__sub {
-    padding: 15% 6% 6% 9.2%;
+    padding: 10% 6% 6% 9.2%;
     flex-direction: row;
     gap: 50px;
     transition: all 0.4s linear;
-    height: 35%;
+    min-height: 35%;
+    height: 35.1%;
   }
   .card-prestaciones-lite__sub__logo {
     position: absolute;
