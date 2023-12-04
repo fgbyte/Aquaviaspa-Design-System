@@ -13978,6 +13978,7 @@ p {
   transition: all 0.4s linear;
   padding: 20px 50px;
   text-decoration: none;
+  gap: 20px;
   /* &:hover {
 
     &::before {
@@ -13988,7 +13989,7 @@ p {
     opacity: 1;
     height: 160px;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
       opacity: 1;
       height: auto;
 
@@ -14005,7 +14006,7 @@ p {
   opacity: 1;
   z-index: 1;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .card-category-blog::before {
     display: none;
   }
@@ -14029,11 +14030,17 @@ p {
 }
 .card-category-blog h4, .card-category-blog .h4 {
   position: relative;
-  font-size: 32px;
+  font-size: 26px;
   color: #fff;
   z-index: 2;
   max-width: 400px;
   margin-top: auto;
+}
+@media (min-width: 992px) {
+  .card-category-blog h4, .card-category-blog .h4 {
+    margin-top: 0;
+    font-size: 32px;
+  }
 }
 .card-category-blog p {
   position: relative;
@@ -14046,10 +14053,11 @@ p {
   overflow: hidden;
   transition: all 0.4s linear;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .card-category-blog p {
     opacity: 1;
     height: auto;
+    margin-bottom: auto;
   }
 }
 .card-category-blog .card-category-blog__bg {
@@ -14072,7 +14080,7 @@ p {
   margin: 30px 0px;
   padding-top: 70px;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .card-category-blog .card-category-blog__plus {
     width: 130px;
     display: block;
@@ -14167,7 +14175,7 @@ p {
   margin: auto;
   padding: 120px 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .card-category-blog-lite .card-category-blog-lite__plus {
     width: 130px;
     display: block;
@@ -14592,6 +14600,57 @@ p {
   color: #575757;
   font-size: 14px;
   letter-spacing: 0.7px;
+}
+
+.section-beneficios {
+  padding: 64px 0;
+}
+.section-beneficios h2, .section-beneficios .h2 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .section-beneficios h2, .section-beneficios .h2 {
+    font-size: 42px;
+  }
+}
+.section-beneficios .section-beneficios__container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+}
+.section-beneficios .section-beneficios__container a {
+  scroll-snap-align: start;
+  width: 100%;
+}
+.section-beneficios .section-beneficios__container a .card-category-blog__bg {
+  background-image: url(/dist/assets/img/card-beneficios1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-beneficios .section-beneficios__container a .blog__bg2 {
+  background-image: url(/dist/assets/img/card-beneficios2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-beneficios .section-beneficios__container a .blog__bg3 {
+  background-image: url(/dist/assets/img/card-beneficios3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-beneficios a {
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .section-beneficios a {
+    margin-top: 64px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

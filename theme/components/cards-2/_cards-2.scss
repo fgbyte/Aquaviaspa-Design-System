@@ -15,6 +15,7 @@
   transition: all $delay linear;
   padding: 20px 50px;
   text-decoration: none;
+  gap: 20px;
 
 
   &::before {
@@ -27,7 +28,7 @@
     opacity: 1;
     z-index: 1;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
       display: none;
 
     }
@@ -68,11 +69,18 @@
 
   & h4 {
     position: relative;
-    font-size: 32px;
+    font-size: 26px;
     color: $white;
     z-index: 2;
     max-width: 400px;
     margin-top: auto;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+      font-size: 32px;
+
+
+    }
   }
 
   & p {
@@ -86,11 +94,13 @@
     height: 0;
     overflow: hidden;
     transition: all $delay linear;
+    
 
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
       opacity: 1;
       height: auto;
+      margin-bottom: auto;
     }
 
 
@@ -119,7 +129,7 @@
     margin: 30px 0px;
     padding-top: 70px;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
       width: 130px;
       display: block;
 
@@ -140,7 +150,7 @@
     opacity: 1;
     height: 160px;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
       opacity: 1;
       height: auto;
 
@@ -250,7 +260,7 @@
     margin: auto;
     padding: 120px 0;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
       width: 130px;
       display: block;
 

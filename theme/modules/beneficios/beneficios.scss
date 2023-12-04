@@ -1,0 +1,63 @@
+@use "../../globals";
+
+
+.section-beneficios {
+  padding: 64px 0;
+
+
+  & h2 {
+    font-size: 28px;
+    font-weight: $textMedium;
+    text-align: center;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 42px;
+
+    }
+  }
+
+  & .section-beneficios__container {
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+
+
+    & a {
+      scroll-snap-align: start;
+      width: 100%;
+
+      & .card-category-blog__bg {
+        background-image: url(/dist/assets/img/card-beneficios1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      & .blog__bg2 {
+        background-image: url(/dist/assets/img/card-beneficios2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      & .blog__bg3 {
+        background-image: url(/dist/assets/img/card-beneficios3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  & a {
+    margin-top: 40px;
+
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 64px;
+    }
+  }
+}
