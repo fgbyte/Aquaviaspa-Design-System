@@ -94,7 +94,7 @@
     height: 0;
     overflow: hidden;
     transition: all $delay linear;
-    
+
 
 
     @include media-breakpoint-up(lg) {
@@ -419,6 +419,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    min-width: 500px;
     width: 500px;
     height: 100%;
     margin-left: 20px;
@@ -506,4 +507,15 @@
 
   }
 
+}
+
+
+/*-----Este es el HOVER q oculta la card hermana en el modulo de card-transform -----*/
+
+@include media-breakpoint-up(lg) {
+  .card-transform:hover~.card-transform-right {
+    opacity: .3;
+    z-index: -1;
+    width: 0;
+  }
 }
