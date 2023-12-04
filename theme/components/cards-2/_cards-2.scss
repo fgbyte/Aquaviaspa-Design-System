@@ -407,9 +407,11 @@
   width: 100%;
   transition: all $delay linear;
   overflow: hidden;
+  height: 295px;
 
   @include media-breakpoint-up(lg) {
     width: 50%;
+    height: auto;
 
   }
 

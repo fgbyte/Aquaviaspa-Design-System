@@ -14332,10 +14332,12 @@ p {
   width: 100%;
   transition: all 0.4s linear;
   overflow: hidden;
+  height: 295px;
 }
 @media (min-width: 992px) {
   .card-transform {
     width: 50%;
+    height: auto;
   }
 }
 .card-transform .card-transform__card-inside {
@@ -14703,6 +14705,97 @@ p {
 @media (min-width: 992px) {
   .section-beneficios a {
     margin-top: 64px;
+  }
+}
+
+.card-transform-rigth {
+  background-image: url("/dist/assets/img/card-transform.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 63% center;
+  width: 100%;
+  transition: all 0.4s linear;
+  overflow: hidden;
+  height: 295px;
+}
+@media (min-width: 992px) {
+  .card-transform-rigth {
+    width: 50%;
+    height: auto;
+  }
+}
+.card-transform-rigth .card-transform__card-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 500px;
+  height: 100%;
+  margin-left: 20px;
+  padding: 20px 40px;
+  transition: all 0.4s linear;
+  color: #fff;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .card-transform-rigth .card-transform__card-inside {
+    margin-left: 100px;
+    padding: 20px 80px;
+    height: 600px;
+  }
+}
+.card-transform-rigth .card-transform__card-inside .card-transform__card-inside--img {
+  width: 117px;
+  height: auto;
+  align-self: center;
+  justify-self: start;
+  margin-bottom: auto;
+  margin-top: 60px;
+  opacity: 0;
+}
+.card-transform-rigth .card-transform__card-inside h3, .card-transform-rigth .card-transform__card-inside .h3 {
+  font-size: 58px;
+  text-transform: none;
+}
+.card-transform-rigth .card-transform__card-inside p {
+  display: none;
+  font-size: 20px;
+  font-weight: 400;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+@media (min-width: 992px) {
+  .card-transform-rigth .card-transform__card-inside p {
+    display: block;
+  }
+}
+.card-transform-rigth .card-transform__card-inside a {
+  margin-bottom: 16px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+@media (min-width: 992px) {
+  .card-transform-rigth .card-transform__card-inside a {
+    display: block;
+    margin-bottom: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .card-transform-rigth:hover .card-transform__card-inside .card-transform__card-inside--img {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .card-transform-rigth:hover .card-transform__card-inside p {
+    max-height: 300px;
+    opacity: 0.8;
+    margin-bottom: 32px;
+  }
+  .card-transform-rigth:hover {
+    width: 100%;
+  }
+  .card-transform-rigth:hover .card-transform__card-inside {
+    background-color: rgba(0, 0, 0, 0.421);
   }
 }
 
