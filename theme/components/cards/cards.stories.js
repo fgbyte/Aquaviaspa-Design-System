@@ -128,15 +128,15 @@ export const card6 = `
 `
 
 export const card7 = `
-<div class="card-prestaciones" href="#">
-<div class="card-prestaciones__container">
-  <img src="/dist/assets/img/card-prestaciones.webp" alt="">
+<div class="card-prestacion" href="#">
+<div class="card-prestacion__container">
+  <img src="/dist/assets/img/card-prestacion.webp" alt="">
 </div>
-<div class="card-prestaciones__sub">
+<div class="card-prestacion__sub">
   <img src="/dist/assets/icons/logo-mobleaurora.svg" alt="logo-mobleaurora">
-  <div class="card-prestaciones__text">
+  <div class="card-prestacion__text">
     <p>Experimenta más allá del agua, deja que el tacto invada tus sentidos de principio a fin. <span>El mueble Aurora, es una propuesta innovadora, sensorial y sostenible. Esta vez nuestra experiencia empieza desde el exterior, con un mueble que despierta todos tus sentidos.</span></p>
-    <a class="card-prestaciones__text-plus" href="#">
+    <a class="card-prestacion__text-plus" href="#">
       <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
     </a>
     <a  class="link-arrow-grow" href="#">
@@ -151,6 +151,7 @@ export const card7 = `
                 stroke-width="1" />
             </g>
           </svg>
+      
         </div>
       </a>
   </div>
@@ -159,15 +160,15 @@ export const card7 = `
 `
 
 export const card8 = `
-<div class="card-prestaciones-lite">
-<div class="card-prestaciones-lite__container">
-  <img src="/dist/assets/img/card-prestaciones2.webp" alt="">
+<div class="card-prestacion-lite">
+<div class="card-prestacion-lite__container">
+  <img src="/dist/assets/img/card-prestacion2.webp" alt="">
 </div>
-<div class="card-prestaciones-lite__sub">
-  <img class="card-prestaciones-lite__sub__logo" src="/dist/assets/icons/logo-ue.svg" alt="logo-ue">
-  <div class="card-prestaciones-lite__text">
+<div class="card-prestacion-lite__sub">
+  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-ue.svg" alt="logo-ue">
+  <div class="card-prestacion-lite__text">
     <p>Diseñamos y fabricamos nuestros propios spas con distinción europea. <span>Ante la tendencia deslocalizadora de la producción, Aquavia Spa ha apostado por mantener la producción propia, desde Cervera (70 Km de Barcelona), de todos nuestros spas, piscinas contracorriente y cada uno de sus componentes.</span></p>
-    <a class="card-prestaciones-lite__text-plus" href="#">
+    <a class="card-prestacion-lite__text-plus" href="#">
       <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
     </a>
     <a  class="link-arrow-grow" href="#">

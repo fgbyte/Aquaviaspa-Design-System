@@ -12814,6 +12814,10 @@ textarea.form-control-lg {
   font-weight: 800;
   font-style: normal;
 }
+body {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
 blockquote {
   font-family: Raleway;
   font-weight: 600;
@@ -13746,7 +13750,7 @@ p {
   }
 }
 
-.card-prestaciones-menu {
+.card-prestacion-menu {
   width: 100%;
   height: 410px;
   background: transparent linear-gradient(0deg, #111111 0%, #545454 100%) 0% 0% no-repeat padding-box;
@@ -13759,93 +13763,93 @@ p {
   justify-content: center;
 }
 @media (min-width: 1158px) {
-  .card-prestaciones-menu {
+  .card-prestacion-menu {
     width: 50%;
     height: 620px;
     padding: 150px 55px 120px 55px;
   }
 }
-.card-prestaciones-menu__container {
+.card-prestacion-menu__container {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.card-prestaciones-menu__text {
+.card-prestacion-menu__text {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.card-prestaciones-menu__text h4, .card-prestaciones-menu__text .h4 {
+.card-prestacion-menu__text h4, .card-prestacion-menu__text .h4 {
   font-size: 36px;
   font-weight: 500;
   margin: 0;
 }
 @media (min-width: 992px) {
-  .card-prestaciones-menu__text h4, .card-prestaciones-menu__text .h4 {
+  .card-prestacion-menu__text h4, .card-prestacion-menu__text .h4 {
     font-size: 42px;
   }
 }
-.card-prestaciones-menu__text p {
+.card-prestacion-menu__text p {
   font-size: 18px;
   font-weight: 400;
 }
-.card-prestaciones-menu__links {
+.card-prestacion-menu__links {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 @media (max-width: 991.98px) {
-  .card-prestaciones-menu__links {
+  .card-prestacion-menu__links {
     display: none;
   }
 }
 
-.card-prestaciones {
+.card-prestacion {
   width: 100%;
   height: 410px;
   position: relative;
   z-index: 1;
 }
 @media (min-width: 1158px) {
-  .card-prestaciones {
+  .card-prestacion {
     width: 50%;
     height: 620px;
   }
-  .card-prestaciones:hover .card-prestaciones__sub {
+  .card-prestacion:hover .card-prestacion__sub {
     transition: all 0.4s ease-in-out;
     height: 70%;
   }
-  .card-prestaciones:hover .card-prestaciones__text {
+  .card-prestacion:hover .card-prestacion__text {
     overflow: hidden;
     gap: 65px;
   }
-  .card-prestaciones:hover .card-prestaciones__text p {
+  .card-prestacion:hover .card-prestacion__text p {
     font-weight: 700;
   }
-  .card-prestaciones:hover .card-prestaciones__text p span {
+  .card-prestacion:hover .card-prestacion__text p span {
     display: block;
   }
-  .card-prestaciones:hover .card-prestaciones__text .card-prestaciones__text-plus {
+  .card-prestacion:hover .card-prestacion__text .card-prestacion__text-plus {
     display: none;
   }
-  .card-prestaciones:hover .card-prestaciones__text .link-arrow-grow {
+  .card-prestacion:hover .card-prestacion__text .link-arrow-grow {
     display: block;
   }
 }
-.card-prestaciones__container {
+.card-prestacion__container {
   width: 100%;
   height: 40%;
 }
 @media (min-width: 992px) {
-  .card-prestaciones__container {
+  .card-prestacion__container {
     height: 65%;
   }
 }
-.card-prestaciones__container img {
+.card-prestacion__container img {
   width: 100%;
   height: 100%;
 }
-.card-prestaciones__sub {
+.card-prestacion__sub {
   width: 100%;
   min-height: 60%;
   background-color: #fff;
@@ -13858,7 +13862,7 @@ p {
   z-index: 2;
 }
 @media (min-width: 1158px) {
-  .card-prestaciones__sub {
+  .card-prestacion__sub {
     padding: 9.2% 6% 6% 9.2%;
     flex-direction: row;
     gap: 50px;
@@ -13867,95 +13871,95 @@ p {
     height: 35.1%;
   }
 }
-.card-prestaciones__sub img {
+.card-prestacion__sub img {
   width: 109px;
   height: 63px;
 }
 @media (max-width: 991.98px) {
-  .card-prestaciones__sub img {
+  .card-prestacion__sub img {
     width: 150px;
     height: 86px;
   }
 }
-.card-prestaciones__text {
+.card-prestacion__text {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.card-prestaciones__text p {
+.card-prestacion__text p {
   margin: 0px;
   font-size: 16px;
   max-width: 75%;
 }
-.card-prestaciones__text p span {
+.card-prestacion__text p span {
   font-weight: 400;
   display: none;
 }
-.card-prestaciones__text a {
+.card-prestacion__text a {
   align-self: end;
 }
-.card-prestaciones__text a img {
+.card-prestacion__text a img {
   width: 20px;
   height: 20px;
 }
 @media (min-width: 992px) {
-  .card-prestaciones__text a img {
+  .card-prestacion__text a img {
     width: 30px;
     height: 30px;
   }
 }
-.card-prestaciones__text .link-arrow-grow {
+.card-prestacion__text .link-arrow-grow {
   font-size: 16px;
   font-weight: 500;
   display: none;
   margin-right: 25%;
 }
 
-.card-prestaciones-lite {
+.card-prestacion-lite {
   width: 100%;
   height: 410px;
   position: relative;
   z-index: 1;
 }
 @media (min-width: 992px) {
-  .card-prestaciones-lite {
+  .card-prestacion-lite {
     width: 50%;
     height: 515px;
   }
-  .card-prestaciones-lite:hover .card-prestaciones-lite__sub {
+  .card-prestacion-lite:hover .card-prestacion-lite__sub {
     transition: all 0.4s ease-in-out;
     height: 70%;
     margin-top: 0px;
   }
-  .card-prestaciones-lite:hover .card-prestaciones-lite__text {
+  .card-prestacion-lite:hover .card-prestacion-lite__text {
     overflow: hidden;
     gap: 10px;
   }
-  .card-prestaciones-lite:hover .card-prestaciones-lite__text p {
+  .card-prestacion-lite:hover .card-prestacion-lite__text p {
     font-weight: 700;
   }
-  .card-prestaciones-lite:hover .card-prestaciones-lite__text p span {
+  .card-prestacion-lite:hover .card-prestacion-lite__text p span {
     display: block;
   }
-  .card-prestaciones-lite:hover .card-prestaciones-lite__text .link-arrow-grow {
+  .card-prestacion-lite:hover .card-prestacion-lite__text .link-arrow-grow {
     display: block;
   }
 }
-.card-prestaciones-lite__container {
+.card-prestacion-lite__container {
   width: 100%;
   height: 40%;
 }
 @media (min-width: 992px) {
-  .card-prestaciones-lite__container {
+  .card-prestacion-lite__container {
     height: 65%;
   }
 }
-.card-prestaciones-lite__container img {
+.card-prestacion-lite__container img {
   width: 100%;
   height: 100%;
 }
-.card-prestaciones-lite__sub {
+.card-prestacion-lite__sub {
   width: 100%;
   min-height: 60%;
   background-color: #fff;
@@ -13967,7 +13971,7 @@ p {
   padding: 30px 20px 20px 30px;
 }
 @media (min-width: 992px) {
-  .card-prestaciones-lite__sub {
+  .card-prestacion-lite__sub {
     padding: 10% 6% 6% 9.2%;
     flex-direction: row;
     gap: 50px;
@@ -13975,44 +13979,44 @@ p {
     min-height: 35%;
     height: 35.1%;
   }
-  .card-prestaciones-lite__sub__logo {
+  .card-prestacion-lite__sub__logo {
     position: absolute;
     top: -22px;
     left: 9.2%;
   }
 }
-.card-prestaciones-lite__sub__logo {
+.card-prestacion-lite__sub__logo {
   width: fit-content;
   height: fit-content;
 }
-.card-prestaciones-lite__text {
+.card-prestacion-lite__text {
   margin-top: 25px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.card-prestaciones-lite__text p {
+.card-prestacion-lite__text p {
   margin: 0px;
   font-size: 16px;
   max-width: 90%;
 }
-.card-prestaciones-lite__text p span {
+.card-prestacion-lite__text p span {
   font-weight: 400;
   display: none;
 }
-.card-prestaciones-lite__text a {
+.card-prestacion-lite__text a {
   align-self: end;
 }
-.card-prestaciones-lite__text a img {
+.card-prestacion-lite__text a img {
   width: 20px;
   height: 20px;
 }
 @media (min-width: 992px) {
-  .card-prestaciones-lite__text a img {
+  .card-prestacion-lite__text a img {
     display: none;
   }
 }
-.card-prestaciones-lite__text .link-arrow-grow {
+.card-prestacion-lite__text .link-arrow-grow {
   font-size: 16px;
   font-weight: 500;
   display: none;
@@ -14114,7 +14118,7 @@ p {
   }
 }
 .card-category-blog .card-category-blog__bg {
-  background-image: url(/dist/assets/img/card1.png);
+  background-image: url("/dist/assets/img/card-beneficios1.png");
   position: absolute;
   inset: 0;
   background-size: cover;
@@ -14191,7 +14195,7 @@ p {
   overflow: hidden;
 }
 .card-category-blog-lite__bg {
-  background-image: url("/dist/assets/img/card1.png");
+  background-image: url("/dist/assets/img/card-beneficios1.png");
   position: relative;
   inset: 0;
   background-size: cover;
@@ -14306,7 +14310,7 @@ p {
   align-items: center;
 }
 .card-menu-filters .card-menu-filters__img {
-  background-image: url(/dist/assets/img/card1.png);
+  background-image: url("/dist/assets/img/card-beneficios1.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 114px;
