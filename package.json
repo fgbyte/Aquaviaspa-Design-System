@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "sass --watch theme:dist/css",
+    "ts": "tsc --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -18,7 +19,6 @@
     "vite": "^4.5.0"
   },
   "devDependencies": {
-    "storybook": "^7.5.3",
     "@storybook/addon-docs": "^7.5.3",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
@@ -29,6 +29,8 @@
     "@storybook/testing-library": "^0.2.2",
     "autoprefixer": "^10.4.16",
     "prop-types": "^15.8.1",
-    "sass": "^1.69.4"
+    "sass": "^1.69.4",
+    "storybook": "^7.5.3",
+    "typescript": "^5.3.2"
   }
 }
