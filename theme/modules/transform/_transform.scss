@@ -1,0 +1,147 @@
+@use "../../globals";
+
+
+
+.card-transform-right {
+  background-image: url('/dist/assets/img/card-transform-rigth.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 63% center;
+  width: 100%;
+  transition: all $delay linear;
+  overflow: hidden;
+  height: 295px;
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  & .card-transform__card-inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 500px;
+    width: 500px;
+    height: 100%;
+    margin-left: 20px;
+    padding: 20px 40px;
+    transition: all $delay linear;
+    color: $white;
+    overflow: hidden;
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 50px;
+      padding: 20px 80px;
+      height: 600px;
+
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-right: 170px;
+      padding: 20px 80px;
+      height: 600px;
+
+    }
+
+
+    .card-transform__card-inside--img {
+      width: 117px;
+      height: auto;
+      align-self: center;
+      justify-self: start;
+      margin-bottom: auto;
+      margin-top: 60px;
+      opacity: 0;
+
+
+    }
+
+    & h3 {
+      font-size: 58px;
+      text-transform: none;
+    }
+
+    & p {
+      display: none;
+      font-size: 20px;
+      font-weight: $textRegular;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+
+
+      transition: all $delay linear;
+
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+
+      }
+    }
+
+    & a {
+      margin-bottom: 16px;
+
+      font-size: 18px;
+      opacity: .8;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+        margin-bottom: 28px;
+      }
+    }
+
+  }
+
+  @include media-breakpoint-up(lg) {
+    &:hover .card-transform__card-inside .card-transform__card-inside--img {
+      max-height: 300px;
+      opacity: 1;
+
+    }
+
+    &:hover .card-transform__card-inside p {
+      max-height: 300px;
+      opacity: .8;
+      margin-bottom: 32px;
+    }
+
+    &:hover {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: 2;
+
+    }
+
+    &:hover .card-transform__card-inside {
+      background-color: rgba(0, 0, 0, 0.421)
+    }
+
+  }
+
+}
+
+/* @include media-breakpoint-up(lg) {
+  .card-transform-rigth:hover~article {
+    opacity: .3;
+    z-index: 0;
+    width: 0;
+
+  }
+}
+ */
+
+ /*Animacion provicional con JS*/ 
+.opac {
+  opacity: .3;
+  width: 0;
+  z-index: -1;
+
+}

@@ -14332,16 +14332,19 @@ p {
   width: 100%;
   transition: all 0.4s linear;
   overflow: hidden;
+  height: 295px;
 }
 @media (min-width: 992px) {
   .card-transform {
     width: 50%;
+    height: auto;
   }
 }
 .card-transform .card-transform__card-inside {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  min-width: 500px;
   width: 500px;
   height: 100%;
   margin-left: 20px;
@@ -14413,6 +14416,14 @@ p {
   }
 }
 
+/*-----Este es el HOVER q oculta la card hermana en el modulo de card-transform -----*/
+@media (min-width: 992px) {
+  .card-transform:hover ~ .card-transform-right {
+    opacity: 0.3;
+    z-index: -1;
+    width: 0;
+  }
+}
 .search-container {
   position: relative;
 }
@@ -14704,6 +14715,128 @@ p {
   .section-beneficios a {
     margin-top: 64px;
   }
+}
+
+.card-transform-right {
+  background-image: url("/dist/assets/img/card-transform-rigth.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 63% center;
+  width: 100%;
+  transition: all 0.4s linear;
+  overflow: hidden;
+  height: 295px;
+}
+@media (min-width: 992px) {
+  .card-transform-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.card-transform-right .card-transform__card-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 500px;
+  width: 500px;
+  height: 100%;
+  margin-left: 20px;
+  padding: 20px 40px;
+  transition: all 0.4s linear;
+  color: #fff;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .card-transform-right .card-transform__card-inside {
+    margin-right: 50px;
+    padding: 20px 80px;
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-transform-right .card-transform__card-inside {
+    margin-right: 170px;
+    padding: 20px 80px;
+    height: 600px;
+  }
+}
+.card-transform-right .card-transform__card-inside .card-transform__card-inside--img {
+  width: 117px;
+  height: auto;
+  align-self: center;
+  justify-self: start;
+  margin-bottom: auto;
+  margin-top: 60px;
+  opacity: 0;
+}
+.card-transform-right .card-transform__card-inside h3, .card-transform-right .card-transform__card-inside .h3 {
+  font-size: 58px;
+  text-transform: none;
+}
+.card-transform-right .card-transform__card-inside p {
+  display: none;
+  font-size: 20px;
+  font-weight: 400;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+@media (min-width: 992px) {
+  .card-transform-right .card-transform__card-inside p {
+    display: block;
+  }
+}
+.card-transform-right .card-transform__card-inside a {
+  margin-bottom: 16px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+@media (min-width: 992px) {
+  .card-transform-right .card-transform__card-inside a {
+    display: block;
+    margin-bottom: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .card-transform-right:hover .card-transform__card-inside .card-transform__card-inside--img {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .card-transform-right:hover .card-transform__card-inside p {
+    max-height: 300px;
+    opacity: 0.8;
+    margin-bottom: 32px;
+  }
+  .card-transform-right:hover {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  .card-transform-right:hover .card-transform__card-inside {
+    background-color: rgba(0, 0, 0, 0.421);
+  }
+}
+
+/* @include media-breakpoint-up(lg) {
+  .card-transform-rigth:hover~article {
+    opacity: .3;
+    z-index: 0;
+    width: 0;
+
+  }
+}
+ */
+/*Animacion provicional con JS*/
+.opac {
+  opacity: 0.3;
+  width: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */
