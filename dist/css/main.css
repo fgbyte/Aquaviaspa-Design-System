@@ -14711,6 +14711,83 @@ p {
   margin-bottom: -1.5rem;
 }
 
+.footer-top {
+  display: flex;
+  min-height: 630px;
+  margin-bottom: -1.5rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .footer-top {
+    min-height: 664px;
+  }
+}
+.footer-top article:first-child {
+  background: transparent linear-gradient(180deg, #575757 0%, #111111 100%) 0% 0% no-repeat padding-box;
+}
+.footer-top article:last-child {
+  background: #EFEDE9;
+}
+.footer-top article {
+  padding: 27px;
+}
+.footer-top article .cont-img {
+  max-width: 220px;
+  margin-bottom: 3.5rem;
+  margin-top: -160px;
+}
+@media (min-width: 992px) {
+  .footer-top article .cont-img {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+.footer-top article .cont-img img {
+  height: 220;
+}
+@media (min-width: 992px) {
+  .footer-top article .cont-img img {
+    height: 300;
+  }
+}
+.footer-top article h2, .footer-top article .h2,
+.footer-top article h3,
+.footer-top article .h3 {
+  font-weight: 500;
+  font-size: 38px;
+  text-transform: none;
+}
+.footer-top article h2, .footer-top article .h2 {
+  color: #fff;
+  display: none;
+}
+@media (min-width: 992px) {
+  .footer-top article h2, .footer-top article .h2 {
+    display: block;
+  }
+}
+.footer-top article h4, .footer-top article .h4 {
+  color: #fff;
+  font-size: 35px;
+  text-transform: none;
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  .footer-top article h4, .footer-top article .h4 {
+    display: none;
+  }
+}
+.footer-top article p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .footer-top article p {
+    display: none;
+  }
+}
+
 .section-beneficios {
   padding: 64px 0;
 }

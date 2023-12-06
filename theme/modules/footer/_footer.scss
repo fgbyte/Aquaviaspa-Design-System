@@ -137,6 +137,93 @@
 }
 
 
-.margen-negative{
+.margen-negative {
   margin-bottom: -1.50rem;
+}
+
+.footer-top {
+  display: flex;
+  min-height: 630px;
+  margin-bottom: -1.50rem;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 664px;
+
+  }
+
+  & article:first-child {
+    background: transparent linear-gradient(180deg, #575757 0%, #111111 100%) 0% 0% no-repeat padding-box;
+  }
+
+  & article:last-child {
+    background: $beige;
+  }
+
+  & article {
+    padding: 27px;
+
+    & .cont-img {
+      max-width: 220px;
+      margin-bottom: 3.5rem;
+      margin-top: -160px;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      & img {
+        height: 220;
+
+        @include media-breakpoint-up(lg) {
+          height: 300;
+
+        }
+      }
+    }
+
+
+    & h2,
+    h3 {
+      font-weight: $textMedium;
+      font-size: 38px;
+      text-transform: none;
+    }
+
+    & h2 {
+      color: $white;
+      display: none;
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+
+      }
+    }
+
+    & h4 {
+      color: $white;
+      font-size: 35px;
+      text-transform: none;
+      font-weight: $textMedium;
+
+
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: $textRegular;
+      color: $white;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+
+  }
 }
