@@ -14707,6 +14707,10 @@ p {
   letter-spacing: 0.7px;
 }
 
+.margen-negative {
+  margin-bottom: -1.5rem;
+}
+
 .section-beneficios {
   padding: 64px 0;
 }
