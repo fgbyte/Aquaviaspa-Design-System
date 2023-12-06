@@ -52,20 +52,27 @@
     }
   }
 
-  .card-spa__img {
-    display: block;
+  .card-spa__container {
+    position: relative;
+  }
 
-    &--hover {
-      display: none;
-    }
+  .card-spa__img {
+    opacity: 1;
+    transition: all $delay linear;
+  }
+  .card-spa__img--hover {
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    transition: all $delay linear;
   }
 
   &:hover {
     .card-spa__img {
-      display: none;
+      opacity: 0;
 
       &--hover {
-        display: block;
+        opacity: 1;
       }
     }
   }
