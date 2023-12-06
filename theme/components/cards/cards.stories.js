@@ -189,3 +189,10 @@ export const card8 = `
 </div>
 </div>
 `
+
+export const card9 = `
+<div class="card-gama">
+<img src="/dist/assets/icons/Logo.svg" alt="">
+<h4>15 años estructura</h4>
+</div>
+`

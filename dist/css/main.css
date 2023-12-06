@@ -14023,6 +14023,36 @@ p {
   margin-right: 25%;
 }
 
+.card-gama {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+.card-gama img {
+  width: 82px;
+  height: 82px;
+}
+.card-gama h4, .card-gama .h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .card-gama {
+    width: 287px;
+    gap: 23px;
+  }
+  .card-gama img {
+    width: 98px;
+    height: 98px;
+  }
+  .card-gama h4, .card-gama .h4 {
+    font-size: 26px;
+  }
+}
+
 .card-category-blog {
   display: flex;
   flex-direction: column;
