@@ -217,10 +217,11 @@
 
 /*link-arrow-grow-reverse*/
 
-.link-arrow-grow-reverse {
+
+.link-arrow-grow-white-reverse {
   position: relative;
   display: flex;
-  gap: 4px;
+  gap: 12px;
   text-decoration: none;
   font-weight: $textMedium;
   font-size: 16px;
@@ -229,14 +230,15 @@
   padding: 0;
   margin: 0;
   padding-right: 10px;
+  color: $white;
 
-  &:hover div .link__arrow {
+  &:hover div .link__arrow-white {
     width: 55px;
 
   }
 
   &:hover span {
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $white;
 
   }
 
@@ -247,19 +249,17 @@
 
   }
 
-  & .container-arrow {
+  & .container-arrow-white {
     position: relative;
-  /*   left: 100%;
-    top: 4px; */
   }
 
-  & div .link__arrow {
+  & div .link__arrow-white {
     position: relative;
     margin-right: -6.6px;
     margin-bottom: -1px;
     height: 1px;
     width: 30px;
-    background-color: $black;
+    background-color: $white;
     transition: all $delay linear;
 
 
@@ -272,11 +272,11 @@
 
   @include media-breakpoint-up(lg) {
 
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
-.link__arrow-svg {
-  stroke: $black;
+.link__arrow-svg-white {
+  stroke: $white;
 }
 

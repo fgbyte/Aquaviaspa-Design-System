@@ -13226,10 +13226,10 @@ p {
 }
 
 /*link-arrow-grow-reverse*/
-.link-arrow-grow-reverse {
+.link-arrow-grow-white-reverse {
   position: relative;
   display: flex;
-  gap: 4px;
+  gap: 12px;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -13238,44 +13238,43 @@ p {
   padding: 0;
   margin: 0;
   padding-right: 10px;
+  color: #fff;
 }
-.link-arrow-grow-reverse:hover div .link__arrow {
+.link-arrow-grow-white-reverse:hover div .link__arrow-white {
   width: 55px;
 }
-.link-arrow-grow-reverse:hover span {
-  border-bottom: 2px solid #000;
+.link-arrow-grow-white-reverse:hover span {
+  border-bottom: 2px solid #fff;
 }
-.link-arrow-grow-reverse span {
+.link-arrow-grow-white-reverse span {
   border-bottom: 2px solid transparent;
   transition: color 0.4s, border-bottom-color 0.4s;
 }
-.link-arrow-grow-reverse .container-arrow {
+.link-arrow-grow-white-reverse .container-arrow-white {
   position: relative;
-  /*   left: 100%;
-    top: 4px; */
 }
-.link-arrow-grow-reverse div .link__arrow {
+.link-arrow-grow-white-reverse div .link__arrow-white {
   position: relative;
   margin-right: -6.6px;
   margin-bottom: -1px;
   height: 1px;
   width: 30px;
-  background-color: #000;
+  background-color: #fff;
   transition: all 0.4s linear;
 }
 @media (min-width: 992px) {
-  .link-arrow-grow-reverse div .link__arrow {
+  .link-arrow-grow-white-reverse div .link__arrow-white {
     width: 36px;
   }
 }
 @media (min-width: 992px) {
-  .link-arrow-grow-reverse {
-    font-size: 18px;
+  .link-arrow-grow-white-reverse {
+    font-size: 22px;
   }
 }
 
-.link__arrow-svg {
-  stroke: #000;
+.link__arrow-svg-white {
+  stroke: #fff;
 }
 
 .dropdown {
