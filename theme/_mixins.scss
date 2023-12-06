@@ -1,3 +1,6 @@
 //mixins
 @use './globals';
 
+@mixin background-gradient($startColor: #111111, $endColor: #545454) {
+    background: transparent linear-gradient(0deg, $startColor 0%, $endColor 100%) 0% 0% no-repeat padding-box;
+  }

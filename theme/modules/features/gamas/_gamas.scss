@@ -1,0 +1,51 @@
+@use "../../../globals";
+@use "../../../mixins";
+
+.gamas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  color: $white;
+  padding: 90px 25px;
+  @include background-gradient(#111111, #545454);
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    h2 {
+        font-size: 30px;
+        font-weight: $textMedium;
+    }
+    p {
+        text-align: center;
+        font-weight: $textRegular;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 150px 0px;
+    gap: 70px;
+    &__text {
+        gap: 18px;
+        h2 {
+            font-size: 42px;
+        }
+        p {
+            width: 475px;
+        }
+    }
+    &__cards {
+        flex-direction: row;
+
+    }
+  }
+}

@@ -69,14 +69,14 @@ export const card5 = `
 `
 
 export const card6 = `
-<div class="card-prestaciones-menu">
-<div class="card-prestaciones-menu__container">
-  <div class="card-prestaciones-menu__text">
+<div class="card-prestacion-menu">
+<div class="card-prestacion-menu__container">
+  <div class="card-prestacion-menu__text">
     <h4>Ingeniería y fabricación</h4>
     <p>Prestaciones que nos diferencian como una firma innovadora de spas y swimspas, líder en desarrollo y
       producción propia.</p>
   </div>
-  <div class="card-prestaciones-menu__links">
+  <div class="card-prestacion-menu__links">
     <!-- link1 -->
     <a  class="link-arrow-grow-white" href="#">
       <span>Aurora</span>

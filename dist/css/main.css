@@ -14873,4 +14873,52 @@ p {
   z-index: -1;
 }
 
+.gamas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+  color: #fff;
+  padding: 90px 25px;
+  background: transparent linear-gradient(0deg, #111111 0%, #545454 100%) 0% 0% no-repeat padding-box;
+}
+.gamas__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.gamas__text h2, .gamas__text .h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.gamas__text p {
+  text-align: center;
+  font-weight: 400;
+}
+.gamas__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .gamas {
+    padding: 150px 0px;
+    gap: 70px;
+  }
+  .gamas__text {
+    gap: 18px;
+  }
+  .gamas__text h2, .gamas__text .h2 {
+    font-size: 42px;
+  }
+  .gamas__text p {
+    width: 475px;
+  }
+  .gamas__cards {
+    flex-direction: row;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
