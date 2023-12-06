@@ -14890,6 +14890,7 @@ p {
 }
 .gamas__text h2, .gamas__text .h2 {
   font-size: 30px;
+  text-align: center;
   font-weight: 500;
 }
 .gamas__text p {
