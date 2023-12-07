@@ -1,0 +1,64 @@
+@use '../../../globals';
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 60px 25px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        blockquote {
+            font-size: 36px;
+            font-weight: $textSemibold;
+            margin: 0;
+    
+            span {
+                display: block;
+                font-weight: $textRegular;
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 168px;
+            height: 146px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        padding: 85px 25px;
+        justify-content: space-between;
+
+        &__text {
+            max-width: 725px;
+            blockquote {
+                font-size: 58px;
+                span {
+                    line-height: normal;
+                    font-size: 48px;
+                }
+            }
+        }
+
+        &__img {
+            align-items: center;
+
+            img {
+                width: 257px;
+                height: 223px;
+            }
+        }
+    }
+}

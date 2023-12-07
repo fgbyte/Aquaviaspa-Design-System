@@ -14581,6 +14581,12 @@ p {
   align-items: center;
   justify-content: center;
 }
+.form-full .form-full__checkbox p {
+  margin: 0 0;
+}
+.form-full .form-full__checkbox p b {
+  margin-left: 6px;
+}
 @media (min-width: 992px) {
   .form-full .form-full__checkbox p {
     display: flex;
@@ -14609,6 +14615,7 @@ p {
 }
 .form-full .form-full__terms {
   max-width: 379px;
+  text-transform: none;
 }
 
 .footer {
@@ -15045,6 +15052,62 @@ p {
   .top-ventas__container {
     gap: 20px;
     justify-content: center;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 60px 25px;
+}
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.intro__text blockquote {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+.intro__text blockquote span {
+  display: block;
+  font-weight: 400;
+}
+.intro__text p {
+  margin: 0;
+}
+.intro__img {
+  display: flex;
+  justify-content: center;
+}
+.intro__img img {
+  width: 168px;
+  height: 146px;
+}
+@media (min-width: 992px) {
+  .intro {
+    flex-direction: row;
+    padding: 85px 25px;
+    justify-content: space-between;
+  }
+  .intro__text {
+    max-width: 725px;
+  }
+  .intro__text blockquote {
+    font-size: 58px;
+  }
+  .intro__text blockquote span {
+    line-height: normal;
+    font-size: 48px;
+  }
+  .intro__img {
+    align-items: center;
+  }
+  .intro__img img {
+    width: 257px;
+    height: 223px;
   }
 }
 
