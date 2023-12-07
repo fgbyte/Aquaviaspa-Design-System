@@ -15089,8 +15089,9 @@ p {
 @media (min-width: 992px) {
   .intro {
     flex-direction: row;
+    gap: 190px;
     padding: 85px 13%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .intro__text {
     max-width: 725px;
