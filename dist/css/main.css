@@ -15089,7 +15089,7 @@ p {
 @media (min-width: 992px) {
   .intro {
     flex-direction: row;
-    padding: 85px 25px;
+    padding: 85px 13%;
     justify-content: space-between;
   }
   .intro__text {

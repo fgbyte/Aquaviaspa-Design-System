@@ -38,7 +38,7 @@
 
     @include media-breakpoint-up(lg) {
         flex-direction: row;
-        padding: 85px 25px;
+        padding: 85px $pxDesktop;
         justify-content: space-between;
 
         &__text {
