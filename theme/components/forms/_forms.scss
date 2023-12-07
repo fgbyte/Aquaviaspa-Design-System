@@ -143,6 +143,11 @@
     justify-content: center;
 
     & p {
+
+      & b{
+        margin-left: 6px;
+      }
+      margin: 0 0;
       @include media-breakpoint-up(lg) {
         display: flex;
         align-items: center;
@@ -180,6 +185,8 @@
 
   & .form-full__terms {
     max-width: 379px;
+    text-transform: none;
+  
   }
 
 }
