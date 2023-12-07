@@ -80,50 +80,53 @@ export const card6 = `
   </div>
   <div class="card-prestacion-menu__links">
     <!-- link1 -->
-    <a  class="link-arrow-grow-white" href="#">
+    <a class="link-arrow-grow-white-reverse" href="#">
+      <div class="d-flex align-items-center container-arrow-white">
+        <div class="link__arrow-white"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
+          <g id="Grupo_12494" class="link__arrow-svg-white" data-name="Grupo 12494"
+            transform="translate(-326.008 -160.675)">
+            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486" transform="translate(326.401 160.984)"
+              stroke-width="1" />
+            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
+              stroke-width="1" />
+          </g>
+        </svg>
+      </div>
       <span>Aurora</span>
+    </a>
+    <!-- link2 -->
+    <a class="link-arrow-grow-white-reverse" href="#">
       <div class="d-flex align-items-center container-arrow-white">
-          <div class="link__arrow-white"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-            <g id="Grupo_12494" class="link__arrow-svg-white" data-name="Grupo 12494" transform="translate(-326.008 -160.675)">
-              <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486" transform="translate(326.401 160.984)"
-                stroke-width="1" />
-              <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
-                stroke-width="1" />
-            </g>
-          </svg>
-        </div>
-      </a>
-      <!-- link2 -->
-    <a  class="link-arrow-grow-white" href="#">
-      <span>Made in Europe</span>
+        <div class="link__arrow-white"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
+          <g id="Grupo_12494" class="link__arrow-svg-white" data-name="Grupo 12494"
+            transform="translate(-326.008 -160.675)">
+            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486" transform="translate(326.401 160.984)"
+              stroke-width="1" />
+            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
+              stroke-width="1" />
+          </g>
+        </svg>
+      </div>
+      <span>Aurora</span>
+    </a>
+    <!-- link3 -->
+    <a class="link-arrow-grow-white-reverse" href="#">
       <div class="d-flex align-items-center container-arrow-white">
-          <div class="link__arrow-white"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-            <g id="Grupo_12494" class="link__arrow-svg-white" data-name="Grupo 12494" transform="translate(-326.008 -160.675)">
-              <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486" transform="translate(326.401 160.984)"
-                stroke-width="1" />
-              <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
-                stroke-width="1" />
-            </g>
-          </svg>
-        </div>
-      </a>
-       <!-- link3 -->
-    <a  class="link-arrow-grow-white" href="#">
-      <span>Metallic Structure</span>
-      <div class="d-flex align-items-center container-arrow-white">
-          <div class="link__arrow-white"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-            <g id="Grupo_12494" class="link__arrow-svg-white" data-name="Grupo 12494" transform="translate(-326.008 -160.675)">
-              <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486" transform="translate(326.401 160.984)"
-                stroke-width="1" />
-              <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
-                stroke-width="1" />
-            </g>
-          </svg>
-        </div>
-      </a>
+        <div class="link__arrow-white"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
+          <g id="Grupo_12494" class="link__arrow-svg-white" data-name="Grupo 12494"
+            transform="translate(-326.008 -160.675)">
+            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486" transform="translate(326.401 160.984)"
+              stroke-width="1" />
+            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
+              stroke-width="1" />
+          </g>
+        </svg>
+      </div>
+      <span>Aurora</span>
+    </a>
   </div>
 </div>
 </div>
