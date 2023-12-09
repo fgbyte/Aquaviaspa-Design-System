@@ -14868,6 +14868,145 @@ p {
   }
 }
 
+.hero-cta--left {
+  height: 90svh;
+}
+.hero-cta--left .hero-cta__text--lg {
+  bottom: 16%;
+  left: 13%;
+  right: auto;
+}
+.hero-cta--left .hero-cta__text--lg h1, .hero-cta--left .hero-cta__text--lg .h1 {
+  font-size: 58px;
+}
+.hero-cta--left .hero-cta__text--lg h1 span, .hero-cta--left .hero-cta__text--lg .h1 span {
+  font-size: 68px;
+  display: block;
+}
+.hero-cta--left .hero-cta__text--lg .btn-cta--lg {
+  align-self: start;
+}
+
+.banner-ficha {
+  width: 100%;
+}
+.banner-ficha__card {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background-color: #464646;
+}
+.banner-ficha__card__img {
+  width: 100%;
+  height: 45%;
+}
+.banner-ficha__card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.banner-ficha__card__text {
+  width: 100%;
+  height: 55%;
+  padding: 0 25px;
+}
+.banner-ficha__card__text .text__element {
+  padding: 10px 0;
+  color: #fff;
+  border-bottom: solid 0.8px #575757;
+}
+.banner-ficha__card__text .border-none {
+  border: none;
+}
+.banner-ficha__card__text h1, .banner-ficha__card__text .h1 {
+  margin: 0;
+  padding: 15px 0px;
+  font-size: 45px;
+  font-weight: 600;
+}
+.banner-ficha__card__text p {
+  margin: 0;
+  font-weight: 500;
+}
+.banner-ficha__card__text a {
+  display: flex;
+  align-items: center;
+  gap: 9.5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.banner-ficha__card__text a svg {
+  fill: #fff;
+}
+.banner-ficha__card__text a:hover svg {
+  fill: #94F0F5;
+}
+.banner-ficha__card__text a:hover span {
+  transition: all linear 0.4s;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+.banner-ficha__hero {
+  display: none;
+}
+@media (min-width: 992px) {
+  .banner-ficha__card {
+    display: none;
+  }
+  .banner-ficha__hero {
+    display: block;
+    width: 100%;
+    height: 100svh;
+  }
+  .banner-ficha__hero .hero-cta__text--lg {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__sup h1, .banner-ficha__hero .hero-cta__text--lg .text__sup .h1 {
+    font-size: 110px;
+    font-weight: 600;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__sup__p {
+    display: flex;
+    gap: 22px;
+    color: #fff;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__sup__p p {
+    font-size: 20px;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__down {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__down .text__element a {
+    display: flex;
+    align-items: center;
+    gap: 9.5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__down .text__element a svg {
+    fill: #fff;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__down .text__element a:hover svg {
+    fill: #94F0F5;
+  }
+  .banner-ficha__hero .hero-cta__text--lg .text__down .text__element a:hover span {
+    transition: all linear 0.4s;
+    transform: scale(1.05);
+    text-decoration: underline;
+  }
+}
+
 .hero-cta-home {
   background-image: url("/dist/assets/img/hero-cta-home--sm.webp");
 }
@@ -14883,22 +15022,31 @@ p {
 @media (min-width: 992px) {
   .hero-cta-home2 {
     background-image: url("/dist/assets/img/hero-cta-home2--lg.webp");
+    position: relative;
+  }
+  .hero-cta-home2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
   }
 }
-.hero-cta-home2 .hero-cta__text--lg {
-  bottom: 16%;
-  left: 13%;
-  right: auto;
+
+.banner-ficha__hero {
+  background-image: url("/dist/assets/img/banner-ficha__hero.webp");
+  position: relative;
 }
-.hero-cta-home2 .hero-cta__text--lg h1, .hero-cta-home2 .hero-cta__text--lg .h1 {
-  font-size: 58px;
-}
-.hero-cta-home2 .hero-cta__text--lg h1 span, .hero-cta-home2 .hero-cta__text--lg .h1 span {
-  font-size: 68px;
-  display: block;
-}
-.hero-cta-home2 .hero-cta__text--lg .btn-cta--lg {
-  align-self: start;
+.banner-ficha__hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .section-beneficios {
