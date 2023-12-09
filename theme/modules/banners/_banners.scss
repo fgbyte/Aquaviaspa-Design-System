@@ -1,0 +1,104 @@
+@use "../../globals";
+@use "../../mixins";
+
+.hero-cta {
+  width: 100%;
+  height: 100svh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__text {
+    width: 100%;
+    height: 100%;
+    max-width: $maxW;
+    padding: 45px $pxMobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: end; //abajo
+    gap: 25px;
+
+    h1 {
+      color: $white;
+      font-size: 42px;
+      font-weight: $textLight;
+
+      span {
+        display: block;
+        font-weight: $textSemibold;
+      }
+    }
+
+    .btn-cta--sm {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-self: center;
+    }
+  }
+  &__text--lg {
+    display: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+
+    &__text {
+      display: none;
+    }
+    &__text--lg {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      position: absolute;
+      bottom: 15%;
+      right: 15%;
+
+      h1 {
+        color: $white;
+        font-size: 86px;
+        font-weight: $textLight;
+
+        span {
+          display: inline;
+          font-weight: $textSemibold;
+        }
+      }
+
+      .btn-cta--lg {
+        align-self: end;
+      }
+    }
+  }
+}
+
+.hero-cta-home {
+  background-image: url("/dist/assets/img/hero-cta-home--sm.webp");
+  @include media-breakpoint-up(lg) {
+    background-image: url("/dist/assets/img/hero-cta-home--lg.webp");
+  }
+}
+
+.hero-cta-home2 {
+  background-image: url("/dist/assets/img/hero-cta-home2--sm.webp");
+  @include media-breakpoint-up(lg) {
+    background-image: url("/dist/assets/img/hero-cta-home2--lg.webp");
+  }
+
+  .hero-cta__text--lg {
+    bottom: 16%;
+    left: 13%;
+    right: auto;
+
+    h1 {
+        font-size: 58px;
+      span {
+        font-size: 68px;
+        display: block;
+      }
+    }
+
+    .btn-cta--lg {
+        align-self: start;
+    }
+  }
+}

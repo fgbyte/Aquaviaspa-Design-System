@@ -14805,6 +14805,102 @@ p {
   }
 }
 
+.hero-cta {
+  width: 100%;
+  height: 100svh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-cta__text {
+  width: 100%;
+  height: 100%;
+  max-width: 1420px;
+  padding: 45px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 25px;
+}
+.hero-cta__text h1, .hero-cta__text .h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 300;
+}
+.hero-cta__text h1 span, .hero-cta__text .h1 span {
+  display: block;
+  font-weight: 600;
+}
+.hero-cta__text .btn-cta--sm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-self: center;
+}
+.hero-cta__text--lg {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hero-cta {
+    position: relative;
+  }
+  .hero-cta__text {
+    display: none;
+  }
+  .hero-cta__text--lg {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+  }
+  .hero-cta__text--lg h1, .hero-cta__text--lg .h1 {
+    color: #fff;
+    font-size: 86px;
+    font-weight: 300;
+  }
+  .hero-cta__text--lg h1 span, .hero-cta__text--lg .h1 span {
+    display: inline;
+    font-weight: 600;
+  }
+  .hero-cta__text--lg .btn-cta--lg {
+    align-self: end;
+  }
+}
+
+.hero-cta-home {
+  background-image: url("/dist/assets/img/hero-cta-home--sm.webp");
+}
+@media (min-width: 992px) {
+  .hero-cta-home {
+    background-image: url("/dist/assets/img/hero-cta-home--lg.webp");
+  }
+}
+
+.hero-cta-home2 {
+  background-image: url("/dist/assets/img/hero-cta-home2--sm.webp");
+}
+@media (min-width: 992px) {
+  .hero-cta-home2 {
+    background-image: url("/dist/assets/img/hero-cta-home2--lg.webp");
+  }
+}
+.hero-cta-home2 .hero-cta__text--lg {
+  bottom: 16%;
+  left: 13%;
+  right: auto;
+}
+.hero-cta-home2 .hero-cta__text--lg h1, .hero-cta-home2 .hero-cta__text--lg .h1 {
+  font-size: 58px;
+}
+.hero-cta-home2 .hero-cta__text--lg h1 span, .hero-cta-home2 .hero-cta__text--lg .h1 span {
+  font-size: 68px;
+  display: block;
+}
+.hero-cta-home2 .hero-cta__text--lg .btn-cta--lg {
+  align-self: start;
+}
+
 .section-beneficios {
   padding: 64px 0;
 }
