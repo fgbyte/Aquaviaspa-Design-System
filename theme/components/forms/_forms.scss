@@ -1,8 +1,8 @@
 @use "../../globals";
 
 
-
 .search-container {
+  //TODO: poner lupa en bg
   position: relative;
 
   @include media-breakpoint-up(lg) {
@@ -42,6 +42,7 @@
 
 
 .search-container-withe {
+  //TODO: poner lupa en bg
   position: relative;
 
   @include media-breakpoint-up(lg) {

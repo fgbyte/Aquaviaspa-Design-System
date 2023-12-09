@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import { searchContainer, searchContainerWhite, formBasic } from "../../theme/components/forms/forms.stories"
+
+<Meta title="Components/Forms" />
+
+## Search
+
+<Canvas>
+ <Story name="Primary">
+  {() => searchContainer
+  }
+ </Story>
+</Canvas>
+
+## Search White
+
+<Canvas>
+ <Story name="Search White">
+  {() => searchContainerWhite
+  }
+ </Story>
+</Canvas>
+
+## Form Basic
+
+<Canvas>
+ <Story name="Form">
+  {() => formBasic
+  }
+ </Story>
+</Canvas>
