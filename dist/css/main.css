@@ -15030,17 +15030,16 @@ p {
 .top-ventas {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 26px;
   padding: 0 24px;
 }
-.top-ventas h3, .top-ventas .h3 {
+.top-ventas__title h3, .top-ventas__title .h3 {
   margin: 0px;
+  text-align: center;
 }
 .top-ventas__container {
   display: flex;
   gap: 13px;
-  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -15048,10 +15047,10 @@ p {
 @media (min-width: 992px) {
   .top-ventas {
     gap: 44px;
+    align-items: center;
   }
   .top-ventas__container {
     gap: 20px;
-    justify-content: center;
   }
 }
 
