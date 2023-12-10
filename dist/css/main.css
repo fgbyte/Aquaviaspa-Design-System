@@ -14903,6 +14903,7 @@ p {
 }
 .banner-ficha__card__img img {
   object-fit: cover;
+  object-position: top 0 right 0;
   width: 100%;
   height: 100%;
 }
