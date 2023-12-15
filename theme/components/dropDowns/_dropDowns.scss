@@ -43,8 +43,6 @@
   }
 }
 
-
-
 .dropdown-maps {
   appearance: none;
   -webkit-appearance: none;
@@ -77,9 +75,6 @@
   }
 }
 
-
-
-
 .dropdown-card {
   width: 100%;
 
@@ -96,12 +91,8 @@
     font-size: 18px;
     font-weight: $textMedium;
 
-    &::marker {
-      content: "";
-    }
     &::after {
       content: url("/dist/assets/icons/dropdown-card-arrow.svg");
-      color: $white;
 
       @include media-breakpoint-up(lg) {
         content: "";
@@ -141,30 +132,27 @@
 
   summary::after {
     transform: rotate(0deg);
-    // transition: transform $delay ease-in-out;
+    transition: all linear $delay;
   }
 
   .details-inner {
     max-height: 0;
     overflow: hidden;
     transition: all 2s linear;
-    
   }
 
   &[open] {
     .details-inner {
+      transition: all 2s linear;
       max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
       //TODO: hacer que se abra suavemente siempre
-      transition: all 2s linear;
     }
     summary::after {
-      transform: rotate(180deg);
+      transition: all linear $delay;
+      transform: rotate(-180deg);
     }
   }
 }
-
-
-
 
 .dropdown-podemos {
   summary {
@@ -210,9 +198,9 @@
       display: none;
     }
     .details-inner {
+      transition: all 2s linear;
       max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
       //TODO: hacer que se abra suavemente siempre
-      transition: max-height 2s ease-in-out;
     }
   }
 }
@@ -222,7 +210,6 @@
     content: none;
   }
 }
-
 
 .dropdown-lang {
   .dropdown-toggle {
@@ -250,8 +237,6 @@
   }
 }
 
-
-
 .dropdown-valor {
   summary {
     span {
@@ -276,5 +261,52 @@
 
   @include media-breakpoint-up(lg) {
     // display: none;
+  }
+}
+
+.dropdown-docs {
+  border-bottom: solid $grayText 1px;
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    svg {
+      transition: all linear $delay;
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: $textMedium;
+    }
+  }
+
+  &:hover {
+    .dropdown-docs__summary {
+      span {
+        font-weight: $textBold;
+      }
+    }
+  }
+
+  &[open] {
+    .dropdown-docs__summary {
+      svg {
+        transition: all linear $delay;
+        transform: rotate(-180deg);
+      }
+      span {
+        font-weight: $textBold;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__summary {
+      span {
+        font-size: 26px;
+      }
+    }
   }
 }
