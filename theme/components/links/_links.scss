@@ -280,3 +280,69 @@
   stroke: $white;
 }
 
+
+.link-documento {
+  width: 100%;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: $textRegular;
+  color: $gray;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  &::before {
+    content: url('/dist/assets/icons/link-documento.svg');
+    width: 20px;
+    height: 25px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+    align-items: end;
+    gap: 23px;
+
+    &::before {
+      width: 28px;
+      height: 35px;
+    }
+  }
+}
+
+
+
+.link-documento-dist {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__text {
+    font-size: 16px;
+    color: $gray;
+
+  }
+  &::after {
+    content: url('/dist/assets/icons/link-documento.svg');
+    width: 18px;
+    height: 23px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__text {
+      font-size: 18px;
+    }
+    &::after {
+      width: 24px;
+      height: 29px;
+    }
+  }
+}
+

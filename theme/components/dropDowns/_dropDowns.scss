@@ -217,7 +217,11 @@
   }
 }
 
-
+.no-marker {
+  &::marker {
+    content: none;
+  }
+}
 
 
 .dropdown-lang {
@@ -243,5 +247,34 @@
     color: $black;
     font-size: 13px;
     font-weight: $textMedium;
+  }
+}
+
+
+
+.dropdown-valor {
+  summary {
+    span {
+      font-size: 32px;
+      font-weight: $textSemibold;
+    }
+  }
+  .details-inner__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    color: $white;
+    h5 {
+      font-size: 28px;
+      font-weight: $textSemibold;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    // display: none;
   }
 }

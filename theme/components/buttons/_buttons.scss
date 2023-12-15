@@ -45,11 +45,9 @@
     padding: 18px 40px;
     margin: 0 -14px;
 
-
     & .btn-cta__arrow {
       margin-left: 8px;
       background: rgb(0, 0, 0);
-
     }
 
     & .btn-cta__arrow-svg {
@@ -80,22 +78,16 @@
   background: transparent;
 
   &:hover {
-
     background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
     border: 1px solid $cyan;
     color: $black;
-
   }
 
   @include media-breakpoint-up(lg) {
     font-size: 14px;
   }
 }
-
-
-
-
 
 .btn-ficha {
   display: flex;
@@ -115,20 +107,15 @@
   background: transparent;
 
   &:hover {
-
     background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
     border: 1px solid $cyan;
-
   }
 
   @include media-breakpoint-up(lg) {
     font-size: 14px;
   }
 }
-
-
-
 
 .btn-gray {
   display: flex;
@@ -152,16 +139,12 @@
     background: $cyan 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 20px #00000099;
     border: 1px solid $cyan;
-
   }
 
   @include media-breakpoint-up(lg) {
     font-size: 14px;
   }
 }
-
-
-
 
 .btn-blue {
   display: flex;
@@ -183,5 +166,36 @@
 
   @include media-breakpoint-up(lg) {
     font-size: 14px;
+  }
+}
+
+
+.btn-acabado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+  
+  p {
+    text-align: center;
+    width: 100%;
+    max-width: 85px;
+    font-size: 12px;
+  };
+
+  @include media-breakpoint-up(lg) {
+    img {
+      width: 124px;
+      height: 124px;
+    }
+    p {
+      font-size: 16px;
+    }
+    
   }
 }
