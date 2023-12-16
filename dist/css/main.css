@@ -13382,7 +13382,6 @@ p {
 .link-back-asistente--lg:hover span {
   border-bottom: 2px solid #000;
 }
-
 .link-back-asistente {
   background-color: #000;
   color: #fff;
@@ -13397,7 +13396,6 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
-
 .dropdown {
   width: fit-content;
 }
