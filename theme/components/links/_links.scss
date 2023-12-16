@@ -98,19 +98,15 @@
 
   &:hover div .link__arrow {
     width: 55px;
-
   }
 
   &:hover span {
     border-bottom: 2px solid $black;
-
   }
 
   & span {
     border-bottom: 2px solid transparent;
     transition: color $delay, border-bottom-color $delay;
-
-
   }
 
   & .container-arrow {
@@ -128,16 +124,12 @@
     background-color: $black;
     transition: all $delay linear;
 
-
     @include media-breakpoint-up(lg) {
       width: 36px;
     }
   }
 
-
-
   @include media-breakpoint-up(lg) {
-
     font-size: 18px;
   }
 }
@@ -145,9 +137,6 @@
 .link__arrow-svg {
   stroke: $black;
 }
-
-
-
 
 .link-arrow-grow-white {
   position: relative;
@@ -165,19 +154,15 @@
 
   &:hover div .link__arrow-white {
     width: 55px;
-
   }
 
   &:hover span {
     border-bottom: 2px solid $white;
-
   }
 
   & span {
     border-bottom: 2px solid transparent;
     transition: color $delay, border-bottom-color $delay;
-
-
   }
 
   & .container-arrow-white {
@@ -195,16 +180,12 @@
     background-color: $white;
     transition: all $delay linear;
 
-
     @include media-breakpoint-up(lg) {
       width: 36px;
     }
   }
 
-
-
   @include media-breakpoint-up(lg) {
-
     font-size: 18px;
   }
 }
@@ -213,10 +194,7 @@
   stroke: $white;
 }
 
-
-
 /*link-arrow-grow-reverse*/
-
 
 .link-arrow-grow-white-reverse {
   position: relative;
@@ -234,19 +212,15 @@
 
   &:hover div .link__arrow-white {
     width: 55px;
-
   }
 
   &:hover span {
     border-bottom: 2px solid $white;
-
   }
 
   & span {
     border-bottom: 2px solid transparent;
     transition: color $delay, border-bottom-color $delay;
-
-
   }
 
   & .container-arrow-white {
@@ -262,16 +236,12 @@
     background-color: $white;
     transition: all $delay linear;
 
-
     @include media-breakpoint-up(lg) {
       width: 36px;
     }
   }
 
-
-
   @include media-breakpoint-up(lg) {
-
     font-size: 22px;
   }
 }
@@ -279,7 +249,6 @@
 .link__arrow-svg-white {
   stroke: $white;
 }
-
 
 .link-documento {
   width: 100%;
@@ -292,7 +261,7 @@
   gap: 18px;
 
   &::before {
-    content: url('/dist/assets/icons/link-documento.svg');
+    content: url("/dist/assets/icons/link-documento.svg");
     width: 20px;
     height: 25px;
   }
@@ -313,8 +282,6 @@
   }
 }
 
-
-
 .link-documento-dist {
   width: 100%;
   text-decoration: none;
@@ -324,10 +291,9 @@
   &__text {
     font-size: 16px;
     color: $gray;
-
   }
   &::after {
-    content: url('/dist/assets/icons/link-documento.svg');
+    content: url("/dist/assets/icons/link-documento.svg");
     width: 18px;
     height: 23px;
   }
@@ -346,3 +312,44 @@
   }
 }
 
+.link-back-asistente--lg {
+  span {
+    color: $black;
+    font-size: 18px;
+    font-weight: $textMedium;
+  }
+
+  .container-arrow-white {
+    .link__arrow-white {
+      // transform: rotate(180deg);
+      background: $black;
+      position: relative;
+    }
+    svg {
+      margin-right: -6.6px;
+      margin-bottom: -1.8px;
+      transform: rotate(180deg);
+      .link__arrow-svg-white {
+        stroke: $black;
+      }
+    }
+  }
+  &:hover span {
+    border-bottom: 2px solid $black;
+  }
+}
+
+.link-back-asistente {
+  background-color: $black;
+  color: $white;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10.5px;
+  padding: 20px 40px;
+  span {
+    font-size: 18px;
+    font-weight: $textMedium;
+  }
+}

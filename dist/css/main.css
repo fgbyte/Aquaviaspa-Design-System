@@ -13362,6 +13362,42 @@ p {
   }
 }
 
+.link-back-asistente--lg span {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.link-back-asistente--lg .container-arrow-white .link__arrow-white {
+  background: #000;
+  position: relative;
+}
+.link-back-asistente--lg .container-arrow-white svg {
+  margin-right: -6.6px;
+  margin-bottom: -1.8px;
+  transform: rotate(180deg);
+}
+.link-back-asistente--lg .container-arrow-white svg .link__arrow-svg-white {
+  stroke: #000;
+}
+.link-back-asistente--lg:hover span {
+  border-bottom: 2px solid #000;
+}
+
+.link-back-asistente {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10.5px;
+  padding: 20px 40px;
+}
+.link-back-asistente span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .dropdown {
   width: fit-content;
 }
@@ -13536,10 +13572,6 @@ p {
   max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
 }
 
-.no-marker::marker {
-  content: none;
-}
-
 .dropdown-lang .dropdown-toggle {
   font-size: 13px;
   font-weight: 500;
@@ -13609,6 +13641,10 @@ p {
   .dropdown-docs__summary span {
     font-size: 26px;
   }
+}
+
+.no-marker::marker {
+  content: none;
 }
 
 .card-spa {

@@ -205,11 +205,6 @@
   }
 }
 
-.no-marker {
-  &::marker {
-    content: none;
-  }
-}
 
 .dropdown-lang {
   .dropdown-toggle {
@@ -308,5 +303,12 @@
         font-size: 26px;
       }
     }
+  }
+}
+
+
+.no-marker {
+  &::marker {
+    content: none;
   }
 }
