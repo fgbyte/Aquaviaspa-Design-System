@@ -14415,7 +14415,6 @@ p {
 }
 
 .card-acabados {
-  background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -14428,8 +14427,18 @@ p {
   gap: 20px;
 }
 .card-acabados__casco h4, .card-acabados__mueble h4, .card-acabados__casco .h4, .card-acabados__mueble .h4 {
+  width: 100%;
+  text-align: center;
   font-size: 22px;
   font-weight: 500;
+  padding: 14px 0px;
+}
+@media (min-width: 992px) {
+  .card-acabados__casco h4, .card-acabados__mueble h4, .card-acabados__casco .h4, .card-acabados__mueble .h4 {
+    font-size: 30px;
+    border-bottom: #575757 1px solid;
+    text-align: start;
+  }
 }
 .card-acabados__casco h4 span, .card-acabados__mueble h4 span, .card-acabados__casco .h4 span, .card-acabados__mueble .h4 span {
   font-size: 16px;
@@ -14440,6 +14449,25 @@ p {
   justify-content: space-evenly;
   gap: 26px;
   flex-wrap: wrap;
+}
+.card-acabados__buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+}
+@media (max-width: 991.98px) {
+  .card-acabados__buttons {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .card-acabados {
+    gap: 50px;
+  }
+  .card-acabados__inputs {
+    justify-content: start;
+    gap: 16px;
+  }
 }
 
 .card-category-blog {
