@@ -658,7 +658,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+
       h6 {
         font-size: 16px;
         color: $black;
@@ -671,7 +671,6 @@
       }
     }
   }
-
 
   @include media-breakpoint-up(lg) {
     width: 100%;
@@ -695,7 +694,6 @@
     }
   }
 }
-
 
 .card-down-docs {
   text-decoration: none;
@@ -733,5 +731,84 @@
     p {
       font-size: 24px;
     }
+  }
+}
+
+.card-steps {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5.5px;
+
+  .step {
+    width: 21px;
+    height: 21px;
+    background-color: $grayBorder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-size: 16px;
+    font-weight: $textSemibold;
+
+    &--active {
+      background-color: $black;
+    }
+
+  }
+  .step-divider--lg {
+    display: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: column;
+
+    .step {
+      width: 27px;
+      height: 27px;
+      font-size: 22px;
+    }
+    
+    .step-divider {
+      display: none;
+      &--lg {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.card-acabados {
+  background-color: $white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  &__casco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h4 {
+      font-size: 22px;
+      font-weight: $textMedium;
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__mueble {
+    @extend .card-acabados__casco;
+  }
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 26px;
+    flex-wrap: wrap;
   }
 }
