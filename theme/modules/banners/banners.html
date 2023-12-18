@@ -10,7 +10,7 @@
 <body class="mt-4 d-flex flex-column gap-4 bg-info">
 
     //hero-cta
-    <section class="hero-cta hero-cta-home ">
+    <section id="hero" class="hero-cta hero-cta-home ">
         <div class="hero-cta__text">
             <h1>Creating <span>Sensations</span></h1>
             <button type="button" class="btn-cta btn-cta--sm"><span>DESCÚBRA NUESTROS SPAS</span>
@@ -85,8 +85,40 @@
         </div>
     </section>
 
+    //banner-cta-center
+    <section class="banner-cta-center">
+
+        <div class="banner-cta-center__card">
+            <div class="banner-cta-center__card__logo">
+                <img src="/dist/assets/icons/banner-cta-center-logo-hoja.svg" alt="">
+                <h4>SOSTENIBILIDAD Y MEDIO AMBIENTE</h4>
+                <svg width="98px" height="3px" viewBox="0 0 98 3" version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1L97 1" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1"
+                        stroke-linecap="square" />
+                </svg>
+            </div>
+            <h3>Conoce nuestro <span>Manual de buenas prácticas</span></h3>
+        </div>
+
+        <button type="button" class="btn-cta btn-cta-banner btn-cta--sm"><span>VER MÁS</span>
+            <div class="d-flex align-items-center btn-cta-banner__inner">
+                <div class="btn-cta__arrow"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
+                    <g id="Grupo_12494" class="btn-cta__arrow-svg" data-name="Grupo 12494"
+                        transform="translate(-326.008 -160.675)">
+                        <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
+                            transform="translate(326.401 160.984)" stroke-width="1" />
+                        <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
+                            transform="translate(326.401 171.471)" stroke-width="1" />
+                    </g>
+                </svg>
+            </div>
+        </button>
+    </section>
+
     //banner-ficha
-    <section class="banner-ficha">
+    <section id="hero" class="banner-ficha">
         <!-- SM -->
         <div class="banner-ficha__card">
             <div class="banner-ficha__card__img">
@@ -183,6 +215,70 @@
             </div>
         </div>
     </section>
+
+    //banner
+    <section id="hero" class="banner">
+        <div class="banner__img">
+            <img src="/dist/assets/img/card-beneficios1.webp" alt="">
+        </div>
+        <div class="banner__text">
+            <h1>Spas</h1>
+            <h2>Spas de exterior e interior para cada uso y necesidad.</h2>
+            <p>Todos nuestros spas son aptos para exterior e interior y reúnen la calidad y las prestaciones para ser
+                considerados exclusivos dentro de su segmento en el mercado. En Aquavia Spa hemos diseñado diferentes
+                categorías, como diferentes son los usuarios que quieren comprar un spa y las necesidades de su uso.
+                Nuestra clara vocación es la de acercarnos a cada perfil de cliente y superar sus expectativas.</p>
+        </div>
+    </section>
+
+
+    //banner short
+    <section id="hero" class="banner banner--short">
+        <div class="banner__img">
+            <img src="/dist/assets/img/hero-presupuesto.webp" alt="">
+        </div>
+        <div class="banner__text">
+            <h1>Presupuesto Spas</h1>
+        </div>
+    </section>
+
+
+    //banner video
+    <section id="hero" class="banner banner--video">
+        <div class="banner__img">
+            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="">
+            <div class="glightbox play-btn">
+                <img src="/dist/assets/icons/play-btn-video.svg" alt="">
+            </div>
+        </div>
+        <div class="banner__text">
+            <h1>Aquavia Spa, fabricante de spas y bañeras de hidromasaje líder en Europa</h1>
+            <p>Diseño con marca Barcelona, innovación intensiva y absoluta garantía de calidad son tres de los ejes
+                principales asociados a Aquavia Spa, fabricante de spas con 35 años de exitosa trayectoria. Seguimos
+                apostando por la fabricación propia de spas, a contracorriente de la tendencia mundial de
+                deslocalizaciones.</p>
+        </div>
+
+
+        <script src="/dist/vendors/glightbox.min.js"></script>
+        <script type="text/javascript">
+            document.querySelector('.glightbox.play-btn').addEventListener('click', function () {
+                let link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = '/dist/vendors/glightbox.min.css'; //! RUTA DEL CSS de glightbox
+                document.head.appendChild(link);
+            });
+            const lightbox = GLightbox({
+                // Agregar la ruta del video debajo
+                'href': 'https://mivideo.com',
+                'type': 'video',
+                'source': 'youtube',
+                'width': 900,
+                'autoPlayVideos': 'true',
+            });
+        </script>
+    </section>
+
 
     //end
 
