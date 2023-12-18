@@ -814,9 +814,9 @@
   &__inputs {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    gap: 26px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: nowrap;
   }
 
   &__buttons {
