@@ -14501,7 +14501,7 @@ p {
   } */
 }
 .card-category-blog::before {
-  content: url(/dist/assets/icons/bx-plus-white.svg);
+  content: url("/dist/assets/icons/bx-plus-white.svg");
   position: absolute;
   width: 36px;
   right: 6px;
@@ -14565,7 +14565,7 @@ p {
   }
 }
 .card-category-blog .card-category-blog__bg {
-  background-image: url("/dist/assets/img/card-beneficios1.png");
+  background-image: url("/dist/assets/img/card-beneficios1.webp");
   position: absolute;
   inset: 0;
   background-size: cover;
@@ -14642,7 +14642,7 @@ p {
   overflow: hidden;
 }
 .card-category-blog-lite__bg {
-  background-image: url("/dist/assets/img/card-beneficios1.png");
+  background-image: url("/dist/assets/img/card-beneficios1.webp");
   position: relative;
   inset: 0;
   background-size: cover;
@@ -14757,7 +14757,7 @@ p {
   align-items: center;
 }
 .card-menu-filters .card-menu-filters__img {
-  background-image: url("/dist/assets/img/card-beneficios1.png");
+  background-image: url("/dist/assets/img/card-beneficios1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   width: 114px;

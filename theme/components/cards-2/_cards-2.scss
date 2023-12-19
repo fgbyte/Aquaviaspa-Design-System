@@ -19,7 +19,7 @@
 
 
   &::before {
-    content: url(/dist/assets/icons/bx-plus-white.svg);
+    content: url('/dist/assets/icons/bx-plus-white.svg');
     position: absolute;
     width: 36px;
     right: 6px;
@@ -108,7 +108,7 @@
 
 
   & .card-category-blog__bg {
-    background-image: url('/dist/assets/img/card-beneficios1.png');
+    background-image: url('/dist/assets/img/card-beneficios1.webp');
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -216,7 +216,7 @@
   }
 
   &__bg {
-    background-image: url('/dist/assets/img/card-beneficios1.png');
+    background-image: url('/dist/assets/img/card-beneficios1.webp');
     position: relative;
     inset: 0;
     background-size: cover;
@@ -370,7 +370,7 @@
   align-items: center;
 
   & .card-menu-filters__img {
-    background-image: url('/dist/assets/img/card-beneficios1.png');
+    background-image: url('/dist/assets/img/card-beneficios1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     width: 114px;
