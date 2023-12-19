@@ -15419,6 +15419,7 @@ p {
   width: 100%;
 }
 .banner__img img {
+  height: auto;
   width: 100%;
   object-fit: cover;
   object-position: top center;
@@ -15456,11 +15457,14 @@ p {
   }
   .banner__img {
     max-width: 50%;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
   }
   .banner__img img {
-    height: 100%;
-    object-position: bottom center;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
   }
   .banner__text {
     padding: 50px 70px 50px 70px;
@@ -15519,9 +15523,6 @@ p {
 
 .banner--short {
   max-height: 500px;
-}
-.banner--short .banner__img {
-  min-height: 300px;
 }
 .banner--short .banner__img img {
   height: 100%;
