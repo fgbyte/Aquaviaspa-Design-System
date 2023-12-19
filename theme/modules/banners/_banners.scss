@@ -295,6 +295,7 @@
       height: 100%;
       img {
         height: 100%;
+        object-position: bottom center;
       }
     }
 
@@ -317,8 +318,13 @@
   }
 
   &--video {
-    max-height: 905px;
     .banner__img {
+      img {
+        max-height: 460px;
+        @include media-breakpoint-up(lg) {
+          max-height: 905px;
+        }
+      }
       position: relative;
 
       .play-btn {

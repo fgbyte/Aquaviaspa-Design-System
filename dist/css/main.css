@@ -15460,6 +15460,7 @@ p {
   }
   .banner__img img {
     height: 100%;
+    object-position: bottom center;
   }
   .banner__text {
     padding: 50px 70px 50px 70px;
@@ -15477,11 +15478,16 @@ p {
     font-size: 16px;
   }
 }
-.banner--video {
-  max-height: 905px;
-}
 .banner--video .banner__img {
   position: relative;
+}
+.banner--video .banner__img img {
+  max-height: 460px;
+}
+@media (min-width: 992px) {
+  .banner--video .banner__img img {
+    max-height: 905px;
+  }
 }
 .banner--video .banner__img .play-btn {
   display: flex;
