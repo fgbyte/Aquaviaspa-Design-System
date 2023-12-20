@@ -262,7 +262,8 @@
 
   &::before {
     content: url("/dist/assets/icons/link-documento.svg");
-    width: 20px;
+    min-width: 20px;
+    max-width: 28px;
     height: 25px;
   }
 
@@ -276,7 +277,8 @@
     gap: 23px;
 
     &::before {
-      width: 28px;
+      min-width: 28px;
+      max-width: 28px;
       height: 35px;
     }
   }

@@ -13356,7 +13356,8 @@ p {
 }
 .link-documento::before {
   content: url("/dist/assets/icons/link-documento.svg");
-  width: 20px;
+  min-width: 20px;
+  max-width: 28px;
   height: 25px;
 }
 .link-documento:hover {
@@ -13369,7 +13370,8 @@ p {
     gap: 23px;
   }
   .link-documento::before {
-    width: 28px;
+    min-width: 28px;
+    max-width: 28px;
     height: 35px;
   }
 }
@@ -15912,6 +15914,65 @@ p {
     flex-direction: row;
     gap: 17px;
     justify-content: center;
+  }
+}
+
+.ficha-documentos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 25px;
+}
+.ficha-documentos h3, .ficha-documentos .h3 {
+  font-size: 30px;
+  text-transform: none;
+  font-weight: 500;
+}
+.ficha-documentos__card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 40px 25px;
+}
+.ficha-documentos__card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.ficha-documentos__card__links a {
+  max-width: 310px;
+}
+@media (min-width: 992px) {
+  .ficha-documentos__card__links a {
+    max-width: 100%;
+  }
+}
+.ficha-documentos__card__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+@media (max-width: 991.98px) {
+  .ficha-documentos__card__btns button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .ficha-documentos h3, .ficha-documentos .h3 {
+    font-size: 32px;
+  }
+  .ficha-documentos__card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .ficha-documentos__card__btns {
+    align-self: flex-end;
+    flex-direction: row;
   }
 }
 
