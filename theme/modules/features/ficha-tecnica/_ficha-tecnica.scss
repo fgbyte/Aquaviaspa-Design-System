@@ -1,0 +1,33 @@
+@use "../../../globals";
+@use '../../../mixins';
+
+.ficha-tecnica {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px $pxMobile;
+    h3 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: $textMedium;
+    }
+    &__dropdowns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 114px $pxMobile;
+        h3 {
+            font-size: 42px;
+        }
+        &__dropdowns {
+            align-items: start;
+            flex-direction: row;
+            gap: 17px;
+            justify-content: center;
+        }
+    }
+}

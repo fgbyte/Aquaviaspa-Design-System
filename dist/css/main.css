@@ -15883,6 +15883,38 @@ p {
   }
 }
 
+.ficha-tecnica {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 25px;
+}
+.ficha-tecnica h3, .ficha-tecnica .h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+.ficha-tecnica__dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+@media (min-width: 992px) {
+  .ficha-tecnica {
+    padding: 114px 25px;
+  }
+  .ficha-tecnica h3, .ficha-tecnica .h3 {
+    font-size: 42px;
+  }
+  .ficha-tecnica__dropdowns {
+    align-items: start;
+    flex-direction: row;
+    gap: 17px;
+    justify-content: center;
+  }
+}
+
 .intro {
   display: flex;
   justify-content: center;

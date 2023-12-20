@@ -1,13 +1,24 @@
 //dropdown-card lg disposition
+const detailsElement = document.querySelectorAll('.dropdown-card');
+if (window.matchMedia('(min-width: 992px)').matches) {
+    // Si la pantalla es 'lg' o más grande
+    detailsElement.forEach((element) => {
+        element.setAttribute('open', '');
+    });
+}
+
 window.addEventListener('resize', () => {
-    const detailsElement = document.querySelector('.dropdown-card');
     if (detailsElement) {
         if (window.matchMedia('(min-width: 992px)').matches) {
             // Si la pantalla es 'lg' o más grande
-            detailsElement.setAttribute('open', '');
+            detailsElement.forEach((element) => {
+                element.setAttribute('open', '');
+            });
         } else {
             // Si la pantalla es menor a 'lg'
-            detailsElement.removeAttribute('open');
+            detailsElement.forEach((element) => {
+                element.removeAttribute('open');
+            });
         }
     }
 });
