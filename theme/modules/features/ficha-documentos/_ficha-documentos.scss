@@ -16,7 +16,7 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 36px;
     padding: 40px $pxMobile;
 
     &__links {
@@ -24,7 +24,7 @@
       flex-direction: column;
       gap: 18px;
       a {
-        max-width: 310px;
+        max-width: 85%;
         @include media-breakpoint-up(lg) {
           max-width: 100%;
         }

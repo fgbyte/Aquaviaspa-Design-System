@@ -13654,6 +13654,7 @@ p {
 }
 .dropdown-docs {
   border-bottom: solid #575757 1px;
+  width: 100%;
 }
 .dropdown-docs__summary {
   display: flex;
@@ -15932,7 +15933,7 @@ p {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 36px;
   padding: 40px 25px;
 }
 .ficha-documentos__card__links {
@@ -15941,7 +15942,7 @@ p {
   gap: 18px;
 }
 .ficha-documentos__card__links a {
-  max-width: 310px;
+  max-width: 85%;
 }
 @media (min-width: 992px) {
   .ficha-documentos__card__links a {
@@ -15973,6 +15974,68 @@ p {
   .ficha-documentos__card__btns {
     align-self: flex-end;
     flex-direction: row;
+  }
+}
+
+.distribuidores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 25px;
+}
+.distribuidores__btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+.distribuidores__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.distribuidores__card h2, .distribuidores__card .h2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  max-width: 85%;
+  align-self: center;
+}
+.distribuidores__card__links {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.distribuidores__card__links__row {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .distribuidores {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+    padding: 70px 25px;
+    gap: 66px;
+  }
+  .distribuidores__btns {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .distribuidores__card h2, .distribuidores__card .h2 {
+    font-size: 42px;
+    align-self: flex-start;
+    font-weight: 500;
+  }
+  .distribuidores__card__links {
+    min-width: auto;
+  }
+  .distribuidores__card__links .row {
+    flex-wrap: nowrap;
+    gap: 32px;
   }
 }
 

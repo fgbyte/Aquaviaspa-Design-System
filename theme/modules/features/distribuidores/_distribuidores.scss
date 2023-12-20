@@ -1,0 +1,67 @@
+@use "../../../globals";
+@use "../../../mixins";
+
+.distribuidores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px $pxMobile;
+
+  &__btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+  &__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    h2 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: $textRegular;
+      text-align: center;
+      max-width: 85%;
+      align-self: center;
+    }
+    &__links {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__row {
+            width: 100%;
+        }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $maxW;
+    padding: 70px $pxMobile;
+    gap: 66px;
+    &__btns {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+
+    &__card {
+        h2 {
+            font-size: 42px;
+            align-self: flex-start;
+            font-weight: $textMedium;
+        }
+        &__links {
+            min-width: auto;
+            .row {
+                flex-wrap: nowrap;
+                gap: 32px;
+            }
+        }
+    }
+  }
+}
