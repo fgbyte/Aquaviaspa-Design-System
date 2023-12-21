@@ -13115,7 +13115,7 @@ p {
 }
 
 .link, .link-menu {
-  width: fit-content;
+  width: 100%;
   color: #000;
   font-size: 14px;
   font-weight: 700;
@@ -13123,6 +13123,7 @@ p {
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: color 0.4s, border-bottom-color 0.4s;
+  white-space: nowrap;
 }
 .link:hover, .link-menu:hover {
   border-bottom: 2px solid #000;
@@ -13956,7 +13957,7 @@ p {
 }
 
 .card-faq-icon {
-  width: 100px;
+  max-width: 136px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -13974,6 +13975,7 @@ p {
   }
 }
 .card-faq-icon a {
+  max-width: 136px;
   font-size: 12px;
 }
 @media (min-width: 992px) {
@@ -14320,12 +14322,19 @@ p {
 }
 @media (min-width: 992px) {
   .card-direction {
-    width: 100%;
-    max-width: 1420px;
     flex-direction: row;
     gap: 130px;
     padding: 80px 0px;
   }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .card-direction {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+@media (min-width: 992px) {
   .card-direction img {
     width: 130px;
     height: 130px;
@@ -15215,14 +15224,19 @@ p {
   background-size: cover;
 }
 .hero-cta__text {
-  width: 100%;
   height: 100%;
-  max-width: 1420px;
   padding: 45px 25px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   gap: 25px;
+}
+@media (min-width: 992px) {
+  .hero-cta__text {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
 }
 .hero-cta__text h1, .hero-cta__text .h1 {
   color: #fff;
@@ -16015,12 +16029,18 @@ p {
 }
 @media (min-width: 992px) {
   .distribuidores {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1420px;
     padding: 70px 25px;
     gap: 66px;
   }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .distribuidores {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+@media (min-width: 992px) {
   .distribuidores__btns {
     flex-direction: row;
     gap: 32px;
@@ -16039,6 +16059,33 @@ p {
   }
 }
 
+@media (min-width: 992px) {
+  .faqs {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+.faqs__links {
+  padding: 50px 25px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow-x: auto;
+}
+.faqs__links .search-container {
+  display: none;
+}
+@media (min-width: 992px) {
+  .faqs__links {
+    padding: 80px 25px;
+    gap: 110px;
+  }
+  .faqs__links .search-container {
+    display: block;
+  }
+}
+
 .intro {
   display: flex;
   justify-content: center;
@@ -16049,8 +16096,13 @@ p {
   align-items: center;
   gap: 25px;
   padding: 60px 25px;
-  width: 100%;
-  max-width: 1420px;
+}
+@media (min-width: 992px) {
+  .intro__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
 }
 .intro__container__text {
   display: flex;

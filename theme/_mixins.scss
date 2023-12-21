@@ -1,19 +1,32 @@
 //mixins
-@use './globals';
+@use "./globals";
 
 @mixin background-gradient($startColor: #111111, $endColor: #545454) {
-    background: transparent linear-gradient(0deg, $startColor 0%, $endColor 100%) 0% 0% no-repeat padding-box;
-  }
+  background: transparent linear-gradient(0deg, $startColor 0%, $endColor 100%)
+    0% 0% no-repeat padding-box;
+}
 
-  @mixin gradient-overlay {
-    position: relative;
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 70%;
-        height: 100%;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
-    }
+@mixin gradient-overlay {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      transparent
+    );
+  }
+}
+
+@mixin desk-space {
+  @include media-breakpoint-up(lg) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $maxW;
+  }
 }

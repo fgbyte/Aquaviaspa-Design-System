@@ -295,7 +295,7 @@
 }
 
 .card-faq-icon {
-  width: 100px;
+  max-width: 136px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -313,6 +313,7 @@
   }
 
   a {
+    max-width: 136px;
     font-size: 12px;
     @include media-breakpoint-up(lg) {
       font-size: 15px;
@@ -673,8 +674,7 @@
   }
 
   @include media-breakpoint-up(lg) {
-    width: 100%;
-    max-width: $maxW;
+    @include desk-space;
     flex-direction: row;
     gap: 130px;
     padding: 80px 0px;

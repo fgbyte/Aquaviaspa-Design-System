@@ -38,9 +38,7 @@
     }
   }
   @include media-breakpoint-up(lg) {
-    margin: 0 auto;
-    width: 100%;
-    max-width: $maxW;
+    @include desk-space;
     padding: 70px $pxMobile;
     gap: 66px;
     &__btns {

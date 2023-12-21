@@ -8,9 +8,8 @@
   background-size: cover;
 
   &__text {
-    width: 100%;
+    @include desk-space;
     height: 100%;
-    max-width: $maxW;
     padding: 45px $pxMobile;
     display: flex;
     flex-direction: column;

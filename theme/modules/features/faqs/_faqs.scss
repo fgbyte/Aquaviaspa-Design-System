@@ -1,0 +1,23 @@
+@use "../../../globals";
+@use "../../../mixins";
+
+.faqs {
+  @include desk-space;
+  &__links {
+    padding: 50px $pxMobile;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow-x: auto;
+    .search-container {
+        display: none;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 80px $pxMobile;
+      gap: 110px;
+      .search-container {
+        display: block;
+      }
+    }
+  }
+}
