@@ -170,6 +170,7 @@
   }
   &__hero {
     display: none;
+    @include gradient-overlay;
   }
 
   @include media-breakpoint-up(lg) {
@@ -368,7 +369,6 @@
 .banner--short {
   max-height: 500px;
   .banner__img {
-    
     img {
       height: 100%;
     }
@@ -385,7 +385,6 @@
 .banner-cta-center {
   width: 100%;
   padding: 128px $pxMobile;
-  background-image: url("/dist//assets/img/banner-cta-center-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -432,34 +431,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     @include media-breakpoint-up(lg) {
       max-width: 330px;
     }
   }
 
-  @include media-breakpoint-up(lg) {
-    background-image: url('/dist/assets/img/banner-cta-center-bg--lg.webp');
-  }
-}
-
-//Images
-.hero-cta-home {
-  background-image: url("/dist/assets/img/hero-cta-home--sm.webp");
-  @include media-breakpoint-up(lg) {
-    background-image: url("/dist/assets/img/hero-cta-home--lg.webp");
-  }
-}
-
-.hero-cta-home2 {
-  background-image: url("/dist/assets/img/hero-cta-home2--sm.webp");
-  @include media-breakpoint-up(lg) {
-    background-image: url("/dist/assets/img/hero-cta-home2--lg.webp");
-    @include gradient-overlay;
-  }
-}
-
-.banner-ficha__hero {
-  background-image: url("/dist/assets/img/banner-ficha__hero.webp");
-  @include gradient-overlay;
 }

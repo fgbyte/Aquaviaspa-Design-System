@@ -10,7 +10,17 @@
 <body class="mt-4 d-flex flex-column gap-4 bg-info">
 
     //hero-cta
-    <section id="hero" class="hero-cta hero-cta-home ">
+    <style>
+        .hero-cta-home {
+          background-image: url(/dist/assets/img/hero-cta-home--sm.webp);
+        }
+        @media (min-width: 992px) {
+          .hero-cta-home {
+            background-image: url(/dist/assets/img/hero-cta-home--lg.webp);
+          }
+        }
+    </style>
+    <section id="hero" class="hero-cta hero-cta-home">
         <div class="hero-cta__text">
             <h1>Creating <span>Sensations</span></h1>
             <button type="button" class="btn-cta btn-cta--sm"><span>DESCÚBRA NUESTROS SPAS</span>
@@ -48,6 +58,16 @@
     </section>
 
     //hero-cta--left
+    <style>
+        .hero-cta-home2 {
+          background-image: url(/dist/assets/img/hero-cta-home2--sm.webp);
+        }
+        @media (min-width: 992px) {
+          .hero-cta-home2 {
+            background-image: url(/dist/assets/img/hero-cta-home2--lg.webp);
+          }
+        }
+    </style>
     <section class="hero-cta hero-cta--left hero-cta-home2">
         <div class="hero-cta__text">
             <h1>Le ayudamos a encontrar <span>su producto ideal</span></h1>
@@ -86,8 +106,17 @@
     </section>
 
     //banner-cta-center
+    <style>
+        .banner-cta-center {
+          background-image: url(/dist/assets/img/banner-cta-center-bg.webp);
+        }
+        @media (min-width: 992px) {
+          .banner-cta-center {
+            background-image: url(/dist/assets/img/banner-cta-center-bg--lg.webp);
+          }
+        }
+    </style>
     <section class="banner-cta-center">
-
         <div class="banner-cta-center__card">
             <div class="banner-cta-center__card__logo">
                 <img src="/dist/assets/icons/banner-cta-center-logo-hoja.svg" alt="">
@@ -161,7 +190,7 @@
         </div>
 
         <!-- LG -->
-        <div class="hero-cta hero-cta--left banner-ficha__hero">
+        <div class="hero-cta hero-cta--left banner-ficha__hero" style="background-image: url(/dist/assets/img/banner-ficha__hero.webp);">
             <div class="hero-cta__text--lg">
                 <div class="text__sup">
                     <h1>Quantum</h1>
@@ -278,7 +307,7 @@
         </script>
     </section>
     //end
-   
+
 
     <!-- ScriptJS -->
     <script src="/dist/js/main.js"></script>

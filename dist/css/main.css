@@ -15399,6 +15399,16 @@ p {
 }
 .banner-ficha__hero {
   display: none;
+  position: relative;
+}
+.banner-ficha__hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 }
 @media (min-width: 992px) {
   .banner-ficha__card {
@@ -15581,7 +15591,6 @@ p {
 .banner-cta-center {
   width: 100%;
   padding: 128px 25px;
-  background-image: url("/dist//assets/img/banner-cta-center-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -15630,53 +15639,6 @@ p {
   .banner-cta-center .btn-cta-banner {
     max-width: 330px;
   }
-}
-@media (min-width: 992px) {
-  .banner-cta-center {
-    background-image: url("/dist/assets/img/banner-cta-center-bg--lg.webp");
-  }
-}
-
-.hero-cta-home {
-  background-image: url("/dist/assets/img/hero-cta-home--sm.webp");
-}
-@media (min-width: 992px) {
-  .hero-cta-home {
-    background-image: url("/dist/assets/img/hero-cta-home--lg.webp");
-  }
-}
-
-.hero-cta-home2 {
-  background-image: url("/dist/assets/img/hero-cta-home2--sm.webp");
-}
-@media (min-width: 992px) {
-  .hero-cta-home2 {
-    background-image: url("/dist/assets/img/hero-cta-home2--lg.webp");
-    position: relative;
-  }
-  .hero-cta-home2:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
-  }
-}
-
-.banner-ficha__hero {
-  background-image: url("/dist/assets/img/banner-ficha__hero.webp");
-  position: relative;
-}
-.banner-ficha__hero:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .section-beneficios {
