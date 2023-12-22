@@ -20,4 +20,11 @@
       }
     }
   }
+
+  &__cards {
+    padding: 0 $pxMobile;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }

@@ -231,7 +231,7 @@
 }
 
 .card-faq {
-  // background-color: $white; //quitar
+  background-color: $white;
   padding: 60px 0px;
   border-top: solid 0.5px #878787;
   display: flex;
@@ -255,17 +255,6 @@
         height: 93px;
       }
     }
-
-    h4 {
-      font-size: 30px;
-      font-weight: $textMedium;
-      color: $black;
-      margin: 0;
-      margin-top: 10px;
-      @include media-breakpoint-up(lg) {
-        font-size: 52px;
-      }
-    }
   }
 
   &__text {
@@ -275,7 +264,7 @@
       font-size: 22px;
     }
 
-    ul {
+    .faqs-list {
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -284,11 +273,44 @@
       @include media-breakpoint-up(lg) {
         gap: 18px;
       }
+    }
+  }
 
-      li {
-        &::marker {
-          content: "";
+  .dropdown-docs {
+    border: none;
+    &__summary {
+      padding: 0;
+      span {
+        font-size: 18px;
+        font-weight: $textMedium;
+        color: $black;
+        margin: 0;
+        @include media-breakpoint-up(lg) {
+          font-size: 22px;
         }
+      }
+    }
+    .details-inner {
+      margin-top: 32px;
+      font-size: 18px;
+      font-weight: $textRegular;
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        li {
+            padding-left: 5px;
+          } 
+          span {
+            padding-left: 5px;
+            font-weight: $textBold;
+          }
+          .btn-ficha {
+            margin: 30px 0;
+            @include media-breakpoint-up(lg) {
+              margin: 30px 0 50px 0;
+            }
+          }
       }
     }
   }
@@ -754,7 +776,6 @@
     &--active {
       background-color: $black;
     }
-
   }
   .step-divider--lg {
     display: none;
@@ -768,7 +789,7 @@
       height: 27px;
       font-size: 22px;
     }
-    
+
     .step-divider {
       display: none;
       &--lg {
@@ -777,7 +798,6 @@
     }
   }
 }
-
 
 .card-acabados {
   width: 100%;
