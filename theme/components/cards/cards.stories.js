@@ -120,8 +120,8 @@ export const card4 = `
 //Card FAQ icon
 export const card5 = `
 <div class="card-faq-icon">
-  <img src="/dist/assets/icons/card-faq-icon-box.svg" alt="box">
-  <a class="link" href="#">INSTALACIÓN</a>
+   <img src="/dist/assets/icons/card-faq-icon-box.svg" alt="box">
+   <a class="link" href="#card-faq-1">INSTALACIÓN</a>
 </div>
 `
 

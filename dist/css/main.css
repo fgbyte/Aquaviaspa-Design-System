@@ -16082,6 +16082,37 @@ p {
   gap: 0;
 }
 
+.blog-grid {
+  padding: 45px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (min-width: 992px) {
+  .blog-grid {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+.blog-grid__cards {
+  display: grid;
+  gap: 18px;
+}
+@media (min-width: 768px) {
+  .blog-grid__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 992px) {
+  .blog-grid__cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.blog-grid__cards .gb-card {
+  margin-bottom: 35px;
+}
+
 .intro {
   display: flex;
   justify-content: center;

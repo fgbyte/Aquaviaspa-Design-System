@@ -1,0 +1,25 @@
+@use "../../../globals";
+@use "../../../mixins";
+
+.blog-grid {
+  @include desk-space;
+  padding: 45px $pxMobile;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__cards {
+    display: grid;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    gap: 18px;
+
+    .gb-card {
+      margin-bottom: 35px;
+    }
+  }
+}
