@@ -15179,11 +15179,11 @@ p {
   }
 }
 .footer-top article .cont-img img {
-  height: 220;
+  height: 220px;
 }
 @media (min-width: 992px) {
   .footer-top article .cont-img img {
-    height: 300;
+    height: 300px;
   }
 }
 .footer-top article h2, .footer-top article .h2,
@@ -16129,6 +16129,10 @@ p {
   }
 }
 
+.link-documento-dist {
+  margin-bottom: 16px;
+}
+
 @media (min-width: 992px) {
   .faqs {
     margin: 0 auto;
@@ -16214,9 +16218,12 @@ p {
   gap: 40px;
   overflow-x: auto;
 }
+.prestaciones-grid__filter [checked] {
+  border-bottom: 2px solid #000;
+}
 @media (min-width: 992px) {
   .prestaciones-grid__filter {
-    justify-content: space-evenly;
+    justify-content: start;
     width: 90%;
     gap: 90px;
   }

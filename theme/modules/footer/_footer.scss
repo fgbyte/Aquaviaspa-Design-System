@@ -174,10 +174,10 @@
       }
 
       & img {
-        height: 220;
+        height: 220px;
 
         @include media-breakpoint-up(lg) {
-          height: 300;
+          height: 300px;
 
         }
       }

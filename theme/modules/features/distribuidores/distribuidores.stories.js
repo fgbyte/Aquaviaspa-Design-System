@@ -1,0 +1,189 @@
+//distribuidores
+export const distribuidores = `
+    <section class="distribuidores">
+        <div class="distribuidores__btns">
+            <a href="#" class="card-down-docs">
+                <img src="/dist/assets/icons/down-docs.svg" alt="">
+                <p>Todos los documentos</p>
+            </a>
+            <a href="#" class="card-down-docs">
+                <img src="/dist/assets/icons/down-docs.svg" alt="">
+                <p>Todos los documentos</p>
+            </a>
+        </div>
+        <div class="distribuidores__card">
+            <h2>Documentos clasificados por modelos de spa</h2>
+            <div class="distribuidores__card__links container m-0">
+                <div class="row">
+                    <div class="col-12 col-lg-6 p-0">
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <a href="#" class="link-documento-dist">
+                                    <div class="link-documento-dist__text">
+                                      <b>Spa Lounge City</b> - Ficha Comercial Spa Lounge City
+                                    </div>
+                                  </a>
+                                  <a href="#" class="link-documento-dist">
+                                    <div class="link-documento-dist__text">
+                                      <b>Spa Lounge City</b> - Ficha Comercial Spa Lounge City
+                                    </div>
+                                  </a>
+                                  <a href="#" class="link-documento-dist">
+                                    <div class="link-documento-dist__text">
+                                      <b>Spa Lounge City</b> - Ficha Comercial Spa Lounge City
+                                    </div>
+                                  </a>
+                                  <a href="#" class="link-documento-dist">
+                                    <div class="link-documento-dist__text">
+                                      <b>Spa Lounge City</b> - Ficha Comercial Spa Lounge City
+                                    </div>
+                                  </a>
+                            </div>
+                        </details>
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                            </div>
+                        </details>
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                            </div>
+                        </details>
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="col-12 col-lg-6 p-0">
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                            </div>
+                        </details>
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                            </div>
+                        </details>
+                        <details class="dropdown-docs">
+                            <summary class="dropdown-docs__summary no-marker">
+                                <span>Exclusive Spa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 21.291 11.189">
+                                    <g id="Grupo_12322" data-name="Grupo 12322" transform="translate(-888.016 -7887.31)">
+                                        <line id="Línea_77" data-name="Línea 77" y1="10.116" x2="9.87"
+                                            transform="translate(898.901 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                        <line id="Línea_78" data-name="Línea 78" x2="10.361" y2="10.116"
+                                            transform="translate(888.54 7887.846)" fill="none" stroke="#000"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </summary>
+                            <div class="details-inner">
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+`
