@@ -364,49 +364,56 @@ export const card12 = `
 //Card Acabados
 export const card13 = `
 <div class="card-acabados">
-  <div class="card-acabados__casco">
-    <h4>Acabados casco <span>(Colores acrílico)</span></h4>
-    <div class="card-acabados__inputs">
-      <div class="btn-acabado">
-        <input class="bg-44-white" type="radio" name="casco" id="casco1" checked>
-        <label for="casco1">
-          <p>44 White</p>
-        </label>
+    <div class="card-acabados__casco">
+      <h4>Acabados casco <span>(Colores acrílico)</span></h4>
+      <div class="card-acabados__inputs">
+        <div class="btn-acabado">
+          <input style="background-image: url('/dist/assets/img/44-white.png');" 
+            type="radio"
+            name="casco" id="casco1" checked>
+          <label for="casco1">
+            <p>44 White</p>
+          </label>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="card-acabados__mueble">
-    <h4>Acabados mueble</h4>
-    <div class="card-acabados__inputs">
-      <div class="btn-acabado">
-        <input class="bg-graphite-woodermarx" type="radio" name="mueble" id="mueble1" checked>
-        <label for="mueble1">
-          <p>Graphite Woodermarx</p>
-        </label>
-      </div>
-      <div class="btn-acabado">
-        <input class="bg-butterfly-woodermarx" type="radio" name="mueble" id="mueble2" checked>
-        <label for="mueble2">
-          <p>Butterfly Woodermarx</p>
-        </label>
-      </div>
-      <div class="btn-acabado">
-        <input class="bg-thunder-woodermarx" type="radio" name="mueble" id="mueble3">
-        <label for="mueble3">
-          <p>Thunder Woodermarx</p>
-        </label>
-      </div>
-      <div class="btn-acabado">
-        <input class="bg-walnut-woodermarx" type="radio" name="mueble" id="mueble4">
-        <label for="mueble4">
-          <p>Walnut Woodermarx</p>
-        </label>
+
+
+    <div class="card-acabados__mueble">
+      <h4>Acabados mueble</h4>
+      <div class="card-acabados__inputs">
+        <div class="btn-acabado">
+          <input style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
+            type="radio" name="mueble" id="mueble1" checked>
+          <label for="mueble1">
+            <p>Graphite Woodermarx</p>
+          </label>
+        </div>
+        <div class="btn-acabado">
+          <input style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
+            type="radio" name="mueble" id="mueble2" checked>
+          <label for="mueble2">
+            <p>Butterfly Woodermarx</p>
+          </label>
+        </div>
+        <div class="btn-acabado">
+          <input style="background-image: url('/dist/assets/img/Thunder-Woodermarx.png');" type="radio" name="mueble" id="mueble3">
+          <label for="mueble3">
+            <p>Thunder Woodermarx</p>
+          </label>
+        </div>
+        <div class="btn-acabado">
+          <input style="background-image: url('/dist/assets/img/Walnut-Woodermarx.png');" type="radio" name="mueble" id="mueble4">
+          <label for="mueble4">
+            <p>Walnut Woodermarx</p>
+          </label>
+        </div>
       </div>
     </div>
+
+    <div class="card-acabados__buttons">
+      <button type="button" class="btn-gray">SOLICITE UN PRESUPUESTO</button>
+      <button type="button" class="btn-ficha">Descargue el catalogo</button>
+    </div>
   </div>
-  <div class="card-acabados__buttons">
-    <button type="button" class="btn-gray">SOLICITE UN PRESUPUESTO</button>
-    <button type="button" class="btn-ficha">Descargue el catalogo</button>
-  </div>
-</div>
 `
