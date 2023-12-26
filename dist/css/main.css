@@ -13094,26 +13094,6 @@ p {
   }
 }
 
-.bg-44-white {
-  background-image: url("/dist/assets/img/44-white.png");
-}
-
-.bg-graphite-woodermarx {
-  background-image: url("/dist/assets/img/Graphite-Woodermarx.png");
-}
-
-.bg-butterfly-woodermarx {
-  background-image: url("/dist/assets/img/Butterfly-Woodermarx.png");
-}
-
-.bg-thunder-woodermarx {
-  background-image: url("/dist/assets/img/Thunder-Woodermarx.png");
-}
-
-.bg-walnut-woodermarx {
-  background-image: url("/dist/assets/img/Walnut-Woodermarx.png");
-}
-
 .link, .link-menu {
   width: 100%;
   max-width: fit-content;

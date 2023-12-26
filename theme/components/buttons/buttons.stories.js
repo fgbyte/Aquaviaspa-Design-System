@@ -37,12 +37,14 @@ export const btn5 = `
 <button type="button" class="btn-blue">PEDIR PRESUPUESTO</button>
 `
 
+
 //button-acabado (input type="radio")
 export const btn6 = `
 <div class="btn-acabado">
-  <input class="bg-butterfly-woodermarx" type="radio" name="mueble" id="mueble1" checked>
-  <label for="mueble1">
-    <p>Butterfly Woodermarx</p>
-  </label>
+<input style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
+  type="radio" name="mueble" id="mueble2" checked>
+<label for="mueble2">
+  <p>Butterfly Woodermarx</p>
+</label>
 </div>
 `
