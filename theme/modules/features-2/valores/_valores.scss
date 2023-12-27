@@ -1,7 +1,57 @@
 @use "../../../globals";
 @use "../../../mixins";
 
-
 .valores {
+  @include desk-space;
+  padding: 0 $pxMobile;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  h2 {
+    font-size: 28px;
+    font-weight: $textMedium;
+    text-align: center;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    @include background-gradient($startColor: #111111, $endColor: #545454);
+    padding: 70px $pxMobile;
 
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__modals {
+        display: none;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    h2 {
+      font-size: 42px;
+    }
+    &__card {
+      padding: 70px 90px;
+      flex-direction: row;
+    //   justify-content: space-between;
+      gap: 130px;
+
+      &__links {
+        details {
+          .details-inner {
+            display: none;
+          }
+        }
+      }
+
+      &__modals {
+        display: block;
+        max-width: 590px;
+        color: $white;
+        margin: 50px 0;
+      }
+    }
+  }
 }

@@ -205,7 +205,6 @@
   }
 }
 
-
 .dropdown-lang {
   .dropdown-toggle {
     font-size: 13px;
@@ -237,6 +236,9 @@
     span {
       font-size: 32px;
       font-weight: $textSemibold;
+      @include media-breakpoint-up(lg) {
+        font-size: 48px;
+      }
     }
   }
   .details-inner__text {
@@ -252,10 +254,6 @@
     p {
       font-size: 20px;
     }
-  }
-
-  @include media-breakpoint-up(lg) {
-    // display: none;
   }
 }
 
@@ -306,7 +304,6 @@
     }
   }
 }
-
 
 .no-marker {
   &::marker {

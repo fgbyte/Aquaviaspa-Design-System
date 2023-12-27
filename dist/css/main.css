@@ -13620,6 +13620,11 @@ p {
   font-size: 32px;
   font-weight: 600;
 }
+@media (min-width: 992px) {
+  .dropdown-valor summary span {
+    font-size: 48px;
+  }
+}
 .dropdown-valor .details-inner__text {
   display: flex;
   flex-direction: column;
@@ -13634,6 +13639,7 @@ p {
 .dropdown-valor .details-inner__text p {
   font-size: 20px;
 }
+
 .dropdown-docs {
   border-bottom: solid #575757 1px;
   width: 100%;
@@ -16258,6 +16264,58 @@ p {
     width: 100%;
     height: 100%;
     min-height: 515px;
+  }
+}
+
+.valores {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+@media (min-width: 992px) {
+  .valores {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+.valores h2, .valores .h2 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.valores__card {
+  display: flex;
+  flex-direction: column;
+  background: transparent linear-gradient(0deg, #111111 0%, #545454 100%) 0% 0% no-repeat padding-box;
+  padding: 70px 25px;
+}
+.valores__card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.valores__card__modals {
+  display: none;
+}
+@media (min-width: 992px) {
+  .valores h2, .valores .h2 {
+    font-size: 42px;
+  }
+  .valores__card {
+    padding: 70px 90px;
+    flex-direction: row;
+    gap: 130px;
+  }
+  .valores__card__links details .details-inner {
+    display: none;
+  }
+  .valores__card__modals {
+    display: block;
+    max-width: 590px;
+    color: #fff;
+    margin: 50px 0;
   }
 }
 
