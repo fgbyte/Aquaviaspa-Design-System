@@ -14955,7 +14955,13 @@ p {
   display: flex;
   flex-direction: column;
   gap: 19px;
-  max-width: 920px;
+}
+@media (min-width: 992px) {
+  .form-full {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
 }
 .form-full label span {
   font-size: 18px;
