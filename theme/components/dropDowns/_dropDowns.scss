@@ -144,6 +144,7 @@
   &[open] {
     .details-inner {
       transition: all 2s linear;
+      height: 100%;
       max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
       //TODO: hacer que se abra suavemente siempre
     }
