@@ -15282,6 +15282,7 @@ p {
 .form-full-footer label .form-full__textarea {
   background-color: transparent;
   border: solid 1px #EDEDED;
+  color: #fff;
   height: 200px;
   resize: none;
 }
