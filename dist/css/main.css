@@ -15251,9 +15251,9 @@ p {
   border: solid 1px #EDEDED;
   height: 44px;
   padding-left: 4px;
+  color: #fff;
 }
 .form-full-footer .form-full__container label input:focus-visible {
-  border: none;
   outline: none;
 }
 @media (min-width: 992px) {

@@ -238,7 +238,7 @@
   flex-direction: column;
   gap: 19px;
   @include desk-space;
-
+ 
   label span {
     font-size: 18px;
     font-weight: $textRegular;
@@ -254,9 +254,8 @@
       border: solid 1px #EDEDED;
       height: 44px;
       padding-left: 4px;
-
+      color: $white;
       &:focus-visible {
-        border: none;
         outline: none;
       }
     }
