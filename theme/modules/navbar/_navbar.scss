@@ -1,0 +1,42 @@
+@use "../../globals";
+@use "../../mixins";
+
+
+.header-navbar {
+  position: fixed;
+  inset: auto 0;
+  z-index: 9999999;
+
+  & .header-navbar__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 24px 32px;
+    border-bottom: 1px solid $white;
+
+    & ul {
+      display: flex;
+      gap: 54px;
+      align-items: end;
+      margin-bottom: 8px;
+
+      & li {
+        list-style: none;
+        line-height: 0;
+
+        & a {
+          letter-spacing: 1.26px;
+          font-size: 14px;
+        }
+      }
+    }
+
+
+  }
+}
+
+.white-mode {
+  color: black;
+  background-color: white;
+}
