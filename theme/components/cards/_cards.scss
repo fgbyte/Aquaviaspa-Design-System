@@ -402,6 +402,12 @@
   height: 410px;
   position: relative;
   z-index: 1;
+  &__container {
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+  }
   @include media-breakpoint-up(special) {
     //TODO: poner width y height: 100% para usar en modules para que tomen el alto y ancho de la grid asignada
     width: 50%;

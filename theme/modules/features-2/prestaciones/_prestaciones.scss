@@ -1,2 +1,37 @@
 @use "../../../globals";
 @use "../../../mixins";
+
+
+.prestaciones {
+    @include desk-space;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 88px $pxMobile;
+
+    h3 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    &__categories {
+        margin-top: 33px; //se agrega para completar el gap
+        position: relative;
+    }
+}
+
+.category {
+    // position: absolute; //??
+    display: flex;
+    flex-direction: column;
+}
+
+//SLIDER SM ONLY
+.prestaciones-slider {
+    display: flex;
+    overflow-x: auto;
+
+    .card-prestacion {
+        min-width: 100%;
+    }
+}
