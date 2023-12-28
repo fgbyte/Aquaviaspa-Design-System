@@ -15802,7 +15802,6 @@ p {
 }
 @media (min-width: 992px) {
   .card-transform-right {
-    position: absolute;
     right: 0;
     width: 50%;
     height: auto;

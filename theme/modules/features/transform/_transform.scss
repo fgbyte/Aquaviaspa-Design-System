@@ -12,7 +12,6 @@
   height: 295px;
 
   @include media-breakpoint-up(lg) {
-    position: absolute;
     right: 0;
     width: 50%;
     height: auto;
