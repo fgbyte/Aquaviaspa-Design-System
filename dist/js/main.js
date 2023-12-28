@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const banner = document.querySelector('#hero');
     const navLinks = navbar.querySelectorAll('.link');
     const navLogo = navbar.querySelector('#navlogo');
+    const menuBurger = navbar.querySelector('#menu-burger');
     const bannerHeight = banner.offsetHeight;
-    console.log(navLogo);
     window.addEventListener('scroll', function () {
         if (window.scrollY > bannerHeight) {
             navbar.classList.add('white-mode');
@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.classList.remove('link--white');
             });
             navLogo.src = '/dist/assets/icons/logofooter.svg';
+            menuBurger.src = '/dist/assets/icons/menu-closed-black.svg';
         }
         else {
             navbar.classList.remove('white-mode');
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.classList.add('link--white');
             });
             navLogo.src = '/dist/assets/icons/logo-navbar.svg';
+            menuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
         }
     });
 });

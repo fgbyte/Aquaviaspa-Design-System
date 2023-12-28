@@ -16445,6 +16445,12 @@ p {
   inset: auto 0;
   z-index: 9999999;
 }
+.header-navbar div {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  cursor: pointer;
+}
 .header-navbar .header-navbar__nav {
   display: flex;
   flex-direction: row;
