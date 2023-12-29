@@ -15791,6 +15791,13 @@ p {
   }
 }
 
+.transform-module {
+  gap: 4px;
+}
+.transform-module:hover {
+  gap: 0;
+}
+
 .card-transform-right {
   background-size: cover;
   background-repeat: no-repeat;
