@@ -16464,8 +16464,10 @@ p {
   align-items: center;
   gap: 0;
   justify-content: space-between;
-  cursor: pointer;
   width: 100%;
+}
+.header-navbar .header-navbar__nav div img {
+  cursor: pointer;
 }
 .header-navbar .header-navbar__nav div #menu-burger {
   order: 2;

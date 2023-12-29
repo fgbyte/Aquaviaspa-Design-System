@@ -22,9 +22,12 @@
       align-items: center;
       gap: 0;
       justify-content: space-between;
-      cursor: pointer;
       width: 100%;
+ 
+      & img {
+      cursor: pointer;
 
+      }
       & #menu-burger {
         order: 2;
       }
