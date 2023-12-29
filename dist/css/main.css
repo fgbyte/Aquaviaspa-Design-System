@@ -15791,6 +15791,13 @@ p {
   }
 }
 
+.transform-module {
+  gap: 4px;
+}
+.transform-module:hover {
+  gap: 0;
+}
+
 .card-transform-right {
   background-size: cover;
   background-repeat: no-repeat;
@@ -15802,7 +15809,6 @@ p {
 }
 @media (min-width: 992px) {
   .card-transform-right {
-    position: absolute;
     right: 0;
     width: 50%;
     height: auto;
