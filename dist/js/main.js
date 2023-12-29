@@ -58,6 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = navbar.querySelectorAll('.link');
     const navLogo = navbar.querySelector('#navlogo');
     const menuBurger = navbar.querySelector('#menu-burger');
+    const closeMenu = navbar.querySelector('.close-menu');
+    const leftMenu = document.querySelector('.left-menu');
+    menuBurger.addEventListener('click', function () {
+        leftMenu.classList.add('active');
+    });
+    closeMenu.addEventListener('click', function () {
+        leftMenu.classList.remove('active');
+    });
     const bannerHeight = banner.offsetHeight;
     window.addEventListener('scroll', function () {
         if (window.scrollY > bannerHeight) {

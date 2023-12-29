@@ -6,7 +6,7 @@
   position: fixed;
   inset: auto 0;
   z-index: 100;
-
+  border-bottom: 1px solid $white;
 
 
   & .header-navbar__nav {
@@ -14,8 +14,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    padding: 24px 32px;
-    border-bottom: 1px solid $white;
+    padding: 0px 32px;
+    padding-top: 30px;
+    padding-bottom: 28px;
 
     & div {
       display: flex;
@@ -23,16 +24,17 @@
       gap: 0;
       justify-content: space-between;
       width: 100%;
- 
+
       & img {
-      cursor: pointer;
+        cursor: pointer;
 
       }
+
       & #menu-burger {
         order: 2;
       }
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(xl) {
         gap: 45px;
         width: auto;
 
@@ -49,7 +51,7 @@
       align-items: end;
       margin-bottom: 8px;
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(xl) {
         display: flex;
       }
 
@@ -71,4 +73,38 @@
 .white-mode {
   color: black;
   background-color: white;
+}
+
+.left-menu {
+  position: fixed;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  translate: -100%;
+  transition: all $delay linear;
+
+  & .left-menu__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.208);
+    padding: 32px 32px;
+
+  }
+
+  opacity: .4;
+  overflow-y: auto;
+
+
+  & .close-menu {
+    cursor: pointer;
+  }
+}
+
+.active {
+  transition: all $delay linear;
+  translate: 0%;
+  opacity: 1;
 }

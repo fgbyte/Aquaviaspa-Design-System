@@ -4,6 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = navbar.querySelectorAll('.link');
   const navLogo = navbar.querySelector('#navlogo') as HTMLImageElement;
   const menuBurger = navbar.querySelector('#menu-burger') as HTMLImageElement;
+  const closeMenu = navbar.querySelector('.close-menu') as HTMLImageElement;
+  const leftMenu = document.querySelector('.left-menu') as HTMLElement;
+
+  menuBurger.addEventListener('click', function () {
+    leftMenu.classList.add('active');
+  });
+
+
+  closeMenu.addEventListener('click', function () {
+    leftMenu.classList.remove('active');
+  });
 
   const bannerHeight = banner.offsetHeight;
 
@@ -26,3 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+
