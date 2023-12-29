@@ -5,14 +5,9 @@
 .header-navbar {
   position: fixed;
   inset: auto 0;
-  z-index: 9999999;
+  z-index: 100;
 
-  & div {
-    display: flex;
-    align-items: center;
-    gap: 45px;
-    cursor: pointer;
-  }
+
 
   & .header-navbar__nav {
     display: flex;
@@ -22,11 +17,38 @@
     padding: 24px 32px;
     border-bottom: 1px solid $white;
 
-    & ul {
+    & div {
       display: flex;
+      align-items: center;
+      gap: 0;
+      justify-content: space-between;
+      cursor: pointer;
+      width: 100%;
+
+      & #menu-burger {
+        order: 2;
+      }
+
+      @include media-breakpoint-up(lg) {
+        gap: 45px;
+        width: auto;
+
+        & #menu-burger {
+          order: 0;
+        }
+
+      }
+    }
+
+    & ul {
+      display: none;
       gap: 54px;
       align-items: end;
       margin-bottom: 8px;
+
+      @include media-breakpoint-up(lg) {
+        display: flex;
+      }
 
       & li {
         list-style: none;

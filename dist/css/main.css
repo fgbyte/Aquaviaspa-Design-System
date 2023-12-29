@@ -16449,13 +16449,7 @@ p {
 .header-navbar {
   position: fixed;
   inset: auto 0;
-  z-index: 9999999;
-}
-.header-navbar div {
-  display: flex;
-  align-items: center;
-  gap: 45px;
-  cursor: pointer;
+  z-index: 100;
 }
 .header-navbar .header-navbar__nav {
   display: flex;
@@ -16465,11 +16459,36 @@ p {
   padding: 24px 32px;
   border-bottom: 1px solid #fff;
 }
-.header-navbar .header-navbar__nav ul {
+.header-navbar .header-navbar__nav div {
   display: flex;
+  align-items: center;
+  gap: 0;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+}
+.header-navbar .header-navbar__nav div #menu-burger {
+  order: 2;
+}
+@media (min-width: 992px) {
+  .header-navbar .header-navbar__nav div {
+    gap: 45px;
+    width: auto;
+  }
+  .header-navbar .header-navbar__nav div #menu-burger {
+    order: 0;
+  }
+}
+.header-navbar .header-navbar__nav ul {
+  display: none;
   gap: 54px;
   align-items: end;
   margin-bottom: 8px;
+}
+@media (min-width: 992px) {
+  .header-navbar .header-navbar__nav ul {
+    display: flex;
+  }
 }
 .header-navbar .header-navbar__nav ul li {
   list-style: none;
