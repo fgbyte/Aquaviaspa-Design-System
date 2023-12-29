@@ -7,9 +7,24 @@
 </head>
 
 
-<body class="mt-4 d-flex flex-column gap-4 bg-info">
+<body class="d-flex flex-column bg-info">
 
-    //hero-cta
+    <header id="navbar" class="header-navbar">
+        <nav class="header-navbar__nav ">
+          <div>
+            <img id="menu-burger" width="30" src="/dist/assets/icons/menu-closed-whait.svg" alt="menu like a burger">
+            <img id="navlogo" width="222" src="/dist/assets/icons/logo-navbar.svg" alt="LOGO">
+          </div>
+          <ul>
+            <li><a class="link link--white" href="#">PRODUCTOS</a></li>
+            <li><a class="link link--white" href="#">DÓNDE COMPRAR</a></li>
+            <li><a class="link link--white" href="#">ASISTENTE DE COMPRA</a></li>
+            <li><a class="link link--white" href="#">PEDIR PRESUPUESTO</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    
     <style>
         .hero-cta-home {
           background-image: url(/dist/assets/img/hero-cta-home--sm.webp);
@@ -147,10 +162,11 @@
     </section>
 
     //banner-ficha
-    <section id="hero" class="banner-ficha">
-        <!-- SM -->
+    //TODO: JS para que en LG (resize incluido) se quite el id=hero de .banner-ficha__card y se ponga en .banner-ficha
+    <section class="banner-ficha">
+        SM
         <div class="banner-ficha__card">
-            <div class="banner-ficha__card__img">
+            <div id="hero" class="banner-ficha__card__img">
                 <img src="/dist/assets/img/banner-ficha__hero.webp" alt="">
             </div>
             <div class="banner-ficha__card__text">
@@ -189,7 +205,7 @@
             </div>
         </div>
 
-        <!-- LG -->
+        LG
         <div class="hero-cta hero-cta--left banner-ficha__hero" style="background-image: url(/dist/assets/img/banner-ficha__hero.webp);">
             <div class="hero-cta__text--lg">
                 <div class="text__sup">
@@ -246,8 +262,9 @@
     </section>
 
     //banner
-    <section id="hero" class="banner">
-        <div class="banner__img">
+    //TODO: JS para que en LG (resize incluido) se quite el id=hero de .banner__img y se ponga en .banner
+    <section class="banner">
+        <div id="hero" class="banner__img">
             <img src="/dist/assets/img/card-beneficios1.webp" alt="">
         </div>
         <div class="banner__text">
@@ -262,8 +279,8 @@
 
 
     //banner short
-    <section id="hero" class="banner banner--short">
-        <div class="banner__img">
+    <section class="banner banner--short">
+        <div id="hero" class="banner__img">
             <img src="/dist/assets/img/hero-presupuesto.webp" alt="">
         </div>
         <div class="banner__text">
@@ -273,8 +290,8 @@
 
 
     //banner video
-    <section id="hero" class="banner banner--video">
-        <div class="banner__img">
+    <section class="banner banner--video">
+        <div id="hero" class="banner__img">
             <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="">
             <div class="glightbox play-btn">
                 <img src="/dist/assets/icons/play-btn-video.svg" alt="">
@@ -307,8 +324,7 @@
         </script>
     </section>
     //end
-
-
+   
     <!-- ScriptJS -->
     <script src="/dist/js/main.js"></script>
 
