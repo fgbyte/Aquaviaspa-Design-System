@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dist/css/main.css">
   <script src="/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/dist/js/bootstrap.main.js"></script>
@@ -13,22 +14,139 @@
       <div>
         <img id="menu-burger" width="30" src="/dist/assets/icons/menu-closed-whait.svg" alt="menu like a burger">
 
-        <img id="navlogo" width="222" src="/dist/assets/icons/logo-navbar.svg" alt="LOGO">
+        <img id="navlogo" class="logo" src="/dist/assets/icons/logo-navbar.svg" alt="Logotipo de la empresa">
       </div>
       <ul>
-        <li><a class="link link--white" href="#">PRODUCTOS</a></li>
+        <li><a id="menu-burger" class="link link--white">PRODUCTOS</a></li>
         <li><a class="link link--white" href="#">DÓNDE COMPRAR</a></li>
         <li><a class="link link--white" href="#">ASISTENTE DE COMPRA</a></li>
         <li><a class="link link--white" href="#">PEDIR PRESUPUESTO</a></li>
       </ul>
     </nav>
 
-    <menu class="left-menu">
+    <div class="menuBackdrop "></div>
+
+    <menu class="left-menu main-menu">
       <div class="left-menu__header">
-        <img width="222" src="/dist/assets/icons/logofooter.svg" alt="LOGO">
-        <img class="close-menu" width="30" src="/dist/assets/icons/close-menu.svg" alt="close menu">
+        <img class="close-menu" src="/dist/assets/icons/close-menu.svg" alt="icono para cerrar el menu">
+        <img class="logo" src="/dist/assets/icons/logofooter.svg" alt="Logotipo de la empresa">
+      </div>
+      <div class="other-menu">
+
+        <a id="spas" class="link-menu-arrow">
+          Spas
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+        <a id="swimspas" class="link-menu-arrow">
+          Swimspas
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+        <a id="prestaciones" class="link-menu-arrow">
+          Prestaciones
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+
+      </div>
+      <div class="other-menu">
+        <a class="link-menu link-menu--upper" href="#">ASISTENTE DE COMPRA</a>
+        <a class="link-menu link-menu--upper" href="#">PEDIR PRESUPUESTO</a>
+      </div>
+      <div class="other-menu gap-4">
+        <a class="link-menu" href="#">La marca Aquavia</a>
+        <a class="link-menu" href="#">Dónde comprar</a>
+        <a class="link-menu" href="#">Descargar catálogo</a>
+      </div>
+      <div class="last-other-menu">
+        <a class="link-menu-arrow  link-menu-arrow--lang" href="#">
+          <img src="/dist/assets/icons/link-menu-arrow--lang.svg"></img>España
+          <span><img src="/dist/assets/icons/link-menu-arrow--lang-arrow.svg" alt=""></span>
+        </a>
+      </div>
+
+    </menu>
+
+    <menu class="left-menu spas-menu">
+      <div class="secundary-menu__header">
+        <div>
+          <img class="previous-menu" src="/dist/assets/icons/previous-arrow.svg"
+            alt="icono de regresar al menu principal">
+          <img class="close-menu" src="/dist/assets/icons/close-menu.svg" alt="close menu">
+        </div>
+        <h3>Spas</h3>
+      </div>
+
+      <div class="other-menu">
+
+        <a id="" class="link-menu-arrow link-menu-arrow--upper">
+          CAPACIDAD
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+        <a id="" class="link-menu-arrow link-menu-arrow--upper">
+          USO
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+        <a id="" class="link-menu-arrow link-menu-arrow--upper">
+          INSTALACIÓN
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+
+
+      </div>
+
+      <div class="other-menu gap-4">
+        <a class="link-menu" href="#">Top ventas</a>
+        <a class="link-menu" href="#">Todos</a>
       </div>
     </menu>
+
+    <menu class="left-menu swimspas-menu">
+      <div class="secundary-menu__header">
+        <div>
+          <img class="previous-menu" src="/dist/assets/icons/previous-arrow.svg"
+            alt="icono de regresar al menu principal">
+          <img class="close-menu" src="/dist/assets/icons/close-menu.svg" alt="close menu">
+        </div>
+        <h3>Swimspas</h3>
+      </div>
+
+      <div class="other-menu">
+        <a id="" class="link-menu-arrow link-menu-arrow--upper">
+          INSTALACIÓN
+          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+
+      </div>
+
+      <div class="other-menu gap-4">
+        <a class="link-menu" href="#">Top ventas</a>
+        <a class="link-menu" href="#">Todos</a>
+      </div>
+    </menu>
+
+
+    <menu class="left-menu prestaciones-menu">
+      <div class="secundary-menu__header">
+        <div>
+          <img class="previous-menu" src="/dist/assets/icons/previous-arrow.svg"
+            alt="icono de regresar al menu principal">
+          <img class="close-menu" src="/dist/assets/icons/close-menu.svg" alt="close menu">
+        </div>
+        <h3>Prestaciones</h3>
+      </div>
+
+      <div class="other-menu gap-4">
+        <a class="link-menu link-menu--upper" href="#">INGENIERÍA Y FANIRCACIÓN</a>
+        <a class="link-menu link-menu--upper" href="#">DISEÑO</a>
+        <a class="link-menu link-menu--upper" href="#">CALIDAD DEL AGUA</a>
+        <a class="link-menu link-menu--upper" href="#">BIENESTAR</a>
+        <a class="link-menu link-menu--upper" href="#">EFICIENCIA Y MEDIOAMBIENTE</a>
+      </div>
+
+      <div class="last-other-menu gap-4">
+        <a class="link-menu" href="#">Todos</a>
+      </div>
+    </menu>
+
 
   </header>
 

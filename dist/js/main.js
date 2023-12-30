@@ -57,14 +57,62 @@ document.addEventListener('DOMContentLoaded', function () {
     const banner = document.querySelector('#hero');
     const navLinks = navbar.querySelectorAll('.link');
     const navLogo = navbar.querySelector('#navlogo');
-    const menuBurger = navbar.querySelector('#menu-burger');
-    const closeMenu = navbar.querySelector('.close-menu');
-    const leftMenu = document.querySelector('.left-menu');
-    menuBurger.addEventListener('click', function () {
-        leftMenu.classList.add('active');
+    const firstMenuBurger = navbar.querySelector('#menu-burger');
+    const menuBurger = navbar.querySelectorAll('#menu-burger');
+    const menuSpas = navbar.querySelector('#spas');
+    const menuSwimspas = navbar.querySelector('#swimspas');
+    const menuPrestaciones = navbar.querySelector('#prestaciones');
+    const closeMenu = navbar.querySelectorAll('.close-menu');
+    const previousMenu = navbar.querySelectorAll('.previous-menu');
+    const mainMenu = document.querySelector('.main-menu');
+    const spasMenu = document.querySelector('.spas-menu');
+    const swimspasMenu = document.querySelector('.swimspas-menu');
+    const prestacionesMenu = document.querySelector('.prestaciones-menu');
+    const menuBackdrop = document.querySelector('.menuBackdrop');
+    menuBurger.forEach((element) => {
+        element.addEventListener('click', function () {
+            mainMenu.classList.add('active');
+            menuBackdrop.classList.add('isOpenBackdrop');
+        });
     });
-    closeMenu.addEventListener('click', function () {
-        leftMenu.classList.remove('active');
+    menuSpas.addEventListener('click', function () {
+        spasMenu.classList.add('active');
+        menuBackdrop.classList.add('isOpenBackdrop');
+        mainMenu.classList.remove('active');
+    });
+    menuSwimspas.addEventListener('click', function () {
+        swimspasMenu.classList.add('active');
+        menuBackdrop.classList.add('isOpenBackdrop');
+        mainMenu.classList.remove('active');
+    });
+    menuPrestaciones.addEventListener('click', function () {
+        prestacionesMenu.classList.add('active');
+        menuBackdrop.classList.add('isOpenBackdrop');
+        mainMenu.classList.remove('active');
+    });
+    closeMenu.forEach((elemet) => {
+        elemet.addEventListener('click', function () {
+            mainMenu.classList.remove('active');
+            menuBackdrop.classList.remove('isOpenBackdrop');
+            spasMenu.classList.remove('active');
+            swimspasMenu.classList.remove('active');
+            prestacionesMenu.classList.remove('active');
+        });
+    });
+    previousMenu.forEach((elemet) => {
+        elemet.addEventListener('click', function () {
+            mainMenu.classList.add('active');
+            spasMenu.classList.remove('active');
+            swimspasMenu.classList.remove('active');
+            prestacionesMenu.classList.remove('active');
+        });
+    });
+    menuBackdrop.addEventListener('click', function () {
+        mainMenu.classList.remove('active');
+        spasMenu.classList.remove('active');
+        swimspasMenu.classList.remove('active');
+        prestacionesMenu.classList.remove('active');
+        menuBackdrop.classList.remove('isOpenBackdrop');
     });
     const bannerHeight = banner.offsetHeight;
     window.addEventListener('scroll', function () {
@@ -74,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.classList.remove('link--white');
             });
             navLogo.src = '/dist/assets/icons/logofooter.svg';
-            menuBurger.src = '/dist/assets/icons/menu-closed-black.svg';
+            firstMenuBurger.src = '/dist/assets/icons/menu-closed-black.svg';
         }
         else {
             navbar.classList.remove('white-mode');
@@ -82,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.classList.add('link--white');
             });
             navLogo.src = '/dist/assets/icons/logo-navbar.svg';
-            menuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
+            firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
         }
     });
 });

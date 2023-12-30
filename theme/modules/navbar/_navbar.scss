@@ -78,7 +78,7 @@
 .left-menu {
   position: fixed;
   top: 0;
-  width: 500px;
+  width: 95%;
   height: 100vh;
   background-color: $white;
   margin: 0;
@@ -86,12 +86,77 @@
   translate: -100%;
   transition: all $delay linear;
 
+  @include media-breakpoint-up(sm) {
+    width: 500px;
+  }
+
   & .left-menu__header {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid rgba(0, 0, 0, 0.208);
-    padding: 32px 32px;
+    padding: 29px 52px;
+    padding-bottom: 84px;
 
+    .close-menu {
+      order: 2;
+    }
+
+    @include media-breakpoint-up(xl) {
+      gap: 54px;
+      justify-content: start;
+
+      .close-menu {
+        order: 0;
+      }
+    }
+  }
+
+  & .secundary-menu__header {
+    padding: 29px 52px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.208);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    & div {
+      display: flex;
+      justify-content: space-between;
+      & img {
+        cursor: pointer;
+      }
+    }
+
+    & h3 {
+
+      font: normal normal 600 36px/42px Raleway;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+    }
+
+  }
+
+  & .other-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.208);
+    padding: 29px 52px;
+
+    & .link-menu-arrow {
+      cursor: pointer;
+    }
+  }
+
+  & .last-other-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 29px 52px;
+
+    & .link-menu-arrow {
+      cursor: pointer;
+    }
   }
 
   opacity: .4;
@@ -103,8 +168,45 @@
   }
 }
 
+
+#menu-burger{
+  cursor: pointer;
+}
+
 .active {
   transition: all $delay linear;
   translate: 0%;
+  opacity: 1;
+}
+
+.logo {
+  width: 172px;
+
+  @include media-breakpoint-up(sm) {
+    width: 222px;
+  }
+}
+
+.close-menu .previous-menu {
+  width: 17;
+
+  @include media-breakpoint-up(sm) {
+    width: 23px;
+  }
+}
+
+.menuBackdrop {
+  visibility: hidden;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all $delay linear;
+  opacity: 0;
+}
+
+.isOpenBackdrop {
+  visibility: visible;
   opacity: 1;
 }
