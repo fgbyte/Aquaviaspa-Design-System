@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
     menuBackdrop.classList.remove('isOpenBackdrop')
   });
 
-  const bannerHeight = banner.offsetHeight;
+  
 
   window.addEventListener('scroll', function () {
-    if (window.scrollY > bannerHeight) {
+    if (window.scrollY > calculateBannerHeight()) {
       navbar.classList.add('white-mode');
       navLinks.forEach((link) => {
         link.classList.remove('link--white');
@@ -87,4 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
       firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
     }
   });
+  function calculateBannerHeight() {
+    const bannerHeight = banner.offsetHeight;
+    return bannerHeight;
+  }
 });

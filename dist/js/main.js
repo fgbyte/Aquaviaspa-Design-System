@@ -9,6 +9,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+//banner-ficha
+window.addEventListener('resize', adjustBannerFicha);
+window.addEventListener('DOMContentLoaded', adjustBannerFicha);
+function adjustBannerFicha() {
+    const bannerFichaCard = document.querySelector('.banner-ficha__card__img');
+    const bannerFicha = document.querySelector('.banner-ficha');
+    const lgSize = 992;
+    if (window.innerWidth >= lgSize) {
+        if (bannerFichaCard) {
+            bannerFichaCard.removeAttribute('id');
+        }
+        if (bannerFicha) {
+            bannerFicha.setAttribute('id', 'hero');
+        }
+    }
+    else {
+        if (bannerFicha) {
+            bannerFicha.removeAttribute('id');
+        }
+        if (bannerFichaCard) {
+            bannerFichaCard.setAttribute('id', 'hero');
+        }
+    }
+}
 //transform module
 const cardTransform = document.querySelector("#card-transform");
 const cardTransformRight = document.querySelector(".card-transform-right");
@@ -119,9 +143,8 @@ document.addEventListener('DOMContentLoaded', function () {
         prestacionesMenu.classList.remove('active');
         menuBackdrop.classList.remove('isOpenBackdrop');
     });
-    const bannerHeight = banner.offsetHeight;
     window.addEventListener('scroll', function () {
-        if (window.scrollY > bannerHeight) {
+        if (window.scrollY > calculateBannerHeight()) {
             navbar.classList.add('white-mode');
             navLinks.forEach((link) => {
                 link.classList.remove('link--white');
@@ -138,4 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
             firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
         }
     });
+    function calculateBannerHeight() {
+        const bannerHeight = banner.offsetHeight;
+        return bannerHeight;
+    }
 });
