@@ -1,5 +1,8 @@
+//navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('#navbar') as HTMLElement;
+  if (!navbar) return;
+
   const banner = document.querySelector('#hero') as HTMLElement;
   const navLinks = navbar.querySelectorAll('.link');
   const navLogo = navbar.querySelector('#navlogo') as HTMLImageElement;
@@ -16,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const prestacionesMenu = document.querySelector('.prestaciones-menu') as HTMLElement;
   const menuBackdrop = document.querySelector('.menuBackdrop') as HTMLElement;
 
+  if (!banner || !navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop) return;
+
   menuBurger.forEach((element) => {
     element.addEventListener('click', function () {
       mainMenu.classList.add('active');
@@ -26,19 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
     spasMenu.classList.add('active');
     menuBackdrop.classList.add('isOpenBackdrop')
     mainMenu.classList.remove('active');
-
   });
   menuSwimspas.addEventListener('click', function () {
     swimspasMenu.classList.add('active');
     menuBackdrop.classList.add('isOpenBackdrop')
     mainMenu.classList.remove('active');
-
   });
   menuPrestaciones.addEventListener('click', function () {
     prestacionesMenu.classList.add('active');
     menuBackdrop.classList.add('isOpenBackdrop')
     mainMenu.classList.remove('active');
-
   });
   closeMenu.forEach((elemet) => {
     elemet.addEventListener('click', function () {
@@ -64,12 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
     swimspasMenu.classList.remove('active');
     prestacionesMenu.classList.remove('active');
     menuBackdrop.classList.remove('isOpenBackdrop')
-
   });
 
-
   const bannerHeight = banner.offsetHeight;
-
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > bannerHeight) {
@@ -89,6 +88,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-
-

@@ -52,8 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+//navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('#navbar');
+    if (!navbar)
+        return;
     const banner = document.querySelector('#hero');
     const navLinks = navbar.querySelectorAll('.link');
     const navLogo = navbar.querySelector('#navlogo');
@@ -69,6 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const swimspasMenu = document.querySelector('.swimspas-menu');
     const prestacionesMenu = document.querySelector('.prestaciones-menu');
     const menuBackdrop = document.querySelector('.menuBackdrop');
+    if (!banner || !navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop)
+        return;
     menuBurger.forEach((element) => {
         element.addEventListener('click', function () {
             mainMenu.classList.add('active');
