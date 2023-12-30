@@ -1,6 +1,6 @@
 export const prestacionesGrid = `
 <section class="prestaciones-grid">
-<div class="prestaciones-grid__filter">
+<div class="prestaciones__filter">
     <a class="link" href="#" checked>TODAS</a>
     <a class="link" href="#">INGENIERÍA Y FABRICACIÓN</a>
     <a class="link" href="#">DISEÑO</a>
