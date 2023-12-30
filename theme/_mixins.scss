@@ -23,6 +23,22 @@
   }
 }
 
+@mixin gradient-overlay-top {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      transparent
+    );
+  }
+}
+
 @mixin desk-space {
   @include media-breakpoint-up(lg) {
     margin: 0 auto;

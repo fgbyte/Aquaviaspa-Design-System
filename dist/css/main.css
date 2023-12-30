@@ -15345,10 +15345,19 @@ p {
 }
 
 .hero-cta {
+  position: relative;
   width: 100%;
   height: 100svh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.hero-cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 .hero-cta__text {
   height: 100%;
