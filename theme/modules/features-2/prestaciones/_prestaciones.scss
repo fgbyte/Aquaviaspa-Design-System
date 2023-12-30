@@ -18,13 +18,31 @@
         margin-top: 33px; //se agrega para completar el gap
         position: relative;
     }
+
+    @include media-breakpoint-up(lg) {
+        &__filter {
+            align-self: center;
+            justify-content: space-around;
+        }
+    }
 }
 
 .category {
     // position: absolute; //??
     display: flex;
     flex-direction: column;
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        .card-prestacion-menu {
+            width: 80%;
+        }
+        .prestaciones-box {
+            width: 100%;
+        }
+    }
+
 }
+
 
 //SLIDER SM ONLY
 .prestaciones-slider {
@@ -34,4 +52,18 @@
     .card-prestacion {
         min-width: 100%;
     }
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+//LG ONLY
+.prestaciones-box {
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+  .card-prestacion {
+    width: 100%;
+  }
+
 }
