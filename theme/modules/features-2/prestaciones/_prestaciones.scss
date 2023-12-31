@@ -19,8 +19,11 @@
         position: relative;
     }
 
-    @include media-breakpoint-up(lg) {
-        &__filter {
+    &__filter {
+        .link {
+            cursor: pointer;
+        }
+            @include media-breakpoint-up(lg) {
             align-self: center;
             justify-content: space-around;
         }
@@ -35,17 +38,15 @@
         flex-direction: row;
         .card-prestacion-menu {
             width: 80%;
-        }
-        .prestaciones-box {
-            width: 100%;
+            .link-arrow-grow-white-reverse {
+                cursor: pointer;
+            }
         }
     }
 
 }
 
-
-//SLIDER SM ONLY
-.prestaciones-slider {
+.prestaciones-cards {
     display: flex;
     overflow-x: auto;
 
@@ -53,17 +54,8 @@
         min-width: 100%;
     }
     @include media-breakpoint-up(lg) {
-        display: none;
+        width: 100%;
+        flex-direction: column;
+        overflow-x: visible;
     }
-}
-
-//LG ONLY
-.prestaciones-box {
-    @include media-breakpoint-down(lg) {
-        display: none;
-    }
-  .card-prestacion {
-    width: 100%;
-  }
-
 }
