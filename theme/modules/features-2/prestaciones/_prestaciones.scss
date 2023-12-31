@@ -19,8 +19,11 @@
         position: relative;
     }
 
-    @include media-breakpoint-up(lg) {
-        &__filter {
+    &__filter {
+        .link {
+            cursor: pointer;
+        }
+            @include media-breakpoint-up(lg) {
             align-self: center;
             justify-content: space-around;
         }
@@ -35,6 +38,9 @@
         flex-direction: row;
         .card-prestacion-menu {
             width: 80%;
+            .link-arrow-grow-white-reverse {
+                cursor: pointer;
+            }
         }
     }
 

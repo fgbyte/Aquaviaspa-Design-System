@@ -16315,6 +16315,9 @@ p {
   margin-top: 33px;
   position: relative;
 }
+.prestaciones__filter .link, .prestaciones__filter .link-menu {
+  cursor: pointer;
+}
 @media (min-width: 992px) {
   .prestaciones__filter {
     align-self: center;
@@ -16332,6 +16335,9 @@ p {
   }
   .category .card-prestacion-menu {
     width: 80%;
+  }
+  .category .card-prestacion-menu .link-arrow-grow-white-reverse {
+    cursor: pointer;
   }
 }
 
