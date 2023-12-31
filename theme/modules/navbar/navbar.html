@@ -12,12 +12,12 @@
   <header id="navbar" class="header-navbar">
     <nav class="header-navbar__nav ">
       <div>
-        <img id="menu-burger" width="30" src="/dist/assets/icons/menu-closed-whait.svg" alt="menu like a burger">
+        <img class="menu-burger" width="30" src="/dist/assets/icons/menu-closed-whait.svg" alt="menu like a burger">
 
         <img id="navlogo" class="logo" src="/dist/assets/icons/logo-navbar.svg" alt="Logotipo de la empresa">
       </div>
       <ul>
-        <li><a id="menu-burger" class="link link--white">PRODUCTOS</a></li>
+        <li><a class="link link--white menu-burger">PRODUCTOS</a></li>
         <li><a class="link link--white" href="#">DÓNDE COMPRAR</a></li>
         <li><a class="link link--white" href="#">ASISTENTE DE COMPRA</a></li>
         <li><a class="link link--white" href="#">PEDIR PRESUPUESTO</a></li>
@@ -72,7 +72,7 @@
             <li><a class="dropdown-item" href="#">Global (English)</a></li>
             <li><a class="dropdown-item" href="#">Global (Français)</a></li>
           </ul>
-          </div>
+        </div>
       </div>
 
     </menu>
@@ -87,25 +87,87 @@
         <h3>Spas</h3>
       </div>
 
-      <div class="other-menu">
+      <div class="accordion-other-menu ">
 
-        <a id="" class="link-menu-arrow link-menu-arrow--upper">
+        <a class="link-menu-arrow link-menu-arrow--upper accordion-menu">
           CAPACIDAD
-          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
-        </a>
-        <a id="" class="link-menu-arrow link-menu-arrow--upper">
-          USO
-          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
-        </a>
-        <a id="" class="link-menu-arrow link-menu-arrow--upper">
-          INSTALACIÓN
-          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+          <span><img class="accordion-img" src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
         </a>
 
+        <div class="show-content-menu">
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-capacidad-1.webp');"
+              class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">2-3</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-capacidad-2.webp');"
+              class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">4-5</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-capacidad-3.webp');"
+              class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">6-7</div>
+          </a>
+        </div>
+
+        <a class="link-menu-arrow link-menu-arrow--upper accordion-menu">
+          USO
+          <span><img class="accordion-img" src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+
+        <div class="show-content-menu">
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-uso-1.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">DECORATIVO</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-uso-2.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">TERAPÉUTICO</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-uso-3.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">ENTRETENIMIENTO</div>
+          </a>
+        </div>
+
+        <a class="link-menu-arrow link-menu-arrow--upper accordion-menu">
+          INSTALACIÓN
+          <span><img class="accordion-img" src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+        </a>
+        <div class="show-content-menu">
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-instalacion-1.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">EXTERIOR</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-instalacion-2.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">INTERIOR</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-instalacion-3.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">CON MUEBLE</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-instalacion-4.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">EMPOTRADO</div>
+          </a>
+        </div>
 
       </div>
 
-      <div class="other-menu gap-4">
+      <div class="last-other-menu gap-4">
         <a class="link-menu" href="#">Top ventas</a>
         <a class="link-menu" href="#">Todos</a>
       </div>
@@ -121,15 +183,26 @@
         <h3>Swimspas</h3>
       </div>
 
-      <div class="other-menu">
-        <a id="" class="link-menu-arrow link-menu-arrow--upper">
+      <div class="accordion-other-menu">
+        <a class="link-menu-arrow link-menu-arrow--upper accordion-menu">
           INSTALACIÓN
-          <span><img src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
+          <span><img class="accordion-img" src="/dist/assets/icons/link-menu-arrow.svg" alt=""></span>
         </a>
-
+        <div class="show-content-menu">
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-uso-1.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">CON MUEBLE</div>
+          </a>
+          <a href="#" class="card-menu-filters">
+            <div style="background-image: url('/dist/assets/img/menu-spas-uso-1.webp');" class="card-menu-filters__img">
+            </div>
+            <div class="card-menu-filters__span">EMPOTRADOS</div>
+          </a>
+        </div>
       </div>
 
-      <div class="other-menu gap-4">
+      <div class="last-other-menu gap-4">
         <a class="link-menu" href="#">Top ventas</a>
         <a class="link-menu" href="#">Todos</a>
       </div>

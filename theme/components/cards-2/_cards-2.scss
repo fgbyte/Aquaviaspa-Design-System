@@ -366,13 +366,15 @@
   gap: 22px;
   width: fit-content;
   align-items: center;
+  text-decoration: none;
 
   & .card-menu-filters__img {
     background-size: cover;
     background-repeat: no-repeat;
     width: 114px;
     height: 114px;
-
+    min-width: 114;
+    min-height: 114;
     border: solid 4px transparent;
 
     transition: all $delay linear;
@@ -383,7 +385,8 @@
     }
   }
 
-  & span {
+  & .card-menu-filters__span {
+    text-decoration: none;
     font-size: 13px;
     font-family: $font-family-base;
     font-weight: $textSemibold;
