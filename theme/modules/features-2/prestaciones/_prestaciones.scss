@@ -36,16 +36,11 @@
         .card-prestacion-menu {
             width: 80%;
         }
-        .prestaciones-box {
-            width: 100%;
-        }
     }
 
 }
 
-
-//SLIDER SM ONLY
-.prestaciones-slider {
+.prestaciones-cards {
     display: flex;
     overflow-x: auto;
 
@@ -53,17 +48,8 @@
         min-width: 100%;
     }
     @include media-breakpoint-up(lg) {
-        display: none;
+        width: 100%;
+        flex-direction: column;
+        overflow-x: visible;
     }
-}
-
-//LG ONLY
-.prestaciones-box {
-    @include media-breakpoint-down(lg) {
-        display: none;
-    }
-  .card-prestacion {
-    width: 100%;
-  }
-
 }
