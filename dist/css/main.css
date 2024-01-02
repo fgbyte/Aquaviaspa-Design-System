@@ -15587,6 +15587,7 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #464646;
 }
 .banner__img {
   width: 100%;

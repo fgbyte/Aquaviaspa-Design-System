@@ -1,6 +1,5 @@
 //banner-ficha
 window.addEventListener('resize', adjustBannerFicha);
-window.addEventListener('DOMContentLoaded', adjustBannerFicha);
 
 function adjustBannerFicha() {
     const bannerFichaCard = document.querySelector('.banner-ficha__card__img');
@@ -23,3 +22,5 @@ function adjustBannerFicha() {
         }
     }
 }
+
+adjustBannerFicha()

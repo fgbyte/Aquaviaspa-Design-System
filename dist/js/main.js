@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //banner-ficha
 window.addEventListener('resize', adjustBannerFicha);
-window.addEventListener('DOMContentLoaded', adjustBannerFicha);
 function adjustBannerFicha() {
     const bannerFichaCard = document.querySelector('.banner-ficha__card__img');
     const bannerFicha = document.querySelector('.banner-ficha');
@@ -33,6 +32,7 @@ function adjustBannerFicha() {
         }
     }
 }
+adjustBannerFicha();
 //transform module
 const cardTransform = document.querySelector("#card-transform");
 const cardTransformRight = document.querySelector(".card-transform-right");
