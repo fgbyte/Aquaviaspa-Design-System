@@ -6,13 +6,15 @@
   flex-direction: column;
   gap: 26px;
   padding: 0 24px;
+  scroll-snap-type: x, mandatory;
 
   &__title {
-      h3 {
-        margin: 0px;
-        text-align: center;
-      }
+    h3 {
+      margin: 0px;
+      text-align: center;
+    }
   }
+
   &__container {
     display: flex;
     gap: 13px;
@@ -30,4 +32,33 @@
       //   justify-content: center;
     }
   }
+}
+
+
+/*Slider*/
+.card-spa {
+  scroll-snap-align: start;
+}
+
+
+.guias-top-ventas {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.controls-top-ventas {
+  width: 40px;
+  height: 6px;
+  background-color: #bbb3b3;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.control-active {
+  background-color: #0a1825;
 }
