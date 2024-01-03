@@ -93,14 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
 //prestaciones inner generic para todos las categories
 document.addEventListener('DOMContentLoaded', () => {
     //pr-#
-    const links = Array.from({ length: 3 }, (_, i) => document.querySelectorAll(`#pr-${i + 1}`));
+    const links = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#pr-${i + 1}`));
     //prest-#
-    const prests = Array.from({ length: 3 }, (_, i) => document.querySelectorAll(`#prest-${i + 1}`));
+    const prests = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#prest-${i + 1}`));
+    const special = 1158;
     // console.log(links);
     // console.log(prests);
     //ocultar los modales al principio menos el 1
     //! tiene que ser solo en LG
-    if (window.matchMedia('(min-width: 992px)').matches) {
+    if (window.matchMedia(`(min-width: ${special}px)`).matches) {
         prests.forEach((pre, i) => {
             // console.log(pre)
             // console.log(i)
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     window.addEventListener('resize', () => {
-        if (window.matchMedia('(min-width: 992px)').matches) {
+        if (window.matchMedia(`(min-width: ${special}px)`).matches) {
             prests.forEach((pre, i) => {
                 pre.forEach(element => {
                     if (element instanceof HTMLElement) {
