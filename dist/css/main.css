@@ -15992,6 +15992,7 @@ p {
   flex-direction: column;
   gap: 26px;
   padding: 0 24px;
+  scroll-snap-type: x, mandatory;
 }
 .top-ventas__title h3, .top-ventas__title .h3 {
   margin: 0px;
@@ -16012,6 +16013,34 @@ p {
   .top-ventas__container {
     gap: 20px;
   }
+}
+
+/*Slider*/
+.card-spa {
+  scroll-snap-align: start;
+}
+
+.guias-top-ventas {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+@media (min-width: 992px) {
+  .guias-top-ventas {
+    display: none;
+  }
+}
+
+.controls-top-ventas {
+  width: 40px;
+  height: 6px;
+  background-color: #C7C6BE;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.control-active {
+  background-color: #464646;
 }
 
 .ficha-tecnica {

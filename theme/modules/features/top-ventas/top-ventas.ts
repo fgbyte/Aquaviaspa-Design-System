@@ -17,6 +17,7 @@ carouselsTopVentas.forEach((carousel: Element, carouselIndex: number) => {
     });
   }
 
+
   controlItems.forEach((item: Element, index: number) => {
     item.addEventListener("click", () => {
       moveItems(index)
@@ -36,7 +37,7 @@ carouselsTopVentas.forEach((carousel: Element, carouselIndex: number) => {
     if (carousel === null || !cardWidth) return
 
     const scrollPos: number = carousel.scrollLeft;
-    const activeControlIndex: number = Math.floor(scrollPos / (cardWidth.offsetWidth - 50));
+    const activeControlIndex: number = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
     setActiveControl(activeControlIndex);
   });
 
