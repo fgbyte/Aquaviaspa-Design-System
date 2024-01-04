@@ -13,7 +13,7 @@
         text-align: center;
         margin: 0;
     }
-    
+
     &__categories {
         margin-top: 33px; //se agrega para completar el gap
         position: relative;
@@ -23,7 +23,8 @@
         .link {
             cursor: pointer;
         }
-            @include media-breakpoint-up(special) {
+
+        @include media-breakpoint-up(special) {
             align-self: center;
             justify-content: space-around;
         }
@@ -34,10 +35,13 @@
     // position: absolute; //??
     display: flex;
     flex-direction: column;
+
     @include media-breakpoint-up(special) {
         flex-direction: row;
+
         .card-prestacion-menu {
             width: 80%;
+
             .link-arrow-grow-white-reverse {
                 cursor: pointer;
             }
@@ -48,6 +52,7 @@
 
 .prestaciones-cards {
     display: flex;
+
     @include media-breakpoint-down(special) {
         overflow-x: auto;
     }
@@ -55,9 +60,43 @@
     .card-prestacion {
         min-width: 100%;
     }
+
     @include media-breakpoint-up(special) {
         width: 100%;
         flex-direction: column;
         overflow-x: visible;
     }
+}
+
+
+/*Slider*/
+.prestaciones-cards {
+    scroll-snap-type: x mandatory;
+}
+
+.card-prestacion {
+    scroll-snap-align: start;
+
+}
+
+.guias-prestaciones-cards {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+.controls-prestaciones-cards {
+    width: 40px;
+    height: 6px;
+    background-color: #C7C6BE;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.control-prestaciones-active {
+    background-color: #464646;
 }

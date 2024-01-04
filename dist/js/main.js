@@ -33,40 +33,42 @@ function adjustBannerFicha() {
     }
 }
 adjustBannerFicha();
-const carouselsTopVentas = document.querySelectorAll(".top-ventas__container");
-const controlsList1 = document.querySelectorAll(".guias-top-ventas");
-carouselsTopVentas.forEach((carousel, carouselIndex) => {
-    const controls = controlsList1[carouselIndex];
-    const controlItems = controls.querySelectorAll(".controls-top-ventas");
-    setActiveControl(0);
-    function setActiveControl(index) {
-        controlItems.forEach((item, i) => {
-            if (i === index) {
-                item.classList.add("control-active");
-            }
-            else {
-                item.classList.remove("control-active");
-            }
-        });
-    }
-    controlItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
-            moveItems(index);
-        });
-    });
-    const moveItems = (index) => {
-        const cardWidth = carousel.querySelector(".card-spa");
-        if (cardWidth) {
-            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
+document.addEventListener('DOMContentLoaded', function () {
+    const prestacionesGroups = document.querySelectorAll(".prestaciones-cards");
+    const guiasPrestacionesGroups = document.querySelectorAll(".guias-prestaciones-cards");
+    prestacionesGroups.forEach((prestaciones, groupIndex) => {
+        const controls = guiasPrestacionesGroups[groupIndex];
+        const controlItems = controls.querySelectorAll(".controls-prestaciones-cards");
+        setActiveControl(0);
+        function setActiveControl(index) {
+            controlItems.forEach((item, i) => {
+                if (i === index) {
+                    item.classList.add("control-prestaciones-active");
+                }
+                else {
+                    item.classList.remove("control-prestaciones-active");
+                }
+            });
         }
-    };
-    carousel.addEventListener("scroll", () => {
-        const cardWidth = carousel.querySelector(".card-spa");
-        if (carousel === null || !cardWidth)
-            return;
-        const scrollPos = carousel.scrollLeft;
-        const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
-        setActiveControl(activeControlIndex);
+        controlItems.forEach((item, index) => {
+            item.addEventListener("click", () => {
+                moveItems(index, prestaciones);
+            });
+        });
+        const moveItems = (index, carousel) => {
+            const cardWidth = carousel.querySelector(".card-prestacion");
+            if (cardWidth) {
+                carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
+            }
+        };
+        prestaciones.addEventListener("scroll", () => {
+            const cardWidth = prestaciones.querySelector(".card-prestacion");
+            if (prestaciones === null || !cardWidth)
+                return;
+            const scrollPos = prestaciones.scrollLeft;
+            const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
+            setActiveControl(activeControlIndex);
+        });
     });
 });
 //transform module
@@ -90,6 +92,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 // categories prestaciones
+const prestacionesCards = document.querySelectorAll(".prestaciones-cards");
+const guiasPrestacionesCards = document.querySelectorAll(".guias-prestaciones-cards");
+prestacionesCards.forEach((carousel, carouselIndex) => {
+    const controls = guiasPrestacionesCards[carouselIndex];
+    const controlItems = controls.querySelectorAll(".controls-prestaciones-cards");
+    setActiveControl(0);
+    function setActiveControl(index) {
+        controlItems.forEach((item, i) => {
+            if (i === index) {
+                item.classList.add("control-prestaciones-active");
+            }
+            else {
+                item.classList.remove("control-prestaciones-active");
+            }
+        });
+    }
+    controlItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            moveItems(index);
+        });
+    });
+    const moveItems = (index) => {
+        const cardWidth = carousel.querySelector(".card-prestacion");
+        if (cardWidth) {
+            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
+        }
+    };
+    carousel.addEventListener("scroll", () => {
+        const cardWidth = carousel.querySelector(".card-prestacion");
+        if (carousel === null || !cardWidth)
+            return;
+        const scrollPos = carousel.scrollLeft;
+        const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
+        setActiveControl(activeControlIndex);
+    });
+});
 //prestaciones inner generic para todos las categories
 document.addEventListener('DOMContentLoaded', () => {
     //pr-#
