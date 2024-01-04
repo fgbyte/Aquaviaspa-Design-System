@@ -33,6 +33,63 @@ function adjustBannerFicha() {
     }
 }
 adjustBannerFicha();
+const carouselsTopVentas = document.querySelectorAll(".top-ventas__container");
+const controlsList1 = document.querySelectorAll(".guias-top-ventas");
+carouselsTopVentas.forEach((carousel, carouselIndex) => {
+    const controls = controlsList1[carouselIndex];
+    const controlItems = controls.querySelectorAll(".controls-top-ventas");
+    setActiveControl(0);
+    function setActiveControl(index) {
+        controlItems.forEach((item, i) => {
+            if (i === index) {
+                item.classList.add("control-active");
+            }
+            else {
+                item.classList.remove("control-active");
+            }
+        });
+    }
+    controlItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            moveItems(index);
+        });
+    });
+    const moveItems = (index) => {
+        const cardWidth = carousel.querySelector(".card-spa");
+        if (cardWidth) {
+            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
+        }
+    };
+    carousel.addEventListener("scroll", () => {
+        const cardWidth = carousel.querySelector(".card-spa");
+        if (carousel === null || !cardWidth)
+            return;
+        const scrollPos = carousel.scrollLeft;
+        const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
+        setActiveControl(activeControlIndex);
+    });
+});
+//transform module
+const cardTransform = document.querySelector("#card-transform");
+const cardTransformRight = document.querySelector(".card-transform-right");
+const transformModule = document.querySelector(".transform-module");
+document.addEventListener('DOMContentLoaded', () => {
+    if (cardTransformRight) {
+        cardTransformRight.addEventListener('mouseover', (e) => {
+            if (window.innerWidth > 993) {
+                if (cardTransform) {
+                    cardTransform === null || cardTransform === void 0 ? void 0 : cardTransform.classList.add('opac');
+                }
+            }
+        });
+        cardTransformRight.addEventListener('mouseout', (e) => {
+            if (cardTransform) {
+                cardTransform === null || cardTransform === void 0 ? void 0 : cardTransform.classList.remove('opac');
+            }
+        });
+    }
+});
+// categories prestaciones
 document.addEventListener('DOMContentLoaded', function () {
     const prestacionesGroups = document.querySelectorAll(".prestaciones-cards");
     const guiasPrestacionesGroups = document.querySelectorAll(".guias-prestaciones-cards");
@@ -69,63 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
             setActiveControl(activeControlIndex);
         });
-    });
-});
-//transform module
-const cardTransform = document.querySelector("#card-transform");
-const cardTransformRight = document.querySelector(".card-transform-right");
-const transformModule = document.querySelector(".transform-module");
-document.addEventListener('DOMContentLoaded', () => {
-    if (cardTransformRight) {
-        cardTransformRight.addEventListener('mouseover', (e) => {
-            if (window.innerWidth > 993) {
-                if (cardTransform) {
-                    cardTransform === null || cardTransform === void 0 ? void 0 : cardTransform.classList.add('opac');
-                }
-            }
-        });
-        cardTransformRight.addEventListener('mouseout', (e) => {
-            if (cardTransform) {
-                cardTransform === null || cardTransform === void 0 ? void 0 : cardTransform.classList.remove('opac');
-            }
-        });
-    }
-});
-// categories prestaciones
-const prestacionesCards = document.querySelectorAll(".prestaciones-cards");
-const guiasPrestacionesCards = document.querySelectorAll(".guias-prestaciones-cards");
-prestacionesCards.forEach((carousel, carouselIndex) => {
-    const controls = guiasPrestacionesCards[carouselIndex];
-    const controlItems = controls.querySelectorAll(".controls-prestaciones-cards");
-    setActiveControl(0);
-    function setActiveControl(index) {
-        controlItems.forEach((item, i) => {
-            if (i === index) {
-                item.classList.add("control-prestaciones-active");
-            }
-            else {
-                item.classList.remove("control-prestaciones-active");
-            }
-        });
-    }
-    controlItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
-            moveItems(index);
-        });
-    });
-    const moveItems = (index) => {
-        const cardWidth = carousel.querySelector(".card-prestacion");
-        if (cardWidth) {
-            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
-        }
-    };
-    carousel.addEventListener("scroll", () => {
-        const cardWidth = carousel.querySelector(".card-prestacion");
-        if (carousel === null || !cardWidth)
-            return;
-        const scrollPos = carousel.scrollLeft;
-        const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
-        setActiveControl(activeControlIndex);
     });
 });
 //prestaciones inner generic para todos las categories
