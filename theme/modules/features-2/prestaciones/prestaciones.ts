@@ -7,7 +7,7 @@ const categories = Array.from({ length: 5 }, (_, i) => document.querySelectorAll
 filterLinks.forEach((nodeLink) => {
     nodeLink.forEach((link) => {
         link.addEventListener('click', (event) => {
-            showOnly(0);//muestra la card 1
+            showOnly(0);//muestra la card 1 en todas
             // Remove 'checked' attribute from all filter links
             filterLinks.forEach((otherLink) => {
                 otherLink.forEach((element) => {
@@ -22,3 +22,5 @@ filterLinks.forEach((nodeLink) => {
     });
  });
 })
+
+//TODO: Renderizado condicional para las categories

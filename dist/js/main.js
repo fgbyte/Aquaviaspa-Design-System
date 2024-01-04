@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+//TODO: Renderizado condicional para las categories
 document.addEventListener('DOMContentLoaded', () => {
     //Valores module
     const tabsValores = Array.from({ length: 5 }, (_, i) => document.getElementById(`valor-${i + 1}`));

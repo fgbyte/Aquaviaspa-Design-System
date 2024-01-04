@@ -355,7 +355,6 @@
   align-items: start;
   justify-content: center;
   @include media-breakpoint-up(special) {
-    //TODO: poner width y height: 100% para usar en modules
     width: 50%;
     height: 620px;
     padding: 150px 55px 120px 55px;
@@ -409,7 +408,6 @@
     }
   }
   @include media-breakpoint-up(special) {
-    //TODO: poner width y height: 100% para usar en modules para que tomen el alto y ancho de la grid asignada
     width: 50%;
     height: 620px;
 
@@ -531,7 +529,6 @@
   height: 410px;
   position: relative;
   z-index: 1;
-  //TODO: poner width y height: 100% para usar en modules
   @include media-breakpoint-up(lg) {
     width: 50%;
     height: 515px;
