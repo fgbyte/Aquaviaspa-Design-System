@@ -189,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterLinks.forEach((nodeLink) => {
         nodeLink.forEach((link) => {
             link.addEventListener('click', (event) => {
+                showOnly(0); //muestra la card 1
                 // Remove 'checked' attribute from all filter links
                 filterLinks.forEach((otherLink) => {
                     otherLink.forEach((element) => {
