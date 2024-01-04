@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
 
 //categories
 //pr-#
@@ -33,6 +32,7 @@ function showOnly(cardNumber: number) {//muestra el card que quieras
         });
     });
 }
+document.addEventListener('DOMContentLoaded', () => {
 
     //ocultar los modales al principio menos el 1 solo en LG
     if (window.matchMedia(`(min-width: ${special}px)`).matches) {
