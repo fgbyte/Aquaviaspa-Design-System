@@ -1,64 +1,23 @@
-//prestaciones inner generic para todos las categories
+//prestaciones module
 document.addEventListener('DOMContentLoaded', () => {
-    //pr-#
-    const links = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#pr-${i + 1}`));
-    //prest-#
-    const prests = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#prest-${i + 1}`));
-    const special = 1158;
+const filterLinks = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#fil-${i + 1}`));
+const categories = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#category-${i + 1}`));
 
-    // console.log(links);
-    // console.log(prests);
 
-    //ocultar los modales al principio menos el 1
-    //! tiene que ser solo en LG
-    if (window.matchMedia(`(min-width: ${special}px)`).matches) {
-        prests.forEach((pre, i) => {
-            // console.log(pre)
-            // console.log(i)
-            pre.forEach((element) => {
-                if (element instanceof HTMLElement) {
-                    element.style.display = i === 0 ? 'block' : 'none';//el 1ro del array
-                }
+filterLinks.forEach((nodeLink) => {
+    nodeLink.forEach((link) => {
+        link.addEventListener('click', (event) => {
+            // Remove 'checked' attribute from all filter links
+            filterLinks.forEach((otherLink) => {
+                otherLink.forEach((element) => {
+                   element.removeAttribute('checked');
+                });
             });
-        });
-    }
-    window.addEventListener('resize', () => {
-        if (window.matchMedia(`(min-width: ${special}px)`).matches) {
-            prests.forEach((pre, i) => {
-                pre.forEach(element => {
-                    if (element instanceof HTMLElement) {
-                        element.style.display = i === 0
-                            ? 'block'
-                            : 'none';
-                    }
-                });
-            })
-        } else {
-            prests.forEach((pre) => {
-                pre.forEach(element => {
-                    if (element instanceof HTMLElement) {
-                        element.style.display = 'block';
-                    }
-                });
-            })
-        }
-    });
-
-    links.forEach((link, i) => {
-        link.forEach((singleLink, _) => {
-            singleLink.addEventListener('click', () => {
-                prests.forEach((prest, j) => {
-                    if (prest) {
-                        prest.forEach((singlePrest, __) => {
-                            if (singlePrest instanceof HTMLElement) {
-                                singlePrest.style.display = i === j
-                                    ? 'block'
-                                    : 'none';
-                            }
-                        });
-                    }
-                })
-            })
+ 
+            // Add 'checked' attribute to the clicked link
+            const clickedLink = event.target as HTMLElement;
+            clickedLink.setAttribute('checked', '');
         });
     });
+ });
 })

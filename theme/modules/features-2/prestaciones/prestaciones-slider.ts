@@ -1,3 +1,4 @@
+//prestaciones sliders
 document.addEventListener('DOMContentLoaded', function () {
     const prestacionesGroups: NodeListOf<Element> = document.querySelectorAll(".prestaciones-cards");
     const guiasPrestacionesGroups: NodeListOf<Element> = document.querySelectorAll(".guias-prestaciones-cards");
