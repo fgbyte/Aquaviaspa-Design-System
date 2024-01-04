@@ -80,11 +80,12 @@
 }
 
 .guias-prestaciones-cards {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 8px;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(special) {
         display: none;
     }
 }

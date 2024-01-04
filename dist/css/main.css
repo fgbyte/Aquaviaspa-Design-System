@@ -16405,11 +16405,12 @@ p {
 }
 
 .guias-prestaciones-cards {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-@media (min-width: 992px) {
+@media (min-width: 1158px) {
   .guias-prestaciones-cards {
     display: none;
   }
