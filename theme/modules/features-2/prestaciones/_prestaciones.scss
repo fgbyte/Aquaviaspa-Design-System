@@ -52,6 +52,7 @@
 
 .prestaciones-cards {
     display: flex;
+    
 
     @include media-breakpoint-down(special) {
         overflow-x: auto;
@@ -59,12 +60,19 @@
 
     .card-prestacion {
         min-width: 100%;
+        min-height: 508px;
+
+        @include media-breakpoint-up(special) {
+            min-width: auto;
+            width: 732.68px;
+        }
     }
 
     @include media-breakpoint-up(special) {
         width: 100%;
         flex-direction: column;
         overflow-x: visible;
+        visibility: hidden;
     }
 }
 

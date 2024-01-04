@@ -16386,12 +16386,20 @@ p {
 }
 .prestaciones-cards .card-prestacion {
   min-width: 100%;
+  min-height: 508px;
+}
+@media (min-width: 1158px) {
+  .prestaciones-cards .card-prestacion {
+    min-width: auto;
+    width: 732.68px;
+  }
 }
 @media (min-width: 1158px) {
   .prestaciones-cards {
     width: 100%;
     flex-direction: column;
     overflow-x: visible;
+    visibility: hidden;
   }
 }
 

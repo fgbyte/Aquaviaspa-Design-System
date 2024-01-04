@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 //categories
 //pr-#
 const links = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#pr-${i + 1}`));
@@ -5,18 +7,32 @@ const links = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#pr
 const cards = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#prest-${i + 1}`));
 const special = 1158;
 
-function showOnly(cardNumber:number) {//muestra el card que quieras
+function showOnly(cardNumber: number) {//muestra el card que quieras
     cards.forEach((nodeCard, index) => {
         nodeCard.forEach(singleCard => {
             if (singleCard instanceof HTMLElement) {
                 singleCard.style.display = index === cardNumber
                     ? 'block'
                     : 'none';
+                    singleCard.style.transition = index === cardNumber
+                    ? 'all 1000ms'
+                    : 'all 1000ms';
+                singleCard.style.visibility = index === cardNumber
+                    ? 'visible'
+                    : 'hidden';
+                singleCard.style.display = index === cardNumber
+                    ? 'block'
+                    : 'block';
+                singleCard.style.position = index === cardNumber
+                    ? 'relative'
+                    : 'absolute';
+                singleCard.style.opacity = index === cardNumber
+                    ? '1'
+                    : '0';
             }
         });
     });
 }
-document.addEventListener('DOMContentLoaded', () => {
 
     //ocultar los modales al principio menos el 1 solo en LG
     if (window.matchMedia(`(min-width: ${special}px)`).matches) {
@@ -30,6 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 nodeCard.forEach(singleCard => {
                     if (singleCard instanceof HTMLElement) {
                         singleCard.style.display = 'block';
+                        singleCard.style.visibility = 'visible';
+                        singleCard.style.transition = 'all 1000ms';
+                        singleCard.style.position = 'relative';
+                        singleCard.style.opacity = '1';
                     }
                 });
             })
@@ -43,9 +63,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (nodeCard) {
                         nodeCard.forEach((singleCard, __) => {
                             if (singleCard instanceof HTMLElement) {
+                                singleCard.style.transition = i === j
+                                    ? 'all 1000ms'
+                                    : 'all 1000ms';
+                                singleCard.style.visibility = i === j
+                                    ? 'visible'
+                                    : 'hidden';
                                 singleCard.style.display = i === j
                                     ? 'block'
-                                    : 'none';
+                                    : 'block';
+                                singleCard.style.position = i === j
+                                    ? 'relative'
+                                    : 'absolute';
+                                singleCard.style.opacity = i === j
+                                    ? '1'
+                                    : '0';
+
                             }
                         });
                     }
