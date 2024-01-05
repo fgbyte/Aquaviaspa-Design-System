@@ -1,13 +1,14 @@
 @use "../../../globals";
 
 
-.transform-module{
+.transform-module {
   gap: 4px;
 
-  &:hover{
+  &:hover {
     gap: 0;
   }
 }
+
 .card-transform-right {
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,11 +28,12 @@
   }
 
   & .card-transform__card-inside {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-width: 500px;
-    width: 500px;
+    min-width: 644px;
+    width: 644px;
     height: 100%;
     margin-left: 20px;
     padding: 20px 40px;
@@ -39,23 +41,27 @@
     color: $white;
     overflow: hidden;
 
+
     @include media-breakpoint-up(lg) {
-      margin-right: 50px;
-      padding: 20px 80px;
-      height: 600px;
+      margin-right: 20px;
+      padding: 86px 147px;
+      height: 786px;
 
     }
 
     @include media-breakpoint-up(xl) {
-      margin-right: 170px;
-      padding: 20px 80px;
-      height: 600px;
+      margin-right: 70px;
+
+    }
+    @include media-breakpoint-up(xxl) {
+      margin-right: 200px;
 
     }
 
 
     .card-transform__card-inside--img {
-      width: 117px;
+      position: relative;
+      width: 177px;
       height: auto;
       align-self: center;
       justify-self: start;
@@ -63,23 +69,23 @@
       margin-top: 60px;
       opacity: 0;
 
-
     }
 
     & h3 {
+      position: relative;
       font-size: 58px;
       text-transform: none;
     }
 
     & p {
+      position: relative;
       display: none;
       font-size: 20px;
       font-weight: $textRegular;
       max-height: 0;
       overflow: hidden;
       opacity: 0;
-
-
+      max-width: 400;
       transition: all $delay linear;
 
 
@@ -91,9 +97,8 @@
 
     & a {
       margin-bottom: 16px;
-
       font-size: 18px;
-      opacity: .8;
+      opacity: 1;
 
       @include media-breakpoint-up(lg) {
         display: block;
@@ -112,8 +117,8 @@
 
     &:hover .card-transform__card-inside p {
       max-height: 300px;
-      opacity: .8;
-      margin-bottom: 32px;
+      opacity: 1;
+      margin-bottom: 58px;
     }
 
     &:hover {
@@ -121,13 +126,32 @@
       right: 0;
       width: 100%;
       z-index: 2;
-
     }
 
-    &:hover .card-transform__card-inside {
-      background-color: rgba(0, 0, 0, 0.421)
-    }
+    .card-transform__card-inside::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(87, 87, 87, 0.71) 0%, rgba(17, 17, 17, 0.89) 100%) 0% 0% no-repeat padding-box;
+      mix-blend-mode: multiply;
+      opacity: 0;
+      transition: all $delay linear;
 
+    }
+    &:hover .card-transform__card-inside::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(87, 87, 87, 0.71) 0%, rgba(17, 17, 17, 0.89) 100%) 0% 0% no-repeat padding-box;
+      mix-blend-mode: multiply;
+      opacity: 0.69;
+    }
   }
 
 }
@@ -142,7 +166,7 @@
 }
  */
 
- /*Animacion provicional con JS*/ 
+/*Animacion provicional con JS*/
 .opac {
   opacity: .3;
   width: 0;

@@ -13,7 +13,7 @@
   min-width: 349px;
   overflow: hidden;
   transition: all $delay linear;
-  padding: 20px 50px;
+  padding: 35px 50px;
   text-decoration: none;
   gap: 20px;
 
@@ -74,6 +74,7 @@
     z-index: 2;
     max-width: 400px;
     margin-top: auto;
+    font-weight: $textRegular;
 
     @include media-breakpoint-up(lg) {
       margin-top: 0;
@@ -87,6 +88,7 @@
 
     position: relative;
     font-size: 16px;
+    font-weight: $textRegular;
     max-width: 400px;
     color: $white;
     z-index: 2;
@@ -126,7 +128,7 @@
     transition: all $delay linear;
     z-index: 2;
     margin: 30px 0px;
-    padding-top: 70px;
+    padding-top: 55px;
 
     @include media-breakpoint-up(lg) {
       width: 130px;
@@ -144,17 +146,6 @@
     visibility: visible;
     opacity: 1;
   }
-
-  /* &:hover p {
-    opacity: 1;
-    height: 160px;
-
-    @include media-breakpoint-up(lg) {
-      opacity: 1;
-      height: auto;
-
-    }
-  } */
 
 }
 
@@ -179,6 +170,8 @@
   max-width: 462px;
 
 
+
+
   & h4 {
     position: relative;
     font-size: 32px;
@@ -192,6 +185,8 @@
 
   &:hover h4 {
     text-decoration: underline;
+    text-decoration-thickness: 1.2px;
+    text-underline-offset: 8px;
   }
 
   & p {
@@ -307,6 +302,9 @@
     justify-content: flex-start;
     text-align: start;
 
+    & div .text-14 {
+      font-size: 14px;
+    }
 
     & h3 {
       font-size: 20px;
@@ -329,7 +327,7 @@
       background: $black;
       border-radius: 4px;
       padding: 2px 12px;
-      font-size: 12px;
+      font-size: 10px;
       letter-spacing: 1px;
     }
 
@@ -363,7 +361,7 @@
 .card-menu-filters {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 7px;
   width: fit-content;
   align-items: center;
   text-decoration: none;
@@ -381,7 +379,7 @@
 
 
     &:hover {
-      border: solid 4px $gray;
+      border: solid 4px #707070;
     }
   }
 
@@ -415,11 +413,12 @@
   }
 
   & .card-transform__card-inside {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-width: 500px;
-    width: 500px;
+    min-width: 644px;
+    width: 644px;
     height: 100%;
     margin-left: 20px;
     padding: 20px 40px;
@@ -429,29 +428,32 @@
 
     @include media-breakpoint-up(lg) {
       margin-left: 100px;
-      padding: 20px 80px;
-      height: 600px;
+      padding: 86px 147px;
+      height: 786px;
 
     }
 
     .card-transform__card-inside--img {
-      width: 117px;
+      position: relative;
+      width: 177px;
       height: auto;
       align-self: center;
       justify-self: start;
       margin-bottom: auto;
       margin-top: 60px;
       opacity: 0;
-
+       z-index: 10;
 
     }
 
     & h3 {
+      position: relative;
       font-size: 58px;
       text-transform: none;
     }
 
     & p {
+      position: relative;
       display: none;
       font-size: 20px;
       font-weight: $textRegular;
@@ -471,9 +473,8 @@
 
     & a {
       margin-bottom: 16px;
-
       font-size: 18px;
-      opacity: .8;
+      opacity: 1;
 
       @include media-breakpoint-up(lg) {
         display: block;
@@ -492,16 +493,38 @@
 
     &:hover .card-transform__card-inside p {
       max-height: 300px;
-      opacity: .8;
-      margin-bottom: 32px;
+      opacity: 1;
+      margin-bottom: 58px;
     }
 
     &:hover {
       width: 100%;
     }
 
-    &:hover .card-transform__card-inside {
-      background-color: rgba(0, 0, 0, 0.421)
+
+    .card-transform__card-inside::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(87, 87, 87, 0.71) 0%, rgba(17, 17, 17, 0.89) 100%) 0% 0% no-repeat padding-box;
+      mix-blend-mode: multiply;
+      opacity: 0;
+      transition: all $delay linear;
+
+    }
+    &:hover .card-transform__card-inside::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(87, 87, 87, 0.71) 0%, rgba(17, 17, 17, 0.89) 100%) 0% 0% no-repeat padding-box;
+      mix-blend-mode: multiply;
+      opacity: 0.69;
     }
 
   }

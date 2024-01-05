@@ -1,8 +1,8 @@
 <svg id="Grupo_12208" data-name="Grupo 12208" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98.26" height="98.26" viewBox="0 0 98.26 98.26">
   <defs>
     <linearGradient id="linear-gradient" x1="0.204" y1="-0.4" x2="1.868" y2="1.25" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#a5a5a5"/>
-      <stop offset="1" stop-color="#444"/>
+      <stop offset="0" stop-color="#ddd"/>
+      <stop offset="1" stop-color="#777"/>
     </linearGradient>
     <clipPath id="clip-path">
       <rect id="Rectángulo_5326" data-name="Rectángulo 5326" width="98.26" height="98.26" fill="url(#linear-gradient)"/>
