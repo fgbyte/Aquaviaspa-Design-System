@@ -54,6 +54,3 @@ filterLinks.forEach((nodeLink) => {
      })
  })
 })
-
-//TODO: Renderizado condicional para las categories
-

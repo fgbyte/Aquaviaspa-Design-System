@@ -342,10 +342,6 @@
   &:hover span {
     border-bottom: 2px solid $black;
   }
-
-  @include media-breakpoint-down(lg) {
-    // display: none; //TODO
-  }
 }
 
 .link-back-asistente {
@@ -360,9 +356,5 @@
   span {
     font-size: 18px;
     font-weight: $textMedium;
-  }
-
-  @include media-breakpoint-up(lg) {
-    // display: none; //TODO
   }
 }
