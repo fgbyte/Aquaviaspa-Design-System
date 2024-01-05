@@ -13186,10 +13186,10 @@ p {
   width: 55px;
 }
 .link-arrow-grow:hover span {
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
 }
 .link-arrow-grow span {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   transition: color 0.4s, border-bottom-color 0.4s;
 }
 .link-arrow-grow .container-arrow {
@@ -13293,10 +13293,10 @@ p {
   width: 55px;
 }
 .link-arrow-grow-white-reverse:hover span {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .link-arrow-grow-white-reverse span {
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   transition: color 0.4s, border-bottom-color 0.4s;
 }
 .link-arrow-grow-white-reverse .container-arrow-white {
@@ -13318,6 +13318,7 @@ p {
 }
 @media (min-width: 992px) {
   .link-arrow-grow-white-reverse {
+    gap: 16px;
     font-size: 22px;
   }
 }
@@ -13824,6 +13825,7 @@ p {
   width: 325px;
   height: 355px;
   overflow: hidden;
+  position: relative;
 }
 @media (min-width: 992px) {
   .card-option {
@@ -13834,6 +13836,7 @@ p {
 .card-option img {
   width: 100%;
   height: 270px;
+  z-index: 1;
   transition: all 0.4s linear;
 }
 @media (min-width: 992px) {
@@ -13842,6 +13845,8 @@ p {
   }
 }
 .card-option .btn-blue--asistente {
+  position: absolute;
+  bottom: 0px;
   text-decoration: none;
   background-color: #EFEDE9;
   border: none;
@@ -13850,6 +13855,8 @@ p {
   font-weight: 600;
   height: 85px;
   width: 100%;
+  z-index: 10;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   .card-option .btn-blue--asistente {
@@ -13884,7 +13891,7 @@ p {
 .card-faq {
   background-color: #fff;
   padding: 60px 0px;
-  border-top: solid 0.5px #878787;
+  border-top: solid 1px #dfdfdf;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -13991,6 +13998,7 @@ p {
   }
 }
 .card-faq-icon a {
+  text-align: center;
   max-width: 136px;
   font-size: 12px;
 }
@@ -14253,7 +14261,7 @@ p {
   height: fit-content;
 }
 .card-prestacion-lite__text {
-  margin-top: 25px;
+  margin-top: 35px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -14343,9 +14351,10 @@ p {
   font-size: 16px;
   color: #000;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 .card-direction__container__text p {
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   font-size: 16px;
   color: #575757;
 }
@@ -14405,6 +14414,7 @@ p {
 @media (min-width: 992px) {
   .card-down-docs {
     gap: 20px;
+    padding: 50px;
   }
   .card-down-docs img {
     width: 120px;
@@ -14422,8 +14432,10 @@ p {
   gap: 5.5px;
 }
 .card-steps .step {
-  width: 21px;
-  height: 21px;
+  width: 27px;
+  height: 27px;
+  margin: 0;
+  padding: 0;
   background-color: #A5A5A5;
   display: flex;
   align-items: center;

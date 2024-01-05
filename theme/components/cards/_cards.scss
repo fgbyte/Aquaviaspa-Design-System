@@ -167,6 +167,7 @@
   width: 325px;
   height: 355px;
   overflow: hidden;
+  position: relative;
 
   @include media-breakpoint-up(lg) {
     width: 465px;
@@ -176,6 +177,7 @@
   img {
     width: 100%;
     height: 270px;
+    z-index: 1;
     transition: all $delay linear;
 
     @include media-breakpoint-up(lg) {
@@ -184,6 +186,8 @@
   }
 
   .btn-blue--asistente {
+    position: absolute;
+    bottom: 0px;
     text-decoration: none;
     background-color: $info;
     border: none;
@@ -192,6 +196,9 @@
     font-weight: $textSemibold;
     height: 85px;
     width: 100%;
+    z-index: 10;
+    overflow: hidden;
+
     @include media-breakpoint-up(lg) {
       font-size: 28px;
     }
@@ -233,7 +240,7 @@
 .card-faq {
   background-color: $white;
   padding: 60px 0px;
-  border-top: solid 0.5px #878787;
+  border-top: solid 1px #dfdfdf;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -335,6 +342,7 @@
   }
 
   a {
+    text-align: center;
     max-width: 136px;
     font-size: 12px;
     @include media-breakpoint-up(lg) {
@@ -603,7 +611,7 @@
     }
   }
   &__text {
-    margin-top: 25px;
+    margin-top: 35px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -698,9 +706,10 @@
         font-size: 16px;
         color: $black;
         font-weight: $textBold;
+        margin-bottom: 6px;
       }
       p {
-        margin-bottom: 6px;
+        margin-bottom: 3px;
         font-size: 16px;
         color: $grayText;
       }
@@ -758,6 +767,7 @@
 
   @include media-breakpoint-up(lg) {
     gap: 20px;
+    padding: 50px;
     img {
       width: 120px;
       height: 96px;
@@ -775,8 +785,10 @@
   gap: 5.5px;
 
   .step {
-    width: 21px;
-    height: 21px;
+    width: 27px;
+    height: 27px;
+    margin: 0;
+    padding: 0;
     background-color: $grayBorder;
     display: flex;
     align-items: center;
