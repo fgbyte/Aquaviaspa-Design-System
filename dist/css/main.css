@@ -15568,7 +15568,6 @@ p {
 }
 .banner-ficha__card__text a:hover span {
   transition: all linear 0.4s;
-  transform: scale(1.05);
   text-decoration: underline;
 }
 .banner-ficha__hero {
@@ -15634,7 +15633,6 @@ p {
   }
   .banner-ficha__hero .hero-cta__text--lg .text__down .text__element a:hover span {
     transition: all linear 0.4s;
-    transform: scale(1.05);
     text-decoration: underline;
   }
 }
@@ -15647,6 +15645,7 @@ p {
 }
 .banner__img {
   width: 100%;
+  height: 100%;
 }
 .banner__img img {
   height: auto;
@@ -15704,7 +15703,7 @@ p {
     font-size: 58px;
   }
   .banner__text h2, .banner__text .h2 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 28px;
   }
   .banner__text p {
@@ -15775,11 +15774,21 @@ p {
   gap: 100px;
   color: #fff;
 }
+@media (min-width: 992px) {
+  .banner-cta-center {
+    gap: 60px;
+  }
+}
 .banner-cta-center__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+@media (min-width: 992px) {
+  .banner-cta-center__card {
+    gap: 42px;
+  }
 }
 .banner-cta-center__card__logo {
   display: flex;
