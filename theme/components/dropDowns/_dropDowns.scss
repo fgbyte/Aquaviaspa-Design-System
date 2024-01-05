@@ -104,7 +104,7 @@
     padding-left: 0px;
 
     li {
-      padding: 28px 28px 15px 28px;
+      padding: 20px 28px 15px 28px;
       gap: 10px;
       display: flex;
 
@@ -121,7 +121,7 @@
         p {
           font-weight: $textBold;
           color: $grayText;
-          margin-bottom: 1.6px;
+          margin-bottom: 0.5px;
         }
         span {
           font-weight: $textRegular;
@@ -156,9 +156,9 @@
 }
 
 .dropdown-podemos {
+  background-color: $grayText;
   summary {
-    background-color: $grayText;
-    color: white;
+    color: $white;
     // padding: 18px 16px;
     font-size: 29px;
     font-weight: $textMedium;
@@ -166,9 +166,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 140px;
     position: relative;
 
-    height: 140px;
+    span {
+      margin-bottom: 2px;
+      &:hover {
+        margin-bottom: 1px;
+        border-bottom: 2px solid $white;
+      }
+    }
 
     @include media-breakpoint-up(lg) {
       height: 184px;
@@ -233,12 +240,22 @@
 }
 
 .dropdown-valor {
+  @include media-breakpoint-up(lg) {
+    .link-arrow-grow-white-reverse {
+      gap: 40px;
+    }
+  }
   summary {
     span {
       font-size: 32px;
       font-weight: $textSemibold;
       @include media-breakpoint-up(lg) {
         font-size: 48px;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      .container-arrow-white {
+        scale: 2;
       }
     }
   }
@@ -259,7 +276,7 @@
 }
 
 .dropdown-docs {
-  border-bottom: solid $grayText 1px;
+  border-bottom: solid #d2d2d2 1px;
   width: 100%;
   &__summary {
     display: flex;
@@ -269,6 +286,7 @@
 
     svg {
       transition: all linear $delay;
+      margin-right: 30px;
     }
 
     span {

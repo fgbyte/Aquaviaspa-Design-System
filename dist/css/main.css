@@ -13516,7 +13516,7 @@ p {
   padding-left: 0px;
 }
 .dropdown-card ul li {
-  padding: 28px 28px 15px 28px;
+  padding: 20px 28px 15px 28px;
   gap: 10px;
   display: flex;
 }
@@ -13533,7 +13533,7 @@ p {
 .dropdown-card ul li div p {
   font-weight: 700;
   color: #575757;
-  margin-bottom: 1.6px;
+  margin-bottom: 0.5px;
 }
 .dropdown-card ul li div span {
   font-weight: 400;
@@ -13557,16 +13557,25 @@ p {
   transform: rotate(-180deg);
 }
 
-.dropdown-podemos summary {
+.dropdown-podemos {
   background-color: #575757;
-  color: white;
+}
+.dropdown-podemos summary {
+  color: #fff;
   font-size: 29px;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   height: 140px;
+  position: relative;
+}
+.dropdown-podemos summary span {
+  margin-bottom: 2px;
+}
+.dropdown-podemos summary span:hover {
+  margin-bottom: 1px;
+  border-bottom: 2px solid #fff;
 }
 @media (min-width: 992px) {
   .dropdown-podemos summary {
@@ -13618,6 +13627,11 @@ p {
   font-weight: 500;
 }
 
+@media (min-width: 992px) {
+  .dropdown-valor .link-arrow-grow-white-reverse {
+    gap: 40px;
+  }
+}
 .dropdown-valor summary span {
   font-size: 32px;
   font-weight: 600;
@@ -13625,6 +13639,11 @@ p {
 @media (min-width: 992px) {
   .dropdown-valor summary span {
     font-size: 48px;
+  }
+}
+@media (min-width: 992px) {
+  .dropdown-valor summary .container-arrow-white {
+    scale: 2;
   }
 }
 .dropdown-valor .details-inner__text {
@@ -13643,7 +13662,7 @@ p {
 }
 
 .dropdown-docs {
-  border-bottom: solid #575757 1px;
+  border-bottom: solid #d2d2d2 1px;
   width: 100%;
 }
 .dropdown-docs__summary {
@@ -13654,6 +13673,7 @@ p {
 }
 .dropdown-docs__summary svg {
   transition: all linear 0.4s;
+  margin-right: 30px;
 }
 .dropdown-docs__summary span {
   font-size: 20px;

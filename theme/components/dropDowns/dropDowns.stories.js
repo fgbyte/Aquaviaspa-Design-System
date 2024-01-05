@@ -97,11 +97,11 @@ export const drop3 = `
 
 export const drop4 = `
 <details class="dropdown-podemos">
-<summary>¿Podemos ayudarle?</summary>
-  <div class="details-inner">
-        <form action="">form__footer-podemos</form>
-  </div>
-</details>
+    <summary class="no-marker"><span>¿Podemos ayudarle?</span></summary>
+    <div class="details-inner">
+      <form action="">form__footer-podemos</form>
+    </div>
+  </details>
 `
 
 export const drop5 = `
