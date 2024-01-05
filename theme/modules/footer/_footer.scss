@@ -238,9 +238,10 @@
   display: flex;
   flex-direction: column;
   gap: 19px;
-  @include desk-space;
- 
+  width: 920px;
+  margin: auto;
   label span {
+    margin-bottom: 6px;
     font-size: 18px;
     font-weight: $textRegular;
   }
@@ -256,6 +257,7 @@
       height: 44px;
       padding-left: 4px;
       color: $white;
+      padding-left: 8px;
       &:focus-visible {
         outline: none;
       }
@@ -276,7 +278,7 @@
     height: 44px;
     border: solid 1px #EDEDED;
     color: $white;
-
+    font-size: 15px;
   }
 
   .form-full__select option {
@@ -291,6 +293,7 @@
     color: $white;
     height: 200px;
     resize: none;
+    padding: 8px 8px;
   }
 
   & .form-full__checkbox {
@@ -349,7 +352,8 @@
   & .form-full__terms {
     max-width: 379px;
     text-transform: none;
-
+    font-size: 13px;
+    margin-bottom: 32px;
     & a {
       color: $white;
 

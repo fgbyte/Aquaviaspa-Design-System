@@ -51,7 +51,7 @@
 
   & input {
     height: 44px;
-    border: 0.5px solid #A5A5A5;
+    border: 0.5px solid #d1d1d1;
     padding-right: 40px;
     padding-left: 4px;
     font-size: 18px;
@@ -89,9 +89,10 @@
   display: flex;
   flex-direction: column;
   gap: 19px;
-  @include desk-space;
+  width: 920px;
 
   label span {
+    margin-bottom: 6px;
     font-size: 18px;
     font-weight: $textRegular;
   }
@@ -105,8 +106,8 @@
       background-color: #EDEDED;
       border: none;
       height: 44px;
-      padding-left: 4px;
-
+      padding-left: 8px;
+      
       &:focus-visible {
         border: none;
         outline: none;
@@ -127,7 +128,7 @@
     height: 44px;
     background-color: #EDEDED;
     border: none;
-
+   font-size: 15px;
   }
 
   & label .form-full__textarea {
@@ -135,6 +136,7 @@
     border: none;
     height: 200px;
     resize: none;
+    padding: 8px 8px;
   }
 
   & .form-full__checkbox {
@@ -187,6 +189,8 @@
   & .form-full__terms {
     max-width: 379px;
     text-transform: none;
+    font-size: 13px;
+    margin-bottom: 32px;
   
   }
 
