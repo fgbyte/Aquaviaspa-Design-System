@@ -390,6 +390,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     function calculateBannerHeight() {
         var bannerHeight = banner.offsetHeight;
-        return bannerHeight;
+        var navbarHeight = navbar.offsetHeight;
+        return bannerHeight - navbarHeight;
     }
 });

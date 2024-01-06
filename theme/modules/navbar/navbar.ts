@@ -105,7 +105,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   function calculateBannerHeight() {
     const bannerHeight = banner.offsetHeight;
-    return bannerHeight;
+    const navbarHeight = navbar.offsetHeight;
+    return bannerHeight - navbarHeight;
   }
 });
 
