@@ -89,7 +89,7 @@
   display: flex;
   flex-direction: column;
   gap: 19px;
-  width: 920px;
+  max-width: 920px;
 
   label span {
     margin-bottom: 6px;
@@ -107,7 +107,7 @@
       border: none;
       height: 44px;
       padding-left: 8px;
-      
+
       &:focus-visible {
         border: none;
         outline: none;
@@ -124,11 +124,20 @@
   }
 
   & label .form-full__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('/dist/assets/icons/arrow-form-select.svg');
+    background-size: 17px;
+    background-position: 97.5% center;
+    background-repeat: no-repeat;
+    padding-right: 30px;
     text-align: center;
     height: 44px;
     background-color: #EDEDED;
     border: none;
-   font-size: 15px;
+    font-size: 15px;
+    outline: none;
   }
 
   & label .form-full__textarea {
@@ -147,10 +156,12 @@
 
     & p {
 
-      & b{
+      & b {
         margin-left: 6px;
       }
+
       margin: 0 0;
+
       @include media-breakpoint-up(lg) {
         display: flex;
         align-items: center;
@@ -191,7 +202,7 @@
     text-transform: none;
     font-size: 13px;
     margin-bottom: 32px;
-  
+
   }
 
 }

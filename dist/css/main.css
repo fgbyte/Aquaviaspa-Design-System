@@ -15033,7 +15033,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 19px;
-  width: 920px;
+  max-width: 920px;
 }
 .form-full label span {
   margin-bottom: 6px;
@@ -15062,11 +15062,20 @@ p {
   }
 }
 .form-full label .form-full__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("/dist/assets/icons/arrow-form-select.svg");
+  background-size: 17px;
+  background-position: 97.5% center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
   text-align: center;
   height: 44px;
   background-color: #EDEDED;
   border: none;
   font-size: 15px;
+  outline: none;
 }
 .form-full label .form-full__textarea {
   background-color: #EDEDED;
@@ -15313,7 +15322,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 19px;
-  width: 920px;
+  max-width: 920px;
   margin: auto;
 }
 .form-full-footer label span {
@@ -15344,12 +15353,21 @@ p {
   }
 }
 .form-full-footer label .form-full__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("/dist/assets/icons/arrow-form-select-footer.svg");
+  background-size: 17px;
+  background-position: 97.5% center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
   background-color: transparent;
   text-align: center;
   height: 44px;
   border: solid 1px #EDEDED;
   color: #fff;
   font-size: 15px;
+  outline: none;
 }
 .form-full-footer .form-full__select option {
   background-color: #464646;
