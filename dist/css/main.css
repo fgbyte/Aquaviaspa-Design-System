@@ -13576,7 +13576,7 @@ p {
   margin-bottom: 2px;
 }
 .dropdown-podemos summary span:hover {
-  margin-bottom: 1px;
+  margin-bottom: 0px;
   border-bottom: 2px solid #fff;
 }
 @media (min-width: 992px) {

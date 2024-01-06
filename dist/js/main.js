@@ -1,10 +1,10 @@
 "use strict";
 //dropdown-card lg disposition
-document.addEventListener('DOMContentLoaded', () => {
-    const detailsElement = document.querySelectorAll('.dropdown-card');
+document.addEventListener('DOMContentLoaded', function () {
+    var detailsElement = document.querySelectorAll('.dropdown-card');
     if (window.matchMedia('(min-width: 992px)').matches) {
         // Si la pantalla es 'lg' o más grande
-        detailsElement.forEach((element) => {
+        detailsElement.forEach(function (element) {
             element.toggleAttribute('open');
         });
     }
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //banner-ficha
 window.addEventListener('resize', adjustBannerFicha);
 function adjustBannerFicha() {
-    const bannerFichaCard = document.querySelector('.banner-ficha__card__img');
-    const bannerFicha = document.querySelector('.banner-ficha');
-    const lgSize = 992;
+    var bannerFichaCard = document.querySelector('.banner-ficha__card__img');
+    var bannerFicha = document.querySelector('.banner-ficha');
+    var lgSize = 992;
     if (window.innerWidth >= lgSize) {
         if (bannerFichaCard) {
             bannerFichaCard.removeAttribute('id');
@@ -33,14 +33,14 @@ function adjustBannerFicha() {
     }
 }
 adjustBannerFicha();
-const carouselsTopVentas = document.querySelectorAll(".top-ventas__container");
-const controlsList1 = document.querySelectorAll(".guias-top-ventas");
-carouselsTopVentas.forEach((carousel, carouselIndex) => {
-    const controls = controlsList1[carouselIndex];
-    const controlItems = controls.querySelectorAll(".controls-top-ventas");
+var carouselsTopVentas = document.querySelectorAll(".top-ventas__container");
+var controlsList1 = document.querySelectorAll(".guias-top-ventas");
+carouselsTopVentas.forEach(function (carousel, carouselIndex) {
+    var controls = controlsList1[carouselIndex];
+    var controlItems = controls.querySelectorAll(".controls-top-ventas");
     setActiveControl(0);
     function setActiveControl(index) {
-        controlItems.forEach((item, i) => {
+        controlItems.forEach(function (item, i) {
             if (i === index) {
                 item.classList.add("control-active");
             }
@@ -49,40 +49,40 @@ carouselsTopVentas.forEach((carousel, carouselIndex) => {
             }
         });
     }
-    controlItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
+    controlItems.forEach(function (item, index) {
+        item.addEventListener("click", function () {
             moveItems(index);
         });
     });
-    const moveItems = (index) => {
-        const cardWidth = carousel.querySelector(".card-spa");
+    var moveItems = function (index) {
+        var cardWidth = carousel.querySelector(".card-spa");
         if (cardWidth) {
             carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
         }
     };
-    carousel.addEventListener("scroll", () => {
-        const cardWidth = carousel.querySelector(".card-spa");
+    carousel.addEventListener("scroll", function () {
+        var cardWidth = carousel.querySelector(".card-spa");
         if (carousel === null || !cardWidth)
             return;
-        const scrollPos = carousel.scrollLeft;
-        const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
+        var scrollPos = carousel.scrollLeft;
+        var activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
         setActiveControl(activeControlIndex);
     });
 });
 //transform module
-const cardTransform = document.querySelector("#card-transform");
-const cardTransformRight = document.querySelector(".card-transform-right");
-const transformModule = document.querySelector(".transform-module");
-document.addEventListener('DOMContentLoaded', () => {
+var cardTransform = document.querySelector("#card-transform");
+var cardTransformRight = document.querySelector(".card-transform-right");
+var transformModule = document.querySelector(".transform-module");
+document.addEventListener('DOMContentLoaded', function () {
     if (cardTransformRight) {
-        cardTransformRight.addEventListener('mouseover', (e) => {
+        cardTransformRight.addEventListener('mouseover', function (e) {
             if (window.innerWidth > 993) {
                 if (cardTransform) {
                     cardTransform === null || cardTransform === void 0 ? void 0 : cardTransform.classList.add('opac');
                 }
             }
         });
-        cardTransformRight.addEventListener('mouseout', (e) => {
+        cardTransformRight.addEventListener('mouseout', function (e) {
             if (cardTransform) {
                 cardTransform === null || cardTransform === void 0 ? void 0 : cardTransform.classList.remove('opac');
             }
@@ -91,13 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //categories
 //pr-#
-const links = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#pr-${i + 1}`));
+var links = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#pr-".concat(i + 1)); });
 //prest-#
-const cards = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#prest-${i + 1}`));
-const special = 1158;
+var cards = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#prest-".concat(i + 1)); });
+var special = 1158;
 function showOnly(cardNumber) {
-    cards.forEach((nodeCard, index) => {
-        nodeCard.forEach(singleCard => {
+    cards.forEach(function (nodeCard, index) {
+        nodeCard.forEach(function (singleCard) {
             if (singleCard instanceof HTMLElement) {
                 singleCard.style.display = index === cardNumber
                     ? 'block'
@@ -121,18 +121,18 @@ function showOnly(cardNumber) {
         });
     });
 }
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     //ocultar los modales al principio menos el 1 solo en LG
-    if (window.matchMedia(`(min-width: ${special}px)`).matches) {
+    if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
         showOnly(0); //el 1ro del array
     }
-    window.addEventListener('resize', () => {
-        if (window.matchMedia(`(min-width: ${special}px)`).matches) {
+    window.addEventListener('resize', function () {
+        if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
             showOnly(0); //el 1ro del array
         }
         else {
-            cards.forEach((nodeCard) => {
-                nodeCard.forEach(singleCard => {
+            cards.forEach(function (nodeCard) {
+                nodeCard.forEach(function (singleCard) {
                     if (singleCard instanceof HTMLElement) {
                         singleCard.style.display = 'block';
                         singleCard.style.visibility = 'visible';
@@ -144,12 +144,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-    links.forEach((nodeLink, i) => {
-        nodeLink.forEach((singleLink, _) => {
-            singleLink.addEventListener('click', () => {
-                cards.forEach((nodeCard, j) => {
+    links.forEach(function (nodeLink, i) {
+        nodeLink.forEach(function (singleLink, _) {
+            singleLink.addEventListener('click', function () {
+                cards.forEach(function (nodeCard, j) {
                     if (nodeCard) {
-                        nodeCard.forEach((singleCard, __) => {
+                        nodeCard.forEach(function (singleCard, __) {
                             if (singleCard instanceof HTMLElement) {
                                 singleCard.style.transition = i === j
                                     ? 'all 1000ms'
@@ -176,14 +176,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //prestaciones sliders
 document.addEventListener('DOMContentLoaded', function () {
-    const prestacionesGroups = document.querySelectorAll(".prestaciones-cards");
-    const guiasPrestacionesGroups = document.querySelectorAll(".guias-prestaciones-cards");
-    prestacionesGroups.forEach((prestaciones, groupIndex) => {
-        const controls = guiasPrestacionesGroups[groupIndex];
-        const controlItems = controls.querySelectorAll(".controls-prestaciones-cards");
+    var prestacionesGroups = document.querySelectorAll(".prestaciones-cards");
+    var guiasPrestacionesGroups = document.querySelectorAll(".guias-prestaciones-cards");
+    prestacionesGroups.forEach(function (prestaciones, groupIndex) {
+        var controls = guiasPrestacionesGroups[groupIndex];
+        var controlItems = controls.querySelectorAll(".controls-prestaciones-cards");
         setActiveControl(0);
         function setActiveControl(index) {
-            controlItems.forEach((item, i) => {
+            controlItems.forEach(function (item, i) {
                 if (i === index) {
                     item.classList.add("control-prestaciones-active");
                 }
@@ -192,53 +192,53 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         }
-        controlItems.forEach((item, index) => {
-            item.addEventListener("click", () => {
+        controlItems.forEach(function (item, index) {
+            item.addEventListener("click", function () {
                 moveItems(index, prestaciones);
             });
         });
-        const moveItems = (index, carousel) => {
-            const cardWidth = carousel.querySelector(".card-prestacion");
+        var moveItems = function (index, carousel) {
+            var cardWidth = carousel.querySelector(".card-prestacion");
             if (cardWidth) {
                 carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
             }
         };
-        prestaciones.addEventListener("scroll", () => {
-            const cardWidth = prestaciones.querySelector(".card-prestacion");
+        prestaciones.addEventListener("scroll", function () {
+            var cardWidth = prestaciones.querySelector(".card-prestacion");
             if (prestaciones === null || !cardWidth)
                 return;
-            const scrollPos = prestaciones.scrollLeft;
-            const activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
+            var scrollPos = prestaciones.scrollLeft;
+            var activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 70));
             setActiveControl(activeControlIndex);
         });
     });
 });
 //prestaciones module
-document.addEventListener('DOMContentLoaded', () => {
-    const filterLinks = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#fil-${i + 1}`));
-    const categories = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#category-${i + 1}`));
+document.addEventListener('DOMContentLoaded', function () {
+    var filterLinks = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#fil-".concat(i + 1)); });
+    var categories = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#category-".concat(i + 1)); });
     //links logic
-    filterLinks.forEach((nodeLink) => {
-        nodeLink.forEach((link) => {
-            link.addEventListener('click', (event) => {
-                if (window.matchMedia(`(min-width: ${special}px)`).matches) {
+    filterLinks.forEach(function (nodeLink) {
+        nodeLink.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
                     showOnly(0); //el 1ro del array
                 }
                 // Remove 'checked' attribute from all filter links
-                filterLinks.forEach((otherLink) => {
-                    otherLink.forEach((element) => {
+                filterLinks.forEach(function (otherLink) {
+                    otherLink.forEach(function (element) {
                         element.removeAttribute('checked');
                     });
                 });
                 // Add 'checked' attribute to the clicked link
-                const clickedLink = event.target;
+                var clickedLink = event.target;
                 clickedLink.setAttribute('checked', '');
             });
         });
     });
     //only 1 first logic
-    categories.forEach((nodeCat, index) => {
-        nodeCat.forEach((singleCat) => {
+    categories.forEach(function (nodeCat, index) {
+        nodeCat.forEach(function (singleCat) {
             if (singleCat instanceof HTMLElement) {
                 singleCat.style.display = index === 0
                     ? 'flex'
@@ -247,12 +247,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     //render logic
-    filterLinks.forEach((nodeLink, i) => {
-        nodeLink.forEach((singleLink, _) => {
-            singleLink.addEventListener('click', () => {
-                categories.forEach((nodeCat, j) => {
+    filterLinks.forEach(function (nodeLink, i) {
+        nodeLink.forEach(function (singleLink, _) {
+            singleLink.addEventListener('click', function () {
+                categories.forEach(function (nodeCat, j) {
                     if (nodeCat) {
-                        nodeCat.forEach((singleCat, __) => {
+                        nodeCat.forEach(function (singleCat, __) {
                             if (singleCat instanceof HTMLElement) {
                                 singleCat.style.display = i === j
                                     ? 'flex'
@@ -265,21 +265,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     //Valores module
-    const tabsValores = Array.from({ length: 5 }, (_, i) => document.getElementById(`valor-${i + 1}`));
-    const modalsValores = Array.from({ length: 5 }, (_, i) => document.getElementById(`modal-valor-${i + 1}`));
+    var tabsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("valor-".concat(i + 1)); });
+    var modalsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("modal-valor-".concat(i + 1)); });
     //ocultar los modales al principio menos el 1
-    modalsValores.forEach((modal, i) => {
+    modalsValores.forEach(function (modal, i) {
         if (modal) {
             modal.style.display = i === 0 ? 'block' : 'none';
         }
     });
     //agregar eventListener a las tabsValores
-    tabsValores.forEach((tab, i) => {
+    tabsValores.forEach(function (tab, i) {
         if (tab) {
-            tab.addEventListener('click', () => {
-                modalsValores.forEach((modal, j) => {
+            tab.addEventListener('click', function () {
+                modalsValores.forEach(function (modal, j) {
                     if (modal) {
                         modal.style.display = i === j ? 'block' : 'none';
                     }
@@ -290,30 +290,30 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 //navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.querySelector('#navbar');
+    var navbar = document.querySelector('#navbar');
     if (!navbar)
         return;
-    const banner = document.querySelector('#hero');
-    const navLinks = navbar.querySelectorAll('.link');
-    const navLogo = navbar.querySelector('#navlogo');
-    const firstMenuBurger = navbar.querySelector('.menu-burger');
-    const menuBurger = navbar.querySelectorAll('.menu-burger');
-    const menuSpas = navbar.querySelector('#spas');
-    const menuSwimspas = navbar.querySelector('#swimspas');
-    const menuPrestaciones = navbar.querySelector('#prestaciones');
-    const closeMenu = navbar.querySelectorAll('.close-menu');
-    const previousMenu = navbar.querySelectorAll('.previous-menu');
-    const mainMenu = document.querySelector('.main-menu');
-    const spasMenu = document.querySelector('.spas-menu');
-    const swimspasMenu = document.querySelector('.swimspas-menu');
-    const prestacionesMenu = document.querySelector('.prestaciones-menu');
-    const menuBackdrop = document.querySelector('.menuBackdrop');
-    const accordionMenu = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.accordion-menu');
-    const showContentMenu = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.show-content-menu');
-    const accordionImg = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.accordion-img');
+    var banner = document.querySelector('#hero');
+    var navLinks = navbar.querySelectorAll('.link');
+    var navLogo = navbar.querySelector('#navlogo');
+    var firstMenuBurger = navbar.querySelector('.menu-burger');
+    var menuBurger = navbar.querySelectorAll('.menu-burger');
+    var menuSpas = navbar.querySelector('#spas');
+    var menuSwimspas = navbar.querySelector('#swimspas');
+    var menuPrestaciones = navbar.querySelector('#prestaciones');
+    var closeMenu = navbar.querySelectorAll('.close-menu');
+    var previousMenu = navbar.querySelectorAll('.previous-menu');
+    var mainMenu = document.querySelector('.main-menu');
+    var spasMenu = document.querySelector('.spas-menu');
+    var swimspasMenu = document.querySelector('.swimspas-menu');
+    var prestacionesMenu = document.querySelector('.prestaciones-menu');
+    var menuBackdrop = document.querySelector('.menuBackdrop');
+    var accordionMenu = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.accordion-menu');
+    var showContentMenu = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.show-content-menu');
+    var accordionImg = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.accordion-img');
     if (!banner || !navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop)
         return;
-    menuBurger.forEach((element) => {
+    menuBurger.forEach(function (element) {
         element.addEventListener('click', function () {
             mainMenu.classList.add('active-menu');
             menuBackdrop.classList.add('isOpenBackdrop');
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
         menuBackdrop.classList.add('isOpenBackdrop');
         mainMenu.classList.remove('active-menu');
     });
-    closeMenu.forEach((elemet) => {
+    closeMenu.forEach(function (elemet) {
         elemet.addEventListener('click', function () {
             mainMenu.classList.remove('active-menu');
             menuBackdrop.classList.remove('isOpenBackdrop');
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prestacionesMenu.classList.remove('active-menu');
         });
     });
-    previousMenu.forEach((elemet) => {
+    previousMenu.forEach(function (elemet) {
         elemet.addEventListener('click', function () {
             mainMenu.classList.add('active-menu');
             spasMenu.classList.remove('active-menu');
@@ -358,12 +358,12 @@ document.addEventListener('DOMContentLoaded', function () {
         prestacionesMenu.classList.remove('active-menu');
         menuBackdrop.classList.remove('isOpenBackdrop');
     });
-    accordionMenu.forEach((elemet, idx) => {
-        elemet.addEventListener('click', () => {
-            showContentMenu.forEach((el) => {
+    accordionMenu.forEach(function (elemet, idx) {
+        elemet.addEventListener('click', function () {
+            showContentMenu.forEach(function (el) {
                 el.classList.remove('active-acorddion');
             });
-            accordionImg.forEach((el) => {
+            accordionImg.forEach(function (el) {
                 el.classList.remove('rotate-90');
             });
             showContentMenu[idx].classList.add('active-acorddion');
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         if (window.scrollY > calculateBannerHeight()) {
             navbar.classList.add('white-mode');
-            navLinks.forEach((link) => {
+            navLinks.forEach(function (link) {
                 link.classList.remove('link--white');
             });
             navLogo.src = '/dist/assets/icons/logofooter.svg';
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             navbar.classList.remove('white-mode');
-            navLinks.forEach((link) => {
+            navLinks.forEach(function (link) {
                 link.classList.add('link--white');
             });
             navLogo.src = '/dist/assets/icons/logo-navbar.svg';
@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     function calculateBannerHeight() {
-        const bannerHeight = banner.offsetHeight;
+        var bannerHeight = banner.offsetHeight;
         return bannerHeight;
     }
 });

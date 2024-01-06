@@ -172,7 +172,7 @@
     span {
       margin-bottom: 2px;
       &:hover {
-        margin-bottom: 1px;
+        margin-bottom:0px;
         border-bottom: 2px solid $white;
       }
     }
