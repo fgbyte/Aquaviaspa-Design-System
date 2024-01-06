@@ -13591,7 +13591,7 @@ p {
 .dropdown-podemos summary::after {
   content: url("/dist/assets/icons/dropdown-podemos-triangle.svg");
   position: absolute;
-  bottom: -20px;
+  bottom: -8px;
 }
 .dropdown-podemos .details-inner {
   max-height: 0;
@@ -16625,6 +16625,11 @@ p {
 }
 @media (min-width: 992px) {
   .intro__container {
+    padding: 85px 25px 100px 25px;
+  }
+}
+@media (min-width: 992px) {
+  .intro__container {
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -16978,6 +16983,11 @@ p {
 .py-16 {
   padding-top: 8.4375rem;
   padding-bottom: 8.4375rem;
+}
+
+.py-88 {
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,6 +10,9 @@
         align-items: center;
         gap: 25px;
         padding: 60px 25px;
+        @include media-breakpoint-up(lg) {
+            padding: 85px 25px 100px 25px;
+        }
         @include desk-space;
     
         &__text {
