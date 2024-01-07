@@ -1,3 +1,4 @@
+export const home = `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1934,3 +1935,4 @@
 </body>
 
 </html>
+`
