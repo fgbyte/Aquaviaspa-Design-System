@@ -42,7 +42,7 @@
   }
 
   @include media-breakpoint-up(lg) {
-    justify-content: start;
+    justify-content: flex-start;
     width: 90%;
     gap: 90px;
   }

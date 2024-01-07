@@ -14,7 +14,7 @@
     padding: 45px $pxMobile;
     display: flex;
     flex-direction: column;
-    justify-content: end; //abajo
+    justify-content: flex-end; //abajo
     gap: 25px;
 
     h1 {
@@ -65,7 +65,7 @@
       }
 
       .btn-cta--lg {
-        align-self: end;
+        align-self: flex-end;
       }
     }
   }
@@ -87,7 +87,7 @@
     }
 
     .btn-cta--lg {
-      align-self: start;
+      align-self: flex-start;
     }
   }
 }

@@ -276,7 +276,7 @@
 
   @include media-breakpoint-up(lg) {
     font-size: 18px;
-    align-items: end;
+    align-items: flex-end;
     gap: 23px;
 
     &::before {

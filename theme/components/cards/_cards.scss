@@ -56,7 +56,7 @@
       }
 
       &--price {
-        align-self: end;
+        align-self: flex-end;
         p {
           color: $black;
           font-weight: $textBold;
@@ -139,7 +139,7 @@
     img {
       width: 21px;
       height: 21px;
-      align-self: end;
+      align-self: flex-end;
 
       @include media-breakpoint-up(lg) {
         display: none;
@@ -360,7 +360,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   @include media-breakpoint-up(special) {
     width: 50%;
@@ -512,7 +512,7 @@
     }
 
     a {
-      align-self: end;
+      align-self: flex-end;
       img {
         width: 20px;
         height: 20px;
@@ -627,7 +627,7 @@
     }
 
     a {
-      align-self: end;
+      align-self: flex-end;
       img {
         width: 20px;
         height: 20px;
@@ -876,7 +876,7 @@
     gap: 50px;
 
     &__inputs {
-      justify-content: start;
+      justify-content: flex-start;
       gap: 16px;
     }
   }

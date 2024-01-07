@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch theme:dist/css",
+    "sass": "sass --watch --no-source-map theme:dist/css",
+    "postcss": "postcss dist/css/*.css --use autoprefixer -d dist/css/",
     "ts": "tsc --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -28,6 +29,8 @@
     "@storybook/html-vite": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
     "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "prop-types": "^15.8.1",
     "sass": "^1.69.4",
     "storybook": "^7.5.3",

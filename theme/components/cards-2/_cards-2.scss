@@ -298,7 +298,7 @@
 
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-end;
     justify-content: flex-start;
     text-align: start;
 
@@ -416,7 +416,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     min-width: 644px;
     width: 644px;
     height: 100%;
@@ -438,7 +438,7 @@
       width: 177px;
       height: auto;
       align-self: center;
-      justify-self: start;
+      justify-self: flex-start;
       margin-bottom: auto;
       margin-top: 60px;
       opacity: 0;
