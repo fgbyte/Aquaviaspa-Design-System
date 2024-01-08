@@ -1,15 +1,5 @@
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/css/main.css">
-    <script src="/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body class="mt-4 d-flex flex-column gap-4">
-
-    //blog grid
-    <section class="spas-grid">
+export const spasGrid = `
+<section class="spas-grid">
         <div class="dropdown-filters">
             <div class="dropdown">
                 <a class="link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -279,9 +269,4 @@
             </a>
         </div>
     </section>
-
-    <!-- ScriptJS -->
-    <script src="/dist/js/main.js"></script>
-</body>
-
-</html>
+`
