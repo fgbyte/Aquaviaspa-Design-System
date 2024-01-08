@@ -13,11 +13,15 @@
   min-width: 349px;
   overflow: hidden;
   transition: all $delay linear;
-  padding: 35px 50px;
+  padding: 10px 20px;
   text-decoration: none;
   gap: 20px;
 
+  @include media-breakpoint-up(lg) {
+    padding: 35px 50px;
 
+
+  }
   &::before {
     content: url('/dist/assets/icons/bx-plus-white.svg');
     position: absolute;
@@ -34,13 +38,6 @@
     }
 
   }
-
-  /* &:hover {
-
-    &::before {
-      rotate: 45deg;
-    }
-  } */
 
   &::after {
     content: '';

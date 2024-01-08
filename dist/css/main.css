@@ -14555,15 +14555,14 @@ p {
   min-width: 349px;
   overflow: hidden;
   transition: all 0.4s linear;
-  padding: 35px 50px;
+  padding: 10px 20px;
   text-decoration: none;
   gap: 20px;
-  /* &:hover {
-
-    &::before {
-      rotate: 45deg;
-    }
-  } */
+}
+@media (min-width: 992px) {
+  .card-category-blog {
+    padding: 35px 50px;
+  }
 }
 .card-category-blog::before {
   content: url("/dist/assets/icons/bx-plus-white.svg");
@@ -15853,6 +15852,8 @@ p {
   font-weight: 500;
   text-align: center;
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (min-width: 992px) {
   .section-beneficios h2, .section-beneficios .h2 {
