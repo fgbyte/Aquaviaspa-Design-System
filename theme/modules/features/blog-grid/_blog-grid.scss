@@ -23,3 +23,11 @@
     }
   }
 }
+
+.dropdown-filters {
+  display: flex;
+  gap: 45px;
+  @include media-breakpoint-up(lg) {
+    gap: 90px;
+  }
+}

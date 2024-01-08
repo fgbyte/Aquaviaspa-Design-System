@@ -1,0 +1,41 @@
+@use "../../../globals";
+@use "../../../mixins";
+
+.spas-grid {
+    @include desk-space;
+    padding: 90px $pxMobile;
+    @include media-breakpoint-up(lg) {
+        padding: 90px 0px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    &__cards {
+        display: grid;
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+          @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+          gap: 20px;
+
+          .card-spa {
+            margin-bottom: 20px;
+          }
+    }
+
+    .dropdown-filters {
+        flex-wrap: wrap;//tiene que ser asi, xq de ponerle overflow-x se pierde el menu del dropdown
+        .dropdown-toggle {
+            font-weight: $textRegular
+        }
+
+        .spas-grid__filter--link {
+            font-size: 18px;
+            font-weight: $textRegular;
+            text-transform: none;
+        }
+    }
+}
