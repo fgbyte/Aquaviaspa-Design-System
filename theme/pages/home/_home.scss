@@ -2,11 +2,22 @@
 @use "../../mixins";
 
 .py-16 {
-    padding-top: 8.4375rem;
-    padding-bottom: 8.4375rem;
+    padding-top: 6.4375rem;
+    padding-bottom: 2.4375rem;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 8.4375rem;
+        padding-bottom: 3.4375rem;
+    }
 }
 
 .py-88 {
-    padding-top: 88px;
-    padding-bottom: 88px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+
 }

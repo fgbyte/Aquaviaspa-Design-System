@@ -14557,15 +14557,14 @@ p {
   min-width: 349px;
   overflow: hidden;
   transition: all 0.4s linear;
-  padding: 35px 50px;
+  padding: 10px 20px;
   text-decoration: none;
   gap: 20px;
-  /* &:hover {
-
-    &::before {
-      rotate: 45deg;
-    }
-  } */
+}
+@media (min-width: 992px) {
+  .card-category-blog {
+    padding: 35px 50px;
+  }
 }
 .card-category-blog::before {
   content: url("/dist/assets/icons/bx-plus-white.svg");
@@ -14874,7 +14873,7 @@ p {
   width: 644px;
   height: 100%;
   margin-left: 20px;
-  padding: 20px 40px;
+  padding: 20px 0px;
   transition: all 0.4s linear;
   color: #fff;
   overflow: hidden;
@@ -15855,6 +15854,8 @@ p {
   font-weight: 500;
   text-align: center;
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (min-width: 992px) {
   .section-beneficios h2, .section-beneficios .h2 {
@@ -15919,7 +15920,7 @@ p {
   width: 644px;
   height: 100%;
   margin-left: 20px;
-  padding: 20px 40px;
+  padding: 20px 0px;
   transition: all 0.4s linear;
   color: #fff;
   overflow: hidden;
@@ -17026,11 +17027,23 @@ p {
 }
 
 .py-16 {
-  padding-top: 8.4375rem;
-  padding-bottom: 8.4375rem;
+  padding-top: 6.4375rem;
+  padding-bottom: 2.4375rem;
+}
+@media (min-width: 992px) {
+  .py-16 {
+    padding-top: 8.4375rem;
+    padding-bottom: 3.4375rem;
+  }
 }
 
 .py-88 {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .py-88 {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
 }
