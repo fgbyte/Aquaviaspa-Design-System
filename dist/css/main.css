@@ -14871,7 +14871,7 @@ p {
   width: 644px;
   height: 100%;
   margin-left: 20px;
-  padding: 20px 40px;
+  padding: 20px 0px;
   transition: all 0.4s linear;
   color: #fff;
   overflow: hidden;
@@ -15918,7 +15918,7 @@ p {
   width: 644px;
   height: 100%;
   margin-left: 20px;
-  padding: 20px 40px;
+  padding: 20px 0px;
   transition: all 0.4s linear;
   color: #fff;
   overflow: hidden;
