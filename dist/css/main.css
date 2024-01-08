@@ -16968,11 +16968,23 @@ p {
 }
 
 .py-16 {
-  padding-top: 8.4375rem;
-  padding-bottom: 8.4375rem;
+  padding-top: 6.4375rem;
+  padding-bottom: 2.4375rem;
+}
+@media (min-width: 992px) {
+  .py-16 {
+    padding-top: 8.4375rem;
+    padding-bottom: 8.4375rem;
+  }
 }
 
 .py-88 {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .py-88 {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
 }
