@@ -16711,6 +16711,12 @@ p {
   font-size: 36px;
   font-weight: 600;
   margin: 0;
+  line-height: 44px;
+}
+@media (min-width: 992px) {
+  .intro__container__text blockquote {
+    line-height: unset;
+  }
 }
 .intro__container__text blockquote span {
   display: block;

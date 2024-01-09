@@ -24,6 +24,10 @@
                 font-size: 36px;
                 font-weight: $textSemibold;
                 margin: 0;
+                line-height: 44px;
+                @include media-breakpoint-up(lg) {
+                    line-height: unset;
+                }
         
                 span {
                     display: block;
