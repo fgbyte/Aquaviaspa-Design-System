@@ -60,7 +60,7 @@
 
     .card-prestacion {
         min-width: 100%;
-        min-height: 508px;
+        min-height: 490px;
 
         @include media-breakpoint-up(special) {
             min-width: auto;
@@ -88,7 +88,7 @@
 }
 
 .guias-prestaciones-cards {
-    margin-top: 30px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     gap: 8px;
