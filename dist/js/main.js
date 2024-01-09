@@ -9,6 +9,42 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+var accseoriosSlider = document.querySelectorAll(".accseorios-slider");
+var guiasAccseoriosSlider = document.querySelectorAll(".guias-accseorios-slider");
+accseoriosSlider.forEach(function (carousel, carouselIndex) {
+    var controls = guiasAccseoriosSlider[carouselIndex];
+    var controlItems = controls.querySelectorAll(".controls-accseorios-slider");
+    setActiveControl(0);
+    function setActiveControl(index) {
+        controlItems.forEach(function (item, i) {
+            if (i === index) {
+                item.classList.add("control-active");
+            }
+            else {
+                item.classList.remove("control-active");
+            }
+        });
+    }
+    controlItems.forEach(function (item, index) {
+        item.addEventListener("click", function () {
+            moveItems(index);
+        });
+    });
+    var moveItems = function (index) {
+        var cardWidth = carousel.querySelector(".card-accesorios");
+        if (cardWidth) {
+            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
+        }
+    };
+    carousel.addEventListener("scroll", function () {
+        var cardWidth = carousel.querySelector(".card-accesorios");
+        if (carousel === null || !cardWidth)
+            return;
+        var scrollPos = carousel.scrollLeft;
+        var activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 20));
+        setActiveControl(activeControlIndex);
+    });
+});
 //banner-ficha
 window.addEventListener('resize', adjustBannerFicha);
 function adjustBannerFicha() {

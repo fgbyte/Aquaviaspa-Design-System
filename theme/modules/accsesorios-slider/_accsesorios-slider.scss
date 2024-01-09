@@ -1,0 +1,96 @@
+@use "../../globals";
+@use "../../mixins";
+
+
+.section-slider-accsesorios {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 20px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 9.5625rem 20px;
+
+  }
+
+  & .section-slider-accsesorios__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 64px;
+
+    }
+
+    & h3 {
+      font-size: 28px;
+      font-weight: $textMedium;
+
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: $textRegular;
+      text-wrap: wrap;
+      text-align: center;
+    }
+
+  }
+
+  & .accseorios-slider {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 auto;
+
+    }
+
+    & .card-accesorios {
+      min-width: fit-content;
+      height: fit-content;
+
+    }
+
+    & .arrow-accesorio {
+      display: none;
+      margin-top: 72px;
+      cursor: pointer;
+
+      @include media-breakpoint-up(xxl) {
+        display: block;
+      }
+    }
+  }
+}
+
+
+/*Slider*/
+.card-accesorios {
+  scroll-snap-align: start;
+}
+
+
+.guias-accseorios-slider {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 43px;
+}
+
+.controls-accseorios-slider {
+  width: 40px;
+  height: 6px;
+  background-color: #C7C6BE;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.control-active {
+  background-color: #464646;
+}
