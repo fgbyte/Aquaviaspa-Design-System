@@ -14188,6 +14188,11 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 1158px) {
+  .card-prestacion__text {
+    justify-content: center;
+  }
+}
 .card-prestacion__text p {
   margin-bottom: 25px;
   font-size: 16px;
@@ -14195,7 +14200,7 @@ p {
 }
 @media (min-width: 1158px) {
   .card-prestacion__text p {
-    margin: 0px;
+    margin-top: 0px;
     max-width: 75%;
   }
 }

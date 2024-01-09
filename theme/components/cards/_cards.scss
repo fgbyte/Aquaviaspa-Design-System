@@ -509,13 +509,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include media-breakpoint-up(special) {
+      justify-content: center;
+    }
 
     p {
       margin-bottom: 25px;
       font-size: 16px;
       max-width: 100%;
       @include media-breakpoint-up(special) {
-        margin: 0px;
+        margin-top: 0px;
         max-width: 75%;
       }
       span {
