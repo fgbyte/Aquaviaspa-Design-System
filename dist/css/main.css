@@ -15531,6 +15531,7 @@ p {
   height: 90svh;
 }
 .hero-cta--left .hero-cta__text--lg {
+  gap: 44px;
   bottom: 16%;
   left: 13%;
   right: auto;

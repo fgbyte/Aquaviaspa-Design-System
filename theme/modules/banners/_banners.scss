@@ -74,12 +74,14 @@
 .hero-cta--left {
   height: 90svh;
   .hero-cta__text--lg {
+    gap: 44px;
     bottom: 16%;
     left: 13%;
     right: auto;
 
     h1 {
       font-size: 58px;
+      // line-height: 38px;
       span {
         font-size: 68px;
         display: block;
