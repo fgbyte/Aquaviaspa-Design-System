@@ -7,15 +7,16 @@
   gap: 4px;
   position: relative;
 
-  &:hover {
-    gap: 0;
-  }
+
 
   @include media-breakpoint-up(lg) {
     display: flex;
     gap: 4px;
     flex-direction: row;
 
+    &:hover {
+      gap: 0;
+    }
   }
 }
 
@@ -58,6 +59,7 @@
       height: 80vh;
 
     }
+
     @include media-breakpoint-up(xxxl) {
       padding: 86px 147px;
 
@@ -127,14 +129,16 @@
       opacity: 1;
 
 
-      .container-arrow-white{
+      .container-arrow-white {
         top: 1;
+
         @include media-breakpoint-up(lg) {
           top: 4;
-          }
+        }
       }
+
       @include media-breakpoint-up(lg) {
-      font-size: 18px;
+        font-size: 18px;
 
         display: block;
       }
