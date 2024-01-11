@@ -14355,6 +14355,10 @@ p {
   border-bottom: 2px solid;
 }
 
+.prestaciones__filter .link:hover, .prestaciones__filter .link-menu:hover {
+  border-bottom: 2px solid #000;
+}
+
 .dropdown {
   width: fit-content;
 }
@@ -17751,7 +17755,7 @@ p {
     justify-content: center;
   }
 }
-@media (min-width: 992px) and (min-width: 1700px) {
+@media (min-width: 992px) and (min-width: 1900px) {
   .intro__container {
     justify-content: start;
   }
