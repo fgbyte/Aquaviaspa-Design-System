@@ -360,11 +360,15 @@
 }
 
 .header-navbar .header-navbar__nav ul li .link {
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .header-navbar .header-navbar__nav ul li .link:hover {
   border-bottom: 2px solid;
+}
+
+.prestaciones__filter .link {
+  border-bottom: 2px solid transparent;
 }
 
 .prestaciones__filter .link:hover {

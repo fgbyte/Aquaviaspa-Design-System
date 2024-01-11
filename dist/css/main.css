@@ -14348,11 +14348,15 @@ p {
 }
 
 .header-navbar .header-navbar__nav ul li .link, .header-navbar .header-navbar__nav ul li .link-menu {
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .header-navbar .header-navbar__nav ul li .link:hover, .header-navbar .header-navbar__nav ul li .link-menu:hover {
   border-bottom: 2px solid;
+}
+
+.prestaciones__filter .link, .prestaciones__filter .link-menu {
+  border-bottom: 2px solid transparent;
 }
 
 .prestaciones__filter .link:hover, .prestaciones__filter .link-menu:hover {
