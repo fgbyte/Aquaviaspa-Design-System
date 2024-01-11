@@ -16251,7 +16251,7 @@ p {
 
 .footer-top {
   display: flex;
-  min-height: 630px;
+  min-height: 557px;
   margin-bottom: -1.5rem;
   text-align: center;
 }
@@ -16271,8 +16271,8 @@ p {
 }
 .footer-top article .cont-img {
   max-width: 200px;
-  margin-bottom: 3.5rem;
-  margin-top: -160px;
+  margin-bottom: 37px;
+  margin-top: -130px;
 }
 @media (min-width: 992px) {
   .footer-top article .cont-img {
@@ -16281,7 +16281,7 @@ p {
   }
 }
 .footer-top article .cont-img img {
-  height: 220px;
+  height: 166px;
 }
 @media (min-width: 992px) {
   .footer-top article .cont-img img {
