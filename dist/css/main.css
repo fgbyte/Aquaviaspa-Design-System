@@ -15036,7 +15036,7 @@ p {
 @media (min-width: 992px) {
   .card-transform {
     width: 50%;
-    height: auto;
+    height: 80vh;
   }
 }
 .card-transform .card-transform__card-inside {
@@ -15056,8 +15056,8 @@ p {
 @media (min-width: 992px) {
   .card-transform .card-transform__card-inside {
     margin-left: 100px;
-    padding: 86px 147px;
-    height: 786px;
+    padding: 30px 147px;
+    height: 80vh;
   }
 }
 .card-transform .card-transform__card-inside .card-transform__card-inside--img {
@@ -15067,7 +15067,7 @@ p {
   align-self: center;
   justify-self: flex-start;
   margin-bottom: auto;
-  margin-top: 60px;
+  margin-top: 30px;
   opacity: 0;
   z-index: 10;
 }
@@ -15110,7 +15110,7 @@ p {
   .card-transform:hover .card-transform__card-inside p {
     max-height: 300px;
     opacity: 1;
-    margin-bottom: 58px;
+    margin-bottom: 40px;
   }
   .card-transform:hover {
     width: 100%;
@@ -16072,10 +16072,20 @@ p {
 }
 
 .transform-module {
+  display: flex;
+  flex-direction: column;
   gap: 4px;
+  position: relative;
 }
 .transform-module:hover {
   gap: 0;
+}
+@media (min-width: 992px) {
+  .transform-module {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+  }
 }
 
 .card-transform-right {
@@ -16091,7 +16101,7 @@ p {
   .card-transform-right {
     right: 0;
     width: 50%;
-    height: auto;
+    height: 80vh;
     display: flex;
     justify-content: flex-end;
   }
@@ -16113,8 +16123,8 @@ p {
 @media (min-width: 992px) {
   .card-transform-right .card-transform__card-inside {
     margin-right: 20px;
-    padding: 86px 147px;
-    height: 786px;
+    padding: 30px 147px;
+    height: 80vh;
   }
 }
 @media (min-width: 1200px) {
@@ -16134,7 +16144,7 @@ p {
   align-self: center;
   justify-self: flex-start;
   margin-bottom: auto;
-  margin-top: 60px;
+  margin-top: 30px;
   opacity: 0;
 }
 .card-transform-right .card-transform__card-inside h3, .card-transform-right .card-transform__card-inside .h3 {
@@ -16177,7 +16187,7 @@ p {
   .card-transform-right:hover .card-transform__card-inside p {
     max-height: 300px;
     opacity: 1;
-    margin-bottom: 58px;
+    margin-bottom: 40px;
   }
   .card-transform-right:hover {
     position: absolute;
