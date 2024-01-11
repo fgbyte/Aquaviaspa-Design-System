@@ -58,6 +58,10 @@
       height: 80vh;
 
     }
+    @include media-breakpoint-up(xxxl) {
+      padding: 86px 147px;
+
+    }
 
     @include media-breakpoint-up(xl) {
       margin-right: 70px;
@@ -72,13 +76,19 @@
 
     .card-transform__card-inside--img {
       position: relative;
-      width: 177px;
+      width: 157px;
       height: auto;
       align-self: center;
       justify-self: flex-start;
       margin-bottom: auto;
       margin-top: 30px;
       opacity: 0;
+
+      @include media-breakpoint-up(xxxl) {
+        margin-top: 40px;
+        width: 177px;
+
+      }
 
     }
 
@@ -113,7 +123,6 @@
 
       @include media-breakpoint-up(lg) {
         display: block;
-        margin-bottom: 28px;
       }
     }
 
@@ -131,7 +140,11 @@
       opacity: 1;
       margin-bottom: 40px;
 
-  
+      @include media-breakpoint-up(xxxl) {
+        margin-bottom: 58px;
+
+      }
+
     }
 
     &:hover {
