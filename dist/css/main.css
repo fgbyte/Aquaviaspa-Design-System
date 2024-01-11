@@ -14514,13 +14514,13 @@ p {
 .dropdown-podemos summary span {
   margin-bottom: 2px;
 }
-.dropdown-podemos summary span:hover {
+.dropdown-podemos summary:hover span {
   margin-bottom: 0px;
   border-bottom: 2px solid #fff;
 }
 @media (min-width: 992px) {
   .dropdown-podemos summary {
-    height: 184px;
+    height: 234px;
     font-size: 38px;
   }
 }
@@ -14535,7 +14535,7 @@ p {
 .dropdown-podemos .details-inner {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s ease;
+  transition: max-height 4s ease;
   background-color: #575757;
   color: #fff;
 }
@@ -14543,7 +14543,7 @@ p {
   display: none;
 }
 .dropdown-podemos[open] .details-inner {
-  transition: all 2s linear;
+  transition: all 4s linear;
   max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
 }
 

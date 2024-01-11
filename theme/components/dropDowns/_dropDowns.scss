@@ -171,14 +171,16 @@
 
     span {
       margin-bottom: 2px;
-      &:hover {
-        margin-bottom:0px;
+    }
+    &:hover {
+      span {
+        margin-bottom: 0px;
         border-bottom: 2px solid $white;
       }
     }
 
     @include media-breakpoint-up(lg) {
-      height: 184px;
+      height: 234px;
       font-size: 38px;
     }
 
@@ -196,7 +198,7 @@
   .details-inner {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 2s ease;
+    transition: max-height 4s ease;
     background-color: $grayText;
     color: $white;
   }
@@ -206,7 +208,7 @@
       display: none;
     }
     .details-inner {
-      transition: all 2s linear;
+      transition: all 4s linear;
       max-height: 2000px; /* Ajusta este valor según el contenido de tu details */
       //TODO: hacer que se abra suavemente siempre
     }
