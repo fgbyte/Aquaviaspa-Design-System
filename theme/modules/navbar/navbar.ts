@@ -1,3 +1,4 @@
+
 //navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('#navbar') as HTMLElement;
@@ -49,10 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
   closeMenu.forEach((elemet) => {
     elemet.addEventListener('click', function () {
       mainMenu.classList.remove('active-menu');
-      menuBackdrop.classList.remove('isOpenBackdrop')
+      menuBackdrop.classList.remove('isOpenBackdrop');
       spasMenu.classList.remove('active-menu');
       swimspasMenu.classList.remove('active-menu');
       prestacionesMenu.classList.remove('active-menu');
+      showContentMenu.forEach((content) => content.classList.remove('active-acorddion'));
+      accordionImg.forEach((img) => img.classList.remove('rotate-90'));
     });
   })
   previousMenu.forEach((elemet) => {
@@ -61,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
       spasMenu.classList.remove('active-menu');
       swimspasMenu.classList.remove('active-menu');
       prestacionesMenu.classList.remove('active-menu');
+      showContentMenu.forEach((content) => content.classList.remove('active-acorddion'));
+      accordionImg.forEach((img) => img.classList.remove('rotate-90'));
     });
   })
 
@@ -69,21 +74,27 @@ document.addEventListener('DOMContentLoaded', function () {
     spasMenu.classList.remove('active-menu');
     swimspasMenu.classList.remove('active-menu');
     prestacionesMenu.classList.remove('active-menu');
-    menuBackdrop.classList.remove('isOpenBackdrop')
+    menuBackdrop.classList.remove('isOpenBackdrop');
+    showContentMenu.forEach((content) => content.classList.remove('active-acorddion'));
+    accordionImg.forEach((img) => img.classList.remove('rotate-90'));
   });
 
-  accordionMenu.forEach((elemet, idx) => {
-
-    elemet.addEventListener('click', () => {
-      showContentMenu.forEach((el) => {
-        el.classList.remove('active-acorddion');
-      })
-      accordionImg.forEach((el) => {
-        el.classList.remove('rotate-90');
-      })
-      showContentMenu[idx].classList.add('active-acorddion');
-      accordionImg[idx].classList.add('rotate-90')
-    })
+  accordionMenu.forEach((element, idx) => {
+    element.addEventListener('click', () => {
+      if (showContentMenu[idx].classList.contains('active-acorddion')) {
+        showContentMenu[idx].classList.remove('active-acorddion');
+        accordionImg[idx].classList.remove('rotate-90');
+      } else {
+        showContentMenu.forEach((el, index) => {
+          if (index !== idx) {
+            el.classList.remove('active-acorddion');
+            accordionImg[index].classList.remove('rotate-90');
+          }
+        });
+        showContentMenu[idx].classList.add('active-acorddion');
+        accordionImg[idx].classList.add('rotate-90');
+      }
+    });
   })
 
   window.addEventListener('scroll', function () {
@@ -109,4 +120,3 @@ document.addEventListener('DOMContentLoaded', function () {
     return bannerHeight - navbarHeight;
   }
 });
-
