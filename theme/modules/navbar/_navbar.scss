@@ -6,8 +6,17 @@
   position: fixed;
   inset: auto 0;
   z-index: 100;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #e5e5e5;
 
+  & .link-menu {
+    border-bottom: 2px solid transparent;
+
+    transition: all $delay linear;
+
+    &:hover {
+      border-bottom: 2px solid $black;
+    }
+  }
 
   & .header-navbar__nav {
     display: flex;
@@ -36,7 +45,7 @@
 
       }
 
-      & #menu-burger {
+      & .menu-burger {
         order: 2;
       }
 
@@ -44,7 +53,7 @@
         gap: 45px;
         width: auto;
 
-        & #menu-burger {
+        & .menu-burger {
           order: 0;
         }
 
@@ -99,15 +108,15 @@
   & .left-menu__header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #d1d1d1;
-    padding: 29px 52px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 42px 52px;
 
     .close-menu {
       order: 2;
     }
 
     @include media-breakpoint-up(xl) {
-      padding: 29px 89px;
+      padding: 42px 89px;
       padding-bottom: 84px;
 
       gap: 54px;
@@ -120,15 +129,15 @@
   }
 
   & .secundary-menu__header {
-    padding: 29px 52px;
+    padding: 42px 52px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid #e5e5e5;
     display: flex;
     flex-direction: column;
     gap: 60px;
 
     @include media-breakpoint-up(xl) {
-      padding: 29px 89px;
+      padding: 42px 89px;
       padding-bottom: 24px;
     }
 
@@ -155,27 +164,30 @@
     display: flex;
     flex-direction: column;
     gap: 46px;
-    border-bottom: 1px solid #d1d1d1;
-    padding: 29px 52px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 42px 52px;
 
     @include media-breakpoint-up(xl) {
-      padding: 29px 89px;
+      padding: 42px 89px;
     }
 
     & .link-menu-arrow {
       font-size: 20px;
       cursor: pointer;
+
+
     }
   }
 
   & .last-other-menu {
     display: flex;
     flex-direction: column;
-    gap: 46px;
-    padding: 29px 52px;
+    gap: 29px;
+    padding: 42px 52px;
+    margin-bottom: 100px;
 
     @include media-breakpoint-up(xl) {
-      padding: 29px 89px;
+      padding: 42px 89px;
     }
 
     & .link-menu-arrow {
@@ -186,16 +198,16 @@
   & .other-menu-mid {
     display: flex;
     flex-direction: column;
-    gap: 44px;
-    padding: 29px 52px;
-    border-bottom: 1px solid #d1d1d1;
+    gap: 42px;
+    padding: 42px 52px;
+    border-bottom: 1px solid #e5e5e5;
 
     & .font-size-16 {
       font-size: 16px;
     }
 
     @include media-breakpoint-up(xl) {
-      padding: 29px 89px;
+      padding: 42px 89px;
     }
 
     & .link-menu-arrow {
@@ -227,7 +239,7 @@
 .accordion-other-menu {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #e5e5e5;
   padding: 29px 0;
   padding-bottom: 0px;
 
@@ -267,13 +279,13 @@
 .active-acorddion {
   visibility: visible;
   max-height: 400px;
-  padding: 29px 52px;
+  padding: 42px 52px;
   margin-top: 20px;
   margin-bottom: 20px;
   opacity: 1;
 
   @include media-breakpoint-up(xl) {
-    padding: 29px 89px;
+    padding: 42px 89px;
   }
 }
 
@@ -288,6 +300,8 @@
 .previous-menu,
 .accordion-img {
   height: 20px;
+  transition: all $delay linear;
+
 }
 
 .rotate-90 {
@@ -297,6 +311,8 @@
 
 .close-menu {
   width: 17;
+  transition: all $delay linear;
+
 
   @include media-breakpoint-up(sm) {
     width: 23px;

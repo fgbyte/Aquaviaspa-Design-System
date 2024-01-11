@@ -17133,7 +17133,6 @@ p {
   flex-direction: column;
   gap: 26px;
   padding: 0 24px;
-  scroll-snap-type: x, mandatory;
 }
 .top-ventas__title h3, .top-ventas__title .h3 {
   margin: 0px;
@@ -17145,6 +17144,7 @@ p {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+  scroll-snap-type: x mandatory;
 }
 @media (min-width: 992px) {
   .top-ventas {
@@ -17788,7 +17788,14 @@ p {
   position: fixed;
   inset: auto 0;
   z-index: 100;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header-navbar .link-menu {
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s linear;
+}
+.header-navbar .link-menu:hover {
+  border-bottom: 2px solid #000;
 }
 .header-navbar .header-navbar__nav {
   display: flex;
@@ -17816,7 +17823,7 @@ p {
 .header-navbar .header-navbar__nav div img {
   cursor: pointer;
 }
-.header-navbar .header-navbar__nav div #menu-burger {
+.header-navbar .header-navbar__nav div .menu-burger {
   order: 2;
 }
 @media (min-width: 1200px) {
@@ -17824,7 +17831,7 @@ p {
     gap: 45px;
     width: auto;
   }
-  .header-navbar .header-navbar__nav div #menu-burger {
+  .header-navbar .header-navbar__nav div .menu-burger {
     order: 0;
   }
 }
@@ -17874,15 +17881,15 @@ p {
 .left-menu .left-menu__header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #d1d1d1;
-  padding: 29px 52px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 42px 52px;
 }
 .left-menu .left-menu__header .close-menu {
   order: 2;
 }
 @media (min-width: 1200px) {
   .left-menu .left-menu__header {
-    padding: 29px 89px;
+    padding: 42px 89px;
     padding-bottom: 84px;
     gap: 54px;
     justify-content: start;
@@ -17892,16 +17899,16 @@ p {
   }
 }
 .left-menu .secundary-menu__header {
-  padding: 29px 52px;
+  padding: 42px 52px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
 @media (min-width: 1200px) {
   .left-menu .secundary-menu__header {
-    padding: 29px 89px;
+    padding: 42px 89px;
     padding-bottom: 24px;
   }
 }
@@ -17923,12 +17930,12 @@ p {
   display: flex;
   flex-direction: column;
   gap: 46px;
-  border-bottom: 1px solid #d1d1d1;
-  padding: 29px 52px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 42px 52px;
 }
 @media (min-width: 1200px) {
   .left-menu .other-menu {
-    padding: 29px 89px;
+    padding: 42px 89px;
   }
 }
 .left-menu .other-menu .link-menu-arrow {
@@ -17938,12 +17945,13 @@ p {
 .left-menu .last-other-menu {
   display: flex;
   flex-direction: column;
-  gap: 46px;
-  padding: 29px 52px;
+  gap: 29px;
+  padding: 42px 52px;
+  margin-bottom: 100px;
 }
 @media (min-width: 1200px) {
   .left-menu .last-other-menu {
-    padding: 29px 89px;
+    padding: 42px 89px;
   }
 }
 .left-menu .last-other-menu .link-menu-arrow {
@@ -17952,16 +17960,16 @@ p {
 .left-menu .other-menu-mid {
   display: flex;
   flex-direction: column;
-  gap: 44px;
-  padding: 29px 52px;
-  border-bottom: 1px solid #d1d1d1;
+  gap: 42px;
+  padding: 42px 52px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .left-menu .other-menu-mid .font-size-16 {
   font-size: 16px;
 }
 @media (min-width: 1200px) {
   .left-menu .other-menu-mid {
-    padding: 29px 89px;
+    padding: 42px 89px;
   }
 }
 .left-menu .other-menu-mid .link-menu-arrow {
@@ -17984,7 +17992,7 @@ p {
 .accordion-other-menu {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #e5e5e5;
   padding: 29px 0;
   padding-bottom: 0px;
 }
@@ -18023,14 +18031,14 @@ p {
 .active-acorddion {
   visibility: visible;
   max-height: 400px;
-  padding: 29px 52px;
+  padding: 42px 52px;
   margin-top: 20px;
   margin-bottom: 20px;
   opacity: 1;
 }
 @media (min-width: 1200px) {
   .active-acorddion {
-    padding: 29px 89px;
+    padding: 42px 89px;
   }
 }
 
@@ -18046,6 +18054,7 @@ p {
 .previous-menu,
 .accordion-img {
   height: 20px;
+  transition: all 0.4s linear;
 }
 
 .rotate-90 {
@@ -18055,6 +18064,7 @@ p {
 
 .close-menu {
   width: 17;
+  transition: all 0.4s linear;
 }
 @media (min-width: 576px) {
   .close-menu {

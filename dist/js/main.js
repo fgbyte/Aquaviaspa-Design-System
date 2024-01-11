@@ -377,6 +377,8 @@ document.addEventListener('DOMContentLoaded', function () {
             spasMenu.classList.remove('active-menu');
             swimspasMenu.classList.remove('active-menu');
             prestacionesMenu.classList.remove('active-menu');
+            showContentMenu.forEach(function (content) { return content.classList.remove('active-acorddion'); });
+            accordionImg.forEach(function (img) { return img.classList.remove('rotate-90'); });
         });
     });
     previousMenu.forEach(function (elemet) {
@@ -385,6 +387,8 @@ document.addEventListener('DOMContentLoaded', function () {
             spasMenu.classList.remove('active-menu');
             swimspasMenu.classList.remove('active-menu');
             prestacionesMenu.classList.remove('active-menu');
+            showContentMenu.forEach(function (content) { return content.classList.remove('active-acorddion'); });
+            accordionImg.forEach(function (img) { return img.classList.remove('rotate-90'); });
         });
     });
     menuBackdrop.addEventListener('click', function () {
@@ -393,17 +397,25 @@ document.addEventListener('DOMContentLoaded', function () {
         swimspasMenu.classList.remove('active-menu');
         prestacionesMenu.classList.remove('active-menu');
         menuBackdrop.classList.remove('isOpenBackdrop');
+        showContentMenu.forEach(function (content) { return content.classList.remove('active-acorddion'); });
+        accordionImg.forEach(function (img) { return img.classList.remove('rotate-90'); });
     });
-    accordionMenu.forEach(function (elemet, idx) {
-        elemet.addEventListener('click', function () {
-            showContentMenu.forEach(function (el) {
-                el.classList.remove('active-acorddion');
-            });
-            accordionImg.forEach(function (el) {
-                el.classList.remove('rotate-90');
-            });
-            showContentMenu[idx].classList.add('active-acorddion');
-            accordionImg[idx].classList.add('rotate-90');
+    accordionMenu.forEach(function (element, idx) {
+        element.addEventListener('click', function () {
+            if (showContentMenu[idx].classList.contains('active-acorddion')) {
+                showContentMenu[idx].classList.remove('active-acorddion');
+                accordionImg[idx].classList.remove('rotate-90');
+            }
+            else {
+                showContentMenu.forEach(function (el, index) {
+                    if (index !== idx) {
+                        el.classList.remove('active-acorddion');
+                        accordionImg[index].classList.remove('rotate-90');
+                    }
+                });
+                showContentMenu[idx].classList.add('active-acorddion');
+                accordionImg[idx].classList.add('rotate-90');
+            }
         });
     });
     window.addEventListener('scroll', function () {
