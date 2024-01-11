@@ -94,8 +94,13 @@
 
     & h3 {
       position: relative;
-      font-size: 58px;
+      font-size: 44px;
       text-transform: none;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 58px;
+
+      }
     }
 
     & p {
@@ -118,10 +123,19 @@
 
     & a {
       margin-bottom: 16px;
-      font-size: 18px;
+      font-size: 15px;
       opacity: 1;
 
+
+      .container-arrow-white{
+        top: 1;
+        @include media-breakpoint-up(lg) {
+          top: 4;
+          }
+      }
       @include media-breakpoint-up(lg) {
+      font-size: 18px;
+
         display: block;
       }
     }

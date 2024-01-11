@@ -15853,8 +15853,13 @@ p {
 }
 .card-transform .card-transform__card-inside h3, .card-transform .card-transform__card-inside .h3 {
   position: relative;
-  font-size: 58px;
+  font-size: 44px;
   text-transform: none;
+}
+@media (min-width: 992px) {
+  .card-transform .card-transform__card-inside h3, .card-transform .card-transform__card-inside .h3 {
+    font-size: 58px;
+  }
 }
 .card-transform .card-transform__card-inside p {
   position: relative;
@@ -15873,11 +15878,20 @@ p {
 }
 .card-transform .card-transform__card-inside a {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 15px;
   opacity: 1;
+}
+.card-transform .card-transform__card-inside a .container-arrow-white {
+  top: 1;
+}
+@media (min-width: 992px) {
+  .card-transform .card-transform__card-inside a .container-arrow-white {
+    top: 4;
+  }
 }
 @media (min-width: 992px) {
   .card-transform .card-transform__card-inside a {
+    font-size: 18px;
     display: block;
   }
 }
@@ -16937,8 +16951,13 @@ p {
 }
 .card-transform-right .card-transform__card-inside h3, .card-transform-right .card-transform__card-inside .h3 {
   position: relative;
-  font-size: 58px;
+  font-size: 44px;
   text-transform: none;
+}
+@media (min-width: 992px) {
+  .card-transform-right .card-transform__card-inside h3, .card-transform-right .card-transform__card-inside .h3 {
+    font-size: 58px;
+  }
 }
 .card-transform-right .card-transform__card-inside p {
   position: relative;
@@ -16958,11 +16977,20 @@ p {
 }
 .card-transform-right .card-transform__card-inside a {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 15px;
   opacity: 1;
+}
+.card-transform-right .card-transform__card-inside a .container-arrow-white {
+  top: 1;
+}
+@media (min-width: 992px) {
+  .card-transform-right .card-transform__card-inside a .container-arrow-white {
+    top: 4;
+  }
 }
 @media (min-width: 992px) {
   .card-transform-right .card-transform__card-inside a {
+    font-size: 18px;
     display: block;
   }
 }
