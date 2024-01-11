@@ -53,6 +53,9 @@
             flex-direction: row;
             gap: 190px;
             justify-content: center;
+            @include media-breakpoint-up(xxxl) {
+                justify-content: start;
+            }
     
             &__text {
                 max-width: 725px;
