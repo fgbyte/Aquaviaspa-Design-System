@@ -6,7 +6,6 @@
   flex-direction: column;
   gap: 26px;
   padding: 0 24px;
-  scroll-snap-type: x, mandatory;
 
   &__title {
     h3 {
@@ -21,6 +20,8 @@
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
   }
 
   @include media-breakpoint-up(lg) {
