@@ -300,6 +300,8 @@
 .previous-menu,
 .accordion-img {
   height: 20px;
+  transition: all $delay linear;
+
 }
 
 .rotate-90 {
@@ -309,6 +311,8 @@
 
 .close-menu {
   width: 17;
+  transition: all $delay linear;
+
 
   @include media-breakpoint-up(sm) {
     width: 23px;

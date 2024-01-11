@@ -18054,6 +18054,7 @@ p {
 .previous-menu,
 .accordion-img {
   height: 20px;
+  transition: all 0.4s linear;
 }
 
 .rotate-90 {
@@ -18063,6 +18064,7 @@ p {
 
 .close-menu {
   width: 17;
+  transition: all 0.4s linear;
 }
 @media (min-width: 576px) {
   .close-menu {
