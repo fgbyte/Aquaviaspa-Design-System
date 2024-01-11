@@ -16316,6 +16316,12 @@ p {
   gap: 19px;
   max-width: 920px;
   margin: auto;
+  padding-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .form-full-footer {
+    padding-bottom: 135px;
+  }
 }
 .form-full-footer label span {
   margin-bottom: 6px;

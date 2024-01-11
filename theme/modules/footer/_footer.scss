@@ -240,6 +240,11 @@
   gap: 19px;
   max-width: 920px;
   margin: auto;
+  padding-bottom: 100px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 135px;
+  }
+
   label span {
     margin-bottom: 6px;
     font-size: 18px;
@@ -266,7 +271,6 @@
     @include media-breakpoint-up(lg) {
       gap: 28px;
       flex-direction: row;
-
     }
 
 
