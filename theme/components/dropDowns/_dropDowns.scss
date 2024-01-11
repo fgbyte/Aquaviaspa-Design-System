@@ -166,7 +166,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140px;
+    height: 180px;
     position: relative;
 
     span {
@@ -180,7 +180,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      height: 234px;
+      height: 215px;
       font-size: 38px;
     }
 

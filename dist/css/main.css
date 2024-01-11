@@ -14508,7 +14508,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 140px;
+  height: 180px;
   position: relative;
 }
 .dropdown-podemos summary span {
@@ -14520,7 +14520,7 @@ p {
 }
 @media (min-width: 992px) {
   .dropdown-podemos summary {
-    height: 234px;
+    height: 215px;
     font-size: 38px;
   }
 }
@@ -16159,9 +16159,14 @@ p {
   margin-bottom: 19px;
 }
 .footer .footer__content .order-lg-1 p {
-  font-size: 16px;
+  font-size: 13px;
   margin: 0;
   color: #575757;
+}
+@media (min-width: 992px) {
+  .footer .footer__content .order-lg-1 p {
+    font-size: 16px;
+  }
 }
 @media (min-width: 992px) {
   .footer .footer__content .order-lg-1 {
@@ -16197,6 +16202,12 @@ p {
   margin-top: auto;
   justify-self: flex-end;
   width: fit-content;
+  padding-bottom: 57px;
+}
+@media (min-width: 992px) {
+  .footer .footer__content .order-lg-3 {
+    padding-bottom: 20px;
+  }
 }
 .footer .footer__content .order-lg-3 img {
   width: fit-content;
@@ -16224,8 +16235,14 @@ p {
 }
 .footer .footer-bootom div {
   color: #575757;
-  font-size: 14px;
-  letter-spacing: 0.7px;
+  font-size: 11px;
+  letter-spacing: 0.55px;
+  line-height: 16px;
+}
+@media (min-width: 992px) {
+  .footer .footer-bootom div {
+    font-size: 14px;
+  }
 }
 
 .margen-negative {
