@@ -22,6 +22,7 @@
 
 
   }
+
   &::before {
     content: url('/dist/assets/icons/bx-plus-white.svg');
     position: absolute;
@@ -405,7 +406,7 @@
 
   @include media-breakpoint-up(lg) {
     width: 50%;
-    height: auto;
+    height: 80vh;
 
   }
 
@@ -425,8 +426,8 @@
 
     @include media-breakpoint-up(lg) {
       margin-left: 100px;
-      padding: 86px 147px;
-      height: 786px;
+      padding: 30px 147px;
+      height: 80vh;
 
     }
 
@@ -437,9 +438,9 @@
       align-self: center;
       justify-self: flex-start;
       margin-bottom: auto;
-      margin-top: 60px;
+      margin-top: 30px;
       opacity: 0;
-       z-index: 10;
+      z-index: 10;
 
     }
 
@@ -491,7 +492,7 @@
     &:hover .card-transform__card-inside p {
       max-height: 300px;
       opacity: 1;
-      margin-bottom: 58px;
+      margin-bottom: 40px;
     }
 
     &:hover {
@@ -512,6 +513,7 @@
       transition: all $delay linear;
 
     }
+
     &:hover .card-transform__card-inside::before {
       content: "";
       position: absolute;
