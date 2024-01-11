@@ -58,6 +58,10 @@
       height: 80vh;
 
     }
+    @include media-breakpoint-up(xxxl) {
+      padding: 86px 147px;
+
+    }
 
     @include media-breakpoint-up(xl) {
       margin-right: 70px;
@@ -72,7 +76,7 @@
 
     .card-transform__card-inside--img {
       position: relative;
-      width: 177px;
+      width: 157px;
       height: auto;
       align-self: center;
       justify-self: flex-start;
@@ -80,12 +84,23 @@
       margin-top: 30px;
       opacity: 0;
 
+      @include media-breakpoint-up(xxxl) {
+        margin-top: 40px;
+        width: 177px;
+
+      }
+
     }
 
     & h3 {
       position: relative;
-      font-size: 58px;
+      font-size: 44px;
       text-transform: none;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 58px;
+
+      }
     }
 
     & p {
@@ -108,12 +123,20 @@
 
     & a {
       margin-bottom: 16px;
-      font-size: 18px;
+      font-size: 15px;
       opacity: 1;
 
+
+      .container-arrow-white{
+        top: 1;
+        @include media-breakpoint-up(lg) {
+          top: 4;
+          }
+      }
       @include media-breakpoint-up(lg) {
+      font-size: 18px;
+
         display: block;
-        margin-bottom: 28px;
       }
     }
 
@@ -131,7 +154,11 @@
       opacity: 1;
       margin-bottom: 40px;
 
-  
+      @include media-breakpoint-up(xxxl) {
+        margin-bottom: 58px;
+
+      }
+
     }
 
     &:hover {
