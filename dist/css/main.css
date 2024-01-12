@@ -14573,6 +14573,9 @@ p {
   font-size: 13px;
   font-weight: 500;
 }
+.dropdown-lang .dropdown-item:hover, .dropdown-lang .dropdown-item:focus {
+  background-color: #ebe9e9;
+}
 
 @media (min-width: 992px) {
   .dropdown-valor .link-arrow-grow-white-reverse {
@@ -18132,6 +18135,14 @@ p {
 .isOpenBackdrop {
   visibility: visible;
   opacity: 1;
+}
+
+.header-navbar .link-menu {
+  border-bottom: 1px solid transparent;
+}
+
+.header-navbar .link-menu:hover {
+  border-bottom: 1px solid #000;
 }
 
 .section-slider-accsesorios {

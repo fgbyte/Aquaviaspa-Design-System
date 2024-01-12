@@ -242,6 +242,9 @@
     font-size: 13px;
     font-weight: $textMedium;
   }
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: #ebe9e9;
+  }
 }
 
 .dropdown-valor {

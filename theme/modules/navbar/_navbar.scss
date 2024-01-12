@@ -334,3 +334,11 @@
   visibility: visible;
   opacity: 1;
 }
+
+.header-navbar .link-menu {
+  border-bottom: 1px solid transparent;
+}
+
+.header-navbar .link-menu:hover {
+  border-bottom: 1px solid $black;
+}
