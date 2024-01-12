@@ -14348,6 +14348,7 @@ p {
 }
 
 .header-navbar .header-navbar__nav ul li .link, .header-navbar .header-navbar__nav ul li .link-menu {
+  padding-bottom: 6.5px;
   border-bottom: 2px solid transparent;
 }
 
