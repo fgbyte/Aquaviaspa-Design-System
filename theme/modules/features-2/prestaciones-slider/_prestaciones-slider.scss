@@ -1,0 +1,18 @@
+@use "../../../globals";
+@use "../../../mixins";
+
+.prestaciones-slider {
+    p {
+        max-width: 720px;
+        text-align: center;
+        align-self: center;
+        margin: 0;
+    }
+    .prestaciones__filter {
+        margin-top: 10px;
+        a {
+            text-align: center;
+            text-wrap: wrap;
+        }
+    }
+}
