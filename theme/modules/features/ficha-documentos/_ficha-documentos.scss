@@ -2,6 +2,7 @@
 @use "../../../mixins";
 
 .ficha-documentos {
+  @include desk-space;
   display: flex;
   flex-direction: column;
   gap: 10px;

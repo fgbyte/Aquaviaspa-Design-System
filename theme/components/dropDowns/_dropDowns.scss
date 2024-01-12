@@ -139,6 +139,7 @@
     max-height: 0;
     overflow: hidden;
     transition: all 2s linear;
+    background-color: $white;
   }
 
   &[open] {

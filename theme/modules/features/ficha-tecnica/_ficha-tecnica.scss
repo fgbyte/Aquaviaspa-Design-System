@@ -2,6 +2,7 @@
 @use '../../../mixins';
 
 .ficha-tecnica {
+    @include desk-space;
     display: flex;
     flex-direction: column;
     gap: 40px;
