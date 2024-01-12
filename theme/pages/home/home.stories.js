@@ -186,9 +186,9 @@ export const home = `
 
             </div>
 
-            <div class="last-other-menu gap-4">
+            <div class="last-other-menu">
                 <a class="link-menu" href="#">Top ventas</a>
-                <a class="link-menu" href="#">Todos</a>
+                <a class="link-menu" href="#">Todas</a>
             </div>
         </menu>
 
@@ -223,9 +223,9 @@ export const home = `
                 </div>
             </div>
 
-            <div class="last-other-menu gap-4">
+            <div class="last-other-menu">
                 <a class="link-menu" href="#">Top ventas</a>
-                <a class="link-menu" href="#">Todos</a>
+                <a class="link-menu" href="#">Todas</a>
             </div>
         </menu>
 
@@ -241,15 +241,15 @@ export const home = `
             </div>
 
             <div class="other-menu-mid ">
-                <a class="link-menu link-menu--upper font-size-16" href="#">INGENIERÍA Y FANIRCACIÓN</a>
+                <a class="link-menu link-menu--upper font-size-16" href="#">INGENIERÍA Y FABRICACIÓN</a>
                 <a class="link-menu link-menu--upper font-size-16" href="#">DISEÑO</a>
                 <a class="link-menu link-menu--upper font-size-16" href="#">CALIDAD DEL AGUA</a>
                 <a class="link-menu link-menu--upper font-size-16" href="#">BIENESTAR</a>
                 <a class="link-menu link-menu--upper font-size-16" href="#">EFICIENCIA Y MEDIOAMBIENTE</a>
             </div>
 
-            <div class="last-other-menu gap-4">
-                <a class="link-menu" href="#">Todos</a>
+            <div class="last-other-menu">
+                <a class="link-menu" href="#">Todas</a>
             </div>
         </menu>
     </header>
@@ -309,15 +309,10 @@ export const home = `
         <div class="intro__container">
             <div class="intro__container__text">
                 <blockquote>Aquavia Spa, <span>líder europeo en la fabricación de spas y swimspas</span></blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore magna aliqua ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor
-                    incididunt ut labore et dolore magna aliqua.</p>
+                <p>Diseño, innovación y absoluta garantía de calidad son tres de los ejes principales asociados a Aquavia Spa, una marca con más de 35 años de exitosa trayectoria durante la cual ha mantenido su apuesta por la fabricación propia.
+                    En Aquavia Spa conceptualizamos, diseñamos, producimos y comercializamos spas y swimspas para uso privado y público.
+                    Nuestra marca se ha convertido en una referencia internacional gracias a la innovación constante, el control minucioso y el diseño centrado en la experiencia de usuario.
+                    </p>
             </div>
             <div class="intro__container__img">
                 <img src="/dist/assets/img/intro-home.png" alt="Made in Europe">
@@ -480,7 +475,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -519,7 +514,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -558,7 +553,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -672,7 +667,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -710,7 +705,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -750,7 +745,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -880,7 +875,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -915,7 +910,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -951,7 +946,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -988,7 +983,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1135,7 +1130,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1170,7 +1165,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1206,7 +1201,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1242,7 +1237,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1279,7 +1274,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1409,7 +1404,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1445,7 +1440,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1483,7 +1478,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1520,7 +1515,7 @@ export const home = `
                                         <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                     </a>
                                     <a class="link-arrow-grow" href="#">
-                                        <span>Ir al Blog</span>
+                                        <span>Más información</span>
                                         <div class="d-flex align-items-center container-arrow">
                                             <div class="link__arrow"></div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162"
@@ -1759,9 +1754,8 @@ export const home = `
             <img src="/dist/assets/img/Catálogo-Aquavia-Spa.webp" alt="">
           </div>
           <h2>Catálogo Aquavia Spa</h2>
-          <h4>Descarga nuestro catalogo</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam.</p>
+          <h4>Catálogo Aquavia Spa</h4>
+          <p></p>
           <button type="button" class="btn-ficha-home w-100 justify-content-center d-lg-none">Descargar</button>
     
           <a class="link-arrow-grow-white d-none d-lg-flex" href="#">
@@ -1808,7 +1802,7 @@ export const home = `
       <details class="dropdown-podemos margen-negative">
         <summary><span>¿Podemos ayudarle?</span></summary>
         <div class="details-inner">
-          <form class="form-full-footer  px-4 py-5">
+          <form class="form-full-footer  px-4">
             <div class="form-full__container  ">
               <label class="d-flex flex-column w-100" for="">
                 <span>Nombre*</span>
