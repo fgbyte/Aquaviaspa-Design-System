@@ -16571,6 +16571,9 @@ p {
 .hero-cta--left .hero-cta__text--lg .btn-cta--lg {
   align-self: flex-start;
 }
+.hero-cta--left .hero-cta__text {
+  padding-bottom: 55px;
+}
 
 .banner-ficha {
   width: 100%;
@@ -17222,7 +17225,7 @@ p {
 }
 
 .controls-top-ventas {
-  width: 40px;
+  width: 35px;
   height: 6px;
   background-color: #C7C6BE;
   margin-right: 8px;
@@ -17660,7 +17663,7 @@ p {
 }
 
 .guias-prestaciones-cards {
-  margin-top: 25px;
+  margin-top: 26px;
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -17672,7 +17675,7 @@ p {
 }
 
 .controls-prestaciones-cards {
-  width: 40px;
+  width: 35px;
   height: 6px;
   background-color: #C7C6BE;
   margin-right: 8px;
