@@ -17660,7 +17660,7 @@ p {
 }
 
 .guias-prestaciones-cards {
-  margin-top: 40px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -18248,4 +18248,8 @@ p {
     padding-top: 88px;
     padding-bottom: 88px;
   }
+}
+
+.link-arrow-grow-white span {
+  padding-bottom: 3px;
 }
