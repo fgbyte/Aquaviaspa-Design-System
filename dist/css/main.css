@@ -14530,7 +14530,12 @@ p {
 .dropdown-podemos summary::after {
   content: url("/dist/assets/icons/dropdown-podemos-triangle.svg");
   position: absolute;
-  bottom: -8px;
+  bottom: -7px;
+}
+@media (min-width: 992px) {
+  .dropdown-podemos summary::after {
+    bottom: -10px;
+  }
 }
 .dropdown-podemos .details-inner {
   max-height: 0;

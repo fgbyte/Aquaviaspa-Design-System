@@ -191,7 +191,10 @@
     &::after {
       content: url("/dist/assets/icons/dropdown-podemos-triangle.svg");
       position: absolute;
-      bottom: -8px;
+      bottom: -7px;
+      @include media-breakpoint-up(lg) {
+        bottom: -10px;
+      }
     }
   }
 
