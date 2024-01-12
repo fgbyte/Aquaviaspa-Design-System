@@ -193,7 +193,7 @@
       }
 
       & img {
-        height: 166px;
+        height: 190px;
 
         @include media-breakpoint-up(lg) {
           height: 260px;
@@ -398,4 +398,32 @@
 
 .link-arrow-grow-white:hover span {
   border-bottom: 1px solid #fff;
+}
+
+.footer__content {
+  a {
+    b {
+      transition: border-bottom 0.2s linear;
+      border-bottom: 1px solid transparent;
+    }
+    
+  }
+  a:hover {
+    b {
+      transition: border-bottom 0.2s linear;
+      border-bottom: 1px solid $grayText;
+    }
+  }
+}
+
+.order-lg-1 {
+  b {
+    letter-spacing: .5px;
+  }
+}
+
+.footer-top {
+  h4 {
+    margin-bottom: 100px;
+  }
 }

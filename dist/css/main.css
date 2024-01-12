@@ -16286,7 +16286,7 @@ p {
   }
 }
 .footer-top article .cont-img img {
-  height: 166px;
+  height: 190px;
 }
 @media (min-width: 992px) {
   .footer-top article .cont-img img {
@@ -16452,6 +16452,23 @@ p {
 
 .link-arrow-grow-white:hover span {
   border-bottom: 1px solid #fff;
+}
+
+.footer__content a b {
+  transition: border-bottom 0.2s linear;
+  border-bottom: 1px solid transparent;
+}
+.footer__content a:hover b {
+  transition: border-bottom 0.2s linear;
+  border-bottom: 1px solid #575757;
+}
+
+.order-lg-1 b {
+  letter-spacing: 0.5px;
+}
+
+.footer-top h4, .footer-top .h4 {
+  margin-bottom: 100px;
 }
 
 .hero-cta {
