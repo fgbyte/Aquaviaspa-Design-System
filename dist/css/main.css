@@ -18255,6 +18255,7 @@ p {
   gap: 14px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios .accseorios-slider {
@@ -18300,6 +18301,9 @@ p {
   background-color: #464646;
 }
 
+.prestaciones-slider {
+  position: relative;
+}
 .prestaciones-slider p {
   max-width: 720px;
   text-align: center;
@@ -18318,6 +18322,78 @@ p {
 .prestaciones-slider .prestaciones__filter a {
   text-align: center;
 }
+.prestaciones-slider .guias-prestaciones-slider__slider-arrow {
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
+    display: block;
+  }
+}
+.prestaciones-slider .prestaciones-slider__slider {
+  display: flex;
+  gap: 13px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: 0px;
+  overflow: hidden;
+}
+.prestaciones-slider .prestaciones-slider__slider .card-prestacion-lite {
+  min-width: 325px;
+}
+@media (min-width: 1200px) {
+  .prestaciones-slider .prestaciones-slider__slider .card-prestacion-lite {
+    min-width: 448px;
+  }
+}
+.prestaciones-slider .guias-prestaciones-slider__slider-arrow {
+  display: none;
+  width: 1420px;
+  top: 55%;
+  cursor: pointer;
+}
+.prestaciones-slider .guias-prestaciones-slider__slider-arrow .arrow-prestaciones-slider-left {
+  position: relative;
+  right: 60px;
+}
+.prestaciones-slider .guias-prestaciones-slider__slider-arrow .arrow-prestaciones-slider-right {
+  position: relative;
+  left: 95%;
+}
+@media (min-width: 1400px) {
+  .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
+    position: absolute;
+    display: block;
+  }
+}
+
+/*Slider*/
+.card-prestacion-lite {
+  scroll-snap-align: start;
+}
+
+.guias-prestaciones-slider__slider {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 43px;
+}
+
+.controls-prestaciones-slider__slider {
+  width: 40px;
+  height: 6px;
+  background-color: #C7C6BE;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.control-active {
+  background-color: #464646;
+}
+
 .py-16 {
   padding-top: 6.4375rem;
   padding-bottom: 2.4375rem;
