@@ -45,7 +45,7 @@
         & .card-prestacion-lite {
             min-width: 325px;
 
-            @include media-breakpoint-up(xl) {
+            @include media-breakpoint-up(lg) {
                 min-width: 448px;
 
             }

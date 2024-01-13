@@ -18344,7 +18344,7 @@ p {
 .prestaciones-slider .prestaciones-slider__slider .card-prestacion-lite {
   min-width: 325px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .prestaciones-slider .prestaciones-slider__slider .card-prestacion-lite {
     min-width: 448px;
   }
