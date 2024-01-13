@@ -550,12 +550,12 @@
 
 .card-prestacion-lite {
   width: 100%;
-  height: 410px;
+  max-height: 410px;
   position: relative;
   z-index: 1;
   @include media-breakpoint-up(lg) {
     width: 50%;
-    height: 515px;
+    max-height: 515px;
 
     // ANIMAR AL HACER HOVER
     &:hover {
@@ -567,6 +567,7 @@
       .card-prestacion-lite__text {
         overflow: hidden;
         gap: 10px;
+        justify-content: space-between;
         p {
           font-weight: $textBold;
           span {
