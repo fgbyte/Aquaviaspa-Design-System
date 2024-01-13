@@ -47,31 +47,3 @@
     gap: 90px;
   }
 }
-
-.card-prestacion-lite {
-  min-width: 325px;
-  height: 410px;
-  @include media-breakpoint-up(lg) {
-    min-width: 468px;
-    min-height: 515px;
-  }
-}
-
-.logo-down {
-  .card-prestacion-lite__sub__logo {
-    top: 15px;
-  }
-  .card-prestacion-lite__text p {
-    @include media-breakpoint-up(lg) {
-      margin-top: 13px;
-    }
-  }
-}
-
-.logo-down:hover {
-  @include media-breakpoint-up(lg) {
-    .card-prestacion-lite__text p {
-      // margin-top: 30px;
-    }
-  }
-}

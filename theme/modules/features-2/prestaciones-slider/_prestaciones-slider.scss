@@ -84,12 +84,18 @@
 
         }
     }
+
+    .card-prestacion-lite {
+        scroll-snap-align: start;
+        //!Siempre agregar dentro del Sliders para que mantengan size original
+        @include media-breakpoint-up(lg) {
+            min-width: 468px;
+            min-height: 515px;
+          }
+    }
 }
 
 /*Slider*/
-.card-prestacion-lite {
-    scroll-snap-align: start;
-}
 
 
 .guias-prestaciones-slider__slider {
