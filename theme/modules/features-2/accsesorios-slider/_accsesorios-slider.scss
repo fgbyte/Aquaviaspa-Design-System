@@ -3,9 +3,11 @@
 
 
 .section-slider-accsesorios {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 5rem 20px;
+  max-width: $maxW;
 
   @include media-breakpoint-up(lg) {
     padding: 9.5625rem 20px;
@@ -46,6 +48,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     overflow: hidden;
+    max-width: $maxW - 80px;
 
     @include media-breakpoint-up(lg) {
       margin: 0 auto;
@@ -66,6 +69,29 @@
       @include media-breakpoint-up(xxl) {
         display: block;
       }
+    }
+  }
+
+  & .guias-slider-accsesorios-arrow {
+    display: none;
+    width: $maxW;
+    top: 46%;
+    cursor: pointer;
+
+        & .arrow-slider-accsesorios-left {
+      position: relative;
+      right: 60px;
+    }
+
+    & .arrow-slider-accsesorios-right {
+      position: relative;
+      left: 95%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      position: absolute;
+      display: block;
+
     }
   }
 }

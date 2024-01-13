@@ -4,6 +4,8 @@ const guiasAccseoriosSlider: NodeListOf<Element> = document.querySelectorAll(".g
 accseoriosSlider.forEach((carousel: Element, carouselIndex: number) => {
   const controls: Element = guiasAccseoriosSlider[carouselIndex];
   const controlItems: NodeListOf<Element> = controls.querySelectorAll(".controls-accseorios-slider");
+  const previousItem = document?.querySelector(".arrow-slider-accsesorios-left");
+  const nextItem = document?.querySelector(".arrow-slider-accsesorios-right");
 
   setActiveControl(0);
 
@@ -17,6 +19,20 @@ accseoriosSlider.forEach((carousel: Element, carouselIndex: number) => {
     });
   }
 
+  nextItem?.addEventListener("click", (): void => {
+    const cardWidth: HTMLElement | null = carousel.querySelector(".card-accesorios");
+    if (carousel && cardWidth) {
+      const newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) + 1;
+      moveItems(newIndex);
+    }
+  });
+  previousItem?.addEventListener("click", (): void => {
+    const cardWidth: HTMLElement | null = carousel.querySelector(".card-accesorios");
+    if (carousel && cardWidth) {
+      const newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) - 1;
+      moveItems(newIndex);
+    }
+  });
 
   controlItems.forEach((item: Element, index: number) => {
     item.addEventListener("click", () => {
@@ -37,8 +53,8 @@ accseoriosSlider.forEach((carousel: Element, carouselIndex: number) => {
     if (carousel === null || !cardWidth) return
 
     const scrollPos: number = carousel.scrollLeft;
-    const activeControlIndex: number = Math.floor(scrollPos / (cardWidth.offsetWidth - 20));
-    setActiveControl(activeControlIndex);
+    const controlIndex: number = Math.floor(scrollPos / cardWidth.offsetWidth);
+    setActiveControl(controlIndex);
   });
 
 });

@@ -94,6 +94,8 @@ var guiasAccseoriosSlider = document.querySelectorAll(".guias-accseorios-slider"
 accseoriosSlider.forEach(function (carousel, carouselIndex) {
     var controls = guiasAccseoriosSlider[carouselIndex];
     var controlItems = controls.querySelectorAll(".controls-accseorios-slider");
+    var previousItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-slider-accsesorios-left");
+    var nextItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-slider-accsesorios-right");
     setActiveControl(0);
     function setActiveControl(index) {
         controlItems.forEach(function (item, i) {
@@ -105,6 +107,20 @@ accseoriosSlider.forEach(function (carousel, carouselIndex) {
             }
         });
     }
+    nextItem === null || nextItem === void 0 ? void 0 : nextItem.addEventListener("click", function () {
+        var cardWidth = carousel.querySelector(".card-accesorios");
+        if (carousel && cardWidth) {
+            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) + 1;
+            moveItems(newIndex);
+        }
+    });
+    previousItem === null || previousItem === void 0 ? void 0 : previousItem.addEventListener("click", function () {
+        var cardWidth = carousel.querySelector(".card-accesorios");
+        if (carousel && cardWidth) {
+            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) - 1;
+            moveItems(newIndex);
+        }
+    });
     controlItems.forEach(function (item, index) {
         item.addEventListener("click", function () {
             moveItems(index);
@@ -121,8 +137,8 @@ accseoriosSlider.forEach(function (carousel, carouselIndex) {
         if (carousel === null || !cardWidth)
             return;
         var scrollPos = carousel.scrollLeft;
-        var activeControlIndex = Math.floor(scrollPos / (cardWidth.offsetWidth - 20));
-        setActiveControl(activeControlIndex);
+        var controlIndex = Math.floor(scrollPos / cardWidth.offsetWidth);
+        setActiveControl(controlIndex);
     });
 });
 //categories

@@ -18218,9 +18218,11 @@ p {
 }
 
 .section-slider-accsesorios {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 5rem 20px;
+  max-width: 1420px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios {
@@ -18256,6 +18258,7 @@ p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   overflow: hidden;
+  max-width: 1340px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios .accseorios-slider {
@@ -18273,6 +18276,26 @@ p {
 }
 @media (min-width: 1400px) {
   .section-slider-accsesorios .accseorios-slider .arrow-accesorio {
+    display: block;
+  }
+}
+.section-slider-accsesorios .guias-slider-accsesorios-arrow {
+  display: none;
+  width: 1420px;
+  top: 46%;
+  cursor: pointer;
+}
+.section-slider-accsesorios .guias-slider-accsesorios-arrow .arrow-slider-accsesorios-left {
+  position: relative;
+  right: 60px;
+}
+.section-slider-accsesorios .guias-slider-accsesorios-arrow .arrow-slider-accsesorios-right {
+  position: relative;
+  left: 95%;
+}
+@media (min-width: 1400px) {
+  .section-slider-accsesorios .guias-slider-accsesorios-arrow {
+    position: absolute;
     display: block;
   }
 }
