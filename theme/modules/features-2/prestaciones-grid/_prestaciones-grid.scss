@@ -53,6 +53,7 @@
   height: 410px;
   @include media-breakpoint-up(lg) {
     min-width: 468px;
+    min-height: 515px;
   }
 }
 

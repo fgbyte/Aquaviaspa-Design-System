@@ -17602,6 +17602,7 @@ p {
 @media (min-width: 992px) {
   .card-prestacion-lite {
     min-width: 468px;
+    min-height: 515px;
   }
 }
 
@@ -18347,7 +18348,13 @@ p {
 .prestaciones-slider {
   position: relative;
 }
-.prestaciones-slider p {
+.prestaciones-slider__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.prestaciones-slider__title p {
   max-width: 720px;
   text-align: center;
   align-self: center;

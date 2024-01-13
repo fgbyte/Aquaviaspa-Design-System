@@ -4,13 +4,20 @@
 .prestaciones-slider {
     position: relative;
 
-    p {
-        max-width: 720px;
-        text-align: center;
-        align-self: center;
-        margin: 0;
-        color: $grayText;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        p {
+            max-width: 720px;
+            text-align: center;
+            align-self: center;
+            margin: 0;
+            color: $grayText;
+        }
     }
+
 
     .prestaciones__filter {
         margin-top: 10px;
