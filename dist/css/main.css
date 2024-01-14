@@ -18366,6 +18366,10 @@ p {
 .prestaciones-slider .prestaciones__filter a {
   text-align: center;
 }
+.prestaciones-slider__category {
+  display: flex;
+  flex-direction: column;
+}
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
   display: none;
   margin-top: auto;
