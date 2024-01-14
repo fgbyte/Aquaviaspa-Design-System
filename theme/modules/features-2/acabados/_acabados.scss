@@ -2,7 +2,7 @@
 @use "../../../mixins";
 
 .acabados {
-    @include desk-space;
+    @include desk-space; //prescindible
     display: flex;
     flex-direction: column;
     gap: 16px;
