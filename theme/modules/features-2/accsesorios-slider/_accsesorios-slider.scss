@@ -30,6 +30,9 @@
     & h3 {
       font-size: 28px;
       font-weight: $textMedium;
+      @include media-breakpoint-up(lg) {
+        font-size: 42px;
+      }
 
     }
 

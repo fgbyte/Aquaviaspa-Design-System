@@ -18269,6 +18269,11 @@ p {
   font-size: 28px;
   font-weight: 500;
 }
+@media (min-width: 992px) {
+  .section-slider-accsesorios .section-slider-accsesorios__header h3, .section-slider-accsesorios .section-slider-accsesorios__header .h3 {
+    font-size: 42px;
+  }
+}
 .section-slider-accsesorios .section-slider-accsesorios__header p {
   font-size: 18px;
   font-weight: 400;
