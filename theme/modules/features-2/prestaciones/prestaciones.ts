@@ -1,7 +1,7 @@
 //prestaciones module
 document.addEventListener('DOMContentLoaded', () => {
-const filterLinks = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#fil-${i + 1}`));
-const categories = Array.from({ length: 5 }, (_, i) => document.querySelectorAll(`#category-${i + 1}`));
+const filterLinks = Array.from({ length: 6 }, (_, i) => document.querySelectorAll(`#fil-${i + 1}`));
+const categories = Array.from({ length: 6 }, (_, i) => document.querySelectorAll(`#category-${i + 1}`));
 
 //links logic
 filterLinks.forEach((nodeLink) => {

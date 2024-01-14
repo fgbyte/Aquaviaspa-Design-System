@@ -267,8 +267,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //prestaciones module
 document.addEventListener('DOMContentLoaded', function () {
-    var filterLinks = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#fil-".concat(i + 1)); });
-    var categories = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#category-".concat(i + 1)); });
+    var filterLinks = Array.from({ length: 6 }, function (_, i) { return document.querySelectorAll("#fil-".concat(i + 1)); });
+    var categories = Array.from({ length: 6 }, function (_, i) { return document.querySelectorAll("#category-".concat(i + 1)); });
     //links logic
     filterLinks.forEach(function (nodeLink) {
         nodeLink.forEach(function (link) {

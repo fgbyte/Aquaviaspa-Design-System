@@ -14,11 +14,13 @@
     display: grid;
     @include media-breakpoint-up(md) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      // grid-auto-rows: 1fr;
     }
     @include media-breakpoint-up(lg) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-auto-flow: row dense;
     }
-    gap: 18px;
+    column-gap: 12px;
 
     .card-prestacion-lite {
       margin-bottom: 38px;

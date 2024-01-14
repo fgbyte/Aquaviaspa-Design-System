@@ -554,7 +554,7 @@
   position: relative;
   z-index: 1;
   @include media-breakpoint-up(lg) {
-    width: 50%;
+    width: 100%;
     max-height: 515px;
 
     // ANIMAR AL HACER HOVER
@@ -607,6 +607,12 @@
     bottom: 0px;
     z-index: 2;
     padding: 30px 20px 20px 30px;
+    
+    &__logo {
+      width: max-content;
+      height: max-content;
+      max-height: 100px;
+    }
     @include media-breakpoint-up(lg) {
       padding: 10% 6% 6% 9.2%;
       flex-direction: row;
@@ -617,14 +623,9 @@
 
       &__logo {
         position: absolute;
-        top: -22px;
+        top: -25px;
         left: 9.2%;
       }
-    }
-
-    &__logo {
-      width: fit-content;
-      height: fit-content;
     }
   }
   &__text {
@@ -667,12 +668,17 @@
 .card-prestacion-lite {
   min-width: 325px;
   height: 410px;
-  
+  @include media-breakpoint-up(lg) {
+    .card-prestacion-lite__text p {
+      margin-top: 14px;
+    }
+  }
 }
 
 .logo-down {
   .card-prestacion-lite__sub__logo {
     top: 15px;
+    max-height: 70px;
   }
   .card-prestacion-lite__text p {
     @include media-breakpoint-up(lg) {

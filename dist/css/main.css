@@ -15185,7 +15185,7 @@ p {
 }
 @media (min-width: 992px) {
   .card-prestacion-lite {
-    width: 50%;
+    width: 100%;
     max-height: 515px;
   }
   .card-prestacion-lite:hover .card-prestacion-lite__sub {
@@ -15234,6 +15234,11 @@ p {
   z-index: 2;
   padding: 30px 20px 20px 30px;
 }
+.card-prestacion-lite__sub__logo {
+  width: max-content;
+  height: max-content;
+  max-height: 100px;
+}
 @media (min-width: 992px) {
   .card-prestacion-lite__sub {
     padding: 10% 6% 6% 9.2%;
@@ -15245,13 +15250,9 @@ p {
   }
   .card-prestacion-lite__sub__logo {
     position: absolute;
-    top: -22px;
+    top: -25px;
     left: 9.2%;
   }
-}
-.card-prestacion-lite__sub__logo {
-  width: fit-content;
-  height: fit-content;
 }
 .card-prestacion-lite__text {
   margin-top: 35px;
@@ -15291,9 +15292,15 @@ p {
   min-width: 325px;
   height: 410px;
 }
+@media (min-width: 992px) {
+  .card-prestacion-lite .card-prestacion-lite__text p {
+    margin-top: 14px;
+  }
+}
 
 .logo-down .card-prestacion-lite__sub__logo {
   top: 15px;
+  max-height: 70px;
 }
 @media (min-width: 992px) {
   .logo-down .card-prestacion-lite__text p {
@@ -17568,7 +17575,7 @@ p {
 .prestaciones-grid__cards {
   width: 100%;
   display: grid;
-  gap: 18px;
+  column-gap: 12px;
 }
 @media (min-width: 768px) {
   .prestaciones-grid__cards {
@@ -17578,6 +17585,7 @@ p {
 @media (min-width: 992px) {
   .prestaciones-grid__cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row dense;
   }
 }
 .prestaciones-grid__cards .card-prestacion-lite {
