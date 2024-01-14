@@ -18272,12 +18272,12 @@ p {
   gap: 14px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  overflow: hidden;
   max-width: 1340px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios .accseorios-slider {
     margin: 0 auto;
+    overflow: hidden;
   }
 }
 .section-slider-accsesorios .accseorios-slider .card-accesorios {
@@ -18383,7 +18383,11 @@ p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: 0px;
-  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .prestaciones-slider .prestaciones-slider__slider {
+    overflow: hidden;
+  }
 }
 .prestaciones-slider .prestaciones-slider__slider .card-prestacion-lite {
   min-width: 325px;

@@ -48,7 +48,11 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scrollbar-width: 0px;
-        overflow: hidden;
+       
+        @include media-breakpoint-up(lg) {
+            overflow: hidden;
+
+        }
         & .card-prestacion-lite {
             min-width: 325px;
 
