@@ -15492,13 +15492,14 @@ p {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  align-items: flex-start;
 }
 @media (min-width: 992px) {
   .card-acabados {
     gap: 50px;
     margin-top: 20px;
     max-width: 655px;
-    min-width: 544px;
+    min-width: 600px;
   }
 }
 .card-acabados__casco, .card-acabados__mueble {
@@ -18484,7 +18485,14 @@ p {
 }
 @media (min-width: 992px) {
   .acabados {
-    padding: 100px 5% 100px 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+@media (min-width: 992px) {
+  .acabados {
+    padding: 100px 0px 100px 0px;
   }
 }
 .acabados__content {
@@ -18500,8 +18508,8 @@ p {
 .acabados__content__imgs img {
   width: 100%;
   height: 100%;
-  max-width: 1000px;
-  max-height: 730px;
+  max-width: 1082px;
+  max-height: 812px;
   object-fit: contain;
 }
 
