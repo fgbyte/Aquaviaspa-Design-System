@@ -15505,8 +15505,8 @@ p {
 .card-acabados__casco, .card-acabados__mueble {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
+  align-items: center;
 }
 .card-acabados__casco h4, .card-acabados__mueble h4, .card-acabados__casco .h4, .card-acabados__mueble .h4 {
   width: 100%;
@@ -15546,6 +15546,12 @@ p {
 @media (max-width: 991.98px) {
   .card-acabados__buttons {
     display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-acabados__mueble {
+    align-items: flex-start;
   }
 }
 

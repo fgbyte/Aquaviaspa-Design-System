@@ -2,7 +2,7 @@
 @use "../../../mixins";
 
 .acabados {
-    @include desk-space; //prescindible
+    @include desk-space; //prescindible, quitar si se quiere agrandar la imagen del spa
     display: flex;
     flex-direction: column;
     gap: 16px;
