@@ -2,126 +2,119 @@
 @use "../../../mixins";
 
 .prestaciones-slider {
-    position: relative;
+  position: relative;
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        p {
-            max-width: 720px;
-            text-align: center;
-            align-self: center;
-            margin: 0;
-            color: $grayText;
-        }
+  .prestaciones__filter {
+    margin-top: 10px;
+
+    @include media-breakpoint-up(special) {
+      justify-content: center;
     }
 
+    a {
+      text-align: center;
+    }
+  }
 
-    .prestaciones__filter {
-        margin-top: 10px;
+  &__category {
+    display: flex;
+    flex-direction: column;
+  }
 
-        @include media-breakpoint-up(special) {
-            justify-content: center;
-        }
+  & .guias-prestaciones-slider__slider-arrow {
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
 
-        a {
-            text-align: center;
-        }
+    @include media-breakpoint-up(xxl) {
+      display: block;
+    }
+  }
+
+  .prestaciones-slider__slider {
+    display: flex;
+    gap: 13px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0px;
+
+    @include media-breakpoint-up(lg) {
+      overflow: hidden;
+    }
+    & .card-prestacion-lite {
+      min-width: 325px;
+
+      @include media-breakpoint-up(lg) {
+        min-width: 448px;
+      }
+    }
+  }
+
+  & .guias-prestaciones-slider__slider-arrow {
+    display: none;
+    width: $maxW;
+
+    top: 55%;
+    cursor: pointer;
+
+    & .arrow-prestaciones-slider-left {
+      position: relative;
+      right: 60px;
     }
 
-    &__category {
-        display: flex;
-        flex-direction: column;
+    & .arrow-prestaciones-slider-right {
+      position: relative;
+      left: 95%;
     }
 
-    & .guias-prestaciones-slider__slider-arrow {
-        display: none;
-        margin-top: auto;
-        margin-bottom: auto;
-        cursor: pointer;
-
-        @include media-breakpoint-up(xxl) {
-            display: block;
-        }
+    @include media-breakpoint-up(xxl) {
+      position: absolute;
+      display: block;
     }
+  }
 
-    .prestaciones-slider__slider {
-        display: flex;
-        gap: 13px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: 0px;
-       
-        @include media-breakpoint-up(lg) {
-            overflow: hidden;
-
-        }
-        & .card-prestacion-lite {
-            min-width: 325px;
-
-            @include media-breakpoint-up(lg) {
-                min-width: 448px;
-
-            }
-        }
-
-
+  .card-prestacion-lite {
+    scroll-snap-align: start;
+    //!Siempre agregar dentro del Sliders para que mantengan size original
+    @include media-breakpoint-up(lg) {
+      min-width: 468px;
+      min-height: 515px;
     }
-
-    & .guias-prestaciones-slider__slider-arrow {
-        display: none;
-        width: $maxW;
-
-        top: 55%;
-        cursor: pointer;
-
-        & .arrow-prestaciones-slider-left {
-            position: relative;
-            right: 60px;
-        }
-
-        & .arrow-prestaciones-slider-right {
-            position: relative;
-            left: 95%;
-        }
-
-        @include media-breakpoint-up(xxl) {
-            position: absolute;
-            display: block;
-
-        }
-    }
-
-    .card-prestacion-lite {
-        scroll-snap-align: start;
-        //!Siempre agregar dentro del Sliders para que mantengan size original
-        @include media-breakpoint-up(lg) {
-            min-width: 468px;
-            min-height: 515px;
-          }
-    }
+  }
 }
 
 /*Slider*/
 
-
 .guias-prestaciones-slider__slider {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 43px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 43px;
 }
 
 .controls-prestaciones-slider__slider {
-    width: 40px;
-    height: 6px;
-    background-color: #C7C6BE;
-    margin-right: 8px;
-    cursor: pointer;
+  width: 40px;
+  height: 6px;
+  background-color: #c7c6be;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
 .control-active {
-    background-color: #464646;
+  background-color: #464646;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    p {
+        max-width: 720px;
+        text-align: center;
+        align-self: center;
+        margin: 0;
+        color: $grayText;
+    }
 }

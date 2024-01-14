@@ -13971,10 +13971,16 @@ p {
 }
 
 .btn-acabado {
+  width: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 13px;
+}
+@media (min-width: 992px) {
+  .btn-acabado {
+    width: 124px;
+  }
 }
 .btn-acabado input {
   appearance: none;
@@ -15487,6 +15493,14 @@ p {
   flex-direction: column;
   gap: 18px;
 }
+@media (min-width: 992px) {
+  .card-acabados {
+    gap: 50px;
+    margin-top: 20px;
+    max-width: 655px;
+    min-width: 544px;
+  }
+}
 .card-acabados__casco, .card-acabados__mueble {
   display: flex;
   flex-direction: column;
@@ -15513,27 +15527,24 @@ p {
 .card-acabados__inputs {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 5px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .card-acabados__inputs {
+    justify-content: flex-start;
+    gap: 16px;
+  }
 }
 .card-acabados__buttons {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   gap: 14px;
 }
 @media (max-width: 991.98px) {
   .card-acabados__buttons {
     display: none;
-  }
-}
-@media (min-width: 992px) {
-  .card-acabados {
-    gap: 50px;
-  }
-  .card-acabados__inputs {
-    justify-content: flex-start;
-    gap: 16px;
   }
 }
 
@@ -18355,19 +18366,6 @@ p {
 .prestaciones-slider {
   position: relative;
 }
-.prestaciones-slider__title {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.prestaciones-slider__title p {
-  max-width: 720px;
-  text-align: center;
-  align-self: center;
-  margin: 0;
-  color: #575757;
-}
 .prestaciones-slider .prestaciones__filter {
   margin-top: 10px;
 }
@@ -18455,13 +18453,56 @@ p {
 .controls-prestaciones-slider__slider {
   width: 40px;
   height: 6px;
-  background-color: #C7C6BE;
+  background-color: #c7c6be;
   margin-right: 8px;
   cursor: pointer;
 }
 
 .control-active {
   background-color: #464646;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.subtitle p {
+  max-width: 720px;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+  color: #575757;
+}
+
+.acabados {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 88px 25px;
+}
+@media (min-width: 992px) {
+  .acabados {
+    padding: 100px 5% 100px 0px;
+  }
+}
+.acabados__content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .acabados__content {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.acabados__content__imgs img {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 730px;
+  object-fit: contain;
 }
 
 .py-16 {

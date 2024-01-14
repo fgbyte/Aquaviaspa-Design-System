@@ -173,10 +173,14 @@
 
 //ESTOS SON INPUTS TYPE RADIO
 .btn-acabado {
+  width: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 13px;
+  @include media-breakpoint-up(lg) {
+    width: 124px;
+  }
 
   input {
     appearance: none;
