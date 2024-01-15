@@ -145,6 +145,76 @@ cascos.forEach(function (nodeList, i) {
         });
     });
 });
+var mueble1Inputs = document.querySelectorAll('#mueble-1 input');
+var mueble2Inputs = document.querySelectorAll('#mueble-2 input');
+var mueble3Inputs = document.querySelectorAll('#mueble-3 input');
+var cascoInputs = document.querySelectorAll('#casco-1, #casco-2, #casco-3');
+var imgs = document.querySelectorAll('.acabados__content__imgs img');
+/* aqui dependiendo del mueble lo pongo en block o en none */
+function actualizarImagenesMueble() {
+    imgs.forEach(function (img) {
+        img.style.display = 'none';
+    });
+    if (mueble1Inputs[0].checked) {
+        imgs[0].style.display = 'block';
+    }
+    else if (mueble1Inputs[1].checked) {
+        imgs[1].style.display = 'block';
+    }
+    else if (mueble1Inputs[2].checked) {
+        imgs[2].style.display = 'block';
+    }
+    else if (mueble1Inputs[3].checked) {
+        imgs[3].style.display = 'block';
+    }
+    else if (mueble2Inputs[0].checked) {
+        imgs[4].style.display = 'block';
+    }
+    else if (mueble2Inputs[1].checked) {
+        imgs[5].style.display = 'block';
+    }
+    else if (mueble2Inputs[2].checked) {
+        imgs[6].style.display = 'block';
+    }
+    else if (mueble3Inputs[0].checked) {
+        imgs[7].style.display = 'block';
+    }
+    else if (mueble3Inputs[1].checked) {
+        imgs[8].style.display = 'block';
+    }
+}
+/* si tocas en un casco se renderizo solo el primeo*/
+function mostrarPrimeraImagen() {
+    var casco1Img = imgs[0];
+    var casco2Img = imgs[4];
+    var casco3Img = imgs[7];
+    casco1Img.style.display = 'none';
+    casco2Img.style.display = 'none';
+    casco3Img.style.display = 'none';
+    if (cascoInputs[0].checked) {
+        casco1Img.style.display = 'block';
+    }
+    if (cascoInputs[1].checked) {
+        casco2Img.style.display = 'block';
+    }
+    if (cascoInputs[2].checked) {
+        casco3Img.style.display = 'block';
+    }
+    actualizarImagenesMueble();
+}
+mueble1Inputs.forEach(function (input) {
+    input.addEventListener('change', mostrarPrimeraImagen);
+});
+mueble2Inputs.forEach(function (input) {
+    input.addEventListener('change', mostrarPrimeraImagen);
+});
+mueble3Inputs.forEach(function (input) {
+    input.addEventListener('change', mostrarPrimeraImagen);
+});
+cascoInputs.forEach(function (input) {
+    input.addEventListener('change', mostrarPrimeraImagen);
+});
+mostrarPrimeraImagen();
 var accseoriosSlider = document.querySelectorAll(".accseorios-slider");
 var guiasAccseoriosSlider = document.querySelectorAll(".guias-accseorios-slider");
 accseoriosSlider.forEach(function (carousel, carouselIndex) {
