@@ -109,7 +109,7 @@ muebles.forEach(function (nodeList, index) {
 cascos.forEach(function (nodeList, i) {
     nodeList.forEach(function (casco, _) {
         casco.addEventListener('click', function () {
-            //aquí debe ir el reset, que depende del index del casco se le pone checked al mueble de igual index
+            //aquí debe ir el reset, que depende del index (i) del casco se le pone checked al mueble de igual index
             muebles.forEach(function (nodeList, j) {
                 if (nodeList) {
                     nodeList.forEach(function (mueble, _) {
