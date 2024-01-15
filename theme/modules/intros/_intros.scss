@@ -10,9 +10,11 @@
     align-items: center;
     gap: 25px;
     padding: 60px 25px;
+
     @include media-breakpoint-up(lg) {
       padding: 85px 25px 100px 25px;
     }
+
     @include desk-space;
 
     &__text {
@@ -25,6 +27,7 @@
         font-weight: $textSemibold;
         margin: 0;
         line-height: 44px;
+
         @include media-breakpoint-up(lg) {
           line-height: unset;
         }
@@ -34,6 +37,7 @@
           font-weight: $textRegular;
         }
       }
+
       p {
         margin: 0;
       }
@@ -53,14 +57,17 @@
       flex-direction: row;
       gap: 190px;
       justify-content: center;
+
       @include media-breakpoint-up(xxxl) {
         justify-content: start;
       }
 
       &__text {
         max-width: 725px;
+
         blockquote {
           font-size: 58px;
+
           span {
             line-height: normal;
             font-size: 48px;
@@ -82,28 +89,34 @@
 
 .intro-ficha .intro {
   @include desk-space;
+
   &__container {
     padding: 65px $pxMobile 80px $pxMobile;
     flex-direction: column-reverse;
     gap: 37px;
+
     @include media-breakpoint-up(lg) {
       padding: 106px $pxMobile;
       flex-direction: row;
       gap: 123px;
     }
+
     &__text {
       @include media-breakpoint-up(lg) {
         max-width: 670px;
       }
+
       blockquote {
         font-size: 30px;
         font-weight: $textMedium;
         line-height: 36px;
+
         @include media-breakpoint-up(lg) {
           font-size: 42px;
           line-height: 48px;
         }
       }
+
       p {
         font-size: 18px;
         font-weight: $textRegular;
@@ -111,10 +124,12 @@
         line-height: 28px;
       }
     }
+
     &__img {
       img {
         width: 315px;
         height: 240px;
+
         @include media-breakpoint-up(lg) {
           width: 100%;
           max-width: 630px;
@@ -122,6 +137,43 @@
           max-height: 480px;
         }
       }
+    }
+  }
+}
+
+.intro-header {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 99px;
+  padding-bottom: 395px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 109px;
+    padding-bottom: 286px;
+
+  }
+
+  & h2 {
+    font: normal normal 600 30px/37px Raleway;
+    margin-bottom: 22px;
+
+    @include media-breakpoint-up(lg) {
+      font: normal normal 600 48px/58px Raleway;
+      margin-bottom: 31px;
+
+    }
+
+  }
+
+  & p {
+    font: normal normal normal 18px/28px Raleway;
+
+    @include media-breakpoint-up(lg) {
+      font: normal normal normal 18px/28px Raleway;
+      max-width: 868;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
