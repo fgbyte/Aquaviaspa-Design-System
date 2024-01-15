@@ -19450,6 +19450,7 @@ p {
 }
 .prestaciones-slider .prestaciones__filter {
   margin-top: 10px;
+  justify-self: center;
 }
 @media (min-width: 1158px) {
   .prestaciones-slider .prestaciones__filter {
@@ -19483,6 +19484,7 @@ p {
 }
 @media (min-width: 992px) {
   .prestaciones-slider .prestaciones-slider__slider {
+    max-width: 97%;
     overflow: hidden;
   }
 }

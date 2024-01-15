@@ -6,6 +6,7 @@
 
   .prestaciones__filter {
     margin-top: 10px;
+    justify-self: center;
 
     @include media-breakpoint-up(special) {
       justify-content: center;
@@ -40,6 +41,7 @@
     scrollbar-width: 0px;
 
     @include media-breakpoint-up(lg) {
+      max-width: 97%;
       overflow: hidden;
     }
     & .card-prestacion-lite {
