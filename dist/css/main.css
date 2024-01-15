@@ -17797,6 +17797,11 @@ p {
   flex-direction: column;
   gap: 30px;
 }
+@media (min-width: 992px) {
+  .valores__card__links {
+    min-width: 33%;
+  }
+}
 .valores__card__modals {
   display: none;
 }
