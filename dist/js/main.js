@@ -95,6 +95,27 @@ var cascos = Array.from({ length: 10 }, function (_, i) {
 var muebles = Array.from({ length: 10 }, function (_, i) {
     return document.querySelectorAll("#mueble-".concat(i + 1));
 });
+function checkFirstMueble(index) {
+    // Primero, removemos el estado 'checked' de todos los inputs en todos los muebles
+    muebles.forEach(function (nodeList) {
+        nodeList.forEach(function (mueble) {
+            if (mueble instanceof HTMLElement) {
+                var input = mueble.querySelector('input[type="radio"]');
+                if (input instanceof HTMLInputElement) {
+                    input.checked = false; // Establece la propiedad checked a false
+                }
+            }
+        });
+    });
+    // Luego, establecemos el estado 'checked' al primer input del mueble con el índice correspondiente
+    var firstMueble = muebles[index][0];
+    if (firstMueble instanceof HTMLElement) {
+        var input = firstMueble.querySelector('input[type="radio"]');
+        if (input instanceof HTMLInputElement) {
+            input.checked = true; // Establece la propiedad checked a true
+        }
+    }
+}
 //ocultar al principio todos los muebles menos el 1ro
 muebles.forEach(function (nodeList, index) {
     nodeList.forEach(function (mueble) {
@@ -110,6 +131,7 @@ cascos.forEach(function (nodeList, i) {
     nodeList.forEach(function (casco, _) {
         casco.addEventListener('click', function () {
             //aquí debe ir el reset, que depende del index (i) del casco se le pone checked al mueble de igual index
+            checkFirstMueble(i);
             muebles.forEach(function (nodeList, j) {
                 if (nodeList) {
                     nodeList.forEach(function (mueble, _) {
