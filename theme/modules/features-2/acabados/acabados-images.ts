@@ -4,8 +4,7 @@ const mueble3Inputs = document.querySelectorAll<HTMLInputElement>('#mueble-3 inp
 const cascoInputs = document.querySelectorAll<HTMLInputElement>('#casco-1, #casco-2, #casco-3');
 const imgs = document.querySelectorAll<HTMLImageElement>('.acabados__content__imgs img');
 
-/* aqui dependiendo del mueble lo pongo en block o en none */
-function actualizarImagenesMueble(): void {
+function updateFurnitureImages(): void {
   imgs.forEach((img) => {
     img.style.display = 'none';
   });
@@ -31,46 +30,44 @@ function actualizarImagenesMueble(): void {
   }
 }
 
-/* si tocas en un casco se renderizo solo el primeo*/
+function showFirstImage(): void {
+  const helmet1Img = imgs[0];
+  const helmet2Img = imgs[4];
+  const helmet3Img = imgs[7];
 
-function mostrarPrimeraImagen(): void {
-  const casco1Img = imgs[0];
-  const casco2Img = imgs[4];
-  const casco3Img = imgs[7];
-
-  casco1Img.style.display = 'none';
-  casco2Img.style.display = 'none';
-  casco3Img.style.display = 'none';
+  helmet1Img.style.display = 'none';
+  helmet2Img.style.display = 'none';
+  helmet3Img.style.display = 'none';
 
   if (cascoInputs[0].checked) {
-    casco1Img.style.display = 'block';
+    helmet1Img.style.display = 'block';
   }
 
   if (cascoInputs[1].checked) {
-    casco2Img.style.display = 'block';
+    helmet2Img.style.display = 'block';
   }
 
   if (cascoInputs[2].checked) {
-    casco3Img.style.display = 'block';
+    helmet3Img.style.display = 'block';
   }
 
-  actualizarImagenesMueble();
+  updateFurnitureImages();
 }
 
 mueble1Inputs.forEach((input) => {
-  input.addEventListener('change', mostrarPrimeraImagen);
+  input.addEventListener('change', showFirstImage);
 });
 
 mueble2Inputs.forEach((input) => {
-  input.addEventListener('change', mostrarPrimeraImagen);
+  input.addEventListener('change', showFirstImage);
 });
 
 mueble3Inputs.forEach((input) => {
-  input.addEventListener('change', mostrarPrimeraImagen);
+  input.addEventListener('change', showFirstImage);
 });
 
 cascoInputs.forEach((input) => {
-  input.addEventListener('change', mostrarPrimeraImagen);
+  input.addEventListener('change', showFirstImage);
 });
 
-mostrarPrimeraImagen();
+showFirstImage();

@@ -150,8 +150,7 @@ var mueble2Inputs = document.querySelectorAll('#mueble-2 input');
 var mueble3Inputs = document.querySelectorAll('#mueble-3 input');
 var cascoInputs = document.querySelectorAll('#casco-1, #casco-2, #casco-3');
 var imgs = document.querySelectorAll('.acabados__content__imgs img');
-/* aqui dependiendo del mueble lo pongo en block o en none */
-function actualizarImagenesMueble() {
+function updateFurnitureImages() {
     imgs.forEach(function (img) {
         img.style.display = 'none';
     });
@@ -183,38 +182,37 @@ function actualizarImagenesMueble() {
         imgs[8].style.display = 'block';
     }
 }
-/* si tocas en un casco se renderizo solo el primeo*/
-function mostrarPrimeraImagen() {
-    var casco1Img = imgs[0];
-    var casco2Img = imgs[4];
-    var casco3Img = imgs[7];
-    casco1Img.style.display = 'none';
-    casco2Img.style.display = 'none';
-    casco3Img.style.display = 'none';
+function showFirstImage() {
+    var helmet1Img = imgs[0];
+    var helmet2Img = imgs[4];
+    var helmet3Img = imgs[7];
+    helmet1Img.style.display = 'none';
+    helmet2Img.style.display = 'none';
+    helmet3Img.style.display = 'none';
     if (cascoInputs[0].checked) {
-        casco1Img.style.display = 'block';
+        helmet1Img.style.display = 'block';
     }
     if (cascoInputs[1].checked) {
-        casco2Img.style.display = 'block';
+        helmet2Img.style.display = 'block';
     }
     if (cascoInputs[2].checked) {
-        casco3Img.style.display = 'block';
+        helmet3Img.style.display = 'block';
     }
-    actualizarImagenesMueble();
+    updateFurnitureImages();
 }
 mueble1Inputs.forEach(function (input) {
-    input.addEventListener('change', mostrarPrimeraImagen);
+    input.addEventListener('change', showFirstImage);
 });
 mueble2Inputs.forEach(function (input) {
-    input.addEventListener('change', mostrarPrimeraImagen);
+    input.addEventListener('change', showFirstImage);
 });
 mueble3Inputs.forEach(function (input) {
-    input.addEventListener('change', mostrarPrimeraImagen);
+    input.addEventListener('change', showFirstImage);
 });
 cascoInputs.forEach(function (input) {
-    input.addEventListener('change', mostrarPrimeraImagen);
+    input.addEventListener('change', showFirstImage);
 });
-mostrarPrimeraImagen();
+showFirstImage();
 var accseoriosSlider = document.querySelectorAll(".accseorios-slider");
 var guiasAccseoriosSlider = document.querySelectorAll(".guias-accseorios-slider");
 accseoriosSlider.forEach(function (carousel, carouselIndex) {
