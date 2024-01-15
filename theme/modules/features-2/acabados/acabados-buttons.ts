@@ -43,8 +43,8 @@ muebles.forEach((nodeList, index) => {
 cascos.forEach((nodeList, i) => {
     nodeList.forEach((casco, _) => {
         casco.addEventListener('click', () => {
-            //aquí debe ir el reset, que depende del index (i) del casco se le pone checked al mueble de igual index
-            checkFirstMueble(i);
+            checkFirstMueble(i);//reset al 1er mueble del casco en cuestión
+            
             muebles.forEach((nodeList, j) => {
                 if (nodeList) {
                     nodeList.forEach((mueble, _) => {
