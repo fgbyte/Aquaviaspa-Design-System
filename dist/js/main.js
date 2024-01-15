@@ -89,127 +89,65 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-var cascos = Array.from({ length: 10 }, function (_, i) {
-    return document.querySelectorAll("#casco-".concat(i + 1));
-});
-var muebles = Array.from({ length: 10 }, function (_, i) {
-    return document.querySelectorAll("#mueble-".concat(i + 1));
-});
+var cascos = document.querySelectorAll('[id^="casco-"]');
+var muebles = document.querySelectorAll('[id^="mueble-"]');
 function checkFirstMueble(index) {
-    // Primero, removemos el estado 'checked' de todos los inputs en todos los muebles
-    muebles.forEach(function (nodeList) {
-        nodeList.forEach(function (mueble) {
+    muebles.forEach(function (mueble, i) {
+        if (mueble instanceof HTMLElement) {
+            var input = mueble.querySelector('input[type="radio"]');
+            if (input instanceof HTMLInputElement) {
+                input.checked = (i === index);
+            }
+        }
+    });
+}
+muebles.forEach(function (mueble, index) {
+    if (mueble instanceof HTMLElement) {
+        mueble.style.display = (index === 0) ? 'flex' : 'none';
+    }
+});
+cascos.forEach(function (casco, index) {
+    casco.addEventListener('click', function () {
+        checkFirstMueble(index);
+        muebles.forEach(function (mueble, i) {
             if (mueble instanceof HTMLElement) {
-                var input = mueble.querySelector('input[type="radio"]');
-                if (input instanceof HTMLInputElement) {
-                    input.checked = false; // Establece la propiedad checked a false
-                }
+                mueble.style.display = (i === index) ? 'flex' : 'none';
             }
         });
     });
-    // Luego, establecemos el estado 'checked' al primer input del mueble con el índice correspondiente
-    var firstMueble = muebles[index][0];
-    if (firstMueble instanceof HTMLElement) {
-        var input = firstMueble.querySelector('input[type="radio"]');
-        if (input instanceof HTMLInputElement) {
-            input.checked = true; // Establece la propiedad checked a true
-        }
-    }
-}
-//ocultar al principio todos los muebles menos el 1ro
-muebles.forEach(function (nodeList, index) {
-    nodeList.forEach(function (mueble) {
-        if (mueble instanceof HTMLElement) {
-            mueble.style.display = index === 0
-                ? 'flex'
-                : 'none';
-        }
-    });
 });
-//por cada casco checked mostrar el mueble correspondiente
-cascos.forEach(function (nodeList, i) {
-    nodeList.forEach(function (casco, _) {
-        casco.addEventListener('click', function () {
-            checkFirstMueble(i); //reset al 1er mueble del casco en cuestión
-            muebles.forEach(function (nodeList, j) {
-                if (nodeList) {
-                    nodeList.forEach(function (mueble, _) {
-                        if (mueble instanceof HTMLElement) {
-                            mueble.style.display = i === j
-                                ? 'flex'
-                                : 'none';
-                        }
-                    });
-                }
-            });
-        });
-    });
-});
-var mueble1Inputs = document.querySelectorAll('#mueble-1 input');
-var mueble2Inputs = document.querySelectorAll('#mueble-2 input');
-var mueble3Inputs = document.querySelectorAll('#mueble-3 input');
-var cascoInputs = document.querySelectorAll('#casco-1, #casco-2, #casco-3');
+var furnitureInputs = document.querySelectorAll('.furniture-input');
+var helmetInputs = document.querySelectorAll('.helmet-input');
 var imgs = document.querySelectorAll('.acabados__content__imgs img');
-function updateFurnitureImages() {
+function updateImages() {
     imgs.forEach(function (img) {
         img.style.display = 'none';
     });
-    if (mueble1Inputs[0].checked) {
-        imgs[0].style.display = 'block';
-    }
-    else if (mueble1Inputs[1].checked) {
-        imgs[1].style.display = 'block';
-    }
-    else if (mueble1Inputs[2].checked) {
-        imgs[2].style.display = 'block';
-    }
-    else if (mueble1Inputs[3].checked) {
-        imgs[3].style.display = 'block';
-    }
-    else if (mueble2Inputs[0].checked) {
-        imgs[4].style.display = 'block';
-    }
-    else if (mueble2Inputs[1].checked) {
-        imgs[5].style.display = 'block';
-    }
-    else if (mueble2Inputs[2].checked) {
-        imgs[6].style.display = 'block';
-    }
-    else if (mueble3Inputs[0].checked) {
-        imgs[7].style.display = 'block';
-    }
-    else if (mueble3Inputs[1].checked) {
-        imgs[8].style.display = 'block';
-    }
+    furnitureInputs.forEach(function (input, index) {
+        if (input.checked) {
+            var startIndex = Math.floor(index * imgs.length / furnitureInputs.length);
+            var endIndex = Math.floor(startIndex + imgs.length / furnitureInputs.length - 1);
+            for (var i = startIndex; i <= endIndex && i < imgs.length; i++) {
+                imgs[i].style.display = 'block';
+            }
+        }
+    });
 }
 function showFirstImage() {
-    var helmet1Img = imgs[0];
-    var helmet2Img = imgs[4];
-    var helmet3Img = imgs[7];
-    helmet1Img.style.display = 'none';
-    helmet2Img.style.display = 'none';
-    helmet3Img.style.display = 'none';
-    if (cascoInputs[0].checked) {
-        helmet1Img.style.display = 'block';
-    }
-    if (cascoInputs[1].checked) {
-        helmet2Img.style.display = 'block';
-    }
-    if (cascoInputs[2].checked) {
-        helmet3Img.style.display = 'block';
-    }
-    updateFurnitureImages();
+    helmetInputs.forEach(function (input, index) {
+        var startIndex = Math.floor(index * imgs.length / helmetInputs.length);
+        var endIndex = Math.floor(startIndex + imgs.length / helmetInputs.length - 1);
+        imgs[startIndex].style.display = input.checked ? 'block' : 'none';
+        for (var i = startIndex + 1; i <= endIndex && i < imgs.length; i++) {
+            imgs[i].style.display = 'none';
+        }
+    });
+    updateImages();
 }
-mueble1Inputs.forEach(function (input) {
+furnitureInputs.forEach(function (input) {
     input.addEventListener('change', showFirstImage);
 });
-mueble2Inputs.forEach(function (input) {
-    input.addEventListener('change', showFirstImage);
-});
-mueble3Inputs.forEach(function (input) {
-    input.addEventListener('change', showFirstImage);
-});
-cascoInputs.forEach(function (input) {
+helmetInputs.forEach(function (input) {
     input.addEventListener('change', showFirstImage);
 });
 showFirstImage();
