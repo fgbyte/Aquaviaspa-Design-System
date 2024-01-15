@@ -13982,6 +13982,9 @@ p {
     width: 124px;
   }
 }
+.btn-acabado:hover input {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3019607843);
+}
 .btn-acabado input {
   appearance: none;
   -webkit-appearance: none;
@@ -13992,26 +13995,21 @@ p {
   border-radius: 100%;
   cursor: pointer;
 }
-.btn-acabado input:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3019607843);
-}
 .btn-acabado input:checked {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3019607843);
 }
-.btn-acabado input:checked + label {
-  text-decoration: underline;
-}
-.btn-acabado label {
-  cursor: pointer;
+.btn-acabado input:checked + label p {
+  transition: border-bottom 0.2s linear;
+  border-bottom: 1px solid #000;
 }
 .btn-acabado label p {
   text-align: center;
-  width: 100%;
-  max-width: 85px;
+  width: fit-content;
+  max-width: 95px;
   font-size: 12px;
-}
-.btn-acabado label:hover p {
-  text-decoration: underline;
+  margin: 0px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s linear;
 }
 @media (min-width: 992px) {
   .btn-acabado input {
@@ -15506,8 +15504,13 @@ p {
 .card-acabados__casco, .card-acabados__mueble {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .card-acabados__casco, .card-acabados__mueble {
+    gap: 34px;
+  }
 }
 .card-acabados__casco h4, .card-acabados__mueble h4, .card-acabados__casco .h4, .card-acabados__mueble .h4 {
   width: 100%;
@@ -15515,6 +15518,7 @@ p {
   font-size: 22px;
   font-weight: 500;
   padding: 14px 0px;
+  margin: 0px;
 }
 @media (min-width: 992px) {
   .card-acabados__casco h4, .card-acabados__mueble h4, .card-acabados__casco .h4, .card-acabados__mueble .h4 {
