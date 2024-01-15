@@ -17946,6 +17946,41 @@ p {
   }
 }
 
+.intro-header {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 99px;
+  padding-bottom: 395px;
+}
+@media (min-width: 992px) {
+  .intro-header {
+    padding-top: 109px;
+    padding-bottom: 286px;
+  }
+}
+.intro-header h2, .intro-header .h2 {
+  font: normal normal 600 30px/37px Raleway;
+  margin-bottom: 22px;
+}
+@media (min-width: 992px) {
+  .intro-header h2, .intro-header .h2 {
+    font: normal normal 600 48px/58px Raleway;
+    margin-bottom: 31px;
+  }
+}
+.intro-header p {
+  font: normal normal normal 18px/28px Raleway;
+}
+@media (min-width: 992px) {
+  .intro-header p {
+    font: normal normal normal 18px/28px Raleway;
+    max-width: 868;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .header-navbar {
   position: fixed;
   inset: auto 0;
