@@ -17976,7 +17976,7 @@ p {
 @media (min-width: 992px) {
   .intro-special .intro-header p {
     font: normal normal normal 18px/28px Raleway;
-    max-width: 868;
+    max-width: 868px;
     margin-left: auto;
     margin-right: auto;
   }
