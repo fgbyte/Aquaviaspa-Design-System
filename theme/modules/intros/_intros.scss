@@ -229,7 +229,12 @@
   }
 
   & .btn-ficha {
-    margin-top: 172px;
-    margin-bottom: 160px;
+    margin-top: 88px;
+    margin-bottom: 151px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 172px;
+      margin-bottom: 160px;
+    }
   }
 }

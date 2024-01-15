@@ -18020,8 +18020,14 @@ p {
   margin-left: 50px;
 }
 .intro-special .btn-ficha {
-  margin-top: 172px;
-  margin-bottom: 160px;
+  margin-top: 88px;
+  margin-bottom: 151px;
+}
+@media (min-width: 992px) {
+  .intro-special .btn-ficha {
+    margin-top: 172px;
+    margin-bottom: 160px;
+  }
 }
 
 .header-navbar {
