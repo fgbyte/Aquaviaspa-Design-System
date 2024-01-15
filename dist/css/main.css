@@ -15492,7 +15492,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  align-items: flex-start;
+  align-items: center;
 }
 @media (min-width: 992px) {
   .card-acabados {
@@ -15500,6 +15500,7 @@ p {
     margin-top: 20px;
     max-width: 655px;
     min-width: 600px;
+    align-items: flex-start;
   }
 }
 .card-acabados__casco, .card-acabados__mueble {

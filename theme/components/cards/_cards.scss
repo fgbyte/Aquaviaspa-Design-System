@@ -877,12 +877,13 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  align-items: flex-start;
+  align-items: center;
   @include media-breakpoint-up(lg) {
     gap: 50px;
     margin-top: 20px;
     max-width: 655px;
     min-width: 600px;
+    align-items: flex-start;
   }
 
   &__casco {
