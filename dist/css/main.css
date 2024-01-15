@@ -18544,3 +18544,48 @@ p {
 .link-arrow-grow-white span {
   padding-bottom: 3px;
 }
+
+.conceptualizamos {
+  padding: 71px 20px;
+  max-width: 868px;
+  text-align: start;
+}
+@media (min-width: 992px) {
+  .conceptualizamos {
+    padding: 123px 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.conceptualizamos p {
+  font: normal normal normal 18px/28px Raleway;
+  letter-spacing: 0px;
+  color: #575757;
+}
+.conceptualizamos p span {
+  font-weight: bold;
+}
+
+.intro-modulo-la-marca-aquavia {
+  padding-bottom: 387px;
+}
+@media (min-width: 992px) {
+  .intro-modulo-la-marca-aquavia .intro__container__text {
+    width: 50%;
+  }
+}
+.intro-modulo-la-marca-aquavia .intro__container__img img {
+  width: 100%;
+  height: auto;
+  /*    @include media-breakpoint-up(lg) {
+      width: auto;
+      height: 100%;
+
+  } */
+}
+
+.valores-modulo-la-marca-aquavia {
+  margin-top: -320px;
+  margin-bottom: 161px;
+}
