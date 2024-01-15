@@ -141,39 +141,100 @@
   }
 }
 
-.intro-header {
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 99px;
-  padding-bottom: 395px;
 
-  @include media-breakpoint-up(lg) {
-    padding-top: 109px;
-    padding-bottom: 286px;
+.intro-special {
 
-  }
 
-  & h2 {
-    font: normal normal 600 30px/37px Raleway;
-    margin-bottom: 22px;
+
+  & .intro-header {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 99px;
+    padding-bottom: 395px;
 
     @include media-breakpoint-up(lg) {
-      font: normal normal 600 48px/58px Raleway;
-      margin-bottom: 31px;
+      padding-top: 109px;
+      padding-bottom: 286px;
 
+    }
+
+    & h2 {
+      font: normal normal 600 30px/37px Raleway;
+      margin-bottom: 22px;
+
+      @include media-breakpoint-up(lg) {
+        font: normal normal 600 48px/58px Raleway;
+        margin-bottom: 31px;
+
+      }
+
+    }
+
+    & p {
+      font: normal normal normal 18px/28px Raleway;
+
+      @include media-breakpoint-up(lg) {
+        font: normal normal normal 18px/28px Raleway;
+        max-width: 868px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
   }
 
-  & p {
-    font: normal normal normal 18px/28px Raleway;
+  & .intro-special__imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    width: 100%;
+    max-width: $maxW;
+    margin: 0 auto;
+    margin-top: -350px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @include media-breakpoint-up(lg) {
-      font: normal normal normal 18px/28px Raleway;
-      max-width: 868;
-      margin-left: auto;
-      margin-right: auto;
+      flex-direction: row;
+      gap: 0;
+      margin-top: -200px;
+
+    }
+
+    & .imgs__container {
+      position: relative;
+      width: 100%;
+
+      @include media-breakpoint-up(lg) {
+        width: 50%;
+
+
+      }
+
+      & .intro-img-bg {
+        width: 100%;
+
+      }
+
+      & .intro-img-inside {
+        width: 20%;
+        height: auto;
+        position: relative;
+        object-fit: cover;
+        margin-top: -40px;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  & .btn-ficha {
+    margin-top: 88px;
+    margin-bottom: 151px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 172px;
+      margin-bottom: 160px;
     }
   }
 }
