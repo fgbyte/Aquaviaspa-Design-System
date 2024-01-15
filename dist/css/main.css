@@ -16308,6 +16308,8 @@ p {
 }
 @media (min-width: 992px) and (min-width: 992px) {
   .card-direction {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -17483,6 +17485,8 @@ p {
 }
 @media (min-width: 992px) {
   .hero-cta__text {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18171,6 +18175,8 @@ p {
 }
 @media (min-width: 992px) {
   .top-ventas {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18244,6 +18250,8 @@ p {
 }
 @media (min-width: 992px) {
   .ficha-tecnica {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18283,6 +18291,8 @@ p {
 }
 @media (min-width: 992px) {
   .ficha-documentos {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18385,6 +18395,8 @@ p {
 }
 @media (min-width: 992px) and (min-width: 992px) {
   .distribuidores {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18415,6 +18427,8 @@ p {
 
 @media (min-width: 992px) {
   .faqs {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18454,6 +18468,8 @@ p {
 }
 @media (min-width: 992px) {
   .spas-grid {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18502,6 +18518,8 @@ p {
 }
 @media (min-width: 992px) {
   .blog-grid {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18544,6 +18562,8 @@ p {
 }
 @media (min-width: 992px) {
   .prestaciones-grid {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18602,6 +18622,8 @@ p {
 }
 @media (min-width: 992px) {
   .prestaciones {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18709,6 +18731,8 @@ p {
 }
 @media (min-width: 992px) {
   .valores {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18788,6 +18812,8 @@ p {
 }
 @media (min-width: 992px) {
   .intro__container {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
@@ -18858,6 +18884,8 @@ p {
 
 @media (min-width: 992px) {
   .intro-ficha .intro {
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: 1420px;
