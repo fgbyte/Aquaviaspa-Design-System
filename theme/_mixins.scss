@@ -46,7 +46,15 @@
     margin: 0 auto;
     width: 100%;
     max-width: $maxW;
-    // padding-left: 0px;
-    // padding-right: 0px;
+  }
+}
+
+@mixin blog-space {
+  @include media-breakpoint-up(lg) {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $maxWblog;
   }
 }

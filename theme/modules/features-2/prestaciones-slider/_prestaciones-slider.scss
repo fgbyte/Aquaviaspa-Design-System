@@ -6,7 +6,7 @@
 
   .prestaciones__filter {
     margin-top: 10px;
-    justify-self: center;
+    align-self: center;
 
     @include media-breakpoint-up(special) {
       justify-content: center;

@@ -1,4 +1,6 @@
 @use "../../globals";
+@use "../../mixins";
+
 
 .intro {
   display: flex;
@@ -144,11 +146,7 @@
   }
 }
 
-
 .intro-special {
-
-
-
   & .intro-header {
     text-align: center;
     padding-left: 20px;
@@ -159,7 +157,6 @@
     @include media-breakpoint-up(lg) {
       padding-top: 109px;
       padding-bottom: 286px;
-
     }
 
     & h2 {
@@ -169,9 +166,7 @@
       @include media-breakpoint-up(lg) {
         font: normal normal 600 48px/58px Raleway;
         margin-bottom: 31px;
-
       }
-
     }
 
     & p {
@@ -184,7 +179,6 @@
         margin-right: auto;
       }
     }
-
   }
 
   & .intro-special__imgs {
@@ -202,7 +196,6 @@
       flex-direction: row;
       gap: 0;
       margin-top: -200px;
-
     }
 
     & .imgs__container {
@@ -211,13 +204,10 @@
 
       @include media-breakpoint-up(lg) {
         width: 50%;
-
-
       }
 
       & .intro-img-bg {
         width: 100%;
-
       }
 
       & .intro-img-inside {
@@ -238,6 +228,49 @@
     @include media-breakpoint-up(lg) {
       margin-top: 172px;
       margin-bottom: 160px;
+    }
+  }
+}
+
+.intro-vertical {
+  @include blog-space;
+  padding: 85px $pxMobile;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  @include media-breakpoint-up(lg) {
+    gap: 85px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    h2 {
+      font-size: 36px;
+      font-weight: $textMedium;
+      line-height: 42px;
+      @include media-breakpoint-up(lg) {
+        font-size: 52px;
+        line-height: 54px;
+      }
+    }
+    p {
+      color: $grayText;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 326px;
+      height: 218px;
+      @include media-breakpoint-up(lg) {
+        width: 770px;
+        height: 513px;
+      }
     }
   }
 }
