@@ -16301,7 +16301,7 @@ p {
 }
 @media (min-width: 992px) {
   .card-direction {
-    max-width: 920px;
+    max-width: 900px;
     flex-direction: row;
     gap: 130px;
     padding: 74px 0px;
@@ -19739,4 +19739,5 @@ p {
 .form-full-page-contacto {
   margin-top: 78px;
   margin-bottom: 116px;
+  max-width: 950px;
 }
