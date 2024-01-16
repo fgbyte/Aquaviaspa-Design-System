@@ -93,14 +93,24 @@
 .card-accesorios {
   text-decoration: none;
   background-color: $white;
-  width: 327px;
   overflow: hidden;
+  max-width: 327px;
+  // max-height: 245px;
+  @include media-breakpoint-up(lg) {
+    max-width: 345px;
+    // max-height: 260px;
+  }
 
   &__container {
     width: 100%;
 
     &--bg {
       width: 327px;
+      // height: 245px;
+      @include media-breakpoint-up(lg) {
+        max-width: 345px;
+        // max-height: 260px;
+      }
 
       img {
         transition: all $delay linear;

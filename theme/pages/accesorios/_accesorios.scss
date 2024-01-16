@@ -1,0 +1,10 @@
+@use "../../globals";
+@use "../../mixins";
+
+.posts-page {
+    .posts-page__slider {
+        h3 {
+            align-self: flex-start;
+        }
+    }
+}

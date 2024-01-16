@@ -452,3 +452,37 @@
   }
 
 }
+
+.banner-posts{
+  padding-top: 82px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 162px;
+  }
+  &__img {
+    min-height: 223px;
+    min-width: 375px;
+    @include media-breakpoint-up(lg) {
+      @include blog-space;
+      width: 100%;
+      max-height: 480px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.image-lg {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+
+.image-sm {
+  display: block;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }}

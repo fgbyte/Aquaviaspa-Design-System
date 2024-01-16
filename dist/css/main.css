@@ -15661,14 +15661,24 @@ p {
 .card-accesorios {
   text-decoration: none;
   background-color: #fff;
-  width: 327px;
   overflow: hidden;
+  max-width: 327px;
+}
+@media (min-width: 992px) {
+  .card-accesorios {
+    max-width: 345px;
+  }
 }
 .card-accesorios__container {
   width: 100%;
 }
 .card-accesorios__container--bg {
   width: 327px;
+}
+@media (min-width: 992px) {
+  .card-accesorios__container--bg {
+    max-width: 345px;
+  }
 }
 .card-accesorios__container--bg img {
   transition: all 0.4s linear;
@@ -17896,6 +17906,57 @@ p {
   }
 }
 
+.banner-posts {
+  padding-top: 82px;
+}
+@media (min-width: 992px) {
+  .banner-posts {
+    padding-top: 162px;
+  }
+}
+.banner-posts__img {
+  min-height: 223px;
+  min-width: 375px;
+}
+@media (min-width: 992px) {
+  .banner-posts__img {
+    width: 100%;
+    max-height: 480px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .banner-posts__img {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1152px;
+  }
+}
+.banner-posts__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-lg {
+  display: none;
+}
+@media (min-width: 992px) {
+  .image-lg {
+    display: block;
+  }
+}
+
+.image-sm {
+  display: block;
+}
+@media (min-width: 992px) {
+  .image-sm {
+    display: none;
+  }
+}
+
 .section-beneficios {
   padding: 64px 0;
 }
@@ -19062,6 +19123,61 @@ p {
   }
 }
 
+.intro-vertical {
+  padding: 85px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+@media (min-width: 992px) {
+  .intro-vertical {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1152px;
+  }
+}
+@media (min-width: 992px) {
+  .intro-vertical {
+    gap: 85px;
+  }
+}
+.intro-vertical__text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.intro-vertical__text h2, .intro-vertical__text .h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 42px;
+}
+@media (min-width: 992px) {
+  .intro-vertical__text h2, .intro-vertical__text .h2 {
+    font-size: 52px;
+    line-height: 54px;
+  }
+}
+.intro-vertical__text p {
+  color: #575757;
+}
+.intro-vertical__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-vertical__img img {
+  width: 326px;
+  height: 218px;
+}
+@media (min-width: 992px) {
+  .intro-vertical__img img {
+    width: 770px;
+    height: 513px;
+  }
+}
+
 .header-navbar {
   position: fixed;
   inset: auto 0;
@@ -19745,4 +19861,8 @@ p {
   margin-top: 78px;
   margin-bottom: 116px;
   max-width: 950px;
+}
+
+.posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
+  align-self: flex-start;
 }
