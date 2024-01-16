@@ -572,3 +572,22 @@ document.addEventListener('DOMContentLoaded', function () {
         return bannerHeight - navbarHeight;
     }
 });
+document.addEventListener('DOMContentLoaded', function () {
+    var cards = document.querySelectorAll('.card-spa');
+    var loadMoreButton = document.getElementById('loadMore');
+    function showHiddenCards() {
+        cards.forEach(function (card, index) {
+            if (index >= 6) {
+                card.classList.toggle('hidden-card');
+            }
+        });
+    }
+    loadMoreButton.addEventListener('click', showHiddenCards);
+    if (window.innerWidth <= 768) {
+        cards.forEach(function (card, index) {
+            if (index >= 6) {
+                card.classList.add('hidden-card');
+            }
+        });
+    }
+});
