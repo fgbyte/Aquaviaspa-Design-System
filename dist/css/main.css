@@ -18961,6 +18961,11 @@ p {
   color: #575757;
   line-height: 28px;
 }
+@media (min-width: 992px) {
+  .intro-ficha .intro__container__text p {
+    max-width: 655px;
+  }
+}
 .intro-ficha .intro__container__img img {
   width: 315px;
   height: 240px;
