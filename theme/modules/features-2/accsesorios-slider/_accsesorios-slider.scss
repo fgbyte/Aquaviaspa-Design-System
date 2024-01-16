@@ -78,17 +78,17 @@
   & .guias-slider-accsesorios-arrow {
     display: none;
     width: $maxW;
-    top: 46%;
+    top: 48%;
     cursor: pointer;
 
         & .arrow-slider-accsesorios-left {
       position: relative;
-      right: 60px;
+      right: 30px;
     }
 
     & .arrow-slider-accsesorios-right {
       position: relative;
-      left: 95%;
+      left: 94%;
     }
 
     @include media-breakpoint-up(xxl) {

@@ -19443,16 +19443,16 @@ p {
 .section-slider-accsesorios .guias-slider-accsesorios-arrow {
   display: none;
   width: 1420px;
-  top: 46%;
+  top: 48%;
   cursor: pointer;
 }
 .section-slider-accsesorios .guias-slider-accsesorios-arrow .arrow-slider-accsesorios-left {
   position: relative;
-  right: 60px;
+  right: 30px;
 }
 .section-slider-accsesorios .guias-slider-accsesorios-arrow .arrow-slider-accsesorios-right {
   position: relative;
-  left: 95%;
+  left: 94%;
 }
 @media (min-width: 1400px) {
   .section-slider-accsesorios .guias-slider-accsesorios-arrow {
