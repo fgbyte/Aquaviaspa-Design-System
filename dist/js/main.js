@@ -582,7 +582,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+    function hideLoadMore() {
+        loadMoreButton.style.display = 'none';
+    }
     loadMoreButton.addEventListener('click', showHiddenCards);
+    loadMoreButton.addEventListener('click', hideLoadMore);
     if (window.innerWidth <= 768) {
         cards.forEach(function (card, index) {
             if (index >= 6) {
