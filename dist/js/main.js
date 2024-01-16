@@ -573,21 +573,41 @@ document.addEventListener('DOMContentLoaded', function () {
         return bannerHeight - navbarHeight;
     }
 });
+var mobileMediaQuery = window.matchMedia('(max-width: 768px)');
+var desktopMediaQuery = window.matchMedia('(min-width: 768px)');
 document.addEventListener('DOMContentLoaded', function () {
     var cards = document.querySelectorAll('.card-spa');
     var loadMoreButton = document.getElementById('loadMore');
     function showHiddenCards() {
         cards.forEach(function (card, index) {
             if (index >= 6) {
-                card.classList.toggle('hidden-card');
+                card.classList.remove('hidden-card');
             }
         });
     }
     function hideLoadMore() {
         loadMoreButton.style.display = 'none';
     }
+    function showLoadMore() {
+        loadMoreButton.style.display = 'flex';
+    }
     loadMoreButton.addEventListener('click', showHiddenCards);
     loadMoreButton.addEventListener('click', hideLoadMore);
+    mobileMediaQuery.addEventListener('change', function (event) {
+        if (event.matches) {
+            cards.forEach(function (card, index) {
+                showLoadMore();
+                if (index >= 6) {
+                    card.classList.add('hidden-card');
+                }
+            });
+        }
+    });
+    desktopMediaQuery.addEventListener('change', function (event) {
+        if (event.matches) {
+            showHiddenCards();
+        }
+    });
     if (window.innerWidth <= 768) {
         cards.forEach(function (card, index) {
             if (index >= 6) {
