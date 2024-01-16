@@ -185,7 +185,7 @@
     & .cont-img {
       max-width: 200px;
       margin-bottom: 37px;
-      margin-top: -130px;
+      margin-top: -90px;
 
       @include media-breakpoint-up(lg) {
         margin-top: 0;
@@ -422,8 +422,18 @@
   }
 }
 
-.footer-top {
+.footer-top article {
+  justify-content: center;
+  @include media-breakpoint-down(lg) {
+    padding: 0px $pxMobile;
   h4 {
-    margin-bottom: 100px;
+      font-size: 30px;
+    }
+  }
+}
+
+.footer-top {
+  @include media-breakpoint-down(lg) {
+    min-height: 380px;
   }
 }

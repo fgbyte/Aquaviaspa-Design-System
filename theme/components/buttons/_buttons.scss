@@ -181,6 +181,11 @@
   @include media-breakpoint-up(lg) {
     width: 124px;
   }
+  &:hover {
+    input {
+      box-shadow: 0px 0px 15px #0000004D;
+    }
+  }
 
   input {
     appearance: none;
@@ -192,31 +197,30 @@
     border-radius: 100%;
     cursor: pointer;
 
-    &:hover {
-      box-shadow: 0px 0px 15px #0000004D;
-    }
+    
 
     &:checked {
       box-shadow: 0px 0px 15px #0000004D;
     }
     &:checked + label {
-      text-decoration: underline;
+      p {
+        transition: border-bottom .2s linear;
+        border-bottom: 1px solid $black;
+      }
     }
   }
 
   label {
-    cursor: pointer;
     p {
       text-align: center;
-      width: 100%;
-      max-width: 85px;
+      width: fit-content;
+      max-width: 95px;
       font-size: 12px;
+      margin: 0px;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom .2s linear;
     }
-    &:hover {
-      p {
-        text-decoration: underline;
-      }
-    }
+    
   }
 
   

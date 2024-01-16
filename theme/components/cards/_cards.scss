@@ -879,7 +879,7 @@
   gap: 18px;
   align-items: center;
   @include media-breakpoint-up(lg) {
-    gap: 50px;
+    gap: 20px;
     margin-top: 20px;
     max-width: 655px;
     min-width: 600px;
@@ -889,14 +889,18 @@
   &__casco {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
+    @include media-breakpoint-up(lg) {
+      gap: 34px;
+    }
     h4 {
       width: 100%;
       text-align: center;
       font-size: 22px;
       font-weight: $textMedium;
       padding: 14px 0px;
+      margin: 0px;
       @include media-breakpoint-up(lg) {
         font-size: 30px;
         border-bottom: $grayText 1px solid;
@@ -925,7 +929,7 @@
   }
 
   &__buttons {
-    margin-top: 20px;
+    margin-top: 45px;
     display: flex;
     gap: 14px;
     @include media-breakpoint-down(lg) {
