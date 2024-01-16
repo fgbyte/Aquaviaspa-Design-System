@@ -6,7 +6,7 @@
 
   .prestaciones__filter {
     margin-top: 10px;
-    align-self: center;
+    justify-content: center;
 
     @include media-breakpoint-up(special) {
       justify-content: center;
@@ -40,12 +40,13 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0px;
-    
+
     @include media-breakpoint-up(lg) {
       max-width: 97%;
       margin: 0 auto;
       overflow: hidden;
     }
+
     & .card-prestacion-lite {
       min-width: 325px;
 
@@ -80,6 +81,7 @@
 
   .card-prestacion-lite {
     scroll-snap-align: start;
+
     //!Siempre agregar dentro del Sliders para que mantengan size original
     @include media-breakpoint-up(lg) {
       min-width: 33.33%;
@@ -110,15 +112,16 @@
 }
 
 .subtitle {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    p {
-        max-width: 720px;
-        text-align: center;
-        align-self: center;
-        margin: 0;
-        color: $grayText;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  p {
+    max-width: 720px;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    color: $grayText;
+  }
 }

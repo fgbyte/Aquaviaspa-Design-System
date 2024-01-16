@@ -19607,7 +19607,7 @@ p {
 }
 .prestaciones-slider .prestaciones__filter {
   margin-top: 10px;
-  align-self: center;
+  justify-content: center;
 }
 @media (min-width: 1158px) {
   .prestaciones-slider .prestaciones__filter {
