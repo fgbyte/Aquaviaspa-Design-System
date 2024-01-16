@@ -2,6 +2,7 @@
 //navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('#navbar') as HTMLElement;
+  const body = document.body;
   if (!navbar) return;
 
   const banner = document.querySelector('#hero') as HTMLElement;
@@ -98,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   window.addEventListener('scroll', function () {
-    if (window.scrollY > calculateBannerHeight()) {
+    if (window.scrollY > calculateBannerHeight() || body.classList.contains('.posts-page')) {
       navbar.classList.add('white-mode');
       navLinks.forEach((link) => {
         link.classList.remove('link--white');
