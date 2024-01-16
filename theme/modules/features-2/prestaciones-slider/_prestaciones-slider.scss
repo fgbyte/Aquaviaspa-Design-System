@@ -36,10 +36,11 @@
   .prestaciones-slider__slider {
     display: flex;
     gap: 13px;
+    justify-content: start;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0px;
-
+    margin: 0 auto;
     @include media-breakpoint-up(lg) {
       max-width: 97%;
       overflow: hidden;
@@ -62,12 +63,12 @@
 
     & .arrow-prestaciones-slider-left {
       position: relative;
-      right: 60px;
+      right: 30px;
     }
 
     & .arrow-prestaciones-slider-right {
       position: relative;
-      left: 95%;
+      left: 96%;
     }
 
     @include media-breakpoint-up(xxl) {
