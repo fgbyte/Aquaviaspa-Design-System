@@ -50,7 +50,7 @@
       min-width: 325px;
 
       @include media-breakpoint-up(lg) {
-        min-width: 448px;
+        min-width: 33.33%;
       }
     }
   }
@@ -82,7 +82,7 @@
     scroll-snap-align: start;
     //!Siempre agregar dentro del Sliders para que mantengan size original
     @include media-breakpoint-up(lg) {
-      min-width: 468px;
+      min-width: 33.33%;
       min-height: 515px;
     }
   }

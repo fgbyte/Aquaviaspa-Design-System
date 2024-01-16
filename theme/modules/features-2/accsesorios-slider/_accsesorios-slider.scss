@@ -30,6 +30,7 @@
     & h3 {
       font-size: 28px;
       font-weight: $textMedium;
+
       @include media-breakpoint-up(lg) {
         font-size: 42px;
       }
@@ -81,7 +82,7 @@
     top: 48%;
     cursor: pointer;
 
-        & .arrow-slider-accsesorios-left {
+    & .arrow-slider-accsesorios-left {
       position: relative;
       right: 30px;
     }

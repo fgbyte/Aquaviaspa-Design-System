@@ -19536,7 +19536,7 @@ p {
 }
 @media (min-width: 992px) {
   .prestaciones-slider .prestaciones-slider__slider .card-prestacion-lite {
-    min-width: 448px;
+    min-width: 33.33%;
   }
 }
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
@@ -19564,7 +19564,7 @@ p {
 }
 @media (min-width: 992px) {
   .prestaciones-slider .card-prestacion-lite {
-    min-width: 468px;
+    min-width: 33.33%;
     min-height: 515px;
   }
 }
