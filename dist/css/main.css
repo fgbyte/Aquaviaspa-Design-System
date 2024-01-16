@@ -19774,6 +19774,10 @@ p {
   padding-bottom: 3px;
 }
 
+.hidden-card {
+  display: none;
+}
+
 .conceptualizamos {
   padding: 71px 20px;
   max-width: 868px;

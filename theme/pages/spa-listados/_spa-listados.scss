@@ -1,2 +1,6 @@
 @use "../../globals";
 @use "../../mixins";
+
+.hidden-card {
+    display: none;
+  }
