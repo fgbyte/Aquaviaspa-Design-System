@@ -17025,6 +17025,7 @@ p {
   flex-direction: column;
   gap: 19px;
   max-width: 920px;
+  padding: 0 25px;
 }
 .form-full label span {
   margin-bottom: 6px;
@@ -17074,6 +17075,7 @@ p {
   height: 200px;
   resize: none;
   padding: 8px 8px;
+  outline: none;
 }
 .form-full .form-full__checkbox {
   width: 100%;
@@ -19700,4 +19702,42 @@ p {
 .valores-modulo-la-marca-aquavia {
   margin-top: -320px;
   margin-bottom: 161px;
+}
+
+.form-top__header {
+  margin-top: 68px;
+  margin-bottom: 48px;
+}
+@media (min-width: 992px) {
+  .form-top__header {
+    margin-top: 83px;
+    margin-bottom: 55px;
+  }
+}
+.form-top__header h2, .form-top__header .h2 {
+  text-align: center;
+  font: normal normal normal 32px/37px Raleway;
+}
+@media (min-width: 992px) {
+  .form-top__header h2, .form-top__header .h2 {
+    text-align: center;
+    font: normal normal normal 42px/49px Raleway;
+    margin-bottom: 18px;
+  }
+}
+.form-top__header p {
+  text-align: center;
+  font: normal normal normal 18px/28px Raleway;
+}
+@media (min-width: 992px) {
+  .form-top__header p {
+    text-align: center;
+    font: normal normal normal 18px/28px Raleway;
+    max-width: 860px;
+    padding: 0 30px;
+  }
+}
+
+.form-full-page-pedir-presupuesto {
+  margin-bottom: 104px;
 }

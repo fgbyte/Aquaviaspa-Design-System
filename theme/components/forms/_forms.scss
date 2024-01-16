@@ -90,6 +90,8 @@
   flex-direction: column;
   gap: 19px;
   max-width: 920px;
+  padding: 0 $pxMobile;
+  
 
   label span {
     margin-bottom: 6px;
@@ -146,6 +148,7 @@
     height: 200px;
     resize: none;
     padding: 8px 8px;
+    outline: none;
   }
 
   & .form-full__checkbox {

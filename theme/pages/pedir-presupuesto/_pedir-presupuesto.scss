@@ -1,0 +1,40 @@
+@use "../../globals";
+@use "../../mixins";
+
+.form-top__header {
+    margin-top: 68px;
+    margin-bottom: 48px;
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 83px;
+        margin-bottom: 55px;
+    }
+
+    & h2 {
+        text-align: center;
+        font: normal normal normal 32px/37px Raleway;
+
+        @include media-breakpoint-up(lg) {
+            text-align: center;
+            font: normal normal normal 42px/49px Raleway;
+            margin-bottom: 18px;
+        }
+    }
+
+    & p {
+        text-align: center;
+        font: normal normal normal 18px/28px Raleway;
+        
+
+        @include media-breakpoint-up(lg) {
+            text-align: center;
+            font: normal normal normal 18px/28px Raleway;
+            max-width: 860px;
+            padding: 0 30px;
+        }
+    }
+}
+
+.form-full-page-pedir-presupuesto {
+    margin-bottom: 104px;
+}
