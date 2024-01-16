@@ -4,3 +4,15 @@
 .hidden-card {
     display: none;
   }
+
+ .load-more {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+ }

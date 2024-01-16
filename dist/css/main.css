@@ -19778,6 +19778,19 @@ p {
   display: none;
 }
 
+.load-more {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .load-more {
+    display: none;
+  }
+}
+.load-more svg {
+  cursor: pointer;
+}
+
 .conceptualizamos {
   padding: 71px 20px;
   max-width: 868px;
