@@ -2,10 +2,10 @@
 @use "../../mixins";
 
 .hidden-card {
-    display: none;
-  }
+  display: none;
+}
 
- .load-more {
+.load-more {
   display: flex;
   justify-content: center;
   @include media-breakpoint-up(lg) {
@@ -15,4 +15,27 @@
   svg {
     cursor: pointer;
   }
- }
+}
+
+.sticky-btn {
+  background-color: $white;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+  .btn-blue {
+    width: 80%;
+  }
+}
+
+.hidden {
+  display: none;
+}
