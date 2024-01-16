@@ -40,9 +40,10 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0px;
-    margin: 0 auto;
+    
     @include media-breakpoint-up(lg) {
       max-width: 97%;
+      margin: 0 auto;
       overflow: hidden;
     }
     & .card-prestacion-lite {

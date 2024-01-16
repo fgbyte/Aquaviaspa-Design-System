@@ -19522,11 +19522,11 @@ p {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: 0px;
-  margin: 0 auto;
 }
 @media (min-width: 992px) {
   .prestaciones-slider .prestaciones-slider__slider {
     max-width: 97%;
+    margin: 0 auto;
     overflow: hidden;
   }
 }
