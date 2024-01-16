@@ -15870,7 +15870,7 @@ p {
 @media (min-width: 992px) {
   .card-transform {
     width: 50%;
-    height: 80vh;
+    height: 75vh;
   }
 }
 .card-transform .card-transform__card-inside {
@@ -15878,8 +15878,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-width: 644px;
-  width: 644px;
+  min-width: 544px;
+  width: 544px;
   height: 100%;
   margin-left: 20px;
   padding: 20px 0px;
@@ -15890,31 +15890,34 @@ p {
 @media (min-width: 992px) {
   .card-transform .card-transform__card-inside {
     margin-left: 100px;
-    padding: 30px 147px;
-    height: 80vh;
+    padding: 25px 100px;
+    height: 75vh;
+    padding-top: 0;
   }
 }
 @media (min-width: 1900px) {
   .card-transform .card-transform__card-inside {
     margin-left: 100px;
-    padding: 87px 147px;
-    height: 80vh;
+    padding: 40px 147px;
+    height: 75vh;
+    min-width: 644px;
+    width: 644px;
+    padding-top: 0;
   }
 }
 .card-transform .card-transform__card-inside .card-transform__card-inside--img {
   position: relative;
-  width: 157px;
+  width: 140px;
   height: auto;
   align-self: center;
   justify-self: flex-start;
   margin-bottom: auto;
-  margin-top: 30px;
+  margin-top: auto;
   opacity: 0;
   z-index: 10;
 }
 @media (min-width: 1900px) {
   .card-transform .card-transform__card-inside .card-transform__card-inside--img {
-    margin-top: 40px;
     width: 177px;
   }
 }
@@ -15924,6 +15927,11 @@ p {
   text-transform: none;
 }
 @media (min-width: 992px) {
+  .card-transform .card-transform__card-inside h3, .card-transform .card-transform__card-inside .h3 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1900px) {
   .card-transform .card-transform__card-inside h3, .card-transform .card-transform__card-inside .h3 {
     font-size: 58px;
   }
@@ -15941,6 +15949,12 @@ p {
 @media (min-width: 992px) {
   .card-transform .card-transform__card-inside p {
     display: block;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1900px) {
+  .card-transform .card-transform__card-inside p {
+    font-size: 20px;
   }
 }
 .card-transform .card-transform__card-inside a {
@@ -15958,8 +15972,13 @@ p {
 }
 @media (min-width: 992px) {
   .card-transform .card-transform__card-inside a {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
+  }
+}
+@media (min-width: 1900px) {
+  .card-transform .card-transform__card-inside a {
+    font-size: 18px;
   }
 }
 @media (min-width: 992px) {
@@ -17006,7 +17025,7 @@ p {
   .card-transform-right {
     right: 0;
     width: 50%;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     justify-content: flex-end;
   }
@@ -17016,8 +17035,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-width: 644px;
-  width: 644px;
+  min-width: 544px;
+  width: 544px;
   height: 100%;
   margin-left: 20px;
   padding: 20px 0px;
@@ -17027,14 +17046,20 @@ p {
 }
 @media (min-width: 992px) {
   .card-transform-right .card-transform__card-inside {
-    margin-right: 20px;
-    padding: 30px 147px;
-    height: 80vh;
+    margin-left: 100px;
+    padding: 25px 100px;
+    padding-top: 0;
+    height: 75vh;
   }
 }
 @media (min-width: 1900px) {
   .card-transform-right .card-transform__card-inside {
-    padding: 86px 147px;
+    margin-left: 100px;
+    padding: 30px 147px;
+    height: 75vh;
+    min-width: 644px;
+    width: 644px;
+    padding-top: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -17049,17 +17074,16 @@ p {
 }
 .card-transform-right .card-transform__card-inside .card-transform__card-inside--img {
   position: relative;
-  width: 157px;
+  width: 140px;
   height: auto;
   align-self: center;
   justify-self: flex-start;
   margin-bottom: auto;
-  margin-top: 30px;
+  margin-top: auto;
   opacity: 0;
 }
 @media (min-width: 1900px) {
   .card-transform-right .card-transform__card-inside .card-transform__card-inside--img {
-    margin-top: 40px;
     width: 177px;
   }
 }
@@ -17069,6 +17093,11 @@ p {
   text-transform: none;
 }
 @media (min-width: 992px) {
+  .card-transform-right .card-transform__card-inside h3, .card-transform-right .card-transform__card-inside .h3 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1900px) {
   .card-transform-right .card-transform__card-inside h3, .card-transform-right .card-transform__card-inside .h3 {
     font-size: 58px;
   }
@@ -17087,6 +17116,12 @@ p {
 @media (min-width: 992px) {
   .card-transform-right .card-transform__card-inside p {
     display: block;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1900px) {
+  .card-transform-right .card-transform__card-inside p {
+    font-size: 20px;
   }
 }
 .card-transform-right .card-transform__card-inside a {
@@ -17104,8 +17139,13 @@ p {
 }
 @media (min-width: 992px) {
   .card-transform-right .card-transform__card-inside a {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
+  }
+}
+@media (min-width: 1900px) {
+  .card-transform-right .card-transform__card-inside a {
+    font-size: 18px;
   }
 }
 @media (min-width: 992px) {
