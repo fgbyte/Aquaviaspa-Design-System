@@ -17830,6 +17830,9 @@ p {
 .banner--short {
   max-height: 500px;
 }
+.banner--short h1, .banner--short .h1 {
+  font-weight: 500;
+}
 .banner--short .banner__img img {
   height: 100%;
 }
