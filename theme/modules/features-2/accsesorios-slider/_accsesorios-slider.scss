@@ -7,10 +7,12 @@
   display: flex;
   flex-direction: column;
   padding: 5rem 20px;
-  max-width: $maxW;
+  max-width: $maxW + 60;
+  overflow: hidden;
+
 
   @include media-breakpoint-up(lg) {
-    padding: 9.5625rem 20px;
+    padding: 9.5625rem 50px;
 
   }
 
@@ -51,10 +53,8 @@
     gap: 14px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    max-width: $maxW - 80px;
 
     @include media-breakpoint-up(lg) {
-      margin: 0 auto;
       overflow: hidden;
 
     }
@@ -63,6 +63,9 @@
       min-width: fit-content;
       height: fit-content;
 
+      @include media-breakpoint-up(lg) {
+        min-width: 24%;
+      }
     }
 
     & .arrow-accesorio {
@@ -77,25 +80,26 @@
   }
 
   & .guias-slider-accsesorios-arrow {
+    position: relative;
     display: none;
-    width: $maxW;
+    width: 100%;
     top: 48%;
     cursor: pointer;
+    right: 0px;
+    left: 0px;
 
     & .arrow-slider-accsesorios-left {
       position: relative;
-      right: 30px;
     }
 
     & .arrow-slider-accsesorios-right {
       position: relative;
-      left: 94%;
     }
 
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(lg) {
       position: absolute;
-      display: block;
-
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
