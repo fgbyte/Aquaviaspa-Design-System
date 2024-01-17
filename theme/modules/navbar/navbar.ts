@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   window.addEventListener('scroll', function () {
-    console.log();
+   
 
     if (window.scrollY > calculateBannerHeight() || body.classList[0] == "posts-page") {
       navbar.classList.add('white-mode');

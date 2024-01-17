@@ -566,7 +566,6 @@ document.addEventListener('DOMContentLoaded', function () {
         firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
     }
     window.addEventListener('scroll', function () {
-        console.log();
         if (window.scrollY > calculateBannerHeight() || body.classList[0] == "posts-page") {
             navbar.classList.add('white-mode');
             navLinks.forEach(function (link) {
