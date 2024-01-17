@@ -14728,6 +14728,7 @@ p {
 
 .btn-cta {
   display: flex;
+  text-decoration: none;
   gap: 1rem;
   align-items: center;
   width: fit-content;
@@ -14786,6 +14787,7 @@ p {
 .btn-ficha-home {
   display: flex;
   align-items: center;
+  text-decoration: none;
   width: fit-content;
   height: fit-content;
   border: none;
@@ -14816,6 +14818,7 @@ p {
   display: flex;
   align-items: center;
   width: fit-content;
+  text-decoration: none;
   height: fit-content;
   border: none;
   transition: all 0.4s linear;
@@ -14842,6 +14845,7 @@ p {
 
 .btn-gray {
   display: flex;
+  text-decoration: none;
   align-items: center;
   width: fit-content;
   height: fit-content;
@@ -14871,6 +14875,7 @@ p {
 
 .btn-blue {
   display: flex;
+  text-decoration: none;
   align-items: center;
   width: 100%;
   justify-content: center;
@@ -19862,6 +19867,10 @@ p {
   .ficha-tecnica {
     padding: 80px 25px 0px 25px;
   }
+}
+
+.banner-ficha__card__text .text__element {
+  border-bottom: solid 0.3px #C7C6BE;
 }
 
 .hidden-card {
