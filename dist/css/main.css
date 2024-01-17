@@ -15360,6 +15360,15 @@ p {
 }
 @media (min-width: 992px) {
   .dropdown-card {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1420px;
+  }
+}
+@media (min-width: 992px) {
+  .dropdown-card {
     max-width: 464px;
   }
 }
@@ -18367,7 +18376,7 @@ p {
 }
 @media (min-width: 992px) {
   .ficha-tecnica {
-    padding: 114px 25px;
+    padding: 114px 0px 0px 0px;
   }
   .ficha-tecnica h3, .ficha-tecnica .h3 {
     font-size: 42px;
@@ -19774,6 +19783,87 @@ p {
   padding-bottom: 3px;
 }
 
+.btn--ficha {
+  color: #000;
+  background: #94F0F5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid #94F0F5;
+}
+.btn--ficha .btn-cta__arrow {
+  background: rgb(0, 0, 0);
+}
+.btn--ficha .btn-cta__arrow-svg {
+  stroke: #000;
+}
+
+@media (min-width: 1900px) {
+  .banner-ficha__hero {
+    height: 940px;
+    max-height: 940px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-card summary {
+    height: 96px;
+    padding: 35px 45px 30px 45px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+.dropdown-card ul li::before {
+  margin: 0px;
+}
+
+.dropdown-card ul li div p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.ficha-documentos {
+  padding-bottom: 120px;
+}
+@media (min-width: 992px) {
+  .ficha-documentos {
+    padding: 50px 0px 155px 0px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner-ficha__card {
+    min-height: 662px;
+  }
+}
+
+.banner-ficha__card__img {
+  height: 55%;
+}
+
+.banner-ficha__card__text {
+  max-height: 352px;
+}
+
+.banner-ficha__card__img img {
+  max-height: 295px;
+  object-position: top center;
+}
+
+.intro-ficha .intro__container__img img {
+  height: auto;
+}
+
+.prestaciones__filter {
+  gap: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .ficha-tecnica {
+    padding: 80px 25px 0px 25px;
+  }
+}
+
 .hidden-card {
   display: none;
 }
@@ -19801,6 +19891,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
 }
 @media (min-width: 992px) {
   .sticky-btn {

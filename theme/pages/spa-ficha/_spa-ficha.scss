@@ -1,2 +1,80 @@
 @use "../../globals";
 @use "../../mixins";
+
+.btn--ficha {
+  color: $black;
+  background: $cyan 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 20px #00000099;
+  border: 1px solid $cyan;
+  & .btn-cta__arrow {
+    background: rgb(0, 0, 0);
+  }
+  & .btn-cta__arrow-svg {
+    stroke: $black;
+  }
+}
+
+.banner-ficha__hero {
+  @include media-breakpoint-up(xxxl) {
+    height: 940px;
+    max-height: 940px;
+    object-fit: cover;
+  }
+}
+
+.dropdown-card summary {
+  @include media-breakpoint-up(lg) {
+    height: 96px;
+    padding: 35px 45px 30px 45px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+.dropdown-card ul li::before {
+  margin: 0px;
+}
+
+.dropdown-card ul li div p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.ficha-documentos {
+    padding-bottom: 120px;
+  @include media-breakpoint-up(lg) {
+    padding: 50px 0px 155px 0px;
+  }
+}
+
+.banner-ficha__card {
+  @include media-breakpoint-down(lg) {
+    min-height: 662px;
+  }
+}
+
+.banner-ficha__card__img {
+  height: 55%;
+}
+.banner-ficha__card__text {
+  max-height: 352px;
+}
+.banner-ficha__card__img img {
+  max-height: 295px;
+  object-position: top center;
+}
+.banner-ficha__card__text .text__element {
+    // border-bottom: solid 0.8px $gray;
+}
+.intro-ficha .intro__container__img img {
+    height: auto;
+}
+.prestaciones__filter {
+    gap: 20px;
+}
+
+.ficha-tecnica {
+@include media-breakpoint-down(lg) {
+    padding: 80px 25px 0px 25px;
+}
+}
