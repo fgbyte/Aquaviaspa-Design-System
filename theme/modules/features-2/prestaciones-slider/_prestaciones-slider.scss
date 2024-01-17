@@ -3,7 +3,7 @@
 
 .prestaciones-slider {
   position: relative;
-
+  padding: 0 50px;
   .prestaciones__filter {
     margin-top: 10px;
     justify-content: center;
@@ -42,9 +42,10 @@
     scrollbar-width: 0px;
 
     @include media-breakpoint-up(lg) {
-      max-width: 97%;
+      max-width: $maxW;
       margin: 0 auto;
       overflow: hidden;
+     
     }
 
     & .card-prestacion-lite {
@@ -57,25 +58,26 @@
   }
 
   & .guias-prestaciones-slider__slider-arrow {
+    position: relative;
     display: none;
-    width: $maxW;
-
-    top: 55%;
+    width: 100%;
+    top: 57.5%;
     cursor: pointer;
+    right: 0px;
+    left: 0px;
 
     & .arrow-prestaciones-slider-left {
       position: relative;
-      right: 30px;
     }
 
     & .arrow-prestaciones-slider-right {
       position: relative;
-      left: 93%;
     }
 
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(lg) {
       position: absolute;
-      display: block;
+      display: flex;
+      justify-content: space-between;
     }
   }
 

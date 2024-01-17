@@ -14761,7 +14761,7 @@ p {
   width: 100%;
 }
 .card-accesorios__container--bg {
-  width: 327px;
+  max-width: 327px;
 }
 @media (min-width: 992px) {
   .card-accesorios__container--bg {
@@ -18559,11 +18559,12 @@ p {
   display: flex;
   flex-direction: column;
   padding: 5rem 20px;
-  max-width: 1470px;
+  max-width: 1530px;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios {
-    padding: 9.5625rem 20px;
+    padding: 9.5625rem 50px;
   }
 }
 .section-slider-accsesorios .section-slider-accsesorios__header {
@@ -18599,17 +18600,20 @@ p {
   gap: 14px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  max-width: 1390px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios .accseorios-slider {
-    margin: 0 auto;
     overflow: hidden;
   }
 }
 .section-slider-accsesorios .accseorios-slider .card-accesorios {
   min-width: fit-content;
   height: fit-content;
+}
+@media (min-width: 992px) {
+  .section-slider-accsesorios .accseorios-slider .card-accesorios {
+    min-width: 24%;
+  }
 }
 .section-slider-accsesorios .accseorios-slider .arrow-accesorio {
   display: none;
@@ -18622,23 +18626,25 @@ p {
   }
 }
 .section-slider-accsesorios .guias-slider-accsesorios-arrow {
+  position: relative;
   display: none;
-  width: 1470px;
+  width: 100%;
   top: 48%;
   cursor: pointer;
+  right: 0px;
+  left: 0px;
 }
 .section-slider-accsesorios .guias-slider-accsesorios-arrow .arrow-slider-accsesorios-left {
   position: relative;
-  right: 30px;
 }
 .section-slider-accsesorios .guias-slider-accsesorios-arrow .arrow-slider-accsesorios-right {
   position: relative;
-  left: 94%;
 }
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .section-slider-accsesorios .guias-slider-accsesorios-arrow {
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -18668,6 +18674,7 @@ p {
 
 .prestaciones-slider {
   position: relative;
+  padding: 0 50px;
 }
 .prestaciones-slider .prestaciones__filter {
   margin-top: 10px;
@@ -18706,7 +18713,7 @@ p {
 }
 @media (min-width: 992px) {
   .prestaciones-slider .prestaciones-slider__slider {
-    max-width: 97%;
+    max-width: 1470px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -18720,23 +18727,25 @@ p {
   }
 }
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
+  position: relative;
   display: none;
-  width: 1470px;
-  top: 55%;
+  width: 100%;
+  top: 57.5%;
   cursor: pointer;
+  right: 0px;
+  left: 0px;
 }
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow .arrow-prestaciones-slider-left {
   position: relative;
-  right: 30px;
 }
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow .arrow-prestaciones-slider-right {
   position: relative;
-  left: 93%;
 }
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 }
 .prestaciones-slider .card-prestacion-lite {
