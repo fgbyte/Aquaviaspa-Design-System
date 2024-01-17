@@ -554,16 +554,16 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.forEach(function (link) {
             link.classList.remove('link--white');
         });
-        navLogo.src = '/dist/assets/icons/logofooter.svg';
-        firstMenuBurger.src = '/dist/assets/icons/menu-closed-black.svg';
+        navLogo.style.filter = 'invert(100%)';
+        firstMenuBurger.style.filter = 'invert(100%)';
     }
     else {
         navbar.classList.remove('white-mode');
         navLinks.forEach(function (link) {
             link.classList.add('link--white');
         });
-        navLogo.src = '/dist/assets/icons/logo-navbar.svg';
-        firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
+        navLogo.style.filter = 'invert(0)';
+        firstMenuBurger.style.filter = 'invert(0)';
     }
     window.addEventListener('scroll', function () {
         if (window.scrollY > calculateBannerHeight() || body.classList.contains("posts-page")) {
