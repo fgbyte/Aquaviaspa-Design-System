@@ -71,3 +71,9 @@
 .control-active {
   background-color: #464646;
 }
+
+.top-ventas__container {
+  @include media-breakpoint-up(lg) {
+    margin: 0 auto;
+  }
+}

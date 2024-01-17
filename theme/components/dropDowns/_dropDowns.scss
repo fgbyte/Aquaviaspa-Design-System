@@ -76,6 +76,7 @@
 }
 
 .dropdown-card {
+  @include desk-space;
   width: 100%;
 
   @include media-breakpoint-up(lg) {
