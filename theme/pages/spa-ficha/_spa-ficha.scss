@@ -33,6 +33,7 @@
 
 .dropdown-card ul li::before {
   margin: 0px;
+  margin-top: -3px;
 }
 
 .dropdown-card ul li div p {
@@ -65,9 +66,7 @@
   max-height: 295px;
   object-position: top center;
 }
-.banner-ficha__card__text .text__element {
-    // border-bottom: solid 0.8px $gray;
-}
+
 .intro-ficha .intro__container__img img {
     height: auto;
 }
@@ -82,6 +81,17 @@
 }
 }
 
-.banner-ficha__card__text .text__element {
-  border-bottom: solid .3px $grayOff;
+
+.ficha-documentos__card__btns a {
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.border-none {
+  @include media-breakpoint-down(lg) {
+    border: none;
+  }
 }
