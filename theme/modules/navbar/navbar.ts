@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
 
-  if (body.classList[0] == "posts-page") {
+  if (body.classList.contains("posts-page")) {
     navbar.classList.add('white-mode');
     navLinks.forEach((link) => {
       link.classList.remove('link--white');
