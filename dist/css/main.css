@@ -15367,7 +15367,7 @@ p {
   .dropdown-card {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 @media (min-width: 992px) {
@@ -17148,7 +17148,7 @@ p {
   opacity: 0.8;
 }
 .footer .footer__content {
-  max-width: 1420px;
+  max-width: 1470px;
   padding: 91px 0px;
   padding-bottom: 15px;
 }
@@ -17245,7 +17245,7 @@ p {
 .footer .footer-bootom {
   display: flex;
   gap: 100px;
-  max-width: 1420px;
+  max-width: 1470px;
 }
 .footer .footer-bootom div {
   color: #575757;
@@ -17521,7 +17521,7 @@ p {
   .hero-cta__text {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .hero-cta__text h1, .hero-cta__text .h1 {
@@ -17936,11 +17936,9 @@ p {
 }
 @media (min-width: 992px) and (min-width: 992px) {
   .banner-posts__img {
-    padding-left: 0px;
-    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1152px;
+    max-width: 1102px;
   }
 }
 .banner-posts__img img {
@@ -18284,7 +18282,7 @@ p {
   .top-ventas {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 @media (min-width: 992px) {
@@ -18357,7 +18355,7 @@ p {
   .ficha-tecnica {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .ficha-tecnica h3, .ficha-tecnica .h3 {
@@ -18373,7 +18371,7 @@ p {
 }
 @media (min-width: 992px) {
   .ficha-tecnica {
-    padding: 114px 0px 0px 0px;
+    padding-top: 114px;
   }
   .ficha-tecnica h3, .ficha-tecnica .h3 {
     font-size: 42px;
@@ -18396,7 +18394,7 @@ p {
   .ficha-documentos {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .ficha-documentos h3, .ficha-documentos .h3 {
@@ -18498,7 +18496,7 @@ p {
   .distribuidores {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 @media (min-width: 992px) {
@@ -18528,7 +18526,7 @@ p {
   .faqs {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .faqs__links {
@@ -18567,7 +18565,7 @@ p {
   .spas-grid {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 @media (min-width: 992px) {
@@ -18615,7 +18613,7 @@ p {
   .blog-grid {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .blog-grid__cards {
@@ -18657,7 +18655,7 @@ p {
   .prestaciones-grid {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .prestaciones-grid__cards {
@@ -18715,7 +18713,7 @@ p {
   .prestaciones {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .prestaciones h3, .prestaciones .h3 {
@@ -18822,7 +18820,7 @@ p {
   .valores {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .valores h2, .valores .h2 {
@@ -18901,7 +18899,7 @@ p {
   .intro__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .intro__container__text {
@@ -18971,7 +18969,7 @@ p {
   .intro-ficha .intro {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1470px;
   }
 }
 .intro-ficha .intro__container {
@@ -19065,7 +19063,7 @@ p {
   flex-direction: column;
   gap: 63px;
   width: 100%;
-  max-width: 1420px;
+  max-width: 1470px;
   margin: 0 auto;
   margin-top: -350px;
   padding-left: 20px;
@@ -19117,11 +19115,9 @@ p {
 }
 @media (min-width: 992px) {
   .intro-vertical {
-    padding-left: 0px;
-    padding-right: 0px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1152px;
+    max-width: 1102px;
   }
 }
 @media (min-width: 992px) {
@@ -19481,7 +19477,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 5rem 20px;
-  max-width: 1420px;
+  max-width: 1470px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios {
@@ -19521,7 +19517,7 @@ p {
   gap: 14px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  max-width: 1340px;
+  max-width: 1390px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios .accseorios-slider {
@@ -19545,7 +19541,7 @@ p {
 }
 .section-slider-accsesorios .guias-slider-accsesorios-arrow {
   display: none;
-  width: 1420px;
+  width: 1470px;
   top: 48%;
   cursor: pointer;
 }
@@ -19643,7 +19639,7 @@ p {
 }
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
   display: none;
-  width: 1420px;
+  width: 1470px;
   top: 55%;
   cursor: pointer;
 }
@@ -19653,7 +19649,7 @@ p {
 }
 .prestaciones-slider .guias-prestaciones-slider__slider-arrow .arrow-prestaciones-slider-right {
   position: relative;
-  left: 96.1%;
+  left: 93%;
 }
 @media (min-width: 1400px) {
   .prestaciones-slider .guias-prestaciones-slider__slider-arrow {
@@ -19804,7 +19800,15 @@ p {
 }
 @media (min-width: 992px) {
   .ficha-documentos {
-    padding: 50px 0px 155px 0px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1470px;
+  }
+}
+@media (min-width: 992px) {
+  .ficha-documentos {
+    padding-top: 50px;
+    padding-bottom: 155px;
   }
 }
 
@@ -19835,6 +19839,13 @@ p {
   gap: 20px;
 }
 
+@media (min-width: 992px) {
+  .ficha-tecnica {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1470px;
+  }
+}
 @media (max-width: 991.98px) {
   .ficha-tecnica {
     padding: 80px 25px 0px 25px;

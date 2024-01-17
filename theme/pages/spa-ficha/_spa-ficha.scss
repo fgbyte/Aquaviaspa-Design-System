@@ -41,9 +41,11 @@
 }
 
 .ficha-documentos {
+  @include desk-space;
     padding-bottom: 120px;
   @include media-breakpoint-up(lg) {
-    padding: 50px 0px 155px 0px;
+    padding-top: 50px;
+    padding-bottom: 155px;
   }
 }
 
@@ -74,6 +76,7 @@
 }
 
 .ficha-tecnica {
+  @include desk-space;
 @include media-breakpoint-down(lg) {
     padding: 80px 25px 0px 25px;
 }
