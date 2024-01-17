@@ -2,6 +2,7 @@
 //navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
   const navbar = document.querySelector('#navbar') as HTMLElement;
+  const body = document.body;
   if (!navbar) return;
 
   const banner = document.querySelector('#hero') as HTMLElement;
@@ -97,8 +98,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })
 
+
+  if (body.classList[0] == "posts-page") {
+    navbar.classList.add('white-mode');
+    navLinks.forEach((link) => {
+      link.classList.remove('link--white');
+    });
+    navLogo.src = '/dist/assets/icons/logofooter.svg';
+    firstMenuBurger.src = '/dist/assets/icons/menu-closed-black.svg';
+  } else {
+    navbar.classList.remove('white-mode');
+    navLinks.forEach((link) => {
+      link.classList.add('link--white');
+    });
+    navLogo.src = '/dist/assets/icons/logo-navbar.svg';
+    firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
+  }
+
+
   window.addEventListener('scroll', function () {
-    if (window.scrollY > calculateBannerHeight()) {
+
+
+    if (window.scrollY > calculateBannerHeight() || body.classList.contains("posts-page")) {
       navbar.classList.add('white-mode');
       navLinks.forEach((link) => {
         link.classList.remove('link--white');
