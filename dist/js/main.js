@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function () {
         firstMenuBurger.src = '/dist/assets/icons/menu-closed-whait.svg';
     }
     window.addEventListener('scroll', function () {
-        if (window.scrollY > calculateBannerHeight() || body.classList[0] == "posts-page") {
+        if (window.scrollY > calculateBannerHeight() || body.classList.contains("posts-page")) {
             navbar.classList.add('white-mode');
             navLinks.forEach(function (link) {
                 link.classList.remove('link--white');

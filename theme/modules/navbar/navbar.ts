@@ -117,9 +117,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   window.addEventListener('scroll', function () {
-   
 
-    if (window.scrollY > calculateBannerHeight() || body.classList[0] == "posts-page") {
+
+    if (window.scrollY > calculateBannerHeight() || body.classList.contains("posts-page")) {
       navbar.classList.add('white-mode');
       navLinks.forEach((link) => {
         link.classList.remove('link--white');
