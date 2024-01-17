@@ -15879,7 +15879,7 @@ p {
 .card-transform {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 63% center;
+  background-position: center;
   width: 100%;
   transition: all 0.4s linear;
   overflow: hidden;
@@ -17101,7 +17101,7 @@ p {
 .card-transform-right {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 63% center;
+  background-position: center;
   width: 100%;
   transition: all 0.4s linear;
   overflow: hidden;
