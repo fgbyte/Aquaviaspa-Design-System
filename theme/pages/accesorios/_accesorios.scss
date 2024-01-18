@@ -7,11 +7,20 @@
       align-self: flex-start;
     }
   }
+
+  .intro-vertical {
+    padding-bottom: 0px;
+  }
+
+  .posts-page__slider h3 {
+    font-size: 22px;
+    @include media-breakpoint-up(lg) {
+      font-size: 30px;
+    }
+  }
 }
 
-.banner-posts__img {
-  position: relative;
-}
+
 
 .banner-posts {
   position: relative;
@@ -26,3 +35,4 @@
   border-top: .5px solid $grayOff; // Crea una línea horizontal
   transform: translateY(-50%); // Ajusta la línea al centro exacto
 }
+

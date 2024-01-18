@@ -19116,9 +19116,16 @@ p {
 .posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
   align-self: flex-start;
 }
-
-.banner-posts__img {
-  position: relative;
+.posts-page .intro-vertical {
+  padding-bottom: 0px;
+}
+.posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
+  font-size: 22px;
+}
+@media (min-width: 992px) {
+  .posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
+    font-size: 30px;
+  }
 }
 
 .banner-posts {
