@@ -4,7 +4,7 @@
 .card-spa {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 22px;
   text-decoration: none;
   width: auto;
   max-width: 327px;
@@ -13,6 +13,7 @@
   background-color: $white;
 
   @include media-breakpoint-up(lg) {
+    gap: 27px;
     width: auto;
     max-width: 450px;
     height: auto;
@@ -720,7 +721,6 @@
   }
 }
 
-
 .card-prestacion-lite {
   min-width: 325px;
   height: 410px;
@@ -747,7 +747,7 @@
 
 .logo-down:hover {
   @include media-breakpoint-up(lg) {
-   /*  .card-prestacion-lite__text p {
+    /*  .card-prestacion-lite__text p {
      margin-top: 30px;
     } */
   }
