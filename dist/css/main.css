@@ -14438,9 +14438,6 @@ p {
 }
 
 .dropdown-card {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -14455,7 +14452,13 @@ p {
     max-width: 464px;
   }
 }
+.dropdown-card summary::-webkit-details-marker {
+  display: none;
+}
 .dropdown-card summary {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: #464646;
   color: white;
   padding: 18px 16px;
@@ -14520,12 +14523,15 @@ p {
 }
 
 .dropdown-podemos {
+  background-color: #575757;
+}
+.dropdown-podemos summary::-webkit-details-marker {
+  display: none;
+}
+.dropdown-podemos summary {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #575757;
-}
-.dropdown-podemos summary {
   color: #fff;
   font-size: 29px;
   font-weight: 500;
