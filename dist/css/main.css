@@ -19116,3 +19116,21 @@ p {
 .posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
   align-self: flex-start;
 }
+
+.banner-posts__img {
+  position: relative;
+}
+
+.banner-posts {
+  position: relative;
+}
+
+.banner-posts::before {
+  content: "";
+  position: absolute;
+  top: calc(50% + 81px);
+  left: 0;
+  right: 0;
+  border-top: 0.5px solid #C7C6BE;
+  transform: translateY(-50%);
+}

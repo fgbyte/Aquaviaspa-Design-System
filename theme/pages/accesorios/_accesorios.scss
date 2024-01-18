@@ -2,9 +2,27 @@
 @use "../../mixins";
 
 .posts-page {
-    .posts-page__slider {
-        h3 {
-            align-self: flex-start;
-        }
+  .posts-page__slider {
+    h3 {
+      align-self: flex-start;
     }
+  }
+}
+
+.banner-posts__img {
+  position: relative;
+}
+
+.banner-posts {
+  position: relative;
+}
+
+.banner-posts::before {
+  content: "";
+  position: absolute;
+  top: calc(50% + 81px) ; // Posiciona la línea en el medio verticalmente (81 = mitad del padding)
+  left: 0; // Comienza desde el borde izquierdo
+  right: 0; // Extiende hasta el borde derecho
+  border-top: .5px solid $grayOff; // Crea una línea horizontal
+  transform: translateY(-50%); // Ajusta la línea al centro exacto
 }
