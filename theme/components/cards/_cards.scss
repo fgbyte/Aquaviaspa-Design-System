@@ -15,7 +15,8 @@
   @include media-breakpoint-up(lg) {
     width: auto;
     max-width: 450px;
-    height: 615px;
+    height: auto;
+    max-height: 600px;
   }
 
   .card-spa__container {
