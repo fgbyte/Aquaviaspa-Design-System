@@ -17001,10 +17001,6 @@ p {
     padding-top: 162px;
   }
 }
-.banner-posts__img {
-  min-height: 223px;
-  min-width: 375px;
-}
 @media (min-width: 992px) {
   .banner-posts__img {
     width: 100%;

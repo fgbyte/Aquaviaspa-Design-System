@@ -459,8 +459,7 @@
     padding-top: 162px;
   }
   &__img {
-    min-height: 223px;
-    min-width: 375px;
+
     @include media-breakpoint-up(lg) {
       @include blog-space;
       width: 100%;
