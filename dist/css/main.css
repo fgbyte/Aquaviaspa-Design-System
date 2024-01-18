@@ -16817,12 +16817,22 @@ p {
   flex-direction: column;
   background-color: #464646;
 }
+@media (min-width: 768px) {
+  .banner {
+    max-height: 738px;
+  }
+}
 .banner__img {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 767.98px) {
+  .banner__img {
+    height: 446px;
+  }
+}
 .banner__img img {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: top center;
@@ -16853,7 +16863,7 @@ p {
   font-size: 18px;
   font-weight: 400;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .banner {
     max-height: 905px;
     flex-direction: row;
