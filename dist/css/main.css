@@ -14673,6 +14673,7 @@ p {
   text-decoration: none;
   width: auto;
   max-width: 327px;
+  min-width: 280px;
   height: 482px;
   background-color: #fff;
 }
