@@ -19135,12 +19135,15 @@ p {
   position: relative;
 }
 
-.banner-posts::before {
-  content: "";
-  position: absolute;
-  top: calc(50% + 81px);
-  left: 0;
-  right: 0;
-  border-top: 0.5px solid #C7C6BE;
-  transform: translateY(-50%);
+@media (min-width: 992px) {
+  .banner-posts::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: calc(50% + 81px);
+    left: 0;
+    right: 0;
+    border-top: 0.5px solid #C7C6BE;
+    transform: translateY(-50%);
+  }
 }
