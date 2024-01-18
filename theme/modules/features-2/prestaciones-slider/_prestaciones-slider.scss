@@ -3,7 +3,14 @@
 
 .prestaciones-slider {
   position: relative;
-  padding: 0 50px;
+  padding: 0 $pxMobile;
+  padding-right: 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 50px;
+
+  }
+
   .prestaciones__filter {
     margin-top: 10px;
     justify-content: center;
@@ -45,7 +52,7 @@
       max-width: $maxW;
       margin: 0 auto;
       overflow: hidden;
-     
+
     }
 
     & .card-prestacion-lite {

@@ -15334,6 +15334,14 @@ p {
   }
 }
 
+@media (min-width: 992px) {
+  .logo-down:hover {
+    /*  .card-prestacion-lite__text p {
+      margin-top: 30px;
+     } */
+  }
+}
+
 .card-gama {
   width: 240px;
   display: flex;
@@ -18556,7 +18564,8 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 5rem 20px;
+  padding: 5rem 25px;
+  padding-right: 0;
   max-width: 1470px;
   overflow: hidden;
 }
@@ -18672,7 +18681,13 @@ p {
 
 .prestaciones-slider {
   position: relative;
-  padding: 0 50px;
+  padding: 0 25px;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .prestaciones-slider {
+    padding: 0 50px;
+  }
 }
 .prestaciones-slider .prestaciones__filter {
   margin-top: 10px;

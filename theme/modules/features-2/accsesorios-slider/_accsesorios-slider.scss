@@ -6,7 +6,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 5rem 20px;
+  padding: 5rem $pxMobile;
+  padding-right: 0;
   max-width: $maxW;
   overflow: hidden;
 
