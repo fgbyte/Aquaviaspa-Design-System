@@ -265,11 +265,11 @@
     justify-content: center;
     align-items: center;
     img {
-      width: 326px;
-      height: 218px;
+      max-width: 100%;
+      height: auto;
       @include media-breakpoint-up(lg) {
-        width: 770px;
-        height: 513px;
+        max-width: 70%;
+        height: auto;
       }
     }
   }
