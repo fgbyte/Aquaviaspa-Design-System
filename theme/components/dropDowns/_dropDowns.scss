@@ -76,6 +76,9 @@
 }
 
 .dropdown-card {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   @include desk-space;
   width: 100%;
 
@@ -158,6 +161,9 @@
 }
 
 .dropdown-podemos {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: $grayText;
   summary {
     color: $white;

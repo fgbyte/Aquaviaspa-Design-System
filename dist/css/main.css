@@ -14438,6 +14438,9 @@ p {
 }
 
 .dropdown-card {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -14517,6 +14520,9 @@ p {
 }
 
 .dropdown-podemos {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: #575757;
 }
 .dropdown-podemos summary {
