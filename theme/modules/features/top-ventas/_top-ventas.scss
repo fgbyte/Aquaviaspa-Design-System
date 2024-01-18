@@ -8,7 +8,8 @@
   gap: 26px;
   padding: 0 $pxMobile;
   @include media-breakpoint-up(lg) {
-    padding: 0px;
+    padding: 0 $pxMobile;
+
   }
 
   &__title {

@@ -17364,7 +17364,7 @@ p {
 }
 @media (min-width: 992px) {
   .top-ventas {
-    padding: 0px;
+    padding: 0 25px;
   }
 }
 .top-ventas__title {
