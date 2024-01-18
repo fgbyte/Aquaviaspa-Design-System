@@ -14673,7 +14673,7 @@ p {
   text-decoration: none;
   width: auto;
   max-width: 327px;
-  min-width: 280px;
+  min-width: 327px;
   height: 482px;
   background-color: #fff;
 }
@@ -17350,6 +17350,7 @@ p {
   flex-direction: column;
   gap: 26px;
   padding: 0 25px;
+  padding-right: 0;
 }
 @media (min-width: 992px) {
   .top-ventas {

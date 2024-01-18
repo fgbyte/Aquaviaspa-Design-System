@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 26px;
   padding: 0 $pxMobile;
+  padding-right: 0;
   @include media-breakpoint-up(lg) {
     padding: 0 $pxMobile;
 
