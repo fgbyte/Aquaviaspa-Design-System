@@ -16136,7 +16136,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 19px;
-  max-width: 920px;
+  max-width: 970px;
   padding: 0 25px;
 }
 .form-full label span {
@@ -19222,4 +19222,22 @@ p {
   font: normal normal normal 26px/28px Raleway;
   margin-top: 90px;
   margin-bottom: 29px;
+}
+
+.form-full-page-nl {
+  margin-bottom: 171px;
+}
+.form-full-page-nl .nl-header h2, .form-full-page-nl .nl-header .h2 {
+  font: normal normal normal 18px/28px Raleway;
+  text-align: center;
+  margin-top: 52px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .form-full-page-nl .nl-header h2, .form-full-page-nl .nl-header .h2 {
+    text-align: center;
+    font: normal normal normal 26px/28px Raleway;
+    margin-top: 90px;
+    margin-bottom: 29px;
+  }
 }
