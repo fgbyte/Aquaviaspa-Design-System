@@ -435,11 +435,22 @@ document.addEventListener('DOMContentLoaded', function () {
     //Valores module
     var tabsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("valor-".concat(i + 1)); });
     var modalsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("modal-valor-".concat(i + 1)); });
+    var detailsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("detail-valor-".concat(i + 1)); });
     var buttonValores = document.querySelectorAll('.link-arrow-grow-white-reverse');
+    var allDropdowns = document.querySelectorAll('.valores__card__links details');
     //ocultar los modales al principio menos el 1
     modalsValores.forEach(function (modal, i) {
         if (modal) {
             modal.style.display = i === 0 ? 'block' : 'none';
+        }
+    });
+    //duplicar contenido modales y details
+    modalsValores.forEach(function (modal, i) {
+        if (modal && detailsValores[i]) {
+            var modalContent = modal.innerHTML;
+            if (detailsValores[i]) {
+                detailsValores[i].innerHTML = modalContent;
+            }
         }
     });
     var activeTab = buttonValores[0];
@@ -471,6 +482,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
         }
+    });
+    // Función para cerrar todos los dropdowns excepto el actual
+    function closeAllDropdownsExcept(currentDropdown) {
+        allDropdowns.forEach(function (dropdown) {
+            if (dropdown !== currentDropdown && dropdown.hasAttribute('open')) {
+                dropdown.removeAttribute('open');
+            }
+        });
+    }
+    // Agregar el controlador de eventos a cada 'details'
+    allDropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('toggle', function () {
+            if (dropdown.hasAttribute('open')) {
+                closeAllDropdownsExcept(dropdown);
+            }
+        });
     });
 });
 //navbar & menu lateral
