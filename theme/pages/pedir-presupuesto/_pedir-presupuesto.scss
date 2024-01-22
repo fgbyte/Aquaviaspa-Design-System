@@ -38,3 +38,13 @@
 .form-full-page-pedir-presupuesto {
     margin-bottom: 104px;
 }
+
+.banner--short .banner__img {
+    min-height: 301px;
+}
+
+.form-top__header {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+    }
+}

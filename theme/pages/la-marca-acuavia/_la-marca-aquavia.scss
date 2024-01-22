@@ -71,15 +71,46 @@
     h3 {
       font-size: 42px;
       span {
-          font-size: 48px;
+        font-size: 48px;
       }
     }
   }
 }
 
 .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
-    @include media-breakpoint-up(lg) {
-        min-width: 164px;
-        min-height: 127px;
+  @include media-breakpoint-up(lg) {
+    min-width: 164px;
+    min-height: 127px;
+  }
+}
+
+.intro-special .btn-ficha {
+  @include media-breakpoint-up(lg) {
+    margin-top: 100px;
+  }
+}
+
+.banner--video .banner__img {
+  height: 460px;
+  @include media-breakpoint-up(md) {
+    height: auto;
+  }
+}
+
+.valores-modulo-la-marca-aquavia {
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 110px;
+  }
+}
+
+.intro-special .intro-special__imgs {
+  @include media-breakpoint-down(lg) {
+    gap: 40px;
+  }
+}
+
+.intro-special .intro-special__imgs .imgs__container .intro-img-inside {
+    @include media-breakpoint-down(lg) {
+        width: 25%;
     }
 }
