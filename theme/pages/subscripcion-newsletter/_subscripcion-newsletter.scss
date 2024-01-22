@@ -1,0 +1,23 @@
+@use "../../globals";
+@use "../../mixins";
+
+.form-full-page-nl {
+    margin-bottom: 171px;
+
+    & .nl-header h2 {
+
+        font: normal normal normal 18px/28px Raleway;
+        text-align: center;
+        margin-top: 52px;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(lg) {
+            text-align: center;
+            font: normal normal normal 26px/28px Raleway;
+            margin-top: 90px;
+            margin-bottom: 29px;
+        }
+
+    }
+
+}
