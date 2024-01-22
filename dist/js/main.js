@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function () {
         activeTab.classList.add('active-valor');
     }
     function clickedValores(tab) {
-        if (tab.classList.contains('active-valor') && innerWidth < 720) {
+        if (tab.classList.contains('active-valor') && innerWidth < 990) {
             tab.classList.remove('active-valor');
             activeTab = null;
         }
