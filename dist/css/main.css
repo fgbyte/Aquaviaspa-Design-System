@@ -20146,6 +20146,10 @@ p {
   max-width: 950px;
 }
 
+.max-w {
+  max-width: 950px;
+}
+
 .posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
   align-self: flex-start;
 }
