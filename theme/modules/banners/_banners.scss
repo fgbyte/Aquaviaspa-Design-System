@@ -353,6 +353,10 @@
         transform: translate(-50%, -50%);
         width: 67px;
         height: 67px;
+        @include media-breakpoint-up(lg) {
+          width: 100px;
+          height: 100px;
+        }
         cursor: pointer;
         img {
           transition: all linear 0.2s;

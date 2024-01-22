@@ -14221,12 +14221,6 @@ p {
   padding-right: 10px;
   color: #fff;
 }
-.link-arrow-grow-white-reverse:hover div .link__arrow-white {
-  width: 55px;
-}
-.link-arrow-grow-white-reverse:hover span {
-  border-bottom: 1px solid #fff;
-}
 .link-arrow-grow-white-reverse span {
   border-bottom: 1px solid transparent;
   transition: color 0.4s, border-bottom-color 0.4s;
@@ -14236,9 +14230,9 @@ p {
 }
 .link-arrow-grow-white-reverse div .link__arrow-white {
   position: relative;
-  margin-right: -6.6px;
-  margin-bottom: -1px;
-  height: 1px;
+  margin-right: -6.3px;
+  margin-bottom: -1.5px;
+  height: 0.8px;
   width: 30px;
   background-color: #fff;
   transition: all 0.4s linear;
@@ -14253,6 +14247,19 @@ p {
     gap: 18px;
     font-size: 22px;
   }
+}
+.link-arrow-grow-white-reverse:hover div .link__arrow-white {
+  width: 55px;
+}
+.link-arrow-grow-white-reverse:hover span {
+  border-bottom: 1px solid #fff;
+}
+
+.active-valor div .link__arrow-white {
+  width: 55px;
+}
+.active-valor span {
+  border-bottom: 1px solid #fff;
 }
 
 .link__arrow-svg-white {
@@ -16931,6 +16938,12 @@ p {
   height: 67px;
   cursor: pointer;
 }
+@media (min-width: 992px) {
+  .banner--video .banner__img .play-btn {
+    width: 100px;
+    height: 100px;
+  }
+}
 .banner--video .banner__img .play-btn img {
   transition: all linear 0.2s;
 }
@@ -17966,7 +17979,7 @@ p {
     font-size: 42px;
   }
   .valores__card {
-    padding: 70px 90px;
+    padding: 70px 130px 70px 110px;
     flex-direction: row;
     gap: 130px;
   }
@@ -19073,15 +19086,43 @@ p {
   width: 100%;
   height: auto;
   /*    @include media-breakpoint-up(lg) {
-      width: auto;
-      height: 100%;
+            width: auto;
+            height: 100%;
 
-  } */
+        } */
 }
 
 .valores-modulo-la-marca-aquavia {
   margin-top: -320px;
   margin-bottom: 161px;
+}
+
+@media (min-width: 992px) {
+  .banner-cta-center__card__logo svg {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-cta-center__card {
+    gap: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-cta-center__card h3, .banner-cta-center__card .h3 {
+    font-size: 42px;
+  }
+  .banner-cta-center__card h3 span, .banner-cta-center__card .h3 span {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
+    min-width: 164px;
+    min-height: 127px;
+  }
 }
 
 .form-top__header {

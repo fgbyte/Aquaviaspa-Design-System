@@ -1,58 +1,85 @@
 @use "../../globals";
 @use "../../mixins";
 
-
 .conceptualizamos {
-    padding: 71px 20px;
-    max-width: 868px;
-    text-align: start;
+  padding: 71px 20px;
+  max-width: 868px;
+  text-align: start;
 
-    @include media-breakpoint-up(lg) {
-        padding: 123px 20px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+  @include media-breakpoint-up(lg) {
+    padding: 123px 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & p {
+    font: normal normal normal 18px/28px Raleway;
+    letter-spacing: 0px;
+    color: #575757;
+
+    & span {
+      font-weight: bold;
     }
-
-
-    & p {
-        font: normal normal normal 18px/28px Raleway;
-        letter-spacing: 0px;
-        color: #575757;
-
-        & span {
-            font-weight: bold;
-        }
-    }
+  }
 }
 
 .intro-modulo-la-marca-aquavia {
+  padding-bottom: 387px;
 
-    padding-bottom: 387px;
-
-    & .intro__container__text {
-        @include media-breakpoint-up(lg) {
-            width: 50%;
-
-        }
+  & .intro__container__text {
+    @include media-breakpoint-up(lg) {
+      width: 50%;
     }
+  }
 
-    & .intro__container__img {
-        & img {
-            width: 100%;
-            height: auto;
+  & .intro__container__img {
+    & img {
+      width: 100%;
+      height: auto;
 
-            /*    @include media-breakpoint-up(lg) {
+      /*    @include media-breakpoint-up(lg) {
                 width: auto;
                 height: 100%;
 
             } */
-        }
     }
-
+  }
 }
 
 .valores-modulo-la-marca-aquavia {
-    margin-top: -320px;
-    margin-bottom: 161px;
+  margin-top: -320px;
+  margin-bottom: 161px;
+}
+
+.banner-cta-center__card__logo {
+  @include media-breakpoint-up(lg) {
+    svg {
+      margin-top: 20px;
+    }
+  }
+}
+
+.banner-cta-center__card {
+  @include media-breakpoint-up(lg) {
+    gap: 32px;
+  }
+}
+
+.banner-cta-center__card {
+  @include media-breakpoint-up(lg) {
+    h3 {
+      font-size: 42px;
+      span {
+          font-size: 48px;
+      }
+    }
+  }
+}
+
+.intro-special .intro-special__imgs .imgs__container .intro-img-inside {
+    @include media-breakpoint-up(lg) {
+        min-width: 164px;
+        min-height: 127px;
+    }
 }

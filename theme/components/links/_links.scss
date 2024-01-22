@@ -212,15 +212,7 @@
   padding-right: 10px;
   color: $white;
 
-  &:hover div .link__arrow-white {
-    width: 55px;
-  }
-
-  &:hover span {
-    border-bottom: 1px solid $white;
-  }
-
-  & span {
+    & span {
     border-bottom: 1px solid transparent;
     transition: color $delay, border-bottom-color $delay;
   }
@@ -231,9 +223,9 @@
 
   & div .link__arrow-white {
     position: relative;
-    margin-right: -6.6px;
-    margin-bottom: -1px;
-    height: 1px;
+    margin-right: -6.3px;
+    margin-bottom: -1.5px;
+    height: .8px;
     width: 30px;
     background-color: $white;
     transition: all $delay linear;
@@ -246,6 +238,24 @@
   @include media-breakpoint-up(lg) {
     gap: 18px;
     font-size: 22px;
+  }
+
+  &:hover div .link__arrow-white {
+    width: 55px;
+  }
+
+  &:hover span {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.active-valor  {
+  & div .link__arrow-white {
+    width: 55px;
+  }
+
+  & span {
+    border-bottom: 1px solid $white;
   }
 }
 

@@ -435,10 +435,29 @@ document.addEventListener('DOMContentLoaded', function () {
     //Valores module
     var tabsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("valor-".concat(i + 1)); });
     var modalsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("modal-valor-".concat(i + 1)); });
+    var buttonValores = document.querySelectorAll('.link-arrow-grow-white-reverse');
     //ocultar los modales al principio menos el 1
     modalsValores.forEach(function (modal, i) {
         if (modal) {
             modal.style.display = i === 0 ? 'block' : 'none';
+        }
+    });
+    var activeTab = buttonValores[0];
+    if (activeTab) {
+        activeTab.classList.add('active-valor');
+    }
+    function clickedValores(tab) {
+        if (activeTab) {
+            activeTab.classList.remove('active-valor');
+        }
+        tab.classList.add('active-valor');
+        activeTab = tab;
+    }
+    buttonValores.forEach(function (tab, i) {
+        if (tab) {
+            tab.addEventListener('click', function () {
+                clickedValores(tab);
+            });
         }
     });
     //agregar eventListener a las tabsValores
