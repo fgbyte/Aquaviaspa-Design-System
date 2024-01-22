@@ -27,7 +27,18 @@
 .intro-modulo-la-marca-aquavia {
   padding-bottom: 387px;
 
+  & .intro__container {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include media-breakpoint-up(lg) {
+      padding-top: 105px;
+      padding-left: $pxMobile;
+      padding-right: $pxMobile;
+    }
+  }
   & .intro__container__text {
+    padding: 0 $pxMobile;
     @include media-breakpoint-up(lg) {
       width: 50%;
     }
@@ -37,12 +48,6 @@
     & img {
       width: 100%;
       height: auto;
-
-      /*    @include media-breakpoint-up(lg) {
-                width: auto;
-                height: 100%;
-
-            } */
     }
   }
 }
@@ -110,7 +115,7 @@
 }
 
 .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
-    @include media-breakpoint-down(lg) {
-        width: 25%;
-    }
+  @include media-breakpoint-down(lg) {
+    width: 25%;
+  }
 }

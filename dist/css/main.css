@@ -19077,6 +19077,21 @@ p {
 .intro-modulo-la-marca-aquavia {
   padding-bottom: 387px;
 }
+.intro-modulo-la-marca-aquavia .intro__container {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .intro-modulo-la-marca-aquavia .intro__container {
+    padding-top: 105px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.intro-modulo-la-marca-aquavia .intro__container__text {
+  padding: 0 25px;
+}
 @media (min-width: 992px) {
   .intro-modulo-la-marca-aquavia .intro__container__text {
     width: 50%;
@@ -19085,11 +19100,6 @@ p {
 .intro-modulo-la-marca-aquavia .intro__container__img img {
   width: 100%;
   height: auto;
-  /*    @include media-breakpoint-up(lg) {
-            width: auto;
-            height: 100%;
-
-        } */
 }
 
 .valores-modulo-la-marca-aquavia {
