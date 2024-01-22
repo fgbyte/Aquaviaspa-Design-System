@@ -238,15 +238,17 @@
   @include media-breakpoint-up(lg) {
     gap: 18px;
     font-size: 22px;
+
+    &:hover div .link__arrow-white {
+      width: 55px;
+    }
+  
+    &:hover span {
+      border-bottom: 1px solid $white;
+    }
   }
 
-  &:hover div .link__arrow-white {
-    width: 55px;
-  }
-
-  &:hover span {
-    border-bottom: 1px solid $white;
-  }
+ 
 }
 
 .active-valor  {

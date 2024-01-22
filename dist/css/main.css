@@ -14247,12 +14247,12 @@ p {
     gap: 18px;
     font-size: 22px;
   }
-}
-.link-arrow-grow-white-reverse:hover div .link__arrow-white {
-  width: 55px;
-}
-.link-arrow-grow-white-reverse:hover span {
-  border-bottom: 1px solid #fff;
+  .link-arrow-grow-white-reverse:hover div .link__arrow-white {
+    width: 55px;
+  }
+  .link-arrow-grow-white-reverse:hover span {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 .active-valor div .link__arrow-white {
