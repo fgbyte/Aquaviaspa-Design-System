@@ -458,11 +458,17 @@ document.addEventListener('DOMContentLoaded', function () {
         activeTab.classList.add('active-valor');
     }
     function clickedValores(tab) {
-        if (activeTab) {
-            activeTab.classList.remove('active-valor');
+        if (tab.classList.contains('active-valor')) {
+            tab.classList.remove('active-valor');
+            activeTab = null;
         }
-        tab.classList.add('active-valor');
-        activeTab = tab;
+        else {
+            if (activeTab) {
+                activeTab.classList.remove('active-valor');
+            }
+            tab.classList.add('active-valor');
+            activeTab = tab;
+        }
     }
     buttonValores.forEach(function (tab, i) {
         if (tab) {

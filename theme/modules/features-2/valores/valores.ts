@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   //Valores module
   const tabsValores = Array.from({ length: 5 }, (_, i) => document.getElementById(`valor-${i + 1}`));
@@ -29,13 +30,18 @@ document.addEventListener('DOMContentLoaded', () => {
     activeTab.classList.add('active-valor');
   }
 
-  function clickedValores(tab: HTMLElement) {
-    if (activeTab) {
-      activeTab.classList.remove('active-valor');
-    }
 
-    tab.classList.add('active-valor');
-    activeTab = tab;
+  function clickedValores(tab: HTMLElement) {
+    if (tab.classList.contains('active-valor')) {
+      tab.classList.remove('active-valor');
+      activeTab = null;
+    } else {
+      if (activeTab) {
+        activeTab.classList.remove('active-valor');
+      }
+      tab.classList.add('active-valor');
+      activeTab = tab;
+    }
   }
 
   buttonValores.forEach((tab, i) => {
@@ -78,3 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
