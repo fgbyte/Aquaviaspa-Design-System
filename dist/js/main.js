@@ -641,6 +641,23 @@ document.addEventListener('DOMContentLoaded', function () {
         return bannerHeight - navbarHeight;
     }
 });
+// Obtiene referencias a los formularios
+var formContacto = document.getElementById('form-contacto');
+var formDistribuidor = document.getElementById('form-distribuidor');
+// Obtiene referencias a los enlaces de filtro
+var linkContacto = document.getElementById('fil-1');
+var linkDistribuidor = document.getElementById('fil-2');
+// Escucha los clics en los enlaces de filtro
+linkContacto.addEventListener('click', function () {
+    // Muestra el formulario de contacto y oculta el de distribuidor
+    formContacto.style.display = 'flex';
+    formDistribuidor.style.display = 'none';
+});
+linkDistribuidor.addEventListener('click', function () {
+    // Muestra el formulario de distribuidor y oculta el de contacto
+    formContacto.style.display = 'none';
+    formDistribuidor.style.display = 'flex';
+});
 var mobileMediaQuery = window.matchMedia('(max-width: 768px)');
 var desktopMediaQuery = window.matchMedia('(min-width: 768px)');
 document.addEventListener('DOMContentLoaded', function () {
