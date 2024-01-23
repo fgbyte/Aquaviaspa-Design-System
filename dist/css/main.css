@@ -20150,6 +20150,10 @@ p {
   max-width: 950px;
 }
 
+.text-15 {
+  font-size: 15px;
+}
+
 .posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
   align-self: flex-start;
 }
