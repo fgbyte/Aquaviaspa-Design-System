@@ -20152,6 +20152,7 @@ p {
 .faqs__links .search-container input {
   min-width: 380px;
   max-width: 470px;
+  padding-left: 17px;
 }
 
 .form-full-footer-faqs {
@@ -20174,9 +20175,14 @@ p {
 .form-full-footer-faqs .btn-ficha {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 180px;
-  padding-right: 180px;
+  width: 100%;
+  justify-content: center;
   color: black;
+}
+@media (min-width: 992px) {
+  .form-full-footer-faqs .btn-ficha {
+    width: 50%;
+  }
 }
 
 .faqs-form-header h2, .faqs-form-header .h2 {
