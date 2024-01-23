@@ -20418,6 +20418,10 @@ p {
   background-position: center;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #fff;
+}
+
 .banner__text h1, .banner__text .h1 {
   width: 100%;
   max-width: 642px;
