@@ -18341,6 +18341,7 @@ p {
 }
 .top-ventas__title {
   align-self: center;
+  padding-right: 25px;
 }
 .top-ventas__title h3, .top-ventas__title .h3 {
   margin: 0px;
@@ -19550,6 +19551,7 @@ p {
   align-items: center;
   gap: 16px;
   margin-bottom: 15px;
+  padding-right: 25px;
 }
 @media (min-width: 992px) {
   .section-slider-accsesorios .section-slider-accsesorios__header {
@@ -19765,6 +19767,7 @@ p {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  padding-right: 25px;
 }
 .subtitle p {
   max-width: 720px;

@@ -24,6 +24,7 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 15px;
+    padding-right: $pxMobile;
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 64px;
