@@ -6,9 +6,11 @@
   background: $cyan 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 20px #00000099;
   border: 1px solid $cyan;
+
   & .btn-cta__arrow {
     background: rgb(0, 0, 0);
   }
+
   & .btn-cta__arrow-svg {
     stroke: $black;
   }
@@ -43,7 +45,8 @@
 
 .ficha-documentos {
   @include desk-space;
-    padding-bottom: 120px;
+  padding-bottom: 120px;
+
   @include media-breakpoint-up(lg) {
     padding-top: 50px;
     padding-bottom: 155px;
@@ -59,26 +62,34 @@
 .banner-ficha__card__img {
   height: 55%;
 }
+
 .banner-ficha__card__text {
   max-height: 352px;
 }
+
 .banner-ficha__card__img img {
   max-height: 295px;
   object-position: top center;
 }
 
 .intro-ficha .intro__container__img img {
-    height: auto;
+  height: auto;
 }
+
 .prestaciones__filter {
-    gap: 20px;
+  gap: 20px;
+
+  @include media-breakpoint-up(lg) {
+    gap: 50px;
+  }
 }
 
 .ficha-tecnica {
   @include desk-space;
-@include media-breakpoint-down(lg) {
+
+  @include media-breakpoint-down(lg) {
     padding: 80px 25px 0px 25px;
-}
+  }
 }
 
 
@@ -94,4 +105,9 @@
   @include media-breakpoint-down(lg) {
     border: none;
   }
+}
+
+.py-prestaciones {
+  padding-top: 88px;
+  padding-bottom: 88px;
 }

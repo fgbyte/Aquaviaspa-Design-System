@@ -19915,6 +19915,11 @@ p {
 .prestaciones__filter {
   gap: 20px;
 }
+@media (min-width: 992px) {
+  .prestaciones__filter {
+    gap: 50px;
+  }
+}
 
 @media (min-width: 992px) {
   .ficha-tecnica {
@@ -19941,6 +19946,11 @@ p {
   .border-none {
     border: none;
   }
+}
+
+.py-prestaciones {
+  padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 .hidden-card {
