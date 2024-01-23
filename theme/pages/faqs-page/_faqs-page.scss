@@ -9,3 +9,49 @@
         max-width: 470px;
     }
 }
+
+.form-full-footer-faqs {
+    padding-top: 46px;
+    color: black;
+
+    & b,
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    & .form-full__container label input,
+    .d-flex select,
+    .d-flex textarea {
+        border: 1px solid #A5A5A5;
+        color: black;
+        outline: none;
+        background: transparent;
+    }
+
+    & .btn-ficha {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 180px;
+        padding-right: 180px;
+        color: black;
+    }
+}
+
+.faqs-form-header {
+    & h2 {
+
+        text-align: center;
+        font: normal normal medium 30px/37px Raleway;
+        padding-top: 66px;
+
+        @include media-breakpoint-up(lg) {
+            text-align: center;
+            font: normal normal normal 42px/49px Raleway;
+            padding-top: 125px;
+
+        }
+
+    }
+
+}

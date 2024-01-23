@@ -20154,6 +20154,44 @@ p {
   max-width: 470px;
 }
 
+.form-full-footer-faqs {
+  padding-top: 46px;
+  color: black;
+}
+.form-full-footer-faqs b,
+.form-full-footer-faqs a {
+  color: black;
+  text-decoration: underline;
+}
+.form-full-footer-faqs .form-full__container label input,
+.form-full-footer-faqs .d-flex select,
+.form-full-footer-faqs .d-flex textarea {
+  border: 1px solid #A5A5A5;
+  color: black;
+  outline: none;
+  background: transparent;
+}
+.form-full-footer-faqs .btn-ficha {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 180px;
+  padding-right: 180px;
+  color: black;
+}
+
+.faqs-form-header h2, .faqs-form-header .h2 {
+  text-align: center;
+  font: normal normal medium 30px/37px Raleway;
+  padding-top: 66px;
+}
+@media (min-width: 992px) {
+  .faqs-form-header h2, .faqs-form-header .h2 {
+    text-align: center;
+    font: normal normal normal 42px/49px Raleway;
+    padding-top: 125px;
+  }
+}
+
 .form-full-page-contacto {
   margin-top: 40px;
   margin-bottom: 116px;
