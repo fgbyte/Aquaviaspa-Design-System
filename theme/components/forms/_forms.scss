@@ -2,16 +2,18 @@
 
 
 .search-container {
-  //TODO: poner lupa en bg
   position: relative;
 
   @include media-breakpoint-up(lg) {
-    width: 470;
+    width: 470; 
   }
 
   & input {
     height: 44px;
     background-color: #EDEDED;
+    background-image: url('/dist/assets/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
     border: none;
     padding-right: 40px;
     padding-left: 4px;
@@ -42,7 +44,6 @@
 
 
 .search-container-withe {
-  //TODO: poner lupa en bg
   position: relative;
 
   @include media-breakpoint-up(lg) {
@@ -51,6 +52,9 @@
 
   & input {
     height: 44px;
+    background-image: url('/dist/assets/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
     border: 0.5px solid #d1d1d1;
     padding-right: 40px;
     padding-left: 4px;
