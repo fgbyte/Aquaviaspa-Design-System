@@ -1,0 +1,45 @@
+@use "../../globals";
+@use "../../mixins";
+
+.banner__text {
+  h1 {
+    width: 100%;
+    max-width: 642px;
+  }
+  h2 {
+    width: 100%;
+    max-width: 642px;
+  }
+  p {
+    width: 100%;
+    max-width: 642px;
+  }
+}
+
+.intro-donde-comprar {
+    @include desk-space;
+    padding: 48px $pxMobile 65px $pxMobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    @include media-breakpoint-up(lg) {
+        padding-top: 54px;
+        padding-bottom: 73px;
+        gap: 26px;
+    }
+
+    img {
+        width: 106px;
+        height: 106px;
+    }
+    p {
+        color: $grayText;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+            max-width: 811px;
+            font-size: 16px;
+            color: $black;
+        }
+    }
+}

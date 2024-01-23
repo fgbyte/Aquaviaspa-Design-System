@@ -20298,3 +20298,53 @@ p {
 .card-category-blog-lite__bg {
   background-position: center;
 }
+
+.banner__text h1, .banner__text .h1 {
+  width: 100%;
+  max-width: 642px;
+}
+.banner__text h2, .banner__text .h2 {
+  width: 100%;
+  max-width: 642px;
+}
+.banner__text p {
+  width: 100%;
+  max-width: 642px;
+}
+
+.intro-donde-comprar {
+  padding: 48px 25px 65px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+@media (min-width: 992px) {
+  .intro-donde-comprar {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1470px;
+  }
+}
+@media (min-width: 992px) {
+  .intro-donde-comprar {
+    padding-top: 54px;
+    padding-bottom: 73px;
+    gap: 26px;
+  }
+}
+.intro-donde-comprar img {
+  width: 106px;
+  height: 106px;
+}
+.intro-donde-comprar p {
+  color: #575757;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .intro-donde-comprar p {
+    max-width: 811px;
+    font-size: 16px;
+    color: #000;
+  }
+}
