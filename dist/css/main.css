@@ -20140,6 +20140,14 @@ p {
   }
 }
 
+.faqs__links {
+  overflow-x: auto;
+}
+.faqs__links .search-container input {
+  min-width: 380px;
+  max-width: 470px;
+}
+
 .form-full-page-contacto {
   margin-top: 40px;
   margin-bottom: 116px;

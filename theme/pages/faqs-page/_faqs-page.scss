@@ -1,3 +1,11 @@
 @use "../../globals";
 @use "../../mixins";
 
+.faqs__links {
+    overflow-x: auto;
+
+    .search-container input {
+        min-width: 380px;
+        max-width: 470px;
+    }
+}
