@@ -20168,6 +20168,49 @@ p {
   font-size: 15px;
 }
 
+.banner-contacto {
+  max-height: 638px;
+}
+@media (min-width: 992px) {
+  .banner-contacto {
+    max-height: 712px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-banner-contacto {
+    min-width: 264px;
+    justify-content: center;
+  }
+}
+
+.banner-contacto .hero-cta__text h1, .banner-contacto .hero-cta__text .h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.banner-contacto .hero-cta__text h1 span, .banner-contacto .hero-cta__text .h1 span {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .banner-contacto .hero-cta__text--lg h1, .banner-contacto .hero-cta__text--lg .h1 {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .banner-contacto .hero-cta__text--lg h1 span, .banner-contacto .hero-cta__text--lg .h1 span {
+    font-size: 42px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-contacto .hero-cta__text--lg {
+    top: 57%;
+    transform: translateY(-50%);
+  }
+}
+
 .posts-page .posts-page__slider h3, .posts-page .posts-page__slider .h3 {
   align-self: flex-start;
 }
