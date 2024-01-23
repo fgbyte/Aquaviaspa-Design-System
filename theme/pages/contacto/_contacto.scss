@@ -23,8 +23,14 @@
 
 .btn-banner-contacto {
   @include media-breakpoint-up(lg) {
-    min-width: 264px;
+    // min-width: 264px;
     justify-content: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    &:hover {
+    padding-left: 100px;
+    padding-right: 100px;
+    }
   }
 }
 .banner-contacto .hero-cta__text {

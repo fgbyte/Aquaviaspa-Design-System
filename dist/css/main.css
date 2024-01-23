@@ -20179,8 +20179,13 @@ p {
 
 @media (min-width: 992px) {
   .btn-banner-contacto {
-    min-width: 264px;
     justify-content: center;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .btn-banner-contacto:hover {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
