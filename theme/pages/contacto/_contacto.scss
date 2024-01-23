@@ -7,9 +7,60 @@
   max-width: 950px;
 }
 .max-w {
-  max-width: 950px ;
+  max-width: 950px;
 }
 
-.text-15{
+.text-15 {
   font-size: 15px;
+}
+
+.banner-contacto {
+  max-height: 638px;
+  @include media-breakpoint-up(lg) {
+    max-height: 712px;
+  }
+}
+
+.btn-banner-contacto {
+  @include media-breakpoint-up(lg) {
+    // min-width: 264px;
+    justify-content: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    &:hover {
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+  }
+}
+.banner-contacto .hero-cta__text {
+  h1 {
+    font-size: 32px;
+    font-weight: $textSemibold;
+    span {
+      font-size: 32px;
+      font-weight: $textRegular
+    }
+  }
+}
+
+
+.banner-contacto .hero-cta__text--lg {
+  @include media-breakpoint-up(lg) {
+    h1 {
+      font-size: 42px;
+      font-weight: $textSemibold;
+      span {
+        font-size: 42px;
+        font-weight: $textRegular;
+      }
+    }
+  }
+}
+
+.banner-contacto .hero-cta__text--lg {
+  @include media-breakpoint-up(lg) {
+    top: 57%;
+    transform: translateY(-50%);
+  }
 }
