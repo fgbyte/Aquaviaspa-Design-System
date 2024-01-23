@@ -15923,12 +15923,15 @@ p {
 }
 
 .card-faq-icon {
-  max-width: 136px;
-  height: 100px;
+  text-decoration: none;
+  max-width: 145px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  border-bottom: 1px solid transparent;
+  transition: all linear 0.2s;
 }
 .card-faq-icon img {
   width: 55px;
@@ -15940,15 +15943,23 @@ p {
     height: 64px;
   }
 }
-.card-faq-icon a {
+.card-faq-icon span {
   text-align: center;
-  max-width: 136px;
+  max-width: fit-content;
   font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  padding-bottom: 6px;
 }
 @media (min-width: 992px) {
-  .card-faq-icon a {
+  .card-faq-icon span {
     font-size: 15px;
   }
+}
+.card-faq-icon:hover {
+  transition: all linear 0.2s;
+  border-bottom: 1px solid #000;
 }
 
 .card-prestacion-menu {
@@ -20420,6 +20431,10 @@ p {
 
 .dropdown-item.active, .dropdown-item:active {
   background-color: #fff;
+}
+
+.card-faq summary::-webkit-details-marker {
+  display: none;
 }
 
 .banner__text h1, .banner__text .h1 {

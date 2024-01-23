@@ -31,3 +31,9 @@
 .dropdown-item.active, .dropdown-item:active {
   background-color: $white;
 }
+
+.card-faq {
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
