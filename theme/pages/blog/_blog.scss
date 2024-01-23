@@ -1,0 +1,28 @@
+@use "../../globals";
+@use "../../mixins";
+
+.banner-blog {
+  position: relative;
+  h1 {
+    padding: 165px $pxMobile 50px $pxMobile;
+    @include desk-space;
+  }
+}
+
+.banner-blog::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; // Comienza desde el borde izquierdo
+  right: 0; // Extiende hasta el borde derecho
+  border-bottom: 0.5px solid $grayOff; // Crea una línea horizontal
+}
+
+.card-category-blog-lite {
+  min-width: 300px;
+
+  &__bg {
+    background-position: center;
+  }
+}

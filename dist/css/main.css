@@ -20259,3 +20259,34 @@ p {
     margin-bottom: 29px;
   }
 }
+
+.banner-blog {
+  position: relative;
+}
+.banner-blog h1, .banner-blog .h1 {
+  padding: 165px 25px 50px 25px;
+}
+@media (min-width: 992px) {
+  .banner-blog h1, .banner-blog .h1 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1470px;
+  }
+}
+
+.banner-blog::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 0.5px solid #C7C6BE;
+}
+
+.card-category-blog-lite {
+  min-width: 300px;
+}
+.card-category-blog-lite__bg {
+  background-position: center;
+}
