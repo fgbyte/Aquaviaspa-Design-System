@@ -1,0 +1,32 @@
+@use "../../globals";
+@use "../../mixins";
+
+.banner-posts__img img {
+  max-height: 480px;
+}
+
+.banner-posts__img {
+  position: relative;
+}
+
+.banner-posts__logo {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  max-width: 266px;
+  max-height: 178px;
+  right: 0;
+//   bottom: ;
+  transform: translate(-25%, -50%);
+  
+}
+
+.prestaciones-slider--detalles {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @include media-breakpoint-up(lg) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+
+    }
+}
