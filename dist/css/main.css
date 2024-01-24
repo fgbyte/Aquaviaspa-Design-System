@@ -18633,7 +18633,7 @@ p {
 }
 
 .spas-grid {
-  padding: 90px 25px;
+  padding: 50px 25px;
   display: flex;
   flex-direction: column;
   gap: 38px;
@@ -18648,6 +18648,7 @@ p {
 @media (min-width: 992px) {
   .spas-grid {
     padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
 .spas-grid__cards {
@@ -18672,6 +18673,8 @@ p {
 }
 .spas-grid .dropdown-filters {
   flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 45px;
 }
 .spas-grid .dropdown-filters .dropdown-toggle {
   font-weight: 400;

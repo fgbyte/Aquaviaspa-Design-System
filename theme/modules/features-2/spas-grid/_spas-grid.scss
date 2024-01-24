@@ -3,9 +3,10 @@
 
 .spas-grid {
     @include desk-space;
-    padding: 90px $pxMobile;
+    padding: 50px $pxMobile;
     @include media-breakpoint-up(lg) {
         padding-top: 90px;
+        padding-bottom: 90px;
     }
     display: flex;
     flex-direction: column;
@@ -31,6 +32,8 @@
 
     .dropdown-filters {
         flex-wrap: wrap;//tiene que ser asi, xq de ponerle overflow-x se pierde el menu del dropdown
+        row-gap: 25px;
+        column-gap: 45px;
         .dropdown-toggle {
             font-weight: $textRegular
         }
