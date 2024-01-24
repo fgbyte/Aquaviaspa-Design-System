@@ -15607,6 +15607,9 @@ p {
 .no-marker::marker {
   content: none;
 }
+.no-marker::-webkit-details-marker {
+  display: none;
+}
 
 .card-spa {
   display: flex;
@@ -19024,7 +19027,7 @@ p {
 }
 @media (min-width: 992px) and (min-width: 1900px) {
   .intro__container {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 @media (min-width: 992px) {
@@ -19350,7 +19353,7 @@ p {
     padding: 42px 89px;
     padding-bottom: 84px;
     gap: 54px;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .left-menu .left-menu__header .close-menu {
     order: 0;
@@ -19714,7 +19717,7 @@ p {
 .prestaciones-slider .prestaciones-slider__slider {
   display: flex;
   gap: 13px;
-  justify-content: start;
+  justify-content: flex-start;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: 0px;

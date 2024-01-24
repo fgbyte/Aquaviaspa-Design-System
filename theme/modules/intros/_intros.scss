@@ -61,7 +61,7 @@
       justify-content: center;
 
       @include media-breakpoint-up(xxxl) {
-        justify-content: start;
+        justify-content: flex-start;
       }
 
       &__text {

@@ -20,8 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
     loadMoreButton.style.display = 'flex';
   }
 
-  loadMoreButton.addEventListener('click', showHiddenCards);
-  loadMoreButton.addEventListener('click', hideLoadMore);
+  if (loadMoreButton) {
+    loadMoreButton.addEventListener('click', showHiddenCards);
+    loadMoreButton.addEventListener('click', hideLoadMore);
+  }
 
 
   mobileMediaQuery.addEventListener('change', (event) => {

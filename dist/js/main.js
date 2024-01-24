@@ -645,13 +645,23 @@ var formContacto = document.getElementById('form-contacto');
 var formDistribuidor = document.getElementById('form-distribuidor');
 var linkContacto = document.getElementById('fil-1');
 var linkDistribuidor = document.getElementById('fil-2');
-linkContacto.addEventListener('click', function () {
-    formContacto.style.display = 'flex';
-    formDistribuidor.style.display = 'none';
-});
-linkDistribuidor.addEventListener('click', function () {
-    formContacto.style.display = 'none';
-    formDistribuidor.style.display = 'flex';
+document.addEventListener('DOMContentLoaded', function () {
+    if (linkContacto) {
+        linkContacto.addEventListener('click', function () {
+            if (formContacto && formDistribuidor) {
+                formContacto.style.display = 'flex';
+                formDistribuidor.style.display = 'none';
+            }
+        });
+    }
+    if (linkDistribuidor) {
+        linkDistribuidor.addEventListener('click', function () {
+            if (formContacto && formDistribuidor) {
+                formContacto.style.display = 'none';
+                formDistribuidor.style.display = 'flex';
+            }
+        });
+    }
 });
 var mobileMediaQuery = window.matchMedia('(max-width: 768px)');
 var desktopMediaQuery = window.matchMedia('(min-width: 768px)');
@@ -671,8 +681,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function showLoadMore() {
         loadMoreButton.style.display = 'flex';
     }
-    loadMoreButton.addEventListener('click', showHiddenCards);
-    loadMoreButton.addEventListener('click', hideLoadMore);
+    if (loadMoreButton) {
+        loadMoreButton.addEventListener('click', showHiddenCards);
+        loadMoreButton.addEventListener('click', hideLoadMore);
+    }
     mobileMediaQuery.addEventListener('change', function (event) {
         if (event.matches) {
             cards.forEach(function (card, index) {

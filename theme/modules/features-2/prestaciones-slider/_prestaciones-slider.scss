@@ -43,7 +43,7 @@
   .prestaciones-slider__slider {
     display: flex;
     gap: 13px;
-    justify-content: start;
+    justify-content: flex-start;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0px;
