@@ -260,7 +260,7 @@
   &__img {
     width: 100%;
     height: 100%;
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       height: 446px;
     }
 
@@ -386,8 +386,7 @@
 .banner--short {
   max-height: 500px;
   & h1 {
-  font-weight: $textMedium;
-
+    font-weight: $textMedium;
   }
   .banner__img {
     img {
@@ -472,16 +471,14 @@
       max-width: 330px;
     }
   }
-
 }
 
-.banner-posts{
+.banner-posts {
   padding-top: 82px;
   @include media-breakpoint-up(lg) {
     padding-top: 162px;
   }
   &__img {
-
     @include media-breakpoint-up(lg) {
       @include blog-space;
       width: 100%;
@@ -506,4 +503,5 @@
   display: block;
   @include media-breakpoint-up(lg) {
     display: none;
-  }}
+  }
+}
