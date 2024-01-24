@@ -20518,6 +20518,32 @@ p {
   }
 }
 
+.blog-article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .blog-article {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1102px;
+  }
+}
+.blog-article img {
+  max-width: 550px;
+  max-height: 550px;
+}
+.blog-article h3, .blog-article .h3 {
+  align-self: flex-start;
+  font-size: 42px;
+  text-transform: none;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
 .banner__text h1, .banner__text .h1 {
   width: 100%;
   max-width: 642px;

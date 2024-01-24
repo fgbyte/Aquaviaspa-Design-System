@@ -25,3 +25,25 @@
     }
   }
 }
+
+.blog-article {
+    @include blog-space;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 550px;
+        max-height: 550px;
+    }
+
+    h3 {
+        align-self: flex-start;
+        font-size: 42px;
+        text-transform: none;
+        font-weight: $textMedium;
+        margin-bottom: 30px;
+    }
+}
