@@ -2,26 +2,38 @@
 @use "../../mixins";
 
 .py-16 {
-    padding-top: 6.4375rem;
-    padding-bottom: 2.4375rem;
+  padding-top: 6.4375rem;
+  padding-bottom: 2.4375rem;
 
-    @include media-breakpoint-up(lg) {
-        padding-top: 8.4375rem;
-        padding-bottom: 3.4375rem;
-    }
+  @include media-breakpoint-up(lg) {
+    padding-top: 8.4375rem;
+    padding-bottom: 3.4375rem;
+  }
 }
 
 .py-88 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    @include media-breakpoint-up(lg) {
-        padding-top: 88px;
-        padding-bottom: 88px;
-    }
-
+  @include media-breakpoint-up(lg) {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
 }
 
 .link-arrow-grow-white span {
-    padding-bottom: 3px;
+  padding-bottom: 3px;
+}
+
+.card-prestacion:hover .card-prestacion__text p {
+  @include media-breakpoint-up(special) {
+    margin-top: 0px;
+  }
+}
+
+.card-prestacion:hover .card-prestacion__text p {
+  @include media-breakpoint-up(special) {
+    gap: 10px;
+    justify-content: space-evenly;
+  }
 }

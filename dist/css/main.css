@@ -19859,6 +19859,19 @@ p {
   padding-bottom: 3px;
 }
 
+@media (min-width: 1158px) {
+  .card-prestacion:hover .card-prestacion__text p {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .card-prestacion:hover .card-prestacion__text p {
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+}
+
 .btn--ficha {
   color: #000;
   background: #94F0F5 0% 0% no-repeat padding-box;
