@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modal && detailsValores[i]) {
       let modalContent = modal.innerHTML;
       if (detailsValores[i]) {
-        detailsValores[i].innerHTML = modalContent;
+        detailsValores[i]!.innerHTML = modalContent;
       }
     }
   });
