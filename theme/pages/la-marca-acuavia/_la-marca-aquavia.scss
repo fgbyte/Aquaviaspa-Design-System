@@ -119,3 +119,29 @@
     width: 25%;
   }
 }
+
+
+.intro-ficha .intro__container {
+  @include media-breakpoint-up(lg) {
+    gap: 60px;
+  }
+}
+
+.intro-ficha .intro__container__img img {
+  @include media-breakpoint-up(lg) {
+    max-height: 540px;
+    max-width: 685px;
+  }
+}
+
+.intro-ficha .intro__container {
+  @include media-breakpoint-up(xl) {
+    align-items: flex-start;
+  }
+}
+
+.intro-special .intro-special__imgs .imgs__container .intro-img-inside {
+  @include media-breakpoint-up(lg) {
+    width: auto;
+  }
+}

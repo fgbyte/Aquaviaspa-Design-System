@@ -17670,7 +17670,7 @@ p {
 .banner-ficha__card__text .text__element {
   padding: 10px 0;
   color: #fff;
-  border-bottom: solid 0.3px #C7C6BE;
+  border-bottom: solid 0.3px #878787;
 }
 .banner-ficha__card__text .border-none {
   border: none;
@@ -17918,14 +17918,14 @@ p {
 
 .banner-cta-center {
   width: 100%;
-  padding: 128px 25px;
+  padding: 128px 25px 100px 25px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 110px;
   color: #fff;
 }
 @media (min-width: 992px) {
@@ -17933,11 +17933,16 @@ p {
     gap: 60px;
   }
 }
+@media (max-width: 991.98px) {
+  .banner-cta-center {
+    max-height: 638px;
+  }
+}
 .banner-cta-center__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 @media (min-width: 992px) {
   .banner-cta-center__card {
@@ -17949,6 +17954,11 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+@media (max-width: 991.98px) {
+  .banner-cta-center__card__logo svg {
+    margin-top: 8px;
+  }
 }
 .banner-cta-center__card__logo h4, .banner-cta-center__card__logo .h4 {
   font-size: 14px;
@@ -19963,6 +19973,12 @@ p {
   padding-top: 88px;
   padding-bottom: 88px;
 }
+@media (min-width: 992px) {
+  .py-prestaciones {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 
 .hidden-card {
   display: none;
@@ -20119,6 +20135,31 @@ p {
 @media (max-width: 991.98px) {
   .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
     width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-ficha .intro__container {
+    gap: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-ficha .intro__container__img img {
+    max-height: 540px;
+    max-width: 685px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro-ficha .intro__container {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
+    width: auto;
   }
 }
 

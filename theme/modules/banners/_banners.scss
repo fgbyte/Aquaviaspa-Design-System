@@ -129,7 +129,7 @@
       .text__element {
         padding: 10px 0;
         color: $white;
-        border-bottom: solid 0.3px $grayOff;
+        border-bottom: solid 0.3px $lineaBannerFicha;
       }
 
       .border-none {
@@ -406,15 +406,18 @@
     gap: 60px;
   }
   width: 100%;
-  padding: 128px $pxMobile;
+  padding: 128px $pxMobile 100px $pxMobile;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 110px;
   color: $white;
+  @include media-breakpoint-down(lg) {
+    max-height: 638px;
+  }
 
   &__card {
     @include media-breakpoint-up(lg) {
@@ -423,12 +426,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     &__logo {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 10px;
+
+      svg {
+        @include media-breakpoint-down(lg) {
+          margin-top: 8px;
+        }
+      }
 
       h4 {
         font-size: 14px;

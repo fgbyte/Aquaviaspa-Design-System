@@ -110,4 +110,8 @@
 .py-prestaciones {
   padding-top: 88px;
   padding-bottom: 88px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
