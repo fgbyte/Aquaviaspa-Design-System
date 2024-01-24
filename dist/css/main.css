@@ -20509,9 +20509,13 @@ p {
   }
 }
 
+.blog-post-slider {
+  width: 100%;
+  scroll-snap-type: x mandatory;
+}
 @media (min-width: 992px) {
   .blog-post-slider .card-category-blog-lite {
-    min-width: 462px;
+    min-width: 33%;
   }
   .blog-post-slider .card-category-blog-lite h4, .blog-post-slider .card-category-blog-lite .h4 {
     font-size: 32px;
