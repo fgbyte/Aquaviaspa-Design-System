@@ -17644,7 +17644,16 @@ p {
 }
 
 .banner-ficha {
+  position: relative;
   width: 100%;
+}
+.banner-ficha:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 .banner-ficha__card {
   width: 100%;
@@ -17775,10 +17784,19 @@ p {
 }
 
 .banner {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #464646;
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 @media (min-width: 768px) {
   .banner {
