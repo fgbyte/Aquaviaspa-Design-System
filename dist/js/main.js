@@ -676,10 +676,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     function hideLoadMore() {
-        loadMoreButton.style.display = 'none';
+        if (loadMoreButton) {
+            loadMoreButton.style.display = 'none';
+        }
     }
     function showLoadMore() {
-        loadMoreButton.style.display = 'flex';
+        if (loadMoreButton) {
+            loadMoreButton.style.display = 'flex';
+        }
     }
     if (loadMoreButton) {
         loadMoreButton.addEventListener('click', showHiddenCards);
