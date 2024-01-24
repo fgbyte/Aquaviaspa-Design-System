@@ -1,0 +1,14 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import { blog } from "../../theme/pages/blog/blog.stories"
+
+<Meta title="Pages/Blog" />
+
+## Blog
+
+<Canvas>
+ <Story name="Primary">
+  {() => blog
+  }
+ </Story>
+</Canvas>

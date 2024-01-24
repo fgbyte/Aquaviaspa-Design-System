@@ -1,0 +1,17 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import { prestaciones } from "../../theme/pages/prestaciones-page/prestaciones.stories"
+
+<Meta title="Pages/Prestaciones" />
+
+## Prestaciones
+
+>A la hora de crear nuevas cards de prestaciones hay que considerar la clase `logo-down` para las cards que tengan el logo dentro del cuadro te texto blanco.
+
+<Canvas>
+ <Story name="Primary">
+  {() => prestaciones
+  }
+ </Story>
+</Canvas>
+
