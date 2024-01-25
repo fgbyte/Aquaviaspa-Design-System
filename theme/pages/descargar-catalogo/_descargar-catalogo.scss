@@ -35,7 +35,7 @@
 
             & .banner-descargar-catalogo__img {
                 position: relative;
-                width: 243px;
+                width: 273px;
                 margin: 0 auto;
                 margin-left: 18%;
 
@@ -53,18 +53,18 @@
 
 
 
-        & h1 {
-            font: normal normal 600 42px/49px Raleway;
-            padding-top: 40px;
-            text-align: start;
-            color: white;
+    }
+    & h1 {
+        font: normal normal 600 42px/49px Raleway;
+        padding-top: 40px;
+        text-align: start;
+        color: white;
 
-            @include media-breakpoint-up(lg) {
-                font: normal normal medium 58px/61px Raleway;
-
-            }
-
+        @include media-breakpoint-up(lg) {
+            font-size: 58px;
+            font-weight: $textMedium;
         }
+
     }
 
 }
@@ -81,4 +81,11 @@
 
 
 
+}
+
+
+.form-full-page-descargar-catalogo .descargar-catalogo-header h2, .form-full-page-descargar-catalogo .descargar-catalogo-header .h2 {
+    @include media-breakpoint-down(lg){
+        margin-top: 70px;
+    }
 }

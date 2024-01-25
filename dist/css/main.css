@@ -20425,7 +20425,7 @@ p {
 }
 .banner-descargar-catalogo .banner-text div .banner-descargar-catalogo__img {
   position: relative;
-  width: 243px;
+  width: 273px;
   margin: 0 auto;
   margin-left: 18%;
 }
@@ -20436,15 +20436,16 @@ p {
     margin-bottom: -200px;
   }
 }
-.banner-descargar-catalogo .banner-text h1, .banner-descargar-catalogo .banner-text .h1 {
+.banner-descargar-catalogo h1, .banner-descargar-catalogo .h1 {
   font: normal normal 600 42px/49px Raleway;
   padding-top: 40px;
   text-align: start;
   color: white;
 }
 @media (min-width: 992px) {
-  .banner-descargar-catalogo .banner-text h1, .banner-descargar-catalogo .banner-text .h1 {
-    font: normal normal medium 58px/61px Raleway;
+  .banner-descargar-catalogo h1, .banner-descargar-catalogo .h1 {
+    font-size: 58px;
+    font-weight: 500;
   }
 }
 
@@ -20456,6 +20457,12 @@ p {
   font: normal normal normal 26px/28px Raleway;
   margin-top: 90px;
   margin-bottom: 29px;
+}
+
+@media (max-width: 991.98px) {
+  .form-full-page-descargar-catalogo .descargar-catalogo-header h2, .form-full-page-descargar-catalogo .descargar-catalogo-header .h2 {
+    margin-top: 70px;
+  }
 }
 
 .form-full-page-nl {
