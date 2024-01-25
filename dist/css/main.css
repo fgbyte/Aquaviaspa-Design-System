@@ -20651,3 +20651,21 @@ p {
     padding-bottom: 128px;
   }
 }
+
+.textos-legales-banner::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 0.5px solid #fff;
+}
+
+@media (min-width: 992px) {
+  .textos-legales-banner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1102px;
+  }
+}
