@@ -16,19 +16,25 @@
   max-width: 266px;
   max-height: 178px;
   right: 0;
-//   bottom: ;
+  //   bottom: ;
   transform: translate(-25%, -50%);
+
   @include media-breakpoint-up(lg) {
     width: 20%;
   }
 }
 
 .prestaciones-slider--detalles {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    @include media-breakpoint-up(lg) {
-        padding-top: 128px;
-        padding-bottom: 128px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 
-    }
+  @include media-breakpoint-up(lg) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+  }
+}
+
+.guias-otras-prestaciones-arrow {
+  top: 360px !important;
 }

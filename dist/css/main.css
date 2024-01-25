@@ -20584,6 +20584,10 @@ p {
   padding-top: 70px;
 }
 
+.guias-blog-post-arrow {
+  top: 380px !important;
+}
+
 .banner__text h1, .banner__text .h1 {
   width: 100%;
   max-width: 642px;
@@ -20666,6 +20670,10 @@ p {
     padding-top: 128px;
     padding-bottom: 128px;
   }
+}
+
+.guias-otras-prestaciones-arrow {
+  top: 360px !important;
 }
 
 .textos-legales-banner::after {
