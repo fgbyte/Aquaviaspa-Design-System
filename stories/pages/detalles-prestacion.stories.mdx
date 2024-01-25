@@ -1,0 +1,16 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import { detalles } from "../../theme/pages/detalles-prestacion/detalles-prestacion.stories"
+
+<Meta title="Pages/Detalles-prestacion" />
+
+## Detalles-prestacion
+
+>Esta pagina tiene la class `posts-page` en el body
+
+<Canvas>
+ <Story name="Primary">
+  {() => detalles
+  }
+ </Story>
+</Canvas>

@@ -1,0 +1,74 @@
+export const subs = `
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/css/main.css">
+  <title>Descargar catálogo</title>
+</head>
+
+<body>
+
+  <!-- *****HERO******* -->
+  <section class="banner banner--short">
+    <div id="hero" class="banner__img">
+      <img class="d-none d-lg-block" src="/dist/assets/img/card-wifi.webp" alt="">
+      <img class="d-lg-none" src="/dist/assets/img/banner-nl-page.webp" alt="">
+    </div>
+    <div class="banner__text">
+      <h1>Subscripción Newsletter</h1>
+    </div>
+  </section>
+
+
+
+  <!-- *****Form***** -->
+  <form class="form-full bg-light mx-auto form-full-page-nl">
+    <div class="nl-header">
+      <h2>Rellene el siguiente formulari para subscribirse a nuestra Newsletter:</h2>
+    </div>
+    <div class="form-full__container  ">
+      <label class="d-flex flex-column w-100" for="">
+        <span>Nombre*</span>
+        <input type="text">
+      </label>
+
+    </div>
+    <div class="form-full__container  ">
+      <label class="d-flex flex-column w-100" for="">
+        <span> Apellidos*</span>
+        <input type="text">
+      </label>
+    </div>
+    <div class="form-full__container  ">
+
+      <label class="d-flex flex-column w-100" for="">
+        <span> Correo elecrónico*</span>
+        <input type="text">
+      </label>
+    </div>
+
+    <label class="form-full__checkbox">
+
+      <p><input type="checkbox" id="miCheckbox" name="miCheckbox">Al enviar el formulario, acepto que estoy
+        de acuerdo con los <a href="#"><b>términos y condiciones.</b></a></p>
+    </label>
+
+    <div class="mx-auto text-center form-full__terms">Este sitio está protegido por reCAPTCHA y se aplican la <a
+        href="#"><b>política
+          de privacidad</b></a> y los <a href="#"><b>términos de servicio</b></a> de Google.</div>
+
+
+    <button type="button" class="btn-ficha">Enviar</button>
+
+  </form>
+
+
+  <script src="/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/dist/js/main.js"></script>
+</body>
+
+</html>
+`
