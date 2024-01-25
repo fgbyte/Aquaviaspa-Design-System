@@ -20676,3 +20676,13 @@ p {
     max-width: 1102px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .distribuidores__card {
+    gap: 15px;
+  }
+}
+
+.dropdown-docs .details-inner {
+  padding-bottom: 40px;
+}

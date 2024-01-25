@@ -1,0 +1,14 @@
+@use "../../globals";
+@use "../../mixins";
+
+.distribuidores__card {
+  @include media-breakpoint-down(lg) {
+    gap: 15px;
+  }
+}
+
+.dropdown-docs {
+    .details-inner {
+      padding-bottom: 40px;
+    }
+}
