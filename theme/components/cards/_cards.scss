@@ -216,7 +216,7 @@
     z-index: 10;
     overflow: hidden;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       font-size: 28px;
     }
 
@@ -227,6 +227,7 @@
 
   .card-option__container {
     position: relative;
+    height: 100%;
 
     &::after {
       content: url("/dist/assets/icons/card-option__container__check.svg");
@@ -904,7 +905,7 @@
 }
 
 .card-steps {
-  width: 100%;
+  // width: 100%;
   display: flex;
   align-items: center;
   gap: 5.5px;
