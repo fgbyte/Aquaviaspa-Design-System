@@ -20726,7 +20726,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 }
 @media (min-width: 992px) {
   .asistente__container__header {
@@ -20777,6 +20777,7 @@ p {
 }
 
 .asistente-inner {
+  padding-top: 109px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20786,15 +20787,33 @@ p {
   .asistente-inner {
     flex-direction: row;
     gap: 55px;
+    justify-content: space-around;
   }
   .asistente-inner__steps {
-    padding-right: 230px;
-    border-right: 1px solid #A5A5A5;
+    padding-left: 25px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .asistente-inner__steps {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 991.98px) {
+  .asistente-inner .asistente__container {
+    padding-top: 10px;
   }
 }
 .asistente-inner .card-option {
-  width: 327px;
+  min-width: 280px;
   height: 276px;
+}
+@media (min-width: 992px) {
+  .asistente-inner .card-option {
+    width: 100%;
+  }
+}
+.asistente-inner .card-option img {
+  height: 100%;
 }
 .asistente-inner .card-option .btn-blue--asistente {
   height: 55px;
@@ -20802,5 +20821,10 @@ p {
 @media (min-width: 768px) {
   .asistente-inner .card-option .btn-blue--asistente {
     font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .asistente-inner .asistente__container__header h2, .asistente-inner .asistente__container__header .h2 {
+    margin-top: 49px;
   }
 }
