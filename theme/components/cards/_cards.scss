@@ -186,7 +186,7 @@
   overflow: hidden;
   position: relative;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     width: 465px;
     height: 470px;
   }
@@ -197,7 +197,7 @@
     z-index: 1;
     transition: all $delay linear;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       height: 385px;
     }
   }
