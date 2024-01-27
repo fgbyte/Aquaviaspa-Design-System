@@ -256,6 +256,82 @@
   }
 }
 
+.asistente-input {
+  width: 325px;
+  height: 355px;
+  overflow: hidden;
+  position: relative;
+  transition: all $delay linear;
+  @include media-breakpoint-up(md) {
+    width: 465px;
+    height: 470px;
+    transition: all $delay linear;
+  }
+
+  &:hover {
+    input {
+      transition: all $delay linear;
+      transform: scale(1.1);
+      z-index: 1;
+      filter: brightness(0.7);
+      
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    label {
+      background-color: $primary;
+    }
+  }
+
+  input {
+    //img
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 270px;
+    z-index: 1;
+    transition: all $delay linear;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @include media-breakpoint-up(md) {
+      height: 385px;
+    }
+
+    &::after {
+      content: url("/dist/assets/icons/card-option__container__check.svg");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity $delay linear;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    background-color: $beige;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    font-size: 22px;
+    z-index: 10;
+    overflow: hidden;
+  }
+}
+
+
+
 .card-faq {
   background-color: $white;
   padding: 60px 0px;
@@ -362,7 +438,7 @@
   align-items: center;
   gap: 8px;
   border-bottom: 1px solid transparent;
-  transition: all linear .2s;
+  transition: all linear 0.2s;
 
   img {
     width: 55px;
@@ -389,7 +465,7 @@
   }
 
   &:hover {
-    transition: all linear .2s  ;
+    transition: all linear 0.2s;
     border-bottom: 1px solid #000;
   }
 }
