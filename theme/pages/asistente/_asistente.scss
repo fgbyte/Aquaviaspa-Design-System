@@ -153,3 +153,16 @@
         width: fit-content;
     }
 }
+
+.card-steps::before {
+
+    @include media-breakpoint-up(lg) {
+        content: '';
+        position: absolute;
+        right: -80px;
+        height: 430px;
+
+        width: 1px;
+        background: #21252916;
+    }
+}

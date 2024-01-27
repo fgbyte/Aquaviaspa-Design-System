@@ -20850,3 +20850,14 @@ p {
     width: fit-content;
   }
 }
+
+@media (min-width: 992px) {
+  .card-steps::before {
+    content: "";
+    position: absolute;
+    right: -80px;
+    height: 430px;
+    width: 1px;
+    background: rgba(33, 37, 41, 0.0862745098);
+  }
+}
