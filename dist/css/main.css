@@ -20828,3 +20828,25 @@ p {
     margin-top: 49px;
   }
 }
+
+/*Pruebas*/
+.asistente-inner__steps {
+  position: relative;
+}
+
+.asistente-inner__steps--anterior {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 992px) {
+  .asistente-inner__steps--anterior {
+    position: relative;
+    top: -85px;
+    left: 50px;
+    width: fit-content;
+  }
+}
