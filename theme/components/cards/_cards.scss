@@ -286,6 +286,23 @@
   }
 
   input {
+      &:checked {
+      transition: all $delay linear;
+      transform: scale(1.1);
+      z-index: 1;
+      filter: brightness(0.7);
+      
+      &::after {
+        opacity: 1;
+      }
+    }
+    &:checked + label { //hermano adyacente
+      background-color: $primary;
+    }
+
+  }
+
+  input {
     //img
     cursor: pointer;
     appearance: none;

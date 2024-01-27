@@ -15861,6 +15861,18 @@ p {
 .asistente-input:hover label {
   background-color: #94F0F5;
 }
+.asistente-input input:checked {
+  transition: all 0.4s linear;
+  transform: scale(1.1);
+  z-index: 1;
+  filter: brightness(0.7);
+}
+.asistente-input input:checked::after {
+  opacity: 1;
+}
+.asistente-input input:checked + label {
+  background-color: #94F0F5;
+}
 .asistente-input input {
   cursor: pointer;
   appearance: none;
