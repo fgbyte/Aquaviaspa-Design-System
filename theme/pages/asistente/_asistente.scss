@@ -12,7 +12,7 @@
 
     @include media-breakpoint-up(lg) {
       gap: 43px;
-      overflow: auto;
+      overflow-x: auto;
     }
 
     &__header {

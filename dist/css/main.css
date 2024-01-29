@@ -20831,7 +20831,7 @@ p {
 @media (min-width: 992px) {
   .asistente__container {
     gap: 43px;
-    overflow: auto;
+    overflow-x: auto;
   }
 }
 .asistente__container__header {
