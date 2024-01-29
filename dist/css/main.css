@@ -20956,3 +20956,8 @@ p {
     background: rgba(33, 37, 41, 0.0862745098);
   }
 }
+
+.steps-block {
+  display: flex;
+  gap: 14px;
+}
