@@ -315,19 +315,19 @@
   }
 
   label {
-    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    overflow: hidden;
     background-color: $beige;
     width: 100%;
     height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0px;
-    z-index: 10;
-    overflow: hidden;
     font-size: 22px;
     font-weight: $textSemibold;
+    cursor: pointer;
   }
 
   input {
@@ -341,7 +341,8 @@
         opacity: 1;
       }
     }
-    &:checked + label { //hermano adyacente
+    &:checked + label {
+      //hermano adyacente
       background-color: $primary;
     }
   }
@@ -350,7 +351,7 @@
 .asistente-input--inner {
   @extend .asistente-input;
   height: 275px;
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(lg) {
     height: 290px;
     min-width: 325px;
     width: 345px;
@@ -360,13 +361,16 @@
     width: 100%;
     height: 100%;
     background-position: center top;
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
       background-size: cover;
     }
   }
 
   label {
     height: 55px;
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
   }
 }
 
