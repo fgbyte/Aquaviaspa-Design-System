@@ -2,135 +2,113 @@
 @use "../../mixins";
 
 .asistente {
-    @include desk-space;
+  @include desk-space;
 
-    &__container {
-        padding: 107px $pxMobile 77px $pxMobile;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+  &__container {
+    padding: 107px $pxMobile 77px $pxMobile;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
-        @include media-breakpoint-up(lg) {
-            gap: 43px;
-        }
-
-        &__header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-
-            @include media-breakpoint-up(lg) {
-                gap: 9px;
-            }
-
-            h1 {
-                font-size: 14px;
-                font-weight: $textBold;
-                line-height: 16px;
-                margin: 0px;
-                text-transform: uppercase;
-                text-align: center;
-            }
-
-            h2 {
-                font-size: 36px;
-                font-weight: $textBold;
-                line-height: 40px;
-                margin: 0px;
-                text-align: center;
-
-                @include media-breakpoint-up(lg) {
-                    margin-top: 27px;
-                    line-height: 54px;
-                }
-            }
-
-            p {
-                font-size: 16px;
-                font-weight: $textMedium;
-                color: $grayBorder;
-                line-height: 19px;
-                margin: 0px;
-                text-align: center;
-            }
-        }
-
-        &__cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 21.5px;
-
-            @include media-breakpoint-up(lg) {
-                flex-direction: row;
-                justify-content: center;
-                gap: 13.8px;
-            }
-        }
+    @include media-breakpoint-up(lg) {
+      gap: 43px;
+      overflow: auto;
     }
 
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      @include media-breakpoint-up(lg) {
+        gap: 9px;
+      }
+
+      h1 {
+        font-size: 14px;
+        font-weight: $textBold;
+        line-height: 16px;
+        margin: 0px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 36px;
+        font-weight: $textBold;
+        line-height: 40px;
+        margin: 0px;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+          margin-top: 27px;
+          line-height: 54px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: $textMedium;
+        color: $grayBorder;
+        line-height: 19px;
+        margin: 0px;
+        text-align: center;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 21.5px;
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 13.8px;
+      }
+    }
+  }
 }
 
 .asistente-inner {
-    padding-top: 109px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  padding-top: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-around;
+
+    &__steps {
+      padding-left: $pxMobile;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 100px;
+        width: 250px;
+        min-width: 190px;
+      }
+    }
+  }
+
+  .asistente__container {
+    @include media-breakpoint-down(lg) {
+      padding-top: 10px;
+    }
+  }
+
+  .asistente__container__header {
     @include media-breakpoint-up(lg) {
-        flex-direction: row;
-        gap: 55px;
-        justify-content: space-around;
-
-        &__steps {
-            padding-left: $pxMobile;
-
-            @include media-breakpoint-up(lg) {
-                margin-top: 100px
-            }
-        }
-
+      h2 {
+        margin-top: 49px;
+      }
     }
-
-    .asistente__container {
-        @include media-breakpoint-down(lg) {
-            padding-top: 10px;
-        }
-    }
-
-    .card-option {
-        min-width: 280px;
-        height: 276px;
-
-        @include media-breakpoint-up(lg) {
-            width: 100%;
-        }
-
-        img {
-            height: 100%;
-        }
-
-        .btn-blue--asistente {
-            height: 55px;
-
-            @include media-breakpoint-up(md) {
-                font-size: 22px;
-            }
-        }
-    }
-
-    .asistente__container__header {
-        @include media-breakpoint-up(lg) {
-            h2 {
-                margin-top: 49px;
-            }
-        }
-    }
+  }
 }
-
-
 
 /*Pruebas*/
 
@@ -139,30 +117,30 @@
 }
 
 .asistente-inner__steps--anterior {
-    position: fixed;
-    z-index: 100;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    right: 0;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
 
-    @include media-breakpoint-up(lg) {
-        position: relative;
-        top: -85px;
-        left: 50px;
-        width: fit-content;
-    }
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    top: -85px;
+    left: 50px;
+    width: fit-content;
+  }
 }
 
-.card-steps::before {
+.asistente-inner__steps::before {
+  @include media-breakpoint-up(lg) {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5%;
+    height: 110%;
 
-    @include media-breakpoint-up(lg) {
-        content: '';
-        position: absolute;
-        right: -80px;
-        height: 430px;
-
-        width: 1px;
-        background: #21252916;
-    }
+    width: 1px;
+    background: #21252916;
+  }
 }

@@ -15923,7 +15923,6 @@ p {
 @media (min-width: 992px) {
   .asistente-input--inner {
     height: 290px;
-    min-width: 325px;
     width: 345px;
   }
 }
@@ -16537,6 +16536,7 @@ p {
 }
 
 .card-steps {
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 5.5px;
@@ -20831,6 +20831,7 @@ p {
 @media (min-width: 992px) {
   .asistente__container {
     gap: 43px;
+    overflow: auto;
   }
 }
 .asistente__container__header {
@@ -20897,7 +20898,7 @@ p {
 @media (min-width: 992px) {
   .asistente-inner {
     flex-direction: row;
-    gap: 55px;
+    gap: 0px;
     justify-content: space-around;
   }
   .asistente-inner__steps {
@@ -20907,31 +20908,13 @@ p {
 @media (min-width: 992px) and (min-width: 992px) {
   .asistente-inner__steps {
     margin-top: 100px;
+    width: 250px;
+    min-width: 190px;
   }
 }
 @media (max-width: 991.98px) {
   .asistente-inner .asistente__container {
     padding-top: 10px;
-  }
-}
-.asistente-inner .card-option {
-  min-width: 280px;
-  height: 276px;
-}
-@media (min-width: 992px) {
-  .asistente-inner .card-option {
-    width: 100%;
-  }
-}
-.asistente-inner .card-option img {
-  height: 100%;
-}
-.asistente-inner .card-option .btn-blue--asistente {
-  height: 55px;
-}
-@media (min-width: 768px) {
-  .asistente-inner .card-option .btn-blue--asistente {
-    font-size: 22px;
   }
 }
 @media (min-width: 992px) {
@@ -20963,11 +20946,12 @@ p {
 }
 
 @media (min-width: 992px) {
-  .card-steps::before {
+  .asistente-inner__steps::before {
     content: "";
     position: absolute;
-    right: -80px;
-    height: 430px;
+    right: 0px;
+    bottom: -5%;
+    height: 110%;
     width: 1px;
     background: rgba(33, 37, 41, 0.0862745098);
   }
