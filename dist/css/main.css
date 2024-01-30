@@ -20961,3 +20961,37 @@ p {
   display: flex;
   gap: 14px;
 }
+
+@media (min-width: 992px) {
+  .card-steps {
+    display: flex;
+    align-items: start;
+  }
+}
+@media (min-width: 992px) {
+  .card-steps svg {
+    margin-left: 12.5px;
+  }
+}
+
+.steap-container {
+  display: contents;
+}
+@media (min-width: 992px) {
+  .steap-container {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.step {
+  display: flex;
+  min-width: 27px;
+}

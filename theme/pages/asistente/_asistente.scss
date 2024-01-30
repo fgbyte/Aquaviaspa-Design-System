@@ -113,7 +113,7 @@
 /*Pruebas*/
 
 .asistente-inner__steps {
-    position: relative;
+  position: relative;
 }
 
 .asistente-inner__steps--anterior {
@@ -147,6 +147,45 @@
 
 
 .steps-block {
+  display: flex;
+  gap: 14px;
+}
+
+.card-steps {
+  @include media-breakpoint-up(lg) {
     display: flex;
-    gap: 14px;
+    align-items: start;
+  }
+
+
+  & svg {
+    @include media-breakpoint-up(lg) {
+      margin-left: 12.5px;
+
+    }
+  }
+}
+
+.steap-container {
+  display: contents;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    gap: 8px;
+
+
+  }
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.step {
+  display: flex;
+  min-width: 27px;
+
 }
