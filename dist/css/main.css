@@ -20974,11 +20974,11 @@ p {
   }
 }
 
-.steap-container {
+.step-container {
   display: contents;
 }
 @media (min-width: 992px) {
-  .steap-container {
+  .step-container {
     display: flex;
     gap: 8px;
   }
