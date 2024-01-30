@@ -20985,10 +20985,16 @@ p {
 }
 
 .truncate {
+  display: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 120px;
+}
+@media (min-width: 992px) {
+  .truncate {
+    display: inline-block;
+  }
 }
 
 .step {

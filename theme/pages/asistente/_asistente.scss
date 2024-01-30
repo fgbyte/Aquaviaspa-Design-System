@@ -178,10 +178,15 @@
 }
 
 .truncate {
+  display: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 120px;
+
+  @include media-breakpoint-up(lg) {
+    display: inline-block;
+  }
 }
 
 .step {
