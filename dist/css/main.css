@@ -20981,15 +20981,17 @@ p {
   .step-container {
     display: flex;
     gap: 8px;
+    max-height: 27px;
   }
 }
 
 .truncate {
   display: none;
-  white-space: nowrap;
+  /*  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 120px;
+  text-overflow: ellipsis; */
+  max-width: 180px;
+  font-size: 13px;
 }
 @media (min-width: 992px) {
   .truncate {
