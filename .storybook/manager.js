@@ -6,7 +6,7 @@ addons.setConfig({
         base: "dark",
         brandTitle: "AquaviaSpa Design System",
         brandUrl: "https://aquaviaspa.es",
-        brandImage: "/logo-navbar.svg",
+        brandImage: "/public/logo-navbar.svg",
         brandTarget: "_self",
     })
 })
