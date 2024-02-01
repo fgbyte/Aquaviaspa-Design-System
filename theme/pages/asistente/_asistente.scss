@@ -196,3 +196,37 @@
 
 
 }
+
+
+.asistente-input--logo {
+  background-color: $beige;
+
+  &:hover {
+    background-color: $primary;
+
+    input {
+      background-image: none !important;
+      filter: brightness(1);
+    }
+  }
+  
+  input {
+    background-size: 105px;
+    background-position: center 40%;
+    &::after {
+    content: url("/dist/assets/icons/card-option__container__check--white.svg");
+    }
+  }
+
+  label {
+    height: 100px;
+  }
+
+  input {
+    &:checked {
+      background-image: none !important;
+      background-color: $primary;
+      filter: brightness(1);
+    }
+  }
+}

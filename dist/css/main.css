@@ -15859,6 +15859,7 @@ p {
   opacity: 1;
 }
 .asistente-input:hover label, .asistente-input--inner:hover label {
+  transition: all 0.4s linear;
   background-color: #94F0F5;
 }
 .asistente-input input, .asistente-input--inner input {
@@ -15894,6 +15895,7 @@ p {
   bottom: 0px;
   z-index: 10;
   overflow: hidden;
+  transition: all 0.4s linear;
   background-color: #EFEDE9;
   width: 100%;
   height: 85px;
@@ -15940,10 +15942,11 @@ p {
   height: 55px;
   line-height: 25px;
   text-align: center;
+  font-size: 19px;
 }
 @media (max-width: 991.98px) {
   .asistente-input--inner label {
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
@@ -21004,4 +21007,30 @@ p {
 .step {
   display: flex;
   min-width: 27px;
+}
+
+.asistente-input--logo {
+  background-color: #EFEDE9;
+}
+.asistente-input--logo:hover {
+  background-color: #94F0F5;
+}
+.asistente-input--logo:hover input {
+  background-image: none !important;
+  filter: brightness(1);
+}
+.asistente-input--logo input {
+  background-size: 105px;
+  background-position: center 40%;
+}
+.asistente-input--logo input::after {
+  content: url("/dist/assets/icons/card-option__container__check--white.svg");
+}
+.asistente-input--logo label {
+  height: 100px;
+}
+.asistente-input--logo input:checked {
+  background-image: none !important;
+  background-color: #94F0F5;
+  filter: brightness(1);
 }
