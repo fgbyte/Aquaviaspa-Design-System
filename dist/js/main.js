@@ -641,6 +641,34 @@ document.addEventListener('DOMContentLoaded', function () {
         return bannerHeight - navbarHeight;
     }
 });
+var textInStep = document.querySelectorAll('.dynamic-step');
+var radios = document.querySelectorAll('input[type="radio"]');
+var stepValue = {
+    step1: '',
+    step2: '',
+    step3: '',
+    step4: '',
+    step5: '',
+};
+function updateTextsFromStepValues() {
+    textInStep.forEach(function (step, index) {
+        var stepKey = "step".concat(index + 1);
+        if (stepValue[stepKey]) {
+            step.innerText = stepValue[stepKey];
+        }
+    });
+}
+function setStepValue() {
+    radios.forEach(function (radio, index) {
+        radio.addEventListener('change', function () {
+            var stepIndex = Math.floor(index / 3) + 1;
+            var stepKey = "step".concat(stepIndex);
+            stepValue[stepKey] = radio.value;
+            updateTextsFromStepValues();
+        });
+    });
+}
+setStepValue();
 var blogPostSlider = document.querySelectorAll(".blog-post-slider");
 var guiasBlogPostSlider = document.querySelectorAll(".guias-blogPostSlider");
 blogPostSlider.forEach(function (carousel, carouselIndex) {
