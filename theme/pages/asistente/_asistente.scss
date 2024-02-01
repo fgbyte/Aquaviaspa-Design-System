@@ -220,6 +220,9 @@
 
   label {
     height: 100px;
+    @include media-breakpoint-down(lg) {
+      height: 85px;
+    }
   }
 
   input {
@@ -229,4 +232,20 @@
       filter: brightness(1);
     }
   }
+}
+
+.asistente-selection {
+  width: 325px;
+  @include media-breakpoint-up(md) {
+    width: 465px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+  }
+  height: 330px;
+  background-color: $beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
