@@ -367,6 +367,8 @@
 
   label {
     height: 55px;
+    line-height: 25px;
+    text-align: center;
     @include media-breakpoint-down(lg) {
       font-size: 20px;
     }

@@ -15938,6 +15938,8 @@ p {
 }
 .asistente-input--inner label {
   height: 55px;
+  line-height: 25px;
+  text-align: center;
 }
 @media (max-width: 991.98px) {
   .asistente-input--inner label {
@@ -20965,7 +20967,7 @@ p {
 @media (min-width: 992px) {
   .card-steps {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
   }
 }
 @media (min-width: 992px) {

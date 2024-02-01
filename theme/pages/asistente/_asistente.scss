@@ -154,7 +154,7 @@
 .card-steps {
   @include media-breakpoint-up(lg) {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
   }
 
 
