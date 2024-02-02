@@ -641,6 +641,45 @@ document.addEventListener('DOMContentLoaded', function () {
         return bannerHeight - navbarHeight;
     }
 });
+// Asistentes Generales
+var asistenteBlocks = Array.from({ length: 2 }, function (_, i) { return document.getElementById("asistente-".concat(i + 1)); });
+// Asistentes inners
+var asistenteInnerBlocks = Array.from({ length: 6 }, function (_, i) { return document.getElementById("asistente-inner-".concat(i + 1)); });
+//Inputs Primeros
+var asistenteFirstInputs = document.querySelectorAll("#asistente-input");
+//Inputs inner
+var asistenteInnerInputs = document.querySelectorAll("#asistente-inner-input");
+//mostrar solo el Primero de los Generales
+function showFirstAsistente() {
+    if (asistenteBlocks) {
+        asistenteBlocks.forEach(function (block) {
+            if (block && block.id === 'asistente-1') {
+                block.style.display = 'block';
+            }
+            else {
+                if (block) {
+                    block.style.display = 'none';
+                }
+            }
+        });
+    }
+}
+//mostrar solo el Primero de los Inner
+function showFirstAsistenteInner() {
+    if (asistenteInnerBlocks) {
+        asistenteInnerBlocks.forEach(function (block) {
+            if (block && block.id === 'asistente-inner-1') {
+                block.style.display = 'block';
+            }
+            else {
+                if (block) {
+                    block.style.display = 'none';
+                }
+            }
+        });
+    }
+}
+showFirstAsistenteInner();
 var textInStep = document.querySelectorAll('.dynamic-step');
 var radios = document.querySelectorAll('input[type="radio"]');
 var stepValue = {
