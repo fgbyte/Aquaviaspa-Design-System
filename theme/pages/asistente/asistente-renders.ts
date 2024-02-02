@@ -4,6 +4,7 @@ const asistenteBlocks = Array.from({ length: 2 }, (_, i) => document.getElementB
 // Asistentes inners
 const asistenteInnerBlocks = Array.from({ length: 6 }, (_, i) => document.getElementById(`asistente-inner-${i + 1}`));
 
+//? console.log(asistenteInnerBlocks[0])
 
 //Inputs Primeros
 const asistenteFirstInputs = document.querySelectorAll(`#asistente-input`)
@@ -76,10 +77,37 @@ function hideFirstAsistenteInner() {
     }
 }
 
+//?
+type AsistenteID = 0 | 1 | 2 | 3 | 4 | 5;
+function hideSpecificAsistenteInner(id: AsistenteID) {
+    asistenteBlocks.forEach((block) => {
+        let helper = `asistente-inner${id}`
+        if (block && block.id === helper) {
+            block.style.display = 'none';
+        }
+    })
+}
+function showSpecificAsistenteInner(id: AsistenteID) {
+    asistenteBlocks.forEach((block) => {
+        let helper = `asistente-inner${id}`
+        if (block && block.id === helper) {
+            block.style.display = 'block';
+        }
+    })
+}
+
+
+
 function handleInnerInputClick(event: Event) {
     const mouseEvent = event as MouseEvent;
     const clickedInput = mouseEvent.target;
-    console.log(clickedInput)
+    if (clickedInput) {
+        const grandParentElement = (clickedInput as Node).parentNode?.parentNode?.parentNode as HTMLElement;
+        const currentAsistenteInner = grandParentElement.id;
+        console.log(currentAsistenteInner)
+        //hasta aquí me da el id del asistente inner
+    }
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {

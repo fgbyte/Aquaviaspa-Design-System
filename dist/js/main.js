@@ -645,6 +645,7 @@ document.addEventListener('DOMContentLoaded', function () {
 var asistenteBlocks = Array.from({ length: 2 }, function (_, i) { return document.getElementById("asistente-".concat(i + 1)); });
 // Asistentes inners
 var asistenteInnerBlocks = Array.from({ length: 6 }, function (_, i) { return document.getElementById("asistente-inner-".concat(i + 1)); });
+//? console.log(asistenteInnerBlocks[0])
 //Inputs Primeros
 var asistenteFirstInputs = document.querySelectorAll("#asistente-input");
 //Inputs inner
@@ -711,10 +712,32 @@ function hideFirstAsistenteInner() {
         });
     }
 }
+function hideSpecificAsistenteInner(id) {
+    asistenteBlocks.forEach(function (block) {
+        var helper = "asistente-inner".concat(id);
+        if (block && block.id === helper) {
+            block.style.display = 'none';
+        }
+    });
+}
+function showSpecificAsistenteInner(id) {
+    asistenteBlocks.forEach(function (block) {
+        var helper = "asistente-inner".concat(id);
+        if (block && block.id === helper) {
+            block.style.display = 'block';
+        }
+    });
+}
 function handleInnerInputClick(event) {
+    var _a, _b;
     var mouseEvent = event;
     var clickedInput = mouseEvent.target;
-    console.log(clickedInput);
+    if (clickedInput) {
+        var grandParentElement = (_b = (_a = clickedInput.parentNode) === null || _a === void 0 ? void 0 : _a.parentNode) === null || _b === void 0 ? void 0 : _b.parentNode;
+        var currentAsistenteInner = grandParentElement.id;
+        console.log(currentAsistenteInner);
+        //hasta aquí me da el id del asistente inner
+    }
 }
 document.addEventListener("DOMContentLoaded", function () {
     showFirstAsistente();
