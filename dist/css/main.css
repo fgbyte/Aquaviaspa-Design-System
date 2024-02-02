@@ -17963,6 +17963,7 @@ p {
 @media (min-width: 768px) {
   .banner {
     max-height: 905px;
+    min-height: 650px;
     flex-direction: row;
   }
   .banner__img {
@@ -18040,6 +18041,7 @@ p {
 
 .banner--short {
   max-height: 500px;
+  min-height: auto;
 }
 .banner--short h1, .banner--short .h1 {
   font-weight: 500;
