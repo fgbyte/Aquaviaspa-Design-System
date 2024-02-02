@@ -94,13 +94,11 @@ function handleInnerInputClick(event: Event) {
     const clickedInput = mouseEvent.target;
     if (clickedInput) {
         const grandParentElement = (clickedInput as Node).parentNode?.parentNode?.parentNode as HTMLElement;
+        //ocultar el current
         const currentAsistenteInner = grandParentElement;
-        const nextAsistenteInner = grandParentElement.nextElementSibling;
-        //hasta aquí me da el asistente y me lo oculta
-        //ahora tengo que hacer que me de al proximo y me lo muestre
-        console.log(currentAsistenteInner)
-        
         hideSpecificAsistenteInner(currentAsistenteInner);
+        //mostrar el next
+        const nextAsistenteInner = grandParentElement.nextElementSibling;
         if (nextAsistenteInner instanceof HTMLElement) {
             showSpecificAsistenteInner(nextAsistenteInner);
         }
