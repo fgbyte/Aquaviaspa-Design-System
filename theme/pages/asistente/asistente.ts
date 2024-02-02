@@ -1,6 +1,7 @@
 
 const textInStep = document.querySelectorAll('.dynamic-step') as NodeListOf<HTMLElement>;
 const radios: NodeListOf<HTMLInputElement> = document.querySelectorAll('input[type="radio"]');
+const steps = document.querySelectorAll('.step') as NodeListOf<HTMLElement>;
 
 
 const stepValue = {
@@ -17,6 +18,10 @@ function updateTextsFromStepValues() {
     const stepKey = `step${index + 1}` as keyof typeof stepValue;
     if (stepValue[stepKey]) {
       step.innerText = stepValue[stepKey];
+
+      steps[index].classList.add('step--active');
+    } else {
+      steps[index].classList.remove('step--active');
     }
   });
 }

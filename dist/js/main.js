@@ -751,6 +751,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 var textInStep = document.querySelectorAll('.dynamic-step');
 var radios = document.querySelectorAll('input[type="radio"]');
+var steps = document.querySelectorAll('.step');
 var stepValue = {
     step1: '',
     step2: '',
@@ -763,6 +764,10 @@ function updateTextsFromStepValues() {
         var stepKey = "step".concat(index + 1);
         if (stepValue[stepKey]) {
             step.innerText = stepValue[stepKey];
+            steps[index].classList.add('step--active');
+        }
+        else {
+            steps[index].classList.remove('step--active');
         }
     });
 }
