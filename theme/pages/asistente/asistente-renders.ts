@@ -27,6 +27,30 @@ function showFirstAsistente() {
     }
 }
 
+function hideFirstAsistente() {
+    if (asistenteBlocks) {
+        asistenteBlocks.forEach((block) => {
+            if (block && block.id === 'asistente-1') {
+                block.style.display = 'none';
+            }
+        })
+    }
+}
+
+function showSecondAsistente() {
+    if (asistenteBlocks) {
+        asistenteBlocks.forEach((block) => {
+            if (block && block.id === 'asistente-2') {
+                block.style.display = 'flex';
+            } else {
+                if (block) {
+                    block.style.display = 'none';
+                }
+            }
+        });
+    }
+}
+
 //mostrar solo el Primero de los Inner
 function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
@@ -42,5 +66,37 @@ function showFirstAsistenteInner() {
     }
 }
 
+function hideFirstAsistenteInner() {
+    if (asistenteInnerBlocks) {
+        asistenteInnerBlocks.forEach((block) => {
+            if (block && block.id === 'asistente-inner-1') {
+                block.style.display = 'none';
+            }
+        })
+    }
+}
 
-showFirstAsistenteInner()
+function handleInnerInputClick(event: Event) {
+    const mouseEvent = event as MouseEvent;
+    const clickedInput = mouseEvent.target;
+    console.log(clickedInput)
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    showFirstAsistente();
+
+    asistenteFirstInputs.forEach((input) => {
+        input.addEventListener('click', () => {
+            hideFirstAsistente();
+            showSecondAsistente();
+            // showFirstAsistenteInner();
+        })
+    })
+
+
+    //click en los inputs del asistente inner activa handleInnerInputClick()
+    asistenteInnerInputs.forEach((input) => {
+        input.addEventListener('click', handleInnerInputClick);
+
+    });
+});

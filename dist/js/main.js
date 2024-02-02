@@ -664,6 +664,29 @@ function showFirstAsistente() {
         });
     }
 }
+function hideFirstAsistente() {
+    if (asistenteBlocks) {
+        asistenteBlocks.forEach(function (block) {
+            if (block && block.id === 'asistente-1') {
+                block.style.display = 'none';
+            }
+        });
+    }
+}
+function showSecondAsistente() {
+    if (asistenteBlocks) {
+        asistenteBlocks.forEach(function (block) {
+            if (block && block.id === 'asistente-2') {
+                block.style.display = 'flex';
+            }
+            else {
+                if (block) {
+                    block.style.display = 'none';
+                }
+            }
+        });
+    }
+}
 //mostrar solo el Primero de los Inner
 function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
@@ -679,7 +702,33 @@ function showFirstAsistenteInner() {
         });
     }
 }
-showFirstAsistenteInner();
+function hideFirstAsistenteInner() {
+    if (asistenteInnerBlocks) {
+        asistenteInnerBlocks.forEach(function (block) {
+            if (block && block.id === 'asistente-inner-1') {
+                block.style.display = 'none';
+            }
+        });
+    }
+}
+function handleInnerInputClick(event) {
+    var mouseEvent = event;
+    var clickedInput = mouseEvent.target;
+    console.log(clickedInput);
+}
+document.addEventListener("DOMContentLoaded", function () {
+    showFirstAsistente();
+    asistenteFirstInputs.forEach(function (input) {
+        input.addEventListener('click', function () {
+            hideFirstAsistente();
+            showSecondAsistente();
+            // showFirstAsistenteInner();
+        });
+    });
+    asistenteInnerInputs.forEach(function (input) {
+        input.addEventListener('click', handleInnerInputClick);
+    });
+});
 var textInStep = document.querySelectorAll('.dynamic-step');
 var radios = document.querySelectorAll('input[type="radio"]');
 var stepValue = {
