@@ -78,23 +78,14 @@ function hideFirstAsistenteInner() {
 }
 
 //?
-type AsistenteID = 0 | 1 | 2 | 3 | 4 | 5;
-function hideSpecificAsistenteInner(id: AsistenteID) {
-    asistenteBlocks.forEach((block) => {
-        let helper = `asistente-inner${id}`
-        if (block && block.id === helper) {
-            block.style.display = 'none';
-        }
-    })
+function hideSpecificAsistenteInner(asistente: HTMLElement) {
+    asistente.style.display = 'none';
 }
-function showSpecificAsistenteInner(id: AsistenteID) {
-    asistenteBlocks.forEach((block) => {
-        let helper = `asistente-inner${id}`
-        if (block && block.id === helper) {
-            block.style.display = 'block';
-        }
-    })
+function showSpecificAsistenteInner(asistente: HTMLElement) {
+    asistente.style.display = 'block';
 }
+
+
 
 
 
@@ -103,9 +94,16 @@ function handleInnerInputClick(event: Event) {
     const clickedInput = mouseEvent.target;
     if (clickedInput) {
         const grandParentElement = (clickedInput as Node).parentNode?.parentNode?.parentNode as HTMLElement;
-        const currentAsistenteInner = grandParentElement.id;
+        const currentAsistenteInner = grandParentElement;
+        const nextAsistenteInner = grandParentElement.nextElementSibling;
+        //hasta aquí me da el asistente y me lo oculta
+        //ahora tengo que hacer que me de al proximo y me lo muestre
         console.log(currentAsistenteInner)
-        //hasta aquí me da el id del asistente inner
+        
+        hideSpecificAsistenteInner(currentAsistenteInner);
+        if (nextAsistenteInner instanceof HTMLElement) {
+            showSpecificAsistenteInner(nextAsistenteInner);
+        }
     }
 
 }
@@ -117,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         input.addEventListener('click', () => {
             hideFirstAsistente();
             showSecondAsistente();
-            // showFirstAsistenteInner();
+            showFirstAsistenteInner();
         })
     })
 

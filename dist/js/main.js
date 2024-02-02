@@ -712,21 +712,12 @@ function hideFirstAsistenteInner() {
         });
     }
 }
-function hideSpecificAsistenteInner(id) {
-    asistenteBlocks.forEach(function (block) {
-        var helper = "asistente-inner".concat(id);
-        if (block && block.id === helper) {
-            block.style.display = 'none';
-        }
-    });
+//?
+function hideSpecificAsistenteInner(asistente) {
+    asistente.style.display = 'none';
 }
-function showSpecificAsistenteInner(id) {
-    asistenteBlocks.forEach(function (block) {
-        var helper = "asistente-inner".concat(id);
-        if (block && block.id === helper) {
-            block.style.display = 'block';
-        }
-    });
+function showSpecificAsistenteInner(asistente) {
+    asistente.style.display = 'block';
 }
 function handleInnerInputClick(event) {
     var _a, _b;
@@ -734,9 +725,15 @@ function handleInnerInputClick(event) {
     var clickedInput = mouseEvent.target;
     if (clickedInput) {
         var grandParentElement = (_b = (_a = clickedInput.parentNode) === null || _a === void 0 ? void 0 : _a.parentNode) === null || _b === void 0 ? void 0 : _b.parentNode;
-        var currentAsistenteInner = grandParentElement.id;
+        var currentAsistenteInner = grandParentElement;
+        var nextAsistenteInner = grandParentElement.nextElementSibling;
+        //hasta aquí me da el asistente y me lo oculta
+        //ahora tengo que hacer que me de al proximo y me lo muestre
         console.log(currentAsistenteInner);
-        //hasta aquí me da el id del asistente inner
+        hideSpecificAsistenteInner(currentAsistenteInner);
+        if (nextAsistenteInner instanceof HTMLElement) {
+            showSpecificAsistenteInner(nextAsistenteInner);
+        }
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -745,7 +742,7 @@ document.addEventListener("DOMContentLoaded", function () {
         input.addEventListener('click', function () {
             hideFirstAsistente();
             showSecondAsistente();
-            // showFirstAsistenteInner();
+            showFirstAsistenteInner();
         });
     });
     //click en los inputs del asistente inner activa handleInnerInputClick()
