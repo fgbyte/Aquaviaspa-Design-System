@@ -302,6 +302,7 @@
 
   @include media-breakpoint-up(md) {
     max-height: 905px;
+    min-height: 650px;
     flex-direction: row;
 
     &__img {
@@ -385,6 +386,7 @@
 
 .banner--short {
   max-height: 500px;
+  min-height: auto;
   & h1 {
     font-weight: $textMedium;
   }
