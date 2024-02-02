@@ -725,6 +725,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // showFirstAsistenteInner();
         });
     });
+    //click en los inputs del asistente inner activa handleInnerInputClick()
     asistenteInnerInputs.forEach(function (input) {
         input.addEventListener('click', handleInnerInputClick);
     });
