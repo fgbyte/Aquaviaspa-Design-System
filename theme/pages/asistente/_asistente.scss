@@ -295,6 +295,8 @@
   }
 }
 
-#asistente-inner-6{
-  width: 800px;
+.asistente-inner-blocks {
+  @include media-breakpoint-up(lg) {
+    min-width: 80%;
+  }
 }

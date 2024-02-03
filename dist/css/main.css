@@ -21104,6 +21104,8 @@ p {
   }
 }
 
-#asistente-inner-6 {
-  width: 800px;
+@media (min-width: 992px) {
+  .asistente-inner-blocks {
+    min-width: 80%;
+  }
 }
