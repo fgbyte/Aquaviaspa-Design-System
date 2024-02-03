@@ -750,7 +750,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 var textInStep = document.querySelectorAll('.dynamic-step');
-var radios = document.querySelectorAll('input[type="radio"]');
+var radios = document.querySelectorAll('.asistente-radio');
+var firstRadios = document.querySelectorAll('.type-spa-selected-radio');
+var spaSelected = document.querySelectorAll('.type-spa-selected');
 var steps = document.querySelectorAll('.step');
 var stepValue = {
     step1: '',
@@ -781,6 +783,13 @@ function setStepValue() {
         });
     });
 }
+firstRadios.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+        spaSelected.forEach(function (element) {
+            element.innerText = radio.value;
+        });
+    });
+});
 setStepValue();
 var blogPostSlider = document.querySelectorAll(".blog-post-slider");
 var guiasBlogPostSlider = document.querySelectorAll(".guias-blogPostSlider");

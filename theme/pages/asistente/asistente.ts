@@ -1,8 +1,9 @@
 
 const textInStep = document.querySelectorAll('.dynamic-step') as NodeListOf<HTMLElement>;
-const radios: NodeListOf<HTMLInputElement> = document.querySelectorAll('input[type="radio"]');
+const radios: NodeListOf<HTMLInputElement> = document.querySelectorAll('.asistente-radio');
+const firstRadios: NodeListOf<HTMLInputElement> = document.querySelectorAll('.type-spa-selected-radio');
+const spaSelected: NodeListOf<HTMLInputElement> = document.querySelectorAll('.type-spa-selected');
 const steps = document.querySelectorAll('.step') as NodeListOf<HTMLElement>;
-
 
 const stepValue = {
   step1: '',
@@ -36,5 +37,13 @@ function setStepValue() {
     });
   });
 }
+
+firstRadios.forEach((radio) => {
+  radio.addEventListener('change', () => {
+    spaSelected.forEach((element) => {
+      element.innerText = radio.value;
+    });
+  });
+});
 
 setStepValue();
