@@ -693,7 +693,7 @@ function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-inner-1') {
-                block.style.display = 'block';
+                block.style.display = 'flex';
             }
             else {
                 if (block) {
@@ -717,7 +717,7 @@ function hideSpecificAsistenteInner(asistente) {
     asistente.style.display = 'none';
 }
 function showSpecificAsistenteInner(asistente) {
-    asistente.style.display = 'block';
+    asistente.style.display = 'flex';
 }
 function handleInnerInputClick(event) {
     var _a, _b;
