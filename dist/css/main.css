@@ -21109,3 +21109,7 @@ p {
     min-width: 80%;
   }
 }
+
+#asistente-anterior {
+  cursor: pointer;
+}
