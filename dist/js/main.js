@@ -753,7 +753,7 @@ function handleAnteriorClick() {
         });
     };
     //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
-    for (var i = 0; i < 7; i++) {
+    for (var i = 2; i <= 6; i++) {
         _loop_1(i);
     }
     // TODO: que al darse anterior se limpien los steps
