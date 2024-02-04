@@ -645,12 +645,12 @@ document.addEventListener('DOMContentLoaded', function () {
 var asistenteBlocks = Array.from({ length: 2 }, function (_, i) { return document.getElementById("asistente-".concat(i + 1)); });
 // Asistentes inners
 var asistenteInnerBlocks = Array.from({ length: 6 }, function (_, i) { return document.getElementById("asistente-inner-".concat(i + 1)); });
-//? console.log(asistenteInnerBlocks[0])
 //Inputs Primeros
 var asistenteFirstInputs = document.querySelectorAll("#asistente-input");
 //Inputs inner
 var asistenteInnerInputs = document.querySelectorAll("#asistente-inner-input");
-//mostrar solo el Primero de los Generales
+//Anterior Button
+var anteriorButton = document.querySelectorAll('#asistente-anterior');
 function showFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
@@ -688,7 +688,6 @@ function showSecondAsistente() {
         });
     }
 }
-//mostrar solo el Primero de los Inner
 function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach(function (block) {
@@ -712,7 +711,6 @@ function hideFirstAsistenteInner() {
         });
     }
 }
-//?
 function hideSpecificAsistenteInner(asistente) {
     asistente.style.display = 'none';
 }
@@ -729,14 +727,40 @@ function handleInnerInputClick(event) {
         var currentAsistenteInner = grandParentElement;
         hideSpecificAsistenteInner(currentAsistenteInner);
         //mostrar el next
-        var nextAsistenteInner = grandParentElement.nextElementSibling;
+        var nextAsistenteInner = currentAsistenteInner.nextElementSibling;
         if (nextAsistenteInner instanceof HTMLElement) {
             showSpecificAsistenteInner(nextAsistenteInner);
         }
     }
 }
+function handleAnteriorClick() {
+    //que detecte si esta en el asistente-inner-1 que hal hacer click se ponga en 'none' y el block el asistente-1 ✅
+    asistenteInnerBlocks.forEach(function (asistenteInner) {
+        if (asistenteInner && asistenteInner.id === 'asistente-inner-1' && asistenteInner.style.display === 'flex') {
+            showFirstAsistente();
+        }
+    });
+    var _loop_1 = function (i) {
+        asistenteInnerBlocks.forEach(function (asistenteInner) {
+            if (asistenteInner && asistenteInner.id === "asistente-inner-".concat(i) && asistenteInner.style.display === 'flex') {
+                var currentAsistenteInner = asistenteInner;
+                hideSpecificAsistenteInner(currentAsistenteInner);
+                var previousAsistenteInner = currentAsistenteInner.previousElementSibling;
+                if (previousAsistenteInner instanceof HTMLElement) {
+                    showSpecificAsistenteInner(previousAsistenteInner);
+                }
+            }
+        });
+    };
+    //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
+    for (var i = 0; i < 7; i++) {
+        _loop_1(i);
+    }
+    // TODO: que al darse anterior se limpien los steps
+}
 document.addEventListener("DOMContentLoaded", function () {
     showFirstAsistente();
+    //click en los primeros inputs activa:
     asistenteFirstInputs.forEach(function (input) {
         input.addEventListener('click', function () {
             hideFirstAsistente();
@@ -747,6 +771,10 @@ document.addEventListener("DOMContentLoaded", function () {
     //click en los inputs del asistente inner activa handleInnerInputClick()
     asistenteInnerInputs.forEach(function (input) {
         input.addEventListener('click', handleInnerInputClick);
+    });
+    //click en el Anterior activa handleAnteriorClick()
+    anteriorButton.forEach(function (btn) {
+        btn === null || btn === void 0 ? void 0 : btn.addEventListener('click', handleAnteriorClick);
     });
 });
 var textInStep = document.querySelectorAll('.dynamic-step');

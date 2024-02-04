@@ -4,7 +4,6 @@ const asistenteBlocks = Array.from({ length: 2 }, (_, i) => document.getElementB
 // Asistentes inners
 const asistenteInnerBlocks = Array.from({ length: 6 }, (_, i) => document.getElementById(`asistente-inner-${i + 1}`));
 
-//? console.log(asistenteInnerBlocks[0])
 
 //Inputs Primeros
 const asistenteFirstInputs = document.querySelectorAll(`#asistente-input`)
@@ -12,8 +11,11 @@ const asistenteFirstInputs = document.querySelectorAll(`#asistente-input`)
 //Inputs inner
 const asistenteInnerInputs = document.querySelectorAll(`#asistente-inner-input`)
 
+//Anterior Button
+const anteriorButton = document.querySelectorAll('#asistente-anterior')
 
-//mostrar solo el Primero de los Generales
+
+
 function showFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach((block) => {
@@ -52,7 +54,6 @@ function showSecondAsistente() {
     }
 }
 
-//mostrar solo el Primero de los Inner
 function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach((block) => {
@@ -77,16 +78,12 @@ function hideFirstAsistenteInner() {
     }
 }
 
-//?
 function hideSpecificAsistenteInner(asistente: HTMLElement) {
     asistente.style.display = 'none';
 }
 function showSpecificAsistenteInner(asistente: HTMLElement) {
     asistente.style.display = 'flex';
 }
-
-
-
 
 
 function handleInnerInputClick(event: Event) {
@@ -98,7 +95,7 @@ function handleInnerInputClick(event: Event) {
         const currentAsistenteInner = grandParentElement;
         hideSpecificAsistenteInner(currentAsistenteInner);
         //mostrar el next
-        const nextAsistenteInner = grandParentElement.nextElementSibling;
+        const nextAsistenteInner = currentAsistenteInner.nextElementSibling;
         if (nextAsistenteInner instanceof HTMLElement) {
             showSpecificAsistenteInner(nextAsistenteInner);
         }
@@ -106,9 +103,34 @@ function handleInnerInputClick(event: Event) {
 
 }
 
+function handleAnteriorClick() {
+    //que detecte si esta en el asistente-inner-1 que hal hacer click se ponga en 'none' y el block el asistente-1 ✅
+    asistenteInnerBlocks.forEach((asistenteInner) => {
+        if (asistenteInner && asistenteInner.id === 'asistente-inner-1' && asistenteInner.style.display === 'flex') {
+            showFirstAsistente()
+        }
+    })
+    //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
+    for (let i = 0; i < 7; i++) {
+        asistenteInnerBlocks.forEach((asistenteInner) => {
+            if (asistenteInner && asistenteInner.id === `asistente-inner-${i}` && asistenteInner.style.display === 'flex') {
+                const currentAsistenteInner = asistenteInner;
+                hideSpecificAsistenteInner(currentAsistenteInner)
+                const previousAsistenteInner = currentAsistenteInner.previousElementSibling;
+                if (previousAsistenteInner instanceof HTMLElement) {
+                    showSpecificAsistenteInner(previousAsistenteInner);
+                }
+            }
+        })
+    }
+
+    // TODO: que al darse anterior se limpien los steps
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     showFirstAsistente();
 
+    //click en los primeros inputs activa:
     asistenteFirstInputs.forEach((input) => {
         input.addEventListener('click', () => {
             hideFirstAsistente();
@@ -123,4 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
         input.addEventListener('click', handleInnerInputClick);
 
     });
+
+    //click en el Anterior activa handleAnteriorClick()
+    anteriorButton.forEach((btn) => {
+        btn?.addEventListener('click', handleAnteriorClick);
+    })
 });
