@@ -13,6 +13,9 @@ const asistenteInnerInputs = document.querySelectorAll(`.asistente-input--inner`
 //Anterior Button
 const anteriorButton = document.querySelectorAll('#asistente-anterior')
 
+//Ultimo Button
+const lastButton = document.querySelector('#asistente-last-btn')
+
 //Funciones helpers
 
 function scrollUp() {
@@ -160,4 +163,10 @@ document.addEventListener("DOMContentLoaded", function () {
     anteriorButton.forEach((btn) => {
         btn?.addEventListener('click', handleAnteriorClick);
     })
+
+    if (lastButton) {
+        lastButton.addEventListener('click', () => {
+            console.log(stepValue)
+        })
+    }
 });

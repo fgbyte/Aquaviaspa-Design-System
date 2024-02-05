@@ -651,6 +651,8 @@ var asistenteFirstInputs = document.querySelectorAll(".asistente-input");
 var asistenteInnerInputs = document.querySelectorAll(".asistente-input--inner");
 //Anterior Button
 var anteriorButton = document.querySelectorAll('#asistente-anterior');
+//Ultimo Button
+var lastButton = document.querySelector('#asistente-last-btn');
 //Funciones helpers
 function scrollUp() {
     window.scrollTo(0, 0);
@@ -783,6 +785,11 @@ document.addEventListener("DOMContentLoaded", function () {
     anteriorButton.forEach(function (btn) {
         btn === null || btn === void 0 ? void 0 : btn.addEventListener('click', handleAnteriorClick);
     });
+    if (lastButton) {
+        lastButton.addEventListener('click', function () {
+            console.log(stepValue);
+        });
+    }
 });
 var textInStep = document.querySelectorAll('.dynamic-step');
 var radios = document.querySelectorAll('.asistente-radio');
