@@ -4,8 +4,6 @@ const asistenteBlocks = Array.from({ length: 2 }, (_, i) => document.getElementB
 // Asistentes inners
 const asistenteInnerBlocks = Array.from({ length: 6 }, (_, i) => document.getElementById(`asistente-inner-${i + 1}`));
 
-//TODO poner los ids de los asistentes en el div y no en los inputs
-
 //Inputs Primeros
 const asistenteFirstInputs = document.querySelectorAll(`.asistente-input`)
 
@@ -37,11 +35,18 @@ labelElements.forEach((labelElement) => {
     });
 })
 
+//Funciones helpers
+
+function scrollUp() {
+    window.scrollTo(0, 0);
+}
+
 function showFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach((block) => {
             if (block && block.id === 'asistente-1') {
                 block.style.display = 'block';
+                scrollUp();
             } else {
                 if (block) {
                     block.style.display = 'none';
@@ -66,6 +71,7 @@ function showSecondAsistente() {
         asistenteBlocks.forEach((block) => {
             if (block && block.id === 'asistente-2') {
                 block.style.display = 'flex';
+                scrollUp();
             } else {
                 if (block) {
                     block.style.display = 'none';
@@ -104,6 +110,7 @@ function hideSpecificAsistenteInner(asistente: HTMLElement) {
 }
 function showSpecificAsistenteInner(asistente: HTMLElement) {
     asistente.style.display = 'flex';
+    scrollUp();
 }
 
 
@@ -144,9 +151,8 @@ function handleAnteriorClick() {
             }
         })
     }
-
-    // TODO: que al darse anterior se limpien los steps
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     showFirstAsistente();
