@@ -213,13 +213,11 @@
   input {
     background-size: 105px;
     background-position: center 40%;
-    &::after {
-    content: url("/dist/assets/icons/card-option__container__check--white.svg");
-    }
   }
-
+ 
   label {
     height: 100px;
+    background-color: transparent;
     @include media-breakpoint-down(lg) {
       height: 85px;
     }
@@ -231,6 +229,9 @@
       background-color: $primary;
       filter: brightness(1);
     }
+    // &:checked + label {
+    //   background-color: $primary;
+    // }
   }
 }
 

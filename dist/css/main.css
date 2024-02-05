@@ -15855,7 +15855,7 @@ p {
   z-index: 1;
   filter: brightness(0.7);
 }
-.asistente-input:hover input::after, .asistente-input--inner:hover input::after {
+.asistente-input:hover img, .asistente-input--inner:hover img {
   opacity: 1;
 }
 .asistente-input:hover label, .asistente-input--inner:hover label {
@@ -15881,14 +15881,15 @@ p {
     height: 385px;
   }
 }
-.asistente-input input::after, .asistente-input--inner input::after {
-  content: url("/dist/assets/icons/card-option__container__check.svg");
+.asistente-input img, .asistente-input--inner img {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.4s linear;
+  z-index: 2;
+  cursor: pointer;
 }
 .asistente-input label, .asistente-input--inner label {
   position: absolute;
@@ -15909,13 +15910,14 @@ p {
 .asistente-input input:checked, .asistente-input--inner input:checked {
   transition: all 0.4s linear;
   transform: scale(1.1);
-  z-index: 1;
   filter: brightness(0.7);
+  z-index: 1;
 }
-.asistente-input input:checked::after, .asistente-input--inner input:checked::after {
+.asistente-input input:checked + img, .asistente-input--inner input:checked + img {
   opacity: 1;
+  z-index: 2;
 }
-.asistente-input input:checked + label, .asistente-input--inner input:checked + label {
+.asistente-input input:checked ~ label, .asistente-input--inner input:checked ~ label {
   background-color: #94F0F5;
 }
 
@@ -21025,11 +21027,9 @@ p {
   background-size: 105px;
   background-position: center 40%;
 }
-.asistente-input--logo input::after {
-  content: url("/dist/assets/icons/card-option__container__check--white.svg");
-}
 .asistente-input--logo label {
   height: 100px;
+  background-color: transparent;
 }
 @media (max-width: 991.98px) {
   .asistente-input--logo label {
