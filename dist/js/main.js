@@ -645,12 +645,33 @@ document.addEventListener('DOMContentLoaded', function () {
 var asistenteBlocks = Array.from({ length: 2 }, function (_, i) { return document.getElementById("asistente-".concat(i + 1)); });
 // Asistentes inners
 var asistenteInnerBlocks = Array.from({ length: 6 }, function (_, i) { return document.getElementById("asistente-inner-".concat(i + 1)); });
+//TODO poner los ids de los asistententes en el div y no en los inputs
 //Inputs Primeros
 var asistenteFirstInputs = document.querySelectorAll("#asistente-input");
 //Inputs inner
 var asistenteInnerInputs = document.querySelectorAll("#asistente-inner-input");
 //Anterior Button
 var anteriorButton = document.querySelectorAll('#asistente-anterior');
+//que si se de click en un check o en un label, el input radio se ponga checked
+var checkElements = document.querySelectorAll('.asistente-check');
+var labelElements = document.querySelectorAll('.asistente-label');
+checkElements.forEach(function (checkElement) {
+    checkElement.addEventListener('click', function () {
+        var inputElement = checkElement.previousElementSibling;
+        if (inputElement instanceof HTMLInputElement) {
+            inputElement.checked = true;
+        }
+    });
+});
+labelElements.forEach(function (labelElement) {
+    labelElement.addEventListener('click', function () {
+        var _a;
+        var inputElement = (_a = labelElement.previousElementSibling) === null || _a === void 0 ? void 0 : _a.previousElementSibling;
+        if (inputElement instanceof HTMLInputElement) {
+            inputElement.checked = true;
+        }
+    });
+});
 function showFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
