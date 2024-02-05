@@ -15862,6 +15862,13 @@ p {
   transition: all 0.4s linear;
   background-color: #94F0F5;
 }
+.asistente-input input[type=radio], .asistente-input--inner input[type=radio] {
+  -webkit-appearance: none; /* Desactiva el estilo predeterminado de WebKit */
+  -moz-appearance: none; /* Desactiva el estilo predeterminado para Firefox */
+  appearance: none;
+  outline: none;
+  border: none;
+}
 .asistente-input input, .asistente-input--inner input {
   cursor: pointer;
   appearance: none;

@@ -274,7 +274,6 @@
       transform: scale(1.1);
       z-index: 1;
       filter: brightness(0.7);
-
     }
     img {
       opacity: 1;
@@ -285,9 +284,15 @@
       background-color: $primary;
     }
   }
+  input[type="radio"] {
+    -webkit-appearance: none;/* Desactiva el estilo predeterminado de WebKit */
+    -moz-appearance: none; /* Desactiva el estilo predeterminado para Firefox */
+    appearance: none;
+    outline: none;
+    border: none;
+  }
 
   input {
-    //img
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
