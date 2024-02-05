@@ -655,7 +655,10 @@ var anteriorButton = document.querySelectorAll('#asistente-anterior');
 var lastButton = document.querySelector('#asistente-last-btn');
 //Funciones helpers
 function scrollUp() {
-    window.scrollTo(0, 0);
+    if (window.matchMedia('(max-width: 992px)').matches) {
+        // Si la pantalla es menor de lg
+        window.scrollTo(0, 0);
+    }
 }
 function showFirstAsistente() {
     if (asistenteBlocks) {

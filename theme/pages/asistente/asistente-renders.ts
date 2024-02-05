@@ -19,7 +19,10 @@ const lastButton = document.querySelector('#asistente-last-btn')
 //Funciones helpers
 
 function scrollUp() {
-    window.scrollTo(0, 0);
+    if (window.matchMedia('(max-width: 992px)').matches) {
+        // Si la pantalla es menor de lg
+        window.scrollTo(0, 0);
+    }
 }
 
 function showFirstAsistente() {
@@ -124,7 +127,7 @@ function handleAnteriorClick() {
 
     //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
     asistenteInnerBlocks.forEach((asistenteInner) => {
-            for (let i = 6; i >= 2; i--) {
+        for (let i = 6; i >= 2; i--) {
             if (asistenteInner && asistenteInner.id === `asistente-inner-${i}` && asistenteInner.style.display === 'flex') {
                 const currentAsistenteInner = asistenteInner;
                 hideSpecificAsistenteInner(currentAsistenteInner)

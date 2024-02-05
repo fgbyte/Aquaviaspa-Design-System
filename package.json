@@ -7,7 +7,7 @@
     "sass": "sass --watch --no-source-map theme:dist/css",
     "postcss": "postcss dist/css/*.css --use autoprefixer -d dist/css/",
     "ts": "tsc --watch",
-    "storybook": "storybook dev -p 6006",
+    "sb": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "keywords": [],
