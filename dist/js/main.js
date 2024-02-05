@@ -654,23 +654,6 @@ var anteriorButton = document.querySelectorAll('#asistente-anterior');
 //que si se de click en un check o en un label, el input radio se ponga checked
 var checkElements = document.querySelectorAll('.asistente-check');
 var labelElements = document.querySelectorAll('.asistente-label');
-checkElements.forEach(function (checkElement) {
-    checkElement.addEventListener('click', function () {
-        var inputElement = checkElement.previousElementSibling;
-        if (inputElement instanceof HTMLInputElement) {
-            inputElement.checked = true;
-        }
-    });
-});
-labelElements.forEach(function (labelElement) {
-    labelElement.addEventListener('click', function () {
-        var _a;
-        var inputElement = (_a = labelElement.previousElementSibling) === null || _a === void 0 ? void 0 : _a.previousElementSibling;
-        if (inputElement instanceof HTMLInputElement) {
-            inputElement.checked = true;
-        }
-    });
-});
 //Funciones helpers
 function scrollUp() {
     window.scrollTo(0, 0);
@@ -785,6 +768,23 @@ function handleAnteriorClick() {
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
+    checkElements.forEach(function (checkElement) {
+        checkElement.addEventListener('click', function () {
+            var inputElement = checkElement.previousElementSibling;
+            if (inputElement instanceof HTMLInputElement) {
+                inputElement.checked = true;
+            }
+        });
+    });
+    labelElements.forEach(function (labelElement) {
+        labelElement.addEventListener('click', function () {
+            var _a;
+            var inputElement = (_a = labelElement.previousElementSibling) === null || _a === void 0 ? void 0 : _a.previousElementSibling;
+            if (inputElement instanceof HTMLInputElement) {
+                inputElement.checked = true;
+            }
+        });
+    });
     showFirstAsistente();
     //click en los primeros inputs activa:
     asistenteFirstInputs.forEach(function (input) {

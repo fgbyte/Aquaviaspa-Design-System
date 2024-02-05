@@ -17,24 +17,6 @@ const anteriorButton = document.querySelectorAll('#asistente-anterior')
 const checkElements = document.querySelectorAll('.asistente-check');
 const labelElements = document.querySelectorAll('.asistente-label');
 
-checkElements.forEach((checkElement) => {
-    checkElement.addEventListener('click', () => {
-        const inputElement = checkElement.previousElementSibling;
-        if (inputElement instanceof HTMLInputElement) {
-            inputElement.checked = true;
-        }
-    });
-});
-
-labelElements.forEach((labelElement) => {
-    labelElement.addEventListener('click', () => {
-        const inputElement = labelElement.previousElementSibling?.previousElementSibling;
-        if (inputElement instanceof HTMLInputElement) {
-            inputElement.checked = true;
-        }
-    });
-})
-
 //Funciones helpers
 
 function scrollUp() {
@@ -155,6 +137,24 @@ function handleAnteriorClick() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    checkElements.forEach((checkElement) => {
+        checkElement.addEventListener('click', () => {
+            const inputElement = checkElement.previousElementSibling;
+            if (inputElement instanceof HTMLInputElement) {
+                inputElement.checked = true;
+            }
+        });
+    });
+    
+    labelElements.forEach((labelElement) => {
+        labelElement.addEventListener('click', () => {
+            const inputElement = labelElement.previousElementSibling?.previousElementSibling;
+            if (inputElement instanceof HTMLInputElement) {
+                inputElement.checked = true;
+            }
+        });
+    })
+   
     showFirstAsistente();
 
     //click en los primeros inputs activa:
