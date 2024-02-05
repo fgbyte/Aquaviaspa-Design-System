@@ -15,7 +15,6 @@ const anteriorButton = document.querySelectorAll('#asistente-anterior')
 
 //que si se de click en un check o en un label, el input radio se ponga checked
 const checkElements = document.querySelectorAll('.asistente-check');
-// const labelElements = document.querySelectorAll('.asistente-label');
 
 //Funciones helpers
 
@@ -92,6 +91,9 @@ function hideSpecificAsistenteInner(asistente: HTMLElement) {
 }
 function showSpecificAsistenteInner(asistente: HTMLElement) {
     asistente.style.display = 'flex';
+    const secondChild = asistente.children[1] as HTMLElement;
+    secondChild.style.display = 'flex';
+    console.log(secondChild);
     scrollUp();
 }
 
@@ -120,14 +122,17 @@ function handleAnteriorClick() {
             showFirstAsistente()
         }
     })
+
     //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
     asistenteInnerBlocks.forEach((asistenteInner) => {
-            for (let i = 2; i <= 6; i++) {
+            for (let i = 6; i >= 2; i--) {
             if (asistenteInner && asistenteInner.id === `asistente-inner-${i}` && asistenteInner.style.display === 'flex') {
                 const currentAsistenteInner = asistenteInner;
                 hideSpecificAsistenteInner(currentAsistenteInner)
+                console.log('current', currentAsistenteInner)
                 const previousAsistenteInner = currentAsistenteInner.previousElementSibling;
                 if (previousAsistenteInner instanceof HTMLElement) {
+                    console.log('previous', previousAsistenteInner)
                     showSpecificAsistenteInner(previousAsistenteInner);
                 }
             }
@@ -145,15 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-    
-    // labelElements.forEach((labelElement) => {
-    //     labelElement.addEventListener('click', () => {
-    //         const inputElement = labelElement.previousElementSibling?.previousElementSibling;
-    //         if (inputElement instanceof HTMLInputElement) {
-    //             inputElement.checked = true;
-    //         }
-    //     });
-    // })
    
     showFirstAsistente();
 
