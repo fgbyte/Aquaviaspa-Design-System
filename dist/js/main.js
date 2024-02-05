@@ -653,7 +653,7 @@ var asistenteInnerInputs = document.querySelectorAll(".asistente-input--inner");
 var anteriorButton = document.querySelectorAll('#asistente-anterior');
 //que si se de click en un check o en un label, el input radio se ponga checked
 var checkElements = document.querySelectorAll('.asistente-check');
-var labelElements = document.querySelectorAll('.asistente-label');
+// const labelElements = document.querySelectorAll('.asistente-label');
 //Funciones helpers
 function scrollUp() {
     window.scrollTo(0, 0);
@@ -750,8 +750,9 @@ function handleAnteriorClick() {
             showFirstAsistente();
         }
     });
-    var _loop_1 = function (i) {
-        asistenteInnerBlocks.forEach(function (asistenteInner) {
+    //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
+    asistenteInnerBlocks.forEach(function (asistenteInner) {
+        for (var i = 2; i <= 6; i++) {
             if (asistenteInner && asistenteInner.id === "asistente-inner-".concat(i) && asistenteInner.style.display === 'flex') {
                 var currentAsistenteInner = asistenteInner;
                 hideSpecificAsistenteInner(currentAsistenteInner);
@@ -760,12 +761,8 @@ function handleAnteriorClick() {
                     showSpecificAsistenteInner(previousAsistenteInner);
                 }
             }
-        });
-    };
-    //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
-    for (var i = 2; i <= 6; i++) {
-        _loop_1(i);
-    }
+        }
+    });
 }
 document.addEventListener("DOMContentLoaded", function () {
     checkElements.forEach(function (checkElement) {
@@ -776,15 +773,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-    labelElements.forEach(function (labelElement) {
-        labelElement.addEventListener('click', function () {
-            var _a;
-            var inputElement = (_a = labelElement.previousElementSibling) === null || _a === void 0 ? void 0 : _a.previousElementSibling;
-            if (inputElement instanceof HTMLInputElement) {
-                inputElement.checked = true;
-            }
-        });
-    });
+    // labelElements.forEach((labelElement) => {
+    //     labelElement.addEventListener('click', () => {
+    //         const inputElement = labelElement.previousElementSibling?.previousElementSibling;
+    //         if (inputElement instanceof HTMLInputElement) {
+    //             inputElement.checked = true;
+    //         }
+    //     });
+    // })
     showFirstAsistente();
     //click en los primeros inputs activa:
     asistenteFirstInputs.forEach(function (input) {
