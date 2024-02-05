@@ -4,13 +4,13 @@ const asistenteBlocks = Array.from({ length: 2 }, (_, i) => document.getElementB
 // Asistentes inners
 const asistenteInnerBlocks = Array.from({ length: 6 }, (_, i) => document.getElementById(`asistente-inner-${i + 1}`));
 
-//TODO poner los ids de los asistententes en el div y no en los inputs
+//TODO poner los ids de los asistentes en el div y no en los inputs
 
 //Inputs Primeros
-const asistenteFirstInputs = document.querySelectorAll(`#asistente-input`)
+const asistenteFirstInputs = document.querySelectorAll(`.asistente-input`)
 
 //Inputs inner
-const asistenteInnerInputs = document.querySelectorAll(`#asistente-inner-input`)
+const asistenteInnerInputs = document.querySelectorAll(`.asistente-input--inner`)
 
 //Anterior Button
 const anteriorButton = document.querySelectorAll('#asistente-anterior')

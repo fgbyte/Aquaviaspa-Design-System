@@ -645,11 +645,11 @@ document.addEventListener('DOMContentLoaded', function () {
 var asistenteBlocks = Array.from({ length: 2 }, function (_, i) { return document.getElementById("asistente-".concat(i + 1)); });
 // Asistentes inners
 var asistenteInnerBlocks = Array.from({ length: 6 }, function (_, i) { return document.getElementById("asistente-inner-".concat(i + 1)); });
-//TODO poner los ids de los asistententes en el div y no en los inputs
+//TODO poner los ids de los asistentes en el div y no en los inputs
 //Inputs Primeros
-var asistenteFirstInputs = document.querySelectorAll("#asistente-input");
+var asistenteFirstInputs = document.querySelectorAll(".asistente-input");
 //Inputs inner
-var asistenteInnerInputs = document.querySelectorAll("#asistente-inner-input");
+var asistenteInnerInputs = document.querySelectorAll(".asistente-input--inner");
 //Anterior Button
 var anteriorButton = document.querySelectorAll('#asistente-anterior');
 //que si se de click en un check o en un label, el input radio se ponga checked
