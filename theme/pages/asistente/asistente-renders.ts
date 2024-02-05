@@ -13,9 +13,6 @@ const asistenteInnerInputs = document.querySelectorAll(`.asistente-input--inner`
 //Anterior Button
 const anteriorButton = document.querySelectorAll('#asistente-anterior')
 
-//que si se de click en un check o en un label, el input radio se ponga checked
-const checkElements = document.querySelectorAll('.asistente-check');
-
 //Funciones helpers
 
 function scrollUp() {
@@ -93,7 +90,6 @@ function showSpecificAsistenteInner(asistente: HTMLElement) {
     asistente.style.display = 'flex';
     const secondChild = asistente.children[1] as HTMLElement;
     secondChild.style.display = 'flex';
-    console.log(secondChild);
     scrollUp();
 }
 
@@ -129,10 +125,10 @@ function handleAnteriorClick() {
             if (asistenteInner && asistenteInner.id === `asistente-inner-${i}` && asistenteInner.style.display === 'flex') {
                 const currentAsistenteInner = asistenteInner;
                 hideSpecificAsistenteInner(currentAsistenteInner)
-                console.log('current', currentAsistenteInner)
+                // console.log('current', currentAsistenteInner)
                 const previousAsistenteInner = currentAsistenteInner.previousElementSibling;
                 if (previousAsistenteInner instanceof HTMLElement) {
-                    console.log('previous', previousAsistenteInner)
+                    // console.log('previous', previousAsistenteInner)
                     showSpecificAsistenteInner(previousAsistenteInner);
                 }
             }
@@ -142,15 +138,6 @@ function handleAnteriorClick() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    checkElements.forEach((checkElement) => {
-        checkElement.addEventListener('click', () => {
-            const inputElement = checkElement.previousElementSibling;
-            if (inputElement instanceof HTMLInputElement) {
-                inputElement.checked = true;
-            }
-        });
-    });
-   
     showFirstAsistente();
 
     //click en los primeros inputs activa:

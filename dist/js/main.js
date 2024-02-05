@@ -651,8 +651,6 @@ var asistenteFirstInputs = document.querySelectorAll(".asistente-input");
 var asistenteInnerInputs = document.querySelectorAll(".asistente-input--inner");
 //Anterior Button
 var anteriorButton = document.querySelectorAll('#asistente-anterior');
-//que si se de click en un check o en un label, el input radio se ponga checked
-var checkElements = document.querySelectorAll('.asistente-check');
 //Funciones helpers
 function scrollUp() {
     window.scrollTo(0, 0);
@@ -726,7 +724,6 @@ function showSpecificAsistenteInner(asistente) {
     asistente.style.display = 'flex';
     var secondChild = asistente.children[1];
     secondChild.style.display = 'flex';
-    console.log(secondChild);
     scrollUp();
 }
 function handleInnerInputClick(event) {
@@ -758,10 +755,10 @@ function handleAnteriorClick() {
             if (asistenteInner && asistenteInner.id === "asistente-inner-".concat(i) && asistenteInner.style.display === 'flex') {
                 var currentAsistenteInner = asistenteInner;
                 hideSpecificAsistenteInner(currentAsistenteInner);
-                console.log('current', currentAsistenteInner);
+                // console.log('current', currentAsistenteInner)
                 var previousAsistenteInner = currentAsistenteInner.previousElementSibling;
                 if (previousAsistenteInner instanceof HTMLElement) {
-                    console.log('previous', previousAsistenteInner);
+                    // console.log('previous', previousAsistenteInner)
                     showSpecificAsistenteInner(previousAsistenteInner);
                 }
             }
@@ -769,14 +766,6 @@ function handleAnteriorClick() {
     });
 }
 document.addEventListener("DOMContentLoaded", function () {
-    checkElements.forEach(function (checkElement) {
-        checkElement.addEventListener('click', function () {
-            var inputElement = checkElement.previousElementSibling;
-            if (inputElement instanceof HTMLInputElement) {
-                inputElement.checked = true;
-            }
-        });
-    });
     showFirstAsistente();
     //click en los primeros inputs activa:
     asistenteFirstInputs.forEach(function (input) {
