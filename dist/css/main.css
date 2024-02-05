@@ -21120,3 +21120,7 @@ p {
 #asistente-anterior {
   cursor: pointer;
 }
+
+.asistente-check {
+  pointer-events: none;
+}
