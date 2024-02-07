@@ -1,4 +1,4 @@
-export const blogGrid = `
+export const blogGrid1 = `
 //blog grid
     <section class="blog-grid">
         <div class="dropdown">

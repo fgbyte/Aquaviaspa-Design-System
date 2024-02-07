@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import { bannerCtaLeft1, bannerCenter1, bannerContacto1 } from "../../../theme/modules/banners/banners.stories"
+
+<Meta title="Modules/Banners/Banners" />
+
+
+## Banner CTA Left
+<Canvas>
+ <Story name="Primary">
+  {() => bannerCtaLeft1
+  }
+ </Story>
+</Canvas>
+
+## Banner Center
+<Canvas>
+ <Story name="Banner Center">
+  {() => bannerCenter1
+  }
+ </Story>
+</Canvas>
+
+## Banner CTA Left Contacto
+<Canvas>
+ <Story name="Banner Contacto">
+  {() => bannerContacto1
+  }
+ </Story>
+</Canvas>

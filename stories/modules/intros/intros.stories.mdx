@@ -1,6 +1,6 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
-import { intro } from "../../theme/modules/intros/intros.stories"
+import { intro, introFicha1 } from "../../../theme/modules/intros/intros.stories"
 
 <Meta title="Modules/Intros" />
 
@@ -9,6 +9,16 @@ import { intro } from "../../theme/modules/intros/intros.stories"
 <Canvas>
  <Story name="Primary">
   {() => intro
+  }
+ </Story>
+</Canvas>
+
+
+## Intro Ficha
+
+<Canvas>
+ <Story name="Intro Ficha">
+  {() => introFicha1
   }
  </Story>
 </Canvas>
