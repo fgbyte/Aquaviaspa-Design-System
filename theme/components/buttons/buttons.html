@@ -53,34 +53,31 @@
       <p>44 White</p>
     </label>
   </div>
-  <div class="btn-acabado">
-    <input class="helmet-input" id="casco-1" style="background-image: url('/dist/assets/img/44-white.png');"
-      type="radio" name="casco" checked>
-    <label for="casco">
-      <p>44 White</p>
-    </label>
-  </div>
 
 
-  //Card Option Asistente Input type radio
+  //Asistente Input type radio
   <div class="asistente-input">
-    <input type="radio" id="asistente-spa" name="asistente-spa" style="background-image: url('/dist/assets/img/spa-residencial.webp');">
-    <label for="asistente-spa">
-      <span>
-        2/3 personas
-      </span>
+    <input class="type-spa-selected-radio" type="radio" value="Spa residencial" id="asistente-input-1" name="asistente-spa"
+        style="background-image: url('/dist/assets/img/spa-residencial.webp');">
+        <img class="asistente-check" src="/dist/assets/icons/card-option__container__check.svg" alt="check">
+        <label class="asistente-label" for="asistente-input-1">
+        <span>
+            Spa residencial
+        </span>
     </label>
-  </div>
+</div>
 
-  <div class="asistente-input">
-    <input type="radio" id="asistente-spa" name="asistente-spa" style="background-image: url('/dist/assets/img/spa-residencial.webp');">
-    <label for="asistente-spa">
+//Asistente Input inner
+<div class="asistente-input--inner">
+  <input class="asistente-radio" type="radio" value="2/3 personas" id="asistente-inner-1-input-1" name="asistente-personas"
+      style="background-image: url('/dist/assets/img/asist-1-1.webp');">
+      <img class="asistente-check" src="/dist/assets/icons/card-option__container__check.svg" alt="check">
+      <label class="asistente-label" for="asistente-inner-1-input-1">
       <span>
-        2/3 personas
+          2/3 personas
       </span>
-    </label>
-  </div>
-
+  </label>
+</div>
 
   <script src="/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/dist/js/main.js"></script>
