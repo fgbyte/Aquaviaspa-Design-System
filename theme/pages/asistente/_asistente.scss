@@ -309,3 +309,13 @@
 .asistente-check {
   pointer-events: none;
 }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity linear $delay;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity linear $delay;
+}

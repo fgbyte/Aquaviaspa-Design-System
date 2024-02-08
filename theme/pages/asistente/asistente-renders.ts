@@ -29,6 +29,7 @@ function showFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach((block) => {
             if (block && block.id === 'asistente-1') {
+                block.classList.add('fade-in')
                 block.style.display = 'block';
                 scrollUp();
             } else {
@@ -44,6 +45,8 @@ function hideFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach((block) => {
             if (block && block.id === 'asistente-1') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out')
                 block.style.display = 'none';
             }
         })
@@ -54,7 +57,13 @@ function showSecondAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach((block) => {
             if (block && block.id === 'asistente-2') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out')
                 block.style.display = 'flex';
+                //add class to visibility = 1 with transition
+                setInterval(() => {
+                    block.classList.add('fade-in')
+                }, 200)
                 scrollUp();
             } else {
                 if (block) {
@@ -69,7 +78,14 @@ function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach((block) => {
             if (block && block.id === 'asistente-inner-1') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out')
                 block.style.display = 'flex';
+                //add class to visibility = 1 with transition
+                setInterval(() => {
+                    block.classList.add('fade-in')
+                }, 200)
+                scrollUp();
             } else {
                 if (block) {
                     block.style.display = 'none';
@@ -83,6 +99,8 @@ function hideFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach((block) => {
             if (block && block.id === 'asistente-inner-1') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out')
                 block.style.display = 'none';
             }
         })
@@ -90,11 +108,21 @@ function hideFirstAsistenteInner() {
 }
 
 function hideSpecificAsistenteInner(asistente: HTMLElement) {
+    //add class to visibility = 0 with transition
+    asistente.classList.add('fade-out')
     asistente.style.display = 'none';
 }
 function showSpecificAsistenteInner(asistente: HTMLElement) {
+    asistente.classList.add('fade-out')
     asistente.style.display = 'flex';
+    setInterval(() => {
+        asistente.classList.add('fade-in')
+    }, 200)
     const secondChild = asistente.children[1] as HTMLElement;
+    //add class to visibility = 1 with transition
+    setInterval(() => {
+        secondChild.classList.add('fade-in')
+    }, 200)
     secondChild.style.display = 'flex';
     scrollUp();
 }

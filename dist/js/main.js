@@ -664,6 +664,7 @@ function showFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-1') {
+                block.classList.add('fade-in');
                 block.style.display = 'block';
                 scrollUp();
             }
@@ -679,6 +680,8 @@ function hideFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-1') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out');
                 block.style.display = 'none';
             }
         });
@@ -688,7 +691,13 @@ function showSecondAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-2') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out');
                 block.style.display = 'flex';
+                //add class to visibility = 1 with transition
+                setInterval(function () {
+                    block.classList.add('fade-in');
+                }, 200);
                 scrollUp();
             }
             else {
@@ -703,7 +712,14 @@ function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-inner-1') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out');
                 block.style.display = 'flex';
+                //add class to visibility = 1 with transition
+                setInterval(function () {
+                    block.classList.add('fade-in');
+                }, 200);
+                scrollUp();
             }
             else {
                 if (block) {
@@ -717,17 +733,29 @@ function hideFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-inner-1') {
+                //add class to visibility = 0 with transition
+                block.classList.add('fade-out');
                 block.style.display = 'none';
             }
         });
     }
 }
 function hideSpecificAsistenteInner(asistente) {
+    //add class to visibility = 0 with transition
+    asistente.classList.add('fade-out');
     asistente.style.display = 'none';
 }
 function showSpecificAsistenteInner(asistente) {
+    asistente.classList.add('fade-out');
     asistente.style.display = 'flex';
+    setInterval(function () {
+        asistente.classList.add('fade-in');
+    }, 200);
     var secondChild = asistente.children[1];
+    //add class to visibility = 1 with transition
+    setInterval(function () {
+        secondChild.classList.add('fade-in');
+    }, 200);
     secondChild.style.display = 'flex';
     scrollUp();
 }

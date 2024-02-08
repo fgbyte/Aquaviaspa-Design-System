@@ -21124,3 +21124,13 @@ p {
 .asistente-check {
   pointer-events: none;
 }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity linear 0.4s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity linear 0.4s;
+}
