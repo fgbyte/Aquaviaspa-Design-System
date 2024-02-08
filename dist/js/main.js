@@ -329,52 +329,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //prestaciones module
 document.addEventListener('DOMContentLoaded', function () {
-    var filterLinks = Array.from({ length: 6 }, function (_, i) { return document.querySelectorAll("#fil-".concat(i + 1)); });
-    var categories = Array.from({ length: 6 }, function (_, i) { return document.querySelectorAll("#category-".concat(i + 1)); });
+    var filterLinks = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#fil-".concat(i + 1)); });
+    var categories = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#category-".concat(i + 1)); });
     //links logic
-    filterLinks.forEach(function (nodeLink) {
-        nodeLink.forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
-                    showOnly(0); //el 1ro del array
-                }
-                // Remove 'checked' attribute from all filter links
-                filterLinks.forEach(function (otherLink) {
-                    otherLink.forEach(function (element) {
-                        element.removeAttribute('checked');
-                    });
-                });
-                // Add 'checked' attribute to the clicked link
-                var clickedLink = event.target;
-                clickedLink.setAttribute('checked', '');
+    filterLinks.forEach(function (link) {
+        link === null || link === void 0 ? void 0 : link.addEventListener('click', function (event) {
+            if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
+                showOnly(0); //el 1ro del array
+            }
+            // Remove 'checked' attribute from all filter links
+            filterLinks.forEach(function (element) {
+                element === null || element === void 0 ? void 0 : element.removeAttribute('checked');
             });
+            // Add 'checked' attribute to the clicked link
+            var clickedLink = event.target;
+            clickedLink.setAttribute('checked', '');
         });
     });
     //only 1 first logic
-    categories.forEach(function (nodeCat, index) {
-        nodeCat.forEach(function (singleCat) {
-            if (singleCat instanceof HTMLElement) {
-                singleCat.style.display = index === 0
-                    ? 'flex'
-                    : 'none';
-            }
-        });
+    categories.forEach(function (singleCat, index) {
+        if (singleCat instanceof HTMLElement) {
+            singleCat.style.display = index === 0
+                ? 'flex'
+                : 'none';
+        }
     });
     //render logic
-    filterLinks.forEach(function (nodeLink, i) {
-        nodeLink.forEach(function (singleLink, _) {
-            singleLink.addEventListener('click', function () {
-                categories.forEach(function (nodeCat, j) {
-                    if (nodeCat) {
-                        nodeCat.forEach(function (singleCat, __) {
-                            if (singleCat instanceof HTMLElement) {
-                                singleCat.style.display = i === j
-                                    ? 'flex'
-                                    : 'none';
-                            }
-                        });
-                    }
-                });
+    filterLinks.forEach(function (singleLink, i) {
+        singleLink === null || singleLink === void 0 ? void 0 : singleLink.addEventListener('click', function () {
+            categories.forEach(function (singleCat, j) {
+                if (singleCat instanceof HTMLElement) {
+                    singleCat.style.display = i === j
+                        ? 'flex'
+                        : 'none';
+                }
             });
         });
     });
