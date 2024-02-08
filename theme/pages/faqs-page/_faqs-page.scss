@@ -60,3 +60,39 @@
     }
 
 }
+
+.card-faq .dropdown-docs .details-inner ol .btn-ficha {
+    @include media-breakpoint-down(lg) {
+        margin: 11px 0px;
+    }
+}
+
+.dropdown-docs .details-inner{
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 20px;
+    }
+}
+
+ol, ul {
+    @include media-breakpoint-up(lg) {
+        padding-left: 50px;
+    }
+}
+
+.card-faq .dropdown-docs .details-inner ol .btn-ficha {
+    @include media-breakpoint-up(lg) {
+        margin: 30px 0px;
+    }
+}
+
+.card-faq {
+    @include media-breakpoint-up(lg) {
+        padding-top: 57px;
+    }
+}
+
+.card-faq .dropdown-docs .details-inner {
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 10px;
+    }
+}
