@@ -19979,14 +19979,8 @@ p {
 }
 
 .swiper-container {
-  max-width: 80vw;
   padding: 0;
   margin: 0;
-}
-@media (min-width: 992px) {
-  .swiper-container {
-    width: 50%;
-  }
 }
 
 .swiper-slide img {
@@ -20001,7 +19995,7 @@ p {
 .swiper-pagination-bullet {
   width: 40px !important;
   height: 6px !important;
-  background-color: #C7C6BE !important;
+  background-color: #c7c6be !important;
   margin-right: 8px !important;
   cursor: pointer !important;
   border-radius: 0 !important;
@@ -20011,6 +20005,32 @@ p {
 
 .swiper-pagination-bullet-active {
   background-color: #464646 !important;
+}
+
+.swiper {
+  position: unset;
+}
+
+.slider-container {
+  position: relative;
+  padding-bottom: 50px;
+  width: 315px;
+}
+@media (min-width: 992px) {
+  .slider-container {
+    max-width: 385px;
+    max-height: 540px;
+  }
+}
+
+.swiper-pagination-bullets {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-slide img {
+  padding: 0;
 }
 
 .py-16 {
