@@ -19978,20 +19978,6 @@ p {
   object-fit: contain;
 }
 
-.swiper-container {
-  padding: 0;
-  margin: 0;
-}
-
-.swiper-slide img {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .swiper-slide img {
-    padding: 0 20px;
-  }
-}
-
 .swiper-pagination-bullet {
   width: 40px !important;
   height: 6px !important;
@@ -20013,24 +19999,34 @@ p {
 
 .slider-container {
   position: relative;
-  padding-bottom: 50px;
-  width: 315px;
-}
-@media (min-width: 992px) {
-  .slider-container {
-    max-width: 385px;
-    max-height: 540px;
-  }
 }
 
 .swiper-pagination-bullets {
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.swiper-slide img {
-  padding: 0;
+.slider-container {
+  padding-bottom: 50px;
+}
+@media (max-width: 991.98px) {
+  .slider-container {
+    width: 375px;
+  }
+}
+@media (min-width: 992px) {
+  .slider-container {
+    width: auto;
+    min-width: 375px;
+    max-width: 600px;
+  }
+}
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .py-16 {
