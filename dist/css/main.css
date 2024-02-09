@@ -19978,6 +19978,37 @@ p {
   object-fit: contain;
 }
 
+.swiper-container {
+  width: 83vw;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .swiper-container {
+    width: 50%;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 40px !important;
+  height: 6px !important;
+  background-color: #C7C6BE !important;
+  margin-right: 8px !important;
+  cursor: pointer !important;
+  border-radius: 0 !important;
+  width: 50%;
+  margin-top: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #464646 !important;
+}
+
 .py-16 {
   padding-top: 6.4375rem;
   padding-bottom: 2.4375rem;
