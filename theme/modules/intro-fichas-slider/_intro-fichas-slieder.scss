@@ -4,7 +4,7 @@
 
   }
 
-  width: 83vw;
+  max-width: 80vw;
   padding: 0;
   margin: 0;
 }
@@ -12,7 +12,11 @@
 .swiper-slide {
   & img {
     width: 100%;
-    padding: 0 20px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 20px;
+
+    }
 
   }
 }

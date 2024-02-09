@@ -19979,7 +19979,7 @@ p {
 }
 
 .swiper-container {
-  width: 83vw;
+  max-width: 80vw;
   padding: 0;
   margin: 0;
 }
@@ -19991,7 +19991,11 @@ p {
 
 .swiper-slide img {
   width: 100%;
-  padding: 0 20px;
+}
+@media (min-width: 992px) {
+  .swiper-slide img {
+    padding: 0 20px;
+  }
 }
 
 .swiper-pagination-bullet {
