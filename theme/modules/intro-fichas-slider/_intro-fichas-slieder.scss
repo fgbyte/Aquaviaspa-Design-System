@@ -32,8 +32,13 @@
 
 .slider-container {
   @include media-breakpoint-down(lg) {
-    width: 375px;
+    max-width: 375px;
+    min-width: auto;
+    width: auto;
+    margin: 0 auto;
   }
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 50px;
   
   @include media-breakpoint-up(lg) {

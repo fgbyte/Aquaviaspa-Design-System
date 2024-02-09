@@ -20009,11 +20009,16 @@ p {
 }
 
 .slider-container {
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 50px;
 }
 @media (max-width: 991.98px) {
   .slider-container {
-    width: 375px;
+    max-width: 375px;
+    min-width: auto;
+    width: auto;
+    margin: 0 auto;
   }
 }
 @media (min-width: 992px) {
