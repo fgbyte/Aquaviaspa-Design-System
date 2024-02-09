@@ -38,6 +38,15 @@
                         <div class="swiper-slide">
                             <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
                         </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -52,7 +61,10 @@
             var swiper = new Swiper('.swiper', {
                 pagination: {
                     el: '.swiper-pagination',
-                    clickable: true
+                    clickable: true,
+                    type: 'bullets',
+                    dynamicBullets: true,
+                    dynamicMainBullets: 3
                 },
             });
         });
