@@ -20009,8 +20009,6 @@ p {
 }
 
 .slider-container {
-  padding-left: 25px;
-  padding-right: 25px;
   padding-bottom: 50px;
 }
 @media (max-width: 991.98px) {
@@ -20032,6 +20030,12 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .intro-ficha .intro__container__text {
+    min-width: 520px;
+  }
 }
 
 .py-16 {

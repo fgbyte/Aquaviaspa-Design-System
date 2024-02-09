@@ -1,6 +1,6 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 
-import { intro, introFicha1 } from "../../../theme/modules/intros/intros.stories"
+import { intro, introFicha1, introFichaSlider1 } from "../../../theme/modules/intros/intros.stories"
 
 <Meta title="Modules/Intros" />
 
@@ -19,6 +19,18 @@ import { intro, introFicha1 } from "../../../theme/modules/intros/intros.stories
 <Canvas>
  <Story name="Intro Ficha">
   {() => introFicha1
+  }
+ </Story>
+</Canvas>
+
+
+## Intro Ficha Slider
+
+> este slider funciona con la libreria SwiperJS
+
+<Canvas>
+ <Story name="Intro Ficha Slider">
+  {() => introFichaSlider1
   }
  </Story>
 </Canvas>
