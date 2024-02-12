@@ -1,0 +1,75 @@
+@use "../../globals";
+@use "../../mixins";
+
+.features {
+  position: relative;
+}
+
+.features:after,
+.features:after {
+  z-index: -1;
+  position: absolute;
+  top: 98.1%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: solid 45px $info;
+  border-left: solid 45px transparent;
+  border-right: solid 45px transparent;
+}
+
+.features__content {
+  @include desk-space;
+  padding: 100px $pxMobile;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  h2 {
+    text-align: center;
+    font-weight: $textMedium;
+    @include media-breakpoint-up(lg) {
+      font-size: 42px;
+      line-height: 49px;
+    }
+  }
+}
+
+.features__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 80px;
+  row-gap: 40px;
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 272px;
+
+  img {
+    width: 110px;
+    height: 110px;
+  }
+
+  &__text {
+    @extend .features__card;
+    gap: 7px;
+    h4 {
+      font-size: 28px;
+      font-weight: $textSemibold;
+      line-height: 34px;
+      margin: 0px;
+      text-align: center;
+    }
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
