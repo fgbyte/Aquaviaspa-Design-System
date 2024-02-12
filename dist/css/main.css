@@ -21265,12 +21265,12 @@ p {
 .features__content h2, .features__content .h2 {
   text-align: center;
   font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
 }
-@media (min-width: 992px) {
-  .features__content h2, .features__content .h2 {
-    font-size: 42px;
-    line-height: 49px;
-  }
+.features__content h2 span, .features__content .h2 span {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #000;
 }
 
 .features__grid {
@@ -21305,4 +21305,48 @@ p {
 .features__card__text p {
   margin: 0;
   text-align: center;
+}
+
+.thanks__content {
+  padding: 100px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 992px) {
+  .thanks__content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1470px;
+  }
+}
+.thanks__content h2, .thanks__content .h2 {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  line-height: 49px;
+  font-size: 42px;
+}
+.thanks__content p {
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  line-height: 34px;
+  font-size: 28px;
+  max-width: 675px;
+}
+
+.thanks__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.thanks__seguir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 25px 180px 25px;
 }
