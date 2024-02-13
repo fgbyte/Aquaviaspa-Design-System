@@ -102,7 +102,7 @@ export const introFichaSlider1 = `
     </section>
 
     <!-- ScriptJS -->
-    <script src="/dist/vendors/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var swiper = new Swiper('.swiper', {
