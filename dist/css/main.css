@@ -21350,3 +21350,66 @@ p {
   align-items: center;
   padding: 65px 25px 180px 25px;
 }
+
+/*Form*/
+.register-form-header h3, .register-form-header .h3 {
+  text-align: center;
+  font: medium 42px Raleway !important;
+  font-size: 42px !important;
+  margin-top: 90px;
+  margin-bottom: 29px;
+  text-transform: none;
+}
+
+/*tooltip*/
+.tooltip {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  opacity: 1;
+}
+
+.tooltip .top {
+  min-width: 200px;
+  max-width: 400px;
+  top: -20px;
+  left: 50%;
+  transform: translate(-12%, -100%);
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  position: absolute;
+  background-color: transparent;
+  z-index: 9999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.tooltip:hover .top {
+  display: block;
+}
+.tooltip:hover .top img {
+  object-fit: cover;
+}
+
+.tooltip .top i {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  margin-left: -70px;
+  width: 30px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.tooltip .top i::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #000000;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
