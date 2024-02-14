@@ -118,11 +118,13 @@
 
 .asistente-inner__steps--anterior {
   position: fixed;
-  // z-index: 100;
   bottom: 0;
   width: 100%;
   left: 0;
   right: 0;
+  @include media-breakpoint-down(lg) {
+    z-index: 100;
+  }
 
   @include media-breakpoint-up(lg) {
     position: relative;

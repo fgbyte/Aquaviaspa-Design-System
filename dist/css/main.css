@@ -21017,6 +21017,11 @@ p {
   left: 0;
   right: 0;
 }
+@media (max-width: 991.98px) {
+  .asistente-inner__steps--anterior {
+    z-index: 100;
+  }
+}
 @media (min-width: 992px) {
   .asistente-inner__steps--anterior {
     position: relative;
