@@ -21236,8 +21236,14 @@ p {
 .features__content h2, .features__content .h2 {
   text-align: center;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 32px;
+  line-height: 44px;
+}
+@media (min-width: 992px) {
+  .features__content h2, .features__content .h2 {
+    font-size: 42px;
+    line-height: 49px;
+  }
 }
 .features__content h2 span, .features__content .h2 span {
   padding-bottom: 8px;
@@ -21267,11 +21273,16 @@ p {
   gap: 7px;
 }
 .features__card__text h4, .features__card__text .h4 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 34px;
   margin: 0px;
   text-align: center;
+  line-height: 34px;
+}
+@media (min-width: 992px) {
+  .features__card__text h4, .features__card__text .h4 {
+    font-size: 28px;
+  }
 }
 .features__card__text p {
   margin: 0;
@@ -21293,19 +21304,30 @@ p {
   }
 }
 .thanks__content h2, .thanks__content .h2 {
+  font-size: 32px;
+  line-height: 44px;
   text-align: center;
   font-weight: 600;
   margin: 0;
-  line-height: 49px;
-  font-size: 42px;
+}
+@media (min-width: 992px) {
+  .thanks__content h2, .thanks__content .h2 {
+    line-height: 49px;
+    font-size: 42px;
+  }
 }
 .thanks__content p {
+  font-size: 18px;
   text-align: center;
   font-weight: 400;
   margin: 0;
   line-height: 34px;
-  font-size: 28px;
   max-width: 675px;
+}
+@media (min-width: 992px) {
+  .thanks__content p {
+    font-size: 28px;
+  }
 }
 
 .thanks__text {
@@ -21324,12 +21346,17 @@ p {
 
 /*Form*/
 .register-form-header h3, .register-form-header .h3 {
+  font-size: 32px;
+  font-weight: 500;
   text-align: center;
-  font: medium 42px Raleway !important;
-  font-size: 42px !important;
   margin-top: 90px;
   margin-bottom: 29px;
   text-transform: none;
+}
+@media (min-width: 992px) {
+  .register-form-header h3, .register-form-header .h3 {
+    font-size: 42px;
+  }
 }
 
 /*tooltip*/

@@ -30,8 +30,12 @@
   h2 {
     text-align: center;
     font-weight: $textMedium;
-    font-size: 42px;
-    line-height: 49px;
+    font-size: 32px;
+    line-height: 44px;
+    @include media-breakpoint-up(lg) {
+      font-size: 42px;
+      line-height: 49px;
+    }
 
     span {
       padding-bottom: 8px;
@@ -65,11 +69,14 @@
     gap: 7px;
 
     h4 {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: $textSemibold;
-      line-height: 34px;
       margin: 0px;
       text-align: center;
+      line-height: 34px;
+      @include media-breakpoint-up(lg) {
+        font-size: 28px;
+      }
     }
 
     p {
@@ -88,20 +95,27 @@
   gap: 30px;
 
   h2 {
+    font-size: 32px;
+    line-height: 44px;
     text-align: center;
     font-weight: $textSemibold;
     margin: 0;
-    line-height: 49px;
-    font-size: 42px;
+    @include media-breakpoint-up(lg) {
+      line-height: 49px;
+      font-size: 42px;
+    }
   }
 
   p {
+    font-size: 18px;
     text-align: center;
     font-weight: $textRegular;
     margin: 0;
     line-height: 34px;
-    font-size: 28px;
     max-width: 675px;
+    @include media-breakpoint-up(lg) {
+      font-size: 28px;
+    }
   }
 }
 
@@ -121,12 +135,15 @@
 
 /*Form*/
 .register-form-header h3{
+  font-size: 32px;
+  font-weight: $textMedium;
   text-align: center;
-  font: medium 42px Raleway !important;
-  font-size: 42px !important;
   margin-top: 90px;
   margin-bottom: 29px;
   text-transform: none;
+  @include media-breakpoint-up(lg) {
+    font-size: 42px;
+  }
 }
 
 /*tooltip*/
