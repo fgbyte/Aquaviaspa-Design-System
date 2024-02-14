@@ -53,24 +53,24 @@
   }
 }
 
-.banner-ficha__card {
-  @include media-breakpoint-down(lg) {
-    min-height: 662px;
-  }
-}
+// .banner-ficha__card {
+//   @include media-breakpoint-down(lg) {
+//     min-height: 662px;
+//   }
+// }
 
-.banner-ficha__card__img {
-  height: 55%;
-}
+// .banner-ficha__card__img {
+//   height: 55%;
+// }
 
-.banner-ficha__card__text {
-  max-height: 352px;
-}
+// .banner-ficha__card__text {
+//   max-height: 352px;
+// }
 
-.banner-ficha__card__img img {
-  // max-height: 295px;
-  object-position: top center;
-}
+// .banner-ficha__card__img img {
+//   // max-height: 295px;
+//   object-position: top center;
+// }
 
 .intro-ficha .intro__container__img img {
   height: auto;

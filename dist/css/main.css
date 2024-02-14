@@ -17781,16 +17781,9 @@ p {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 .banner-ficha__card {
-  width: 100%;
-  height: 100svh;
-  max-height: 600px;
   display: flex;
   flex-direction: column;
   background-color: #464646;
-}
-.banner-ficha__card__img {
-  width: 100%;
-  height: 45%;
 }
 .banner-ficha__card__img img {
   object-fit: cover;
@@ -17799,9 +17792,6 @@ p {
   height: 100%;
 }
 .banner-ficha__card__text {
-  width: 100%;
-  height: 100%;
-  max-height: 380px;
   padding: 0 25px;
 }
 .banner-ficha__card__text .text__element {
@@ -20132,24 +20122,6 @@ p {
     padding-top: 50px;
     padding-bottom: 155px;
   }
-}
-
-@media (max-width: 991.98px) {
-  .banner-ficha__card {
-    min-height: 662px;
-  }
-}
-
-.banner-ficha__card__img {
-  height: 55%;
-}
-
-.banner-ficha__card__text {
-  max-height: 352px;
-}
-
-.banner-ficha__card__img img {
-  object-position: top center;
 }
 
 .intro-ficha .intro__container__img img {
