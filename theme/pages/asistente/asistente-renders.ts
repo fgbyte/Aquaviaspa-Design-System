@@ -171,33 +171,33 @@ function handleAnteriorClick() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    showFirstAsistente();
+// document.addEventListener("DOMContentLoaded", function () {
+//     showFirstAsistente();
 
-    //click en los primeros inputs activa:
-    asistenteFirstInputs.forEach((input) => {
-        input.addEventListener('click', () => {
-            hideFirstAsistente();
-            showSecondAsistente();
-            showFirstAsistenteInner();
-        })
-    })
+//     //click en los primeros inputs activa:
+//     asistenteFirstInputs.forEach((input) => {
+//         input.addEventListener('click', () => {
+//             hideFirstAsistente();
+//             showSecondAsistente();
+//             showFirstAsistenteInner();
+//         })
+//     })
 
 
-    //click en los inputs del asistente inner activa handleInnerInputClick()
-    asistenteInnerInputs.forEach((input) => {
-        input.addEventListener('click', handleInnerInputClick);
+//     //click en los inputs del asistente inner activa handleInnerInputClick()
+//     asistenteInnerInputs.forEach((input) => {
+//         input.addEventListener('click', handleInnerInputClick);
 
-    });
+//     });
 
-    //click en el Anterior activa handleAnteriorClick()
-    anteriorButton.forEach((btn) => {
-        btn?.addEventListener('click', handleAnteriorClick);
-    })
+//     //click en el Anterior activa handleAnteriorClick()
+//     anteriorButton.forEach((btn) => {
+//         btn?.addEventListener('click', handleAnteriorClick);
+//     })
 
-    if (lastButton) {
-        lastButton.addEventListener('click', () => {
-            console.log(stepValue)
-        })
-    }
-});
+//     if (lastButton) {
+//         lastButton.addEventListener('click', () => {
+//             console.log(stepValue)
+//         })
+//     }
+// });

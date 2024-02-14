@@ -786,30 +786,30 @@ function handleAnteriorClick() {
         }
     });
 }
-document.addEventListener("DOMContentLoaded", function () {
-    showFirstAsistente();
-    //click en los primeros inputs activa:
-    asistenteFirstInputs.forEach(function (input) {
-        input.addEventListener('click', function () {
-            hideFirstAsistente();
-            showSecondAsistente();
-            showFirstAsistenteInner();
-        });
-    });
-    //click en los inputs del asistente inner activa handleInnerInputClick()
-    asistenteInnerInputs.forEach(function (input) {
-        input.addEventListener('click', handleInnerInputClick);
-    });
-    //click en el Anterior activa handleAnteriorClick()
-    anteriorButton.forEach(function (btn) {
-        btn === null || btn === void 0 ? void 0 : btn.addEventListener('click', handleAnteriorClick);
-    });
-    if (lastButton) {
-        lastButton.addEventListener('click', function () {
-            console.log(stepValue);
-        });
-    }
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     showFirstAsistente();
+//     //click en los primeros inputs activa:
+//     asistenteFirstInputs.forEach((input) => {
+//         input.addEventListener('click', () => {
+//             hideFirstAsistente();
+//             showSecondAsistente();
+//             showFirstAsistenteInner();
+//         })
+//     })
+//     //click en los inputs del asistente inner activa handleInnerInputClick()
+//     asistenteInnerInputs.forEach((input) => {
+//         input.addEventListener('click', handleInnerInputClick);
+//     });
+//     //click en el Anterior activa handleAnteriorClick()
+//     anteriorButton.forEach((btn) => {
+//         btn?.addEventListener('click', handleAnteriorClick);
+//     })
+//     if (lastButton) {
+//         lastButton.addEventListener('click', () => {
+//             console.log(stepValue)
+//         })
+//     }
+// });
 var textInStep = document.querySelectorAll('.dynamic-step');
 var radios = document.querySelectorAll('.asistente-radio');
 var firstRadios = document.querySelectorAll('.type-spa-selected-radio');
