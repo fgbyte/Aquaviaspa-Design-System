@@ -5,9 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.css">
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
-<body class="mt-4 d-flex flex-column gap-4 bg-danger">
+<body class="">
+
+    //intro ficha
+    <section class="intro intro-ficha bg-info">
+        <div class="intro__container">
+            <div class="intro__container__text">
+                <blockquote>Un spa minimalista con prestaciones máximas</blockquote>
+                <p><b>Menos es más,</b> decía el celebérrimo arquitecto Mies Van de Rohe. Este
+                    minimalismo es lo que busca el Spa Quantum, una bañera de hidromasaje sin ornamentos
+                    ni artificios, claramente pensado para aquellos usuarios a quienes les gusta
+                    ostentar poco y demostrar con hechos. En este sentido, el Spa Quantum es una
+                    enormemente efectiva máquina de hidroterapia para una multitud de utilidades
+                    diferentes, desde el puro relax hasta la descontracturación muscular tras un
+                    esfuerzo físico.
+                    <br>
+                    <b>Si desea comprar un spa exclusivo pero minimalista, vesátil pero completo, de
+                        altas prestaciones y a un precio justo, he aquí el Spa Quantum.</b>
+                </p>
+            </div>
+            <div class="slider-container">
+                <div class="swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <script src="/dist/vendors/swiper.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                //dynamic style
+                let swiperStyles = document.createElement('link');
+                swiperStyles.rel = 'stylesheet'
+                swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                document.head.appendChild(swiperStyles);
+                //slider logic
+                var swiper = new Swiper('.swiper', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        type: 'bullets',
+                        dynamicBullets: true,
+                        dynamicMainBullets: 3
+                    },
+                });
+            });
+        </script>
+    </section>
 
     //intro home
     <section class="intro">
@@ -30,29 +96,7 @@
         </div>
     </section>
 
-    //intro ficha
 
-    <section class="intro intro-ficha bg-info">
-        <div class="intro__container">
-            <div class="intro__container__text">
-                <blockquote>Un spa minimalista con prestaciones máximas</blockquote>
-                <p><b>Menos es más,</b> decía el celebérrimo arquitecto Mies Van de Rohe. Este
-                    minimalismo es lo que busca el Spa Quantum, una bañera de hidromasaje sin ornamentos
-                    ni artificios, claramente pensado para aquellos usuarios a quienes les gusta
-                    ostentar poco y demostrar con hechos. En este sentido, el Spa Quantum es una
-                    enormemente efectiva máquina de hidroterapia para una multitud de utilidades
-                    diferentes, desde el puro relax hasta la descontracturación muscular tras un
-                    esfuerzo físico.
-                    <br>
-                    <b>Si desea comprar un spa exclusivo pero minimalista, vesátil pero completo, de
-                        altas prestaciones y a un precio justo, he aquí el Spa Quantum.</b>
-                </p>
-            </div>
-            <div class="intro__container__img">
-                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
-            </div>
-        </div>
-    </section>
 
     //disenno para una vida feliz
     <section class="intro-special">
@@ -91,14 +135,19 @@
         <div class="intro-vertical__text">
             <h2>Escalera de acceso Premium</h2>
             <div>
-                <p>El mejor accesorio para poder acceder al Spa es la Escalera de acceso Premium. Un elemento diseñado con la misma estética de los muebles de los Spas, compuesto por dos peldaños, que le permite tanto acceder como salir del Spa fácilmente. La superfície de los peldaños dispone de un gravado antideslizante concebido para mejorar el agarre aunque la superfície este mojada.</p>
-                <p>La escalera tiene una altura de total de 31 centímetros así como una anchura total de 59 centímetros, lo que la convierte en una escalera estable y de uso cómodo.</p>
+                <p>El mejor accesorio para poder acceder al Spa es la Escalera de acceso Premium. Un elemento diseñado
+                    con la misma estética de los muebles de los Spas, compuesto por dos peldaños, que le permite tanto
+                    acceder como salir del Spa fácilmente. La superfície de los peldaños dispone de un gravado
+                    antideslizante concebido para mejorar el agarre aunque la superfície este mojada.</p>
+                <p>La escalera tiene una altura de total de 31 centímetros así como una anchura total de 59 centímetros,
+                    lo que la convierte en una escalera estable y de uso cómodo.</p>
             </div>
         </div>
         <div class="intro-vertical__img">
             <img src="/dist/assets/img/escalera-premium-modelos-770x513.webp" alt="escalera-premium-modelos">
         </div>
     </section>
+
 
     <!-- ScriptJS -->
     <script src="/dist/js/main.js"></script>

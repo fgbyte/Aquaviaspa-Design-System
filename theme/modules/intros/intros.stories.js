@@ -45,19 +45,7 @@ export const introFicha1 = `
 `
 
 export const introFichaSlider1 = `
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-    <section class="intro intro-ficha bg-info">
+<section class="intro intro-ficha bg-info">
         <div class="intro__container">
             <div class="intro__container__text">
                 <blockquote>Un spa minimalista con prestaciones máximas</blockquote>
@@ -99,26 +87,25 @@ export const introFichaSlider1 = `
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
-
-    <!-- ScriptJS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var swiper = new Swiper('.swiper', {
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    type: 'bullets',
-                    dynamicBullets: true,
-                    dynamicMainBullets: 3
-                },
+        <script src="/dist/vendors/swiper.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                //dynamic style
+                let swiperStyles = document.createElement('link');
+                swiperStyles.rel = 'stylesheet'
+                swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                document.head.appendChild(swiperStyles);
+                //slider logic
+                var swiper = new Swiper('.swiper', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        type: 'bullets',
+                        dynamicBullets: true,
+                        dynamicMainBullets: 3
+                    },
+                });
             });
-        });
-    </script>
-    <script src="/dist/js/main.js"></script>
-
-</body>
-
-</html>
+        </script>
+    </section>
 `

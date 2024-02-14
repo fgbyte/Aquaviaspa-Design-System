@@ -19970,7 +19970,7 @@ p {
 .swiper-pagination-bullet {
   width: 40px !important;
   height: 6px !important;
-  background-color: #c7c6be !important;
+  background-color: #C7C6BE !important;
   margin-right: 8px !important;
   cursor: pointer !important;
   border-radius: 0 !important;
@@ -19998,15 +19998,11 @@ p {
 }
 
 .slider-container {
+  max-width: 375px;
+  min-width: auto;
+  width: auto;
+  margin: 0 auto;
   padding-bottom: 50px;
-}
-@media (max-width: 991.98px) {
-  .slider-container {
-    max-width: 375px;
-    min-width: auto;
-    width: auto;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 992px) {
   .slider-container {
@@ -20023,8 +20019,12 @@ p {
 
 @media (min-width: 992px) {
   .intro-ficha .intro__container__text {
-    min-width: 520px;
+    min-width: 400px;
   }
+}
+
+.intro-ficha .intro__container__img img {
+  width: 100%;
 }
 
 .py-16 {
