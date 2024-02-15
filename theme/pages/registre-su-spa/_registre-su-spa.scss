@@ -111,10 +111,11 @@
     text-align: center;
     font-weight: $textRegular;
     margin: 0;
-    line-height: 34px;
+    line-height: 24px;
     max-width: 675px;
     @include media-breakpoint-up(lg) {
       font-size: 28px;
+      line-height: 34px;
     }
   }
 }
@@ -134,7 +135,7 @@
 }
 
 /*Form*/
-.register-form-header h3{
+.register-form-header h3 {
   font-size: 32px;
   font-weight: $textMedium;
   text-align: center;
@@ -153,7 +154,6 @@
   text-align: left;
   opacity: 1;
 }
-
 
 .tooltip .top {
   min-width: 200px;
@@ -190,7 +190,7 @@
 }
 
 .tooltip .top i::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;

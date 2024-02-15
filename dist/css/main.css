@@ -21325,12 +21325,13 @@ p {
   text-align: center;
   font-weight: 400;
   margin: 0;
-  line-height: 34px;
+  line-height: 24px;
   max-width: 675px;
 }
 @media (min-width: 992px) {
   .thanks__content p {
     font-size: 28px;
+    line-height: 34px;
   }
 }
 
