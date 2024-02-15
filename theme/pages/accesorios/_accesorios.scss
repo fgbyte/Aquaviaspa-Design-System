@@ -14,6 +14,7 @@
 
   .posts-page__slider h3 {
     font-size: 22px;
+
     @include media-breakpoint-up(lg) {
       font-size: 30px;
     }
@@ -31,7 +32,7 @@
     z-index: -1;
     content: "";
     position: absolute;
-    top: calc(50% + 81px) ; // Posiciona la línea en el medio verticalmente (81 = mitad del padding)
+    top: calc(50% + 81px); // Posiciona la línea en el medio verticalmente (81 = mitad del padding)
     left: 0; // Comienza desde el borde izquierdo
     right: 0; // Extiende hasta el borde derecho
     border-top: .5px solid $grayOff; // Crea una línea horizontal
@@ -39,3 +40,14 @@
   }
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 40px !important; /* Reduced font-size for thinner arrows */
+  stroke-width: 0px;
+  text-transform: none !important;
+  color: black !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}

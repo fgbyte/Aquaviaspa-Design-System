@@ -38,84 +38,113 @@
         <div class="section-slider-accsesorios__header">
             <h3>OTROS ACCESORIOS QUE TE PUEDEN INTERESAR</h3>
         </div>
-        <div class="guias-slider-accsesorios-arrow">
-            <img class="arrow-slider-accsesorios-left" height="88" src="/dist/assets/icons/arrow-accesorios-left.svg"
-                alt="flecha para mover carrusel a la izquierda">
-            <img class="arrow-slider-accsesorios-right" height="88" src="/dist/assets/icons/arrow-accesorios-right.svg"
-                alt="flecha para mover carrusel a la derecha">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <div class="swiper-container accseorios-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
-        <article class="accseorios-slider">
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.accseorios-slider', {
+                loop: false,
+                slidesPerView: 1.2,
+                spaceBetween: 20,
 
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    navigator: false
+                },
+                breakpoints: {
+                    924: {
+                        slidesPerView: 4,
+                    },
+                    720: {
+                        slidesPerView: 3,
+                    },
+                    520: {
+                        slidesPerView: 2,
+                    },
+                }
 
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-
-        </article>
-        <div class="guias-accseorios-slider">
-            <div data-index="0" class="controls-accseorios-slider"></div>
-            <div data-index="1" class="controls-accseorios-slider"></div>
-            <div data-index="2" class="controls-accseorios-slider d-lg-none"></div>
-            <div data-index="3" class="controls-accseorios-slider d-lg-none"></div>
-            <div data-index="4" class="controls-accseorios-slider d-lg-none"></div>
-        </div>
+            });
+        </script>
 
     </div>
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
