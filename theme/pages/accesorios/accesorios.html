@@ -38,10 +38,47 @@
         <div class="section-slider-accsesorios__header">
             <h3>OTROS ACCESORIOS QUE TE PUEDEN INTERESAR</h3>
         </div>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
         <div class="swiper-container accseorios-slider">
             <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
                 <div class="swiper-slide">
                     <a href="#" class="card-accesorios">
                         <div class="card-accesorios__container">
@@ -115,35 +152,42 @@
 
         </div>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="/dist/vendors/swiper.min.js"></script>
         <script>
-            var mySwiper = new Swiper('.accseorios-slider', {
-                loop: false,
-                slidesPerView: 1.2,
-                spaceBetween: 20,
+            document.addEventListener('DOMContentLoaded', function () {
+                //dynamic style
+                let swiperStyles = document.createElement('link');
+                swiperStyles.rel = 'stylesheet'
+                swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                document.head.appendChild(swiperStyles);
 
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                    navigator: false
-                },
-                breakpoints: {
-                    924: {
-                        slidesPerView: 4,
-                    },
-                    720: {
-                        slidesPerView: 3,
-                    },
-                    520: {
-                        slidesPerView: 2,
-                    },
-                }
+                var mySwiper = new Swiper('.accseorios-slider', {
+                    loop: false,
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
 
-            });
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                        navigator: false
+                    },
+                    breakpoints: {
+                        924: {
+                            slidesPerView: 4,
+                        },
+                        720: {
+                            slidesPerView: 3,
+                        },
+                        520: {
+                            slidesPerView: 2,
+                        },
+                    }
+                });
+            })
         </script>
 
     </div>
