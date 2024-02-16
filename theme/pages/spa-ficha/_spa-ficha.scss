@@ -115,3 +115,20 @@
     padding-bottom: 100px;
   }
 }
+
+.ficha-accesorios {
+  @include desk-space;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 85px $pxMobile;
+  @include media-breakpoint-up(lg) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    gap: 64px;
+  }
+}
+
+.swiper-pagination {
+  min-width: 250px;
+}

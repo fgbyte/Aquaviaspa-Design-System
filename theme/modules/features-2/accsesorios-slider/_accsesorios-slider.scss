@@ -1,21 +1,27 @@
 @use "../../../globals";
 @use "../../../mixins";
 
-
-.section-slider-accsesorios {
+.accseorios-slider {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem $pxMobile;
-  padding-right: 0;
-  max-width: $maxW;
   overflow: hidden;
-
+  padding-bottom: 30px;//Espacio hasta la bullets
 
   @include media-breakpoint-up(lg) {
-    padding: 9.5625rem 50px;
-
+    padding-bottom: 60px;//Espacio hasta la bullets
   }
+  
+  
+  .swiper-wrapper {
+  padding: 0 40px
+  
+  }
+}
+
+
+.section-slider-accsesorios {
+  @include desk-space;
+  
+
 
   & .section-slider-accsesorios__header {
     display: flex;
@@ -28,7 +34,6 @@
 
     @include media-breakpoint-up(lg) {
       margin-bottom: 64px;
-
     }
 
     & h3 {
@@ -38,7 +43,6 @@
       @include media-breakpoint-up(lg) {
         font-size: 42px;
       }
-
     }
 
     & p {
@@ -47,71 +51,13 @@
       text-wrap: wrap;
       text-align: center;
     }
-
-  }
-
-  & .accseorios-slider {
-    display: flex;
-    gap: 14px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
-    @include media-breakpoint-up(lg) {
-      overflow: hidden;
-
-    }
-
-    & .card-accesorios {
-      min-width: fit-content;
-      height: fit-content;
-
-      @include media-breakpoint-up(lg) {
-        min-width: 24%;
-      }
-    }
-
-    & .arrow-accesorio {
-      display: none;
-      margin-top: 72px;
-      cursor: pointer;
-
-      @include media-breakpoint-up(xxl) {
-        display: block;
-      }
-    }
-  }
-
-  & .guias-slider-accsesorios-arrow {
-    position: relative;
-    display: none;
-    width: 100%;
-    top: 48%;
-    cursor: pointer;
-    right: 0px;
-    left: 0px;
-
-    & .arrow-slider-accsesorios-left {
-      position: relative;
-    }
-
-    & .arrow-slider-accsesorios-right {
-      position: relative;
-    }
-
-    @include media-breakpoint-up(lg) {
-      position: absolute;
-      display: flex;
-      justify-content: space-between;
-    }
   }
 }
-
 
 /*Slider*/
 .card-accesorios {
   scroll-snap-align: start;
 }
-
 
 .guias-accseorios-slider {
   display: flex;
@@ -123,11 +69,16 @@
 .controls-accseorios-slider {
   width: 40px;
   height: 6px;
-  background-color: #C7C6BE;
+  background-color: #c7c6be;
   margin-right: 8px;
   cursor: pointer;
 }
 
 .control-active {
   background-color: #464646;
+}
+
+
+.swiper-pagination-accesorios {
+  min-width: 250px;
 }
