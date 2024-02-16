@@ -1,15 +1,12 @@
 "use strict";
-//dropdown-card lg disposition
 document.addEventListener('DOMContentLoaded', function () {
     var detailsElement = document.querySelectorAll('.dropdown-card');
     if (window.matchMedia('(min-width: 992px)').matches) {
-        // Si la pantalla es 'lg' o más grande
         detailsElement.forEach(function (element) {
             element.toggleAttribute('open');
         });
     }
 });
-//banner-ficha
 window.addEventListener('resize', adjustBannerFicha);
 function adjustBannerFicha() {
     var bannerFichaCard = document.querySelector('.banner-ficha__card__img');
@@ -69,7 +66,6 @@ carouselsTopVentas.forEach(function (carousel, carouselIndex) {
         setActiveControl(activeControlIndex);
     });
 });
-//transform module
 var cardTransform = document.querySelector("#card-transform");
 var cardTransformRight = document.querySelector(".card-transform-right");
 var transformModule = document.querySelector(".transform-module");
@@ -151,62 +147,7 @@ helmetInputs.forEach(function (input) {
     input.addEventListener('change', showFirstImage);
 });
 showFirstImage();
-var accseoriosSlider = document.querySelectorAll(".accseorios-slider");
-var guiasAccseoriosSlider = document.querySelectorAll(".guias-accseorios-slider");
-accseoriosSlider.forEach(function (carousel, carouselIndex) {
-    var controls = guiasAccseoriosSlider[carouselIndex];
-    var controlItems = controls.querySelectorAll(".controls-accseorios-slider");
-    var previousItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-slider-accsesorios-left");
-    var nextItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-slider-accsesorios-right");
-    setActiveControl(0);
-    function setActiveControl(index) {
-        controlItems.forEach(function (item, i) {
-            if (i === index) {
-                item.classList.add("control-active");
-            }
-            else {
-                item.classList.remove("control-active");
-            }
-        });
-    }
-    nextItem === null || nextItem === void 0 ? void 0 : nextItem.addEventListener("click", function () {
-        var cardWidth = carousel.querySelector(".card-accesorios");
-        if (carousel && cardWidth) {
-            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) + 1;
-            moveItems(newIndex);
-        }
-    });
-    previousItem === null || previousItem === void 0 ? void 0 : previousItem.addEventListener("click", function () {
-        var cardWidth = carousel.querySelector(".card-accesorios");
-        if (carousel && cardWidth) {
-            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) - 1;
-            moveItems(newIndex);
-        }
-    });
-    controlItems.forEach(function (item, index) {
-        item.addEventListener("click", function () {
-            moveItems(index);
-        });
-    });
-    var moveItems = function (index) {
-        var cardWidth = carousel.querySelector(".card-accesorios");
-        if (cardWidth) {
-            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
-        }
-    };
-    carousel.addEventListener("scroll", function () {
-        var cardWidth = carousel.querySelector(".card-accesorios");
-        if (carousel === null || !cardWidth)
-            return;
-        var scrollPos = carousel.scrollLeft;
-        var controlIndex = Math.floor(scrollPos / cardWidth.offsetWidth);
-        setActiveControl(controlIndex);
-    });
-});
-//categories
-//pr-#
 var links = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#pr-".concat(i + 1)); });
-//prest-#
 var cards = Array.from({ length: 5 }, function (_, i) { return document.querySelectorAll("#prest-".concat(i + 1)); });
 var special = 1158;
 function showOnly(cardNumber) {
@@ -236,13 +177,12 @@ function showOnly(cardNumber) {
     });
 }
 document.addEventListener('DOMContentLoaded', function () {
-    //ocultar los modales al principio menos el 1 solo en LG
     if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
-        showOnly(0); //el 1ro del array
+        showOnly(0);
     }
     window.addEventListener('resize', function () {
         if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
-            showOnly(0); //el 1ro del array
+            showOnly(0);
         }
         else {
             cards.forEach(function (nodeCard) {
@@ -288,7 +228,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-//prestaciones sliders
 document.addEventListener('DOMContentLoaded', function () {
     var prestacionesGroups = document.querySelectorAll(".prestaciones-cards");
     var guiasPrestacionesGroups = document.querySelectorAll(".guias-prestaciones-cards");
@@ -327,26 +266,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-//prestaciones module
 document.addEventListener('DOMContentLoaded', function () {
     var filterLinks = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#fil-".concat(i + 1)); });
     var categories = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#category-".concat(i + 1)); });
-    //links logic
     filterLinks.forEach(function (link) {
         link === null || link === void 0 ? void 0 : link.addEventListener('click', function (event) {
             if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
-                showOnly(0); //el 1ro del array
+                showOnly(0);
             }
-            // Remove 'checked' attribute from all filter links
             filterLinks.forEach(function (element) {
                 element === null || element === void 0 ? void 0 : element.removeAttribute('checked');
             });
-            // Add 'checked' attribute to the clicked link
             var clickedLink = event.target;
             clickedLink.setAttribute('checked', '');
         });
     });
-    //only 1 first logic
     categories.forEach(function (singleCat, index) {
         if (singleCat instanceof HTMLElement) {
             singleCat.style.display = index === 0
@@ -354,7 +288,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 : 'none';
         }
     });
-    //render logic
     filterLinks.forEach(function (singleLink, i) {
         singleLink === null || singleLink === void 0 ? void 0 : singleLink.addEventListener('click', function () {
             categories.forEach(function (singleCat, j) {
@@ -420,19 +353,16 @@ prestacionesSliderSlider.forEach(function (carousel, carouselIndex) {
     });
 });
 document.addEventListener('DOMContentLoaded', function () {
-    //Valores module
     var tabsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("valor-".concat(i + 1)); });
     var modalsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("modal-valor-".concat(i + 1)); });
     var detailsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("detail-valor-".concat(i + 1)); });
     var buttonValores = document.querySelectorAll('.link-arrow-grow-white-reverse');
     var allDropdowns = document.querySelectorAll('.valores__card__links details');
-    //ocultar los modales al principio menos el 1
     modalsValores.forEach(function (modal, i) {
         if (modal) {
             modal.style.display = i === 0 ? 'block' : 'none';
         }
     });
-    //duplicar contenido modales y details
     modalsValores.forEach(function (modal, i) {
         if (modal && detailsValores[i]) {
             var modalContent = modal.innerHTML;
@@ -465,7 +395,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-    //agregar eventListener a las tabsValores
     tabsValores.forEach(function (tab, i) {
         if (tab) {
             tab.addEventListener('click', function () {
@@ -477,7 +406,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-    // Función para cerrar todos los dropdowns excepto el actual
     function closeAllDropdownsExcept(currentDropdown) {
         allDropdowns.forEach(function (dropdown) {
             if (dropdown !== currentDropdown && dropdown.hasAttribute('open')) {
@@ -485,7 +413,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-    // Agregar el controlador de eventos a cada 'details'
     allDropdowns.forEach(function (dropdown) {
         dropdown.addEventListener('toggle', function () {
             if (dropdown.hasAttribute('open')) {
@@ -494,7 +421,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-//navbar & menu lateral
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('#navbar');
     var body = document.body;
@@ -629,22 +555,14 @@ document.addEventListener('DOMContentLoaded', function () {
         return bannerHeight - navbarHeight;
     }
 });
-// Asistentes Generales
 var asistenteBlocks = Array.from({ length: 2 }, function (_, i) { return document.getElementById("asistente-".concat(i + 1)); });
-// Asistentes inners
 var asistenteInnerBlocks = Array.from({ length: 6 }, function (_, i) { return document.getElementById("asistente-inner-".concat(i + 1)); });
-//Inputs Primeros
 var asistenteFirstInputs = document.querySelectorAll(".asistente-input");
-//Inputs inner
 var asistenteInnerInputs = document.querySelectorAll(".asistente-input--inner");
-//Anterior Button
 var anteriorButton = document.querySelectorAll('#asistente-anterior');
-//Ultimo Button
 var lastButton = document.querySelector('#asistente-last-btn');
-//Funciones helpers
 function scrollUp() {
     if (window.matchMedia('(max-width: 992px)').matches) {
-        // Si la pantalla es menor de lg
         window.scrollTo(0, 0);
     }
 }
@@ -668,7 +586,6 @@ function hideFirstAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-1') {
-                //add class to visibility = 0 with transition
                 block.classList.add('fade-out');
                 block.style.display = 'none';
             }
@@ -679,10 +596,8 @@ function showSecondAsistente() {
     if (asistenteBlocks) {
         asistenteBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-2') {
-                //add class to visibility = 0 with transition
                 block.classList.add('fade-out');
                 block.style.display = 'flex';
-                //add class to visibility = 1 with transition
                 setInterval(function () {
                     block.classList.add('fade-in');
                 }, 200);
@@ -700,10 +615,8 @@ function showFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-inner-1') {
-                //add class to visibility = 0 with transition
                 block.classList.add('fade-out');
                 block.style.display = 'flex';
-                //add class to visibility = 1 with transition
                 setInterval(function () {
                     block.classList.add('fade-in');
                 }, 200);
@@ -721,7 +634,6 @@ function hideFirstAsistenteInner() {
     if (asistenteInnerBlocks) {
         asistenteInnerBlocks.forEach(function (block) {
             if (block && block.id === 'asistente-inner-1') {
-                //add class to visibility = 0 with transition
                 block.classList.add('fade-out');
                 block.style.display = 'none';
             }
@@ -729,7 +641,6 @@ function hideFirstAsistenteInner() {
     }
 }
 function hideSpecificAsistenteInner(asistente) {
-    //add class to visibility = 0 with transition
     asistente.classList.add('fade-out');
     asistente.style.display = 'none';
 }
@@ -740,7 +651,6 @@ function showSpecificAsistenteInner(asistente) {
         asistente.classList.add('fade-in');
     }, 200);
     var secondChild = asistente.children[1];
-    //add class to visibility = 1 with transition
     setInterval(function () {
         secondChild.classList.add('fade-in');
     }, 200);
@@ -753,10 +663,8 @@ function handleInnerInputClick(event) {
     var clickedInput = mouseEvent.target;
     if (clickedInput) {
         var grandParentElement = (_b = (_a = clickedInput.parentNode) === null || _a === void 0 ? void 0 : _a.parentNode) === null || _b === void 0 ? void 0 : _b.parentNode;
-        //ocultar el current
         var currentAsistenteInner = grandParentElement;
         hideSpecificAsistenteInner(currentAsistenteInner);
-        //mostrar el next
         var nextAsistenteInner = currentAsistenteInner.nextElementSibling;
         if (nextAsistenteInner instanceof HTMLElement) {
             showSpecificAsistenteInner(nextAsistenteInner);
@@ -764,93 +672,24 @@ function handleInnerInputClick(event) {
     }
 }
 function handleAnteriorClick() {
-    //que detecte si esta en el asistente-inner-1 que hal hacer click se ponga en 'none' y el block el asistente-1 ✅
     asistenteInnerBlocks.forEach(function (asistenteInner) {
         if (asistenteInner && asistenteInner.id === 'asistente-inner-1' && asistenteInner.style.display === 'flex') {
             showFirstAsistente();
         }
     });
-    //que detecte si esta en el asistente-inner-2 al hacer click se ponga en 'none y flex el asistente-inner-1 y asi para los otros ✅
     asistenteInnerBlocks.forEach(function (asistenteInner) {
         for (var i = 6; i >= 2; i--) {
             if (asistenteInner && asistenteInner.id === "asistente-inner-".concat(i) && asistenteInner.style.display === 'flex') {
                 var currentAsistenteInner = asistenteInner;
                 hideSpecificAsistenteInner(currentAsistenteInner);
-                // console.log('current', currentAsistenteInner)
                 var previousAsistenteInner = currentAsistenteInner.previousElementSibling;
                 if (previousAsistenteInner instanceof HTMLElement) {
-                    // console.log('previous', previousAsistenteInner)
                     showSpecificAsistenteInner(previousAsistenteInner);
                 }
             }
         }
     });
 }
-// document.addEventListener("DOMContentLoaded", function () {
-//     showFirstAsistente();
-//     //click en los primeros inputs activa:
-//     asistenteFirstInputs.forEach((input) => {
-//         input.addEventListener('click', () => {
-//             hideFirstAsistente();
-//             showSecondAsistente();
-//             showFirstAsistenteInner();
-//         })
-//     })
-//     //click en los inputs del asistente inner activa handleInnerInputClick()
-//     asistenteInnerInputs.forEach((input) => {
-//         input.addEventListener('click', handleInnerInputClick);
-//     });
-//     //click en el Anterior activa handleAnteriorClick()
-//     anteriorButton.forEach((btn) => {
-//         btn?.addEventListener('click', handleAnteriorClick);
-//     })
-//     if (lastButton) {
-//         lastButton.addEventListener('click', () => {
-//             console.log(stepValue)
-//         })
-//     }
-// });
-// const textInStep = document.querySelectorAll('.dynamic-step') as NodeListOf<HTMLElement>;
-// const radios: NodeListOf<HTMLInputElement> = document.querySelectorAll('.asistente-radio');
-// const firstRadios: NodeListOf<HTMLInputElement> = document.querySelectorAll('.type-spa-selected-radio');
-// const spaSelected: NodeListOf<HTMLInputElement> = document.querySelectorAll('.type-spa-selected');
-// const steps = document.querySelectorAll('.step') as NodeListOf<HTMLElement>;
-// const stepValue = {
-//   step1: '',
-//   step2: '',
-//   step3: '',
-//   step4: '',
-//   step5: '',
-// }
-// function updateTextsFromStepValues() {
-//   textInStep.forEach((step, index) => {
-//     const stepKey = `step${index + 1}` as keyof typeof stepValue;
-//     if (stepValue[stepKey]) {
-//       step.innerText = stepValue[stepKey];
-//       steps[index].classList.add('step--active');
-//     } else {
-//       steps[index].classList.remove('step--active');
-//     }
-//   });
-// }
-// function setStepValue() {
-//   radios.forEach((radio, index) => {
-//     radio.addEventListener('change', () => {
-//       const stepIndex = Math.floor(index / 3) + 1;
-//       const stepKey = `step${stepIndex}` as keyof typeof stepValue;
-//       stepValue[stepKey] = radio.value;
-//       updateTextsFromStepValues();
-//     });
-//   });
-// }
-// firstRadios.forEach((radio) => {
-//   radio.addEventListener('change', () => {
-//     spaSelected.forEach((element) => {
-//       element.innerText = radio.value;
-//     });
-//   });
-// });
-// setStepValue();
 var blogPostSlider = document.querySelectorAll(".blog-post-slider");
 var guiasBlogPostSlider = document.querySelectorAll(".guias-blogPostSlider");
 blogPostSlider.forEach(function (carousel, carouselIndex) {

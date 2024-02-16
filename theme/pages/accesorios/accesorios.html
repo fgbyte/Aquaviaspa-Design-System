@@ -144,6 +144,32 @@
                         </div>
                     </a>
                 </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="card-accesorios">
+                        <div class="card-accesorios__container">
+                            <div class="card-accesorios__container--bg">
+                                <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                            </div>
+                        </div>
+                        <div class="card-accesorios__text">
+                            <h4>Pérgola Venice</h4>
+                            <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
 
@@ -169,12 +195,16 @@
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
+                        type: 'bullets',
+                        dynamicBullets: true,
+                        dynamicMainBullets: 3,
                     },
+
                     navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
-                        navigator: false
                     },
+
                     breakpoints: {
                         924: {
                             slidesPerView: 4,

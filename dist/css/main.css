@@ -20599,6 +20599,10 @@ p {
   line-height: 1;
 }
 
+.swiper-pagination {
+  min-width: 250px;
+}
+
 .banner-descargar-catalogo {
   background: transparent linear-gradient(0deg, #000 0%, #545454 100%) 0% 0% no-repeat;
 }
