@@ -51,8 +51,24 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-        </div>
+        <style>
+            @media (max-width: 1420px) {
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none;
+                }
+            }
+            .swiper-button-prev {
+                    left: -40px;
+                }
+
+                .swiper-button-next {
+                    right: -40px;
+                }
+        </style>
         <script src="/dist/vendors/swiper.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -77,6 +93,7 @@
                 });
             });
         </script>
+        </div>
     </section>
 
     //intro home
