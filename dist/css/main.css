@@ -19726,13 +19726,17 @@ p {
 }
 
 .accesorios-slider {
-  position: relative;
   overflow: hidden;
 }
 
 .pagination-accesorios {
   position: absolute !important;
-  bottom: 0 !important;
+  bottom: 5% !important;
+}
+@media (max-width: 767.98px) {
+  .pagination-accesorios {
+    bottom: -5% !important;
+  }
 }
 
 .prev-accesorios {

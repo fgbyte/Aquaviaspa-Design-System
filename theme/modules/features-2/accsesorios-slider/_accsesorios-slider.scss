@@ -14,16 +14,17 @@
 }
 
 .accesorios-slider {
-  position: relative;
+  // position: relative;
   overflow: hidden;
 }
 
 .pagination-accesorios {
   position: absolute !important;
-  bottom: 0 !important;
-  // @include media-breakpoint-up(md) {
-  //   bottom: -10% !important;
-  // }
+  bottom: 5% !important;
+  @include media-breakpoint-down(md) {
+    bottom: -5% !important;
+    // z-index: 99 !important;
+  }
 }
 
 .prev-accesorios {
