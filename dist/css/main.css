@@ -19693,7 +19693,7 @@ p {
 
 .slider-large-container {
   padding: 0 25px;
-  padding-right: 0;
+  padding: 0;
   position: relative;
   height: 380px;
 }

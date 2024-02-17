@@ -4,7 +4,7 @@
 .slider-large-container {
   @include desk-space;
   padding: 0 $pxMobile;
-  padding-right: 0;
+  padding: 0;
   position: relative;
   height: 380px;
   @include media-breakpoint-up(md) {
