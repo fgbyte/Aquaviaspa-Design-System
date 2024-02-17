@@ -43,7 +43,14 @@
 
 .section-slider-accsesorios {
   @include desk-space;
-  
+  padding: 90px $pxMobile;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  @include media-breakpoint-up(lg) {
+    padding: 100px $pxMobile;
+    gap: 55px;
+  }
 
 
   & .section-slider-accsesorios__header {

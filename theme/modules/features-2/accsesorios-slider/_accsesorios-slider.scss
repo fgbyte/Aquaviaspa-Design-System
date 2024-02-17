@@ -16,19 +16,14 @@
 .accesorios-slider {
   position: relative;
   overflow: hidden;
-  // padding-bottom: 30px; //Espacio hasta la bullets
-
-  @include media-breakpoint-up(lg) {
-    // padding-bottom: 60px; //Espacio hasta la bullets
-  }
 }
 
 .pagination-accesorios {
   position: absolute !important;
   bottom: 0 !important;
-  @include media-breakpoint-up(md) {
-    bottom: 10% !important;
-  }
+  // @include media-breakpoint-up(md) {
+  //   bottom: -10% !important;
+  // }
 }
 
 .prev-accesorios {
@@ -57,26 +52,3 @@
   line-height: 1;
 }
 
-/*Slider*/
-// .card-accesorios {
-//   scroll-snap-align: start;
-// }
-
-// .guias-accseorios-slider {
-//   display: flex;
-//   justify-content: center;
-//   gap: 8px;
-//   margin-top: 43px;
-// }
-
-// .controls-accseorios-slider {
-//   width: 40px;
-//   height: 6px;
-//   background-color: #c7c6be;
-//   margin-right: 8px;
-//   cursor: pointer;
-// }
-
-// .control-active {
-//   background-color: #464646;
-// }

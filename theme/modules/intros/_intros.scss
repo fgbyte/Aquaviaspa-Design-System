@@ -1,7 +1,6 @@
 @use "../../globals";
 @use "../../mixins";
 
-
 .intro {
   display: flex;
   justify-content: center;
@@ -89,10 +88,10 @@
   }
 }
 
-.intro-ficha .intro {
-  @include desk-space;
-
+.intro,
+.intro-ficha {
   &__container {
+    @include desk-space;
     padding: 65px $pxMobile 80px $pxMobile;
     flex-direction: column-reverse;
     gap: 37px;
@@ -104,6 +103,7 @@
     }
 
     &__text {
+      padding: 0 $pxMobile;
       @include media-breakpoint-up(lg) {
         max-width: 670px;
       }

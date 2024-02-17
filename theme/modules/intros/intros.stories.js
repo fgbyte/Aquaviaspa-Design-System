@@ -84,49 +84,49 @@ export const introFichaSlider1 = `
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev prev-intro"></div>
+                <div class="swiper-button-next next-intro"></div>
+                
+                <div class="swiper-pagination pagination-intro"></div>
             </div>
-        <style>
-            @media (max-width: 1420px) {
-                .intro .swiper-button-prev,
-                .intro .swiper-button-next {
-                    display: none;
+            <style>
+                @media (max-width: 1420px) {
+                    .prev-intro,
+                    .next-intro {
+                        display: none;
+                    }
                 }
-            }
-            .intro .swiper-button-prev {
+                .prev-intro {
                     left: -40px;
                 }
-
-                .intro .swiper-button-next {
+                .next-intro {
                     right: -40px;
                 }
-        </style>
-        <script src="/dist/vendors/swiper.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                //dynamic style
-                let swiperStyles = document.createElement('link');
-                swiperStyles.rel = 'stylesheet'
-                swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
-                document.head.appendChild(swiperStyles);
-                //slider logic
-                var swiper = new Swiper('.swiper', {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                        type: 'bullets',
-                        dynamicBullets: true,
-                        dynamicMainBullets: 3
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }
+            </style>
+            <script src="/dist/vendors/swiper.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    //dynamic style
+                    let swiperStyles = document.createElement('link');
+                    swiperStyles.rel = 'stylesheet'
+                    swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                    document.head.appendChild(swiperStyles);
+                    //slider logic
+                    var swiper = new Swiper('.swiper', {
+                        pagination: {
+                            el: '.pagination-intro',
+                            clickable: true,
+                            type: 'bullets',
+                            dynamicBullets: true,
+                            dynamicMainBullets: 3
+                        },
+                        navigation: {
+                            prevEl: '.prev-intro',
+                            nextEl: '.next-intro',
+                        }
+                    });
                 });
-            });
-        </script>
+            </script>
         </div>
     </section>
 `
