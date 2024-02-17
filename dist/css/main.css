@@ -19725,7 +19725,7 @@ p {
   }
 }
 
-.accesorios-slider {
+.accesorios-swiper {
   overflow: hidden;
 }
 
@@ -19894,6 +19894,11 @@ p {
   align-self: center;
   margin: 0;
   color: #575757;
+}
+
+.prestaciones-swiper {
+  background-color: red;
+  overflow: hidden;
 }
 
 .acabados {

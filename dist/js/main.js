@@ -300,58 +300,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-var prestacionesSliderSlider = document.querySelectorAll(".prestaciones-slider__slider");
-var guiasPrestacionesSliderSlider = document.querySelectorAll(".guias-prestaciones-slider__slider");
-prestacionesSliderSlider.forEach(function (carousel, carouselIndex) {
-    var controls = guiasPrestacionesSliderSlider[carouselIndex];
-    var controlItems = controls.querySelectorAll(".controls-prestaciones-slider__slider");
-    var previousItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-prestaciones-slider-left");
-    var nextItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-prestaciones-slider-right");
-    setActiveControl(0);
-    function setActiveControl(index) {
-        controlItems.forEach(function (item, i) {
-            if (i === index) {
-                item.classList.add("control-active");
-            }
-            else {
-                item.classList.remove("control-active");
-            }
-        });
-    }
-    nextItem === null || nextItem === void 0 ? void 0 : nextItem.addEventListener("click", function () {
-        var cardWidth = carousel.querySelector(".card-prestacion-lite");
-        if (carousel && cardWidth) {
-            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) + 1;
-            moveItems(newIndex);
-        }
-    });
-    previousItem === null || previousItem === void 0 ? void 0 : previousItem.addEventListener("click", function () {
-        var cardWidth = carousel.querySelector(".card-prestacion-lite");
-        if (carousel && cardWidth) {
-            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) - 1;
-            moveItems(newIndex);
-        }
-    });
-    controlItems.forEach(function (item, index) {
-        item.addEventListener("click", function () {
-            moveItems(index);
-        });
-    });
-    var moveItems = function (index) {
-        var cardWidth = carousel.querySelector(".card-prestacion-lite");
-        if (cardWidth) {
-            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
-        }
-    };
-    carousel.addEventListener("scroll", function () {
-        var cardWidth = carousel.querySelector(".card-prestacion-lite");
-        if (carousel === null || !cardWidth)
-            return;
-        var scrollPos = carousel.scrollLeft;
-        var controlIndex = Math.floor(scrollPos / cardWidth.offsetWidth);
-        setActiveControl(controlIndex);
-    });
-});
 document.addEventListener('DOMContentLoaded', function () {
     var tabsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("valor-".concat(i + 1)); });
     var modalsValores = Array.from({ length: 5 }, function (_, i) { return document.getElementById("modal-valor-".concat(i + 1)); });
@@ -690,58 +638,6 @@ function handleAnteriorClick() {
         }
     });
 }
-var blogPostSlider = document.querySelectorAll(".blog-post-slider");
-var guiasBlogPostSlider = document.querySelectorAll(".guias-blogPostSlider");
-blogPostSlider.forEach(function (carousel, carouselIndex) {
-    var controls = guiasPrestacionesSliderSlider[carouselIndex];
-    var controlItems = controls.querySelectorAll(".controls-blogPostSlider");
-    var previousItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-prestaciones-slider-left");
-    var nextItem = document === null || document === void 0 ? void 0 : document.querySelector(".arrow-prestaciones-slider-right");
-    setActiveControl(0);
-    function setActiveControl(index) {
-        controlItems.forEach(function (item, i) {
-            if (i === index) {
-                item.classList.add("control-active");
-            }
-            else {
-                item.classList.remove("control-active");
-            }
-        });
-    }
-    nextItem === null || nextItem === void 0 ? void 0 : nextItem.addEventListener("click", function () {
-        var cardWidth = carousel.querySelector(".card-category-blog-lite");
-        if (carousel && cardWidth) {
-            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) + 1;
-            moveItems(newIndex);
-        }
-    });
-    previousItem === null || previousItem === void 0 ? void 0 : previousItem.addEventListener("click", function () {
-        var cardWidth = carousel.querySelector(".card-category-blog-lite");
-        if (carousel && cardWidth) {
-            var newIndex = Math.floor(carousel.scrollLeft / cardWidth.offsetWidth) - 1;
-            moveItems(newIndex);
-        }
-    });
-    controlItems.forEach(function (item, index) {
-        item.addEventListener("click", function () {
-            moveItems(index);
-        });
-    });
-    var moveItems = function (index) {
-        var cardWidth = carousel.querySelector(".card-category-blog-lite");
-        if (cardWidth) {
-            carousel.scroll({ left: cardWidth.offsetWidth * index, behavior: "smooth" });
-        }
-    };
-    carousel.addEventListener("scroll", function () {
-        var cardWidth = carousel.querySelector(".card-category-blog-lite");
-        if (carousel === null || !cardWidth)
-            return;
-        var scrollPos = carousel.scrollLeft;
-        var controlIndex = Math.floor(scrollPos / cardWidth.offsetWidth);
-        setActiveControl(controlIndex);
-    });
-});
 var formContacto = document.getElementById('form-contacto');
 var formDistribuidor = document.getElementById('form-distribuidor');
 var linkContacto = document.getElementById('fil-1');
