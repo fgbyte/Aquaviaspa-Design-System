@@ -40,15 +40,39 @@
   }
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: 40px !important; /* Reduced font-size for thinner arrows */
-  stroke-width: 0px;
-  text-transform: none !important;
-  color: black !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
-}
 
+.section-slider-accsesorios {
+  @include desk-space;
+  
+
+
+  & .section-slider-accsesorios__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 15px;
+    padding-right: $pxMobile;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 64px;
+    }
+
+    & h3 {
+      font-size: 28px;
+      font-weight: $textMedium;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 42px;
+      }
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: $textRegular;
+      text-wrap: wrap;
+      text-align: center;
+    }
+  }
+}
