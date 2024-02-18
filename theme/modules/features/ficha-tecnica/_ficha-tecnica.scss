@@ -7,11 +7,13 @@
     flex-direction: column;
     gap: 40px;
     padding: 80px $pxMobile;
+
     h3 {
         text-align: center;
         font-size: 28px;
         font-weight: $textMedium;
     }
+
     &__dropdowns {
         display: flex;
         flex-direction: column;
@@ -21,9 +23,11 @@
 
     @include media-breakpoint-up(lg) {
         padding-top: 114px;
+
         h3 {
             font-size: 42px;
         }
+
         &__dropdowns {
             align-items: flex-start;
             flex-direction: row;
@@ -31,4 +35,33 @@
             justify-content: center;
         }
     }
+}
+
+/*Dropdown animation*/
+@keyframes closing {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opening {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.details_anim_open {
+    animation: opening .3s ease;
+}
+
+.details_anim_close {
+    animation: closing .3s ease;
 }

@@ -13,7 +13,7 @@
         <h3>FICHA TÉCNICA</h3>
         <div class="ficha-tecnica__dropdowns">
             <details class="dropdown-card">
-                <summary>Especificaciones Generales</summary>
+                <summary class="details_summary">Especificaciones Generales</summary>
                 <div class="details-inner">
                     <ul>
                         <li>
@@ -80,7 +80,7 @@
                 </div>
             </details>
             <details class="dropdown-card">
-                <summary>Características</summary>
+                <summary class="details_summary">Características</summary>
                 <div class="details-inner">
                     <ul>
                         <li>
@@ -147,7 +147,7 @@
                 </div>
             </details>
             <details class="dropdown-card">
-                <summary>Opciones</summary>
+                <summary class="details_summary">Opciones</summary>
                 <div class="details-inner">
                     <ul>
                         <li>
@@ -216,7 +216,31 @@
         </div>
     </section>
 
+    <script>
+        document.querySelectorAll('.dropdown-card').forEach(details => {
+            const summary = details.querySelector('.details_summary');
+            const dropdown = details.querySelector('.details-inner');
 
+            summary.addEventListener('click', event => {
+                if (details.hasAttribute('open')) {
+                    event.preventDefault();
+                    dropdown.classList.add('details_anim_close');
+                } else {
+                    dropdown.classList.add('details_anim_open');
+                }
+            });
+
+            dropdown.addEventListener('animationend', () => {
+                if (dropdown.classList.contains('details_anim_close')) {
+                    dropdown.classList.remove('details_anim_close');
+                    details.removeAttribute('open');
+
+                } else {
+                    dropdown.classList.remove('details_anim_open');
+                }
+            });
+        });
+    </script>
     <!-- ScriptJS -->
     <script src="/dist/js/main.js"></script>
 </body>
