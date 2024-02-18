@@ -127,9 +127,75 @@ export const spaFicha = `
                         altas prestaciones y a un precio justo, he aquí el Spa Quantum.</b>
                 </p>
             </div>
-            <div class="intro__container__img">
-                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+            <div class="slider-container">
+                <div class="swiper swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev prev-intro"></div>
+                <div class="swiper-button-next next-intro"></div>
+
+                <div class="swiper-pagination pagination-intro"></div>
             </div>
+            <style>
+                @media (max-width: 1420px) {
+
+                    .prev-intro,
+                    .next-intro {
+                        display: none;
+                    }
+                }
+
+                .prev-intro {
+                    left: -40px;
+                }
+
+                .next-intro {
+                    right: -40px;
+                }
+            </style>
+            <script src="/dist/vendors/swiper.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    //dynamic style
+                    let swiperStyles = document.createElement('link');
+                    swiperStyles.rel = 'stylesheet'
+                    swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                    document.head.appendChild(swiperStyles);
+                    //slider logic
+                    var swiper = new Swiper('.swiper', {
+                        pagination: {
+                            el: '.pagination-intro',
+                            clickable: true,
+                            type: 'bullets',
+                            dynamicBullets: true,
+                            dynamicMainBullets: 3
+                        },
+                        navigation: {
+                            prevEl: '.prev-intro',
+                            nextEl: '.next-intro',
+                        }
+                    });
+                });
+            </script>
         </div>
     </section>
 
@@ -141,15 +207,24 @@ export const spaFicha = `
         </div>
         <div class="acabados__content">
             <div class="acabados__content__imgs">
-                <img id="spa-1" style="display: block;" src="/dist/assets/img/exclusive-quantum-graphite-white.webp" alt="">
-                <img id="spa-2" style="display: none;" src="/dist/assets/img/exclusive-quantum-butterfly-white.webp" alt="">
-                <img id="spa-3" style="display: none;" src="/dist/assets/img/exclusive-quantum-thunder-white.webp" alt="">
-                <img id="spa-4" style="display: none;" src="/dist/assets/img/exclusive-quantum-walnut-white.webp" alt="">
-                <img id="spa-5" style="display: none;" src="/dist/assets/img/exclusive-quantum-graphite-black.webp" alt="">
-                <img id="spa-6" style="display: none;" src="/dist/assets/img/exclusive-quantum-butterfly-black.webp" alt="">
-                <img id="spa-7" style="display: none;" src="/dist/assets/img/exclusive-quantum-thunder-black.webp" alt="">
-                <img id="spa-8" style="display: none;" src="/dist/assets/img/exclusive-quantum-graphite-brown.webp" alt="">
-                <img id="spa-9" style="display: none;" src="/dist/assets/img/exclusive-quantum-walnut-brown.webp" alt="">
+                <img id="spa-1" style="display: block;" src="/dist/assets/img/exclusive-quantum-graphite-white.webp"
+                    alt="">
+                <img id="spa-2" style="display: none;" src="/dist/assets/img/exclusive-quantum-butterfly-white.webp"
+                    alt="">
+                <img id="spa-3" style="display: none;" src="/dist/assets/img/exclusive-quantum-thunder-white.webp"
+                    alt="">
+                <img id="spa-4" style="display: none;" src="/dist/assets/img/exclusive-quantum-walnut-white.webp"
+                    alt="">
+                <img id="spa-5" style="display: none;" src="/dist/assets/img/exclusive-quantum-graphite-black.webp"
+                    alt="">
+                <img id="spa-6" style="display: none;" src="/dist/assets/img/exclusive-quantum-butterfly-black.webp"
+                    alt="">
+                <img id="spa-7" style="display: none;" src="/dist/assets/img/exclusive-quantum-thunder-black.webp"
+                    alt="">
+                <img id="spa-8" style="display: none;" src="/dist/assets/img/exclusive-quantum-graphite-brown.webp"
+                    alt="">
+                <img id="spa-9" style="display: none;" src="/dist/assets/img/exclusive-quantum-walnut-brown.webp"
+                    alt="">
             </div>
             <div class="acabados__content__colors">
                 <!-- COLORES -->
@@ -158,22 +233,25 @@ export const spaFicha = `
                         <h4>Acabados casco <span>(Colores acrílico)</span></h4>
                         <div class="card-acabados__inputs">
                             <div class="btn-acabado">
-                                <input class="helmet-input" id="casco-1" style="background-image: url('/dist/assets/img/44-white.png');" type="radio"
+                                <input class="helmet-input" id="casco-1"
+                                    style="background-image: url('/dist/assets/img/44-white.png');" type="radio"
                                     name="casco" checked>
                                 <label for="casco">
                                     <p>44 White</p>
                                 </label>
                             </div>
                             <div class="btn-acabado">
-                                <input class="helmet-input" id="casco-2" style="background-image: url('/dist/assets/img/black-test.png');" type="radio"
-                                    name="casco" >
+                                <input class="helmet-input" id="casco-2"
+                                    style="background-image: url('/dist/assets/img/black-test.png');" type="radio"
+                                    name="casco">
                                 <label for="casco">
                                     <p>Black Test</p>
                                 </label>
                             </div>
                             <div class="btn-acabado">
-                                <input class="helmet-input" id="casco-3" style="background-image: url('/dist/assets/img/brown-test.png');" type="radio"
-                                    name="casco" >
+                                <input class="helmet-input" id="casco-3"
+                                    style="background-image: url('/dist/assets/img/brown-test.png');" type="radio"
+                                    name="casco">
                                 <label for="casco">
                                     <p>Brown Test</p>
                                 </label>
@@ -182,77 +260,85 @@ export const spaFicha = `
                     </div>
                     <div class="card-acabados__mueble">
                         <h4>Acabados mueble</h4>
-                            <div id="mueble-1" class="card-acabados__inputs">
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
-                                        type="radio" name="mueble"
-                                        checked>
-                                    <label for="mueble">
-                                        <p>Graphite Woodermarx</p>
-                                    </label>
-                                </div>
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Butterfly Woodermarx</p>
-                                    </label>
-                                </div>
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Thunder-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Thunder Woodermarx</p>
-                                    </label>
-                                </div>
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Walnut-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Walnut Woodermarx</p>
-                                    </label>
-                                </div>
+                        <div id="mueble-1" class="card-acabados__inputs">
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
+                                    type="radio" name="mueble" checked>
+                                <label for="mueble">
+                                    <p>Graphite Woodermarx</p>
+                                </label>
                             </div>
-                            <div id="mueble-2" class="card-acabados__inputs">
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Graphite Woodermarx</p>
-                                    </label>
-                                </div>
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Butterfly Woodermarx</p>
-                                    </label>
-                                </div>
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Thunder-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Thunder Woodermarx</p>
-                                    </label>
-                                </div>
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Butterfly Woodermarx</p>
+                                </label>
                             </div>
-                            <div id="mueble-3" class="card-acabados__inputs">
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Graphite Woodermarx</p>
-                                    </label>
-                                </div>
-                                <div class="btn-acabado">
-                                    <input class="furniture-input" style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
-                                        type="radio" name="mueble">
-                                    <label for="mueble">
-                                        <p>Butterfly Woodermarx</p>
-                                    </label>
-                                </div>
-                                
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Thunder-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Thunder Woodermarx</p>
+                                </label>
                             </div>
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Walnut-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Walnut Woodermarx</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="mueble-2" class="card-acabados__inputs">
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Graphite Woodermarx</p>
+                                </label>
+                            </div>
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Butterfly Woodermarx</p>
+                                </label>
+                            </div>
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Thunder-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Thunder Woodermarx</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="mueble-3" class="card-acabados__inputs">
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Graphite-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Graphite Woodermarx</p>
+                                </label>
+                            </div>
+                            <div class="btn-acabado">
+                                <input class="furniture-input"
+                                    style="background-image: url('/dist/assets/img/Butterfly-Woodermarx.png');"
+                                    type="radio" name="mueble">
+                                <label for="mueble">
+                                    <p>Butterfly Woodermarx</p>
+                                </label>
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="card-acabados__buttons">
@@ -267,378 +353,625 @@ export const spaFicha = `
     <!-- *****JETS***** -->
 
     <!-- *****PRESTACIONES SLIDER***** -->
-    <div class="bg-info py-88">
-        <section class="prestaciones prestaciones-slider">
-          <div class="subtitle prestaciones-slider__title">
-            <h3>PRESTACIONES</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
-          </div>
-          <div class="prestaciones__filter">
-            <a id="fil-1" class="link" checked>PRESTACIONES</a>
-            <a id="fil-2" class="link">PRESTACIONES OPCIONALES</a>
-          </div>
-          <div class="guias-prestaciones-slider__slider-arrow">
-            <img class="arrow-prestaciones-slider-left" height="88" src="/dist/assets/icons/arrow-accesorios-left.svg"
-              alt="flecha para mover carrusel a la izquierda">
-            <img class="arrow-prestaciones-slider-right" height="88" src="/dist/assets/icons/arrow-accesorios-right.svg"
-              alt="flecha para mover carrusel a la derecha">
-          </div>
-          <div id="category-1" class="prestaciones-slider__category">
-            <div class="prestaciones-slider__slider">
-      
-              <div class="card-prestacion-lite logo-down">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-prestacion.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-mobleaurora.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Experimenta más allá del agua, deja que el tacto invada tus sentidos de principio a fin. <span>El mueble Aurora, es una propuesta innovadora, sensorial y sostenible. Esta vez nuestra experiencia empieza desde el exterior, con un mueble que despierta todos tus sentidos. </span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24" transform="translate(326.401 171.471)"
-                              stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-prestacion-lite">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-prestacion2.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-ue.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Diseñamos y fabricamos nuestros propios spas con distinción europea. <span>Ante la tendencia
-                        deslocalizadora
-                        de la producción, Aquavia Spa ha apostado por mantener la producción propia, desde Cervera (70 Km de
-                        Barcelona), de todos nuestros spas, piscinas contracorriente y cada uno de sus componentes.</span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-prestacion-lite logo-down">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-metalic.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-metalic.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Estructuras robustas que aseguran una larga vida del producto. <span>Es una de las claves de la
-                        durabilidad de nuestros spas. Se trata de una estructura metálica sometida a un tratamiento
-                        anticorrosión que soporta todo el peso del spa y le aporta robustez para evitar cualquier
-                        deformación.</span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="card-prestacion-lite logo-down">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-barcelona-design.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-bcn-desing.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>La fuerte influencia de una de las ciudades más creativas del mundo. <span>Barcelona es una de las ciudades mundiales del diseño. Su carácter cosmopolita y su tradición creativa la convierten en una de las cunas de grandes tendencias a nivel internacional y en uno de los polos de innovación en Europa.</span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+    <div class="bg-info">
+        <section class="prestaciones ficha-prestaciones">
+            <div class="subtitle ficha-prestaciones__subtitle">
+                <h3>PRESTACIONES</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.
+                </p>
             </div>
-            <div class="guias-prestaciones-slider__slider">
-              <div data-index="0" class="controls-prestaciones-slider__slider"></div>
-              <div data-index="1" class="controls-prestaciones-slider__slider"></div>
-              <div data-index="2" class="controls-prestaciones-slider__slider d-lg-none"></div>
-              <div data-index="3" class="controls-prestaciones-slider__slider d-lg-none"></div>
+            <div class="prestaciones__filter">
+                <a id="fil-1" class="link" checked>PRESTACIONES</a>
+                <a id="fil-2" class="link">PRESTACIONES OPCIONALES</a>
             </div>
-          </div>
-          <div id="category-2" class="prestaciones-slider__category">
-            <div class="prestaciones-slider__slider">
-              <div class="card-prestacion-lite">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-woodermax.webp" alt="">
+            <div id="fichaCat-1">
+                <div class="slider-large-container slider-large-container--prestaciones">
+                    <div id="prestaciones-swiper" class="swiper-container prestaciones-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite logo-down">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-prestacion.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-mobleaurora.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>Experimenta más allá del agua, deja que el tacto invada tus sentidos de
+                                                principio a
+                                                fin. <span>El mueble Aurora, es una propuesta innovadora, sensorial y
+                                                    sostenible.
+                                                    Esta vez nuestra experiencia empieza desde el exterior, con un
+                                                    mueble que
+                                                    despierta todos tus sentidos. </span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                            transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-prestacion2.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-ue.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>Diseñamos y fabricamos nuestros propios spas con distinción europea.
+                                                <span>Ante la
+                                                    tendencia
+                                                    deslocalizadora
+                                                    de la producción, Aquavia Spa ha apostado por mantener la producción
+                                                    propia,
+                                                    desde Cervera (70 Km de
+                                                    Barcelona), de todos nuestros spas, piscinas contracorriente y cada
+                                                    uno de sus
+                                                    componentes.</span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                            transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite logo-down">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-metalic.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-metalic.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>Estructuras robustas que aseguran una larga vida del producto. <span>Es
+                                                    una de las
+                                                    claves de la
+                                                    durabilidad de nuestros spas. Se trata de una estructura metálica
+                                                    sometida a un
+                                                    tratamiento
+                                                    anticorrosión que soporta todo el peso del spa y le aporta robustez
+                                                    para evitar
+                                                    cualquier
+                                                    deformación.</span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                   div      transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite logo-down">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-barcelona-design.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-bcn-desing.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>La fuerte influencia de una de las ciudades más creativas del mundo.
+                                                <span>Barcelona
+                                                    es una de las ciudades mundiales del diseño. Su carácter cosmopolita
+                                                    y su
+                                                    tradición creativa la convierten en una de las cunas de grandes
+                                                    tendencias a
+                                                    nivel internacional y en uno de los polos de innovación en
+                                                    Europa.</span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                            transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pagination-prestaciones" class="swiper-pagination pagination-prestaciones"></div>
+                    </div>
+                    <div id="prev-accesorios" class="swiper-button-prev prev-accesorios"></div>
+                    <div id="next-accesorios" class="swiper-button-next next-accesorios"></div>
+                    <script src="/dist/vendors/swiper.min.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            //dynamic style
+                            let swiperStyles = document.createElement('link');
+                            swiperStyles.rel = 'stylesheet'
+                            swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                            document.head.appendChild(swiperStyles);
+
+                            var mySwiper = new Swiper('#prestaciones-swiper', {
+                                loop: false,
+                                slidesPerView: 1,
+                                spaceBetween: 13,
+
+                                pagination: {
+                                    el: '#pagination-prestaciones',
+                                    clickable: true,
+                                    type: 'bullets',
+                                    dynamicBullets: true,
+                                    dynamicMainBullets: 3,
+                                },
+
+                                navigation: {
+                                    prevEl: '#prev-accesorios',
+                                    nextEl: '#next-accesorios',
+                                },
+
+                                breakpoints: {
+                                    1100: {
+                                        slidesPerView: 3,
+                                    },
+                                    805: {
+                                        slidesPerView: 2,
+                                    },
+                                    520: {
+                                        slidesPerView: 1,
+                                    },
+                                }
+                            });
+                        })
+                    </script>
                 </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-woodermax.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Mobiliario sin tornillos, con cómodo mecanismo de apertura para manipulación. <span>Woodermax es un mueble de spa elegante y exclusivo de Aquavia Spa con un sistema de sujeción de lamas que elimina totalmente los tornillos y consigue una estética única.</span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-prestacion-lite logo-down">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-line.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-line.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Iluminación LED de alta calidad en la franja perimetral central del spa. <span>Pure Line Lighting cambia el look del spa, y con él la estética de todo el espacio donde va instalado. Se trata de un sistema de iluminación LED policromática en toda la franja perimetral exterior de algunos de los spa de la gama Exclusive y Premium.</span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-prestacion-lite logo-down">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-blue-connect.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-blue-connect.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Analiza la calidad del agua y te indica los productos químicos para su spa. <span>Controle su spa esté donde esté gracias al analizador de agua de spa conectado y su aplicación gratuita Blue connect Plus. Analizador inteligente para el spa. La solución para monitorear, cuidar y disfrutar del spa. </span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-prestacion-lite">
-                <div class="card-prestacion-lite__container">
-                  <img src="/dist/assets/img/card-high-performance.webp" alt="">
-                </div>
-                <div class="card-prestacion-lite__sub">
-                  <img class="card-prestacion-lite__sub__logo" src="/dist/assets/icons/logo-high-performance.svg" alt="logo-ue">
-                  <div class="card-prestacion-lite__text">
-                    <p>Filtrado de alto rendimiento a presión. <span>Mediante el sistema de alto rendimiento High Performance Water Care, el spa recoge el agua y la introduce a alta presión en el filtro. </span></p>
-                    <a class="card-prestacion-lite__text-plus" href="#">
-                      <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                    </a>
-                    <a class="link-arrow-grow" href="#">
-                      <span>Más información</span>
-                      <div class="d-flex align-items-center container-arrow">
-                        <div class="link__arrow"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
-                          <g id="Grupo_12494" class="link__arrow-svg" data-name="Grupo 12494"
-                            transform="translate(-326.008 -160.675)">
-                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
-                              transform="translate(326.401 160.984)" stroke-width="1" />
-                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
-                              transform="translate(326.401 171.471)" stroke-width="1" />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="guias-prestaciones-slider__slider">
-              <div data-index="0" class="controls-prestaciones-slider__slider"></div>
-              <div data-index="1" class="controls-prestaciones-slider__slider"></div>
-              <div data-index="2" class="controls-prestaciones-slider__slider d-lg-none"></div>
-              <div data-index="3" class="controls-prestaciones-slider__slider d-lg-none"></div>
+            <div id="fichaCat-2" class="prestaciones-slider__category">
+                <div class="slider-large-container slider-large-container--prestaciones">
+                    <div id="prestaciones-swiper-2" class="swiper-container prestaciones-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite logo-down">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-barcelona-design.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-bcn-desing.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>La fuerte influencia de una de las ciudades más creativas del mundo.
+                                                <span>Barcelona
+                                                    es una de las ciudades mundiales del diseño. Su carácter cosmopolita
+                                                    y su
+                                                    tradición creativa la convierten en una de las cunas de grandes
+                                                    tendencias a
+                                                    nivel internacional y en uno de los polos de innovación en
+                                                    Europa.</span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                            transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite logo-down">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-prestacion.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-mobleaurora.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>Experimenta más allá del agua, deja que el tacto invada tus sentidos de
+                                                principio a
+                                                fin. <span>El mueble Aurora, es una propuesta innovadora, sensorial y
+                                                    sostenible.
+                                                    Esta vez nuestra experiencia empieza desde el exterior, con un
+                                                    mueble que
+                                                    despierta todos tus sentidos. </span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                            transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-prestacion2.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-ue.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>Diseñamos y fabricamos nuestros propios spas con distinción europea.
+                                                <span>Ante la
+                                                    tendencia
+                                                    deslocalizadora
+                                                    de la producción, Aquavia Spa ha apostado por mantener la producción
+                                                    propia,
+                                                    desde Cervera (70 Km de
+                                                    Barcelona), de todos nuestros spas, piscinas contracorriente y cada
+                                                    uno de sus
+                                                    componentes.</span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                            transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-prestacion-lite logo-down">
+                                    <div class="card-prestacion-lite__container">
+                                        <img src="/dist/assets/img/card-metalic.webp" alt="">
+                                    </div>
+                                    <div class="card-prestacion-lite__sub">
+                                        <img class="card-prestacion-lite__sub__logo"
+                                            src="/dist/assets/icons/logo-metalic.svg" alt="logo-ue">
+                                        <div class="card-prestacion-lite__text">
+                                            <p>Estructuras robustas que aseguran una larga vida del producto. <span>Es
+                                                    una de las
+                                                    claves de la
+                                                    durabilidad de nuestros spas. Se trata de una estructura metálica
+                                                    sometida a un
+                                                    tratamiento
+                                                    anticorrosión que soporta todo el peso del spa y le aporta robustez
+                                                    para evitar
+                                                    cualquier
+                                                    deformación.</span></p>
+                                            <a class="card-prestacion-lite__text-plus" href="#">
+                                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                            </a>
+                                            <a class="link-arrow-grow" href="#">
+                                                <span>Más información</span>
+                                                <div class="d-flex align-items-center container-arrow">
+                                                    <div class="link__arrow"></div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                                        height="20.162" viewBox="0 0 9.026 20.162">
+                                                        <g id="Grupo_12494" class="link__arrow-svg"
+                                                            data-name="Grupo 12494"
+                                                   div      transform="translate(-326.008 -160.675)">
+                                                            <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                                y1="10.486" transform="translate(326.401 160.984)"
+                                                                stroke-width="1" />
+                                                            <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                                x2="8.24" transform="translate(326.401 171.471)"
+                                                                stroke-width="1" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div id="pagination-prestaciones-2" class="swiper-pagination pagination-prestaciones"></div>
+                    </div>
+                    <div id="prev-accesorios-2" class="swiper-button-prev prev-accesorios"></div>
+                    <div id="next-accesorios-2" class="swiper-button-next next-accesorios"></div>
+                    <script src="/dist/vendors/swiper.min.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            //dynamic style
+                            let swiperStyles = document.createElement('link');
+                            swiperStyles.rel = 'stylesheet'
+                            swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                            document.head.appendChild(swiperStyles);
+
+                            var mySwiper = new Swiper('#prestaciones-swiper-2', {
+                                loop: false,
+                                slidesPerView: 1,
+                                spaceBetween: 13,
+
+                                pagination: {
+                                    el: '#pagination-prestaciones-2',
+                                    clickable: true,
+                                    type: 'bullets',
+                                    dynamicBullets: true,
+                                    dynamicMainBullets: 3,
+                                },
+
+                                navigation: {
+                                    prevEl: '#prev-accesorios-2',
+                                    nextEl: '#next-accesorios-2',
+                                },
+
+                                breakpoints: {
+                                    1100: {
+                                        slidesPerView: 3,
+                                    },
+                                    805: {
+                                        slidesPerView: 2,
+                                    },
+                                    520: {
+                                        slidesPerView: 1,
+                                    },
+                                }
+                            });
+                        })
+                    </script>
+                </div>
             </div>
-          </div>
         </section>
-      </div>
+    </div>
 
     <!-- *****ACCESORIOS SLIDER***** -->
-    <div class="section-slider-accsesorios mx-auto">
-
+    <div class="ficha-accesorios">
         <div class="section-slider-accsesorios__header">
-            <div class="subtitle">
+            <div class="subtitle ficha-accesorios__subtitle">
                 <h3>ACCESORIOS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
                     dolore
                     magna aliqua.</p>
             </div>
         </div>
-        <div class="guias-slider-accsesorios-arrow">
-            <img class="arrow-slider-accsesorios-left" height="88" src="/dist/assets/icons/arrow-accesorios-left.svg"
-                alt="flecha para mover carrusel a la izquierda">
-            <img class="arrow-slider-accsesorios-right" height="88" src="/dist/assets/icons/arrow-accesorios-right.svg"
-                alt="flecha para mover carrusel a la derecha">
+        <div class="slider-large-container">
+            <div class="swiper-container accesorios-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="card-accesorios">
+                            <div class="card-accesorios__container">
+                                <div class="card-accesorios__container--bg">
+                                    <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                        alt="Pergola Venice">
+                                </div>
+                            </div>
+                            <div class="card-accesorios__text">
+                                <h4>Pérgola Venice</h4>
+                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="card-accesorios">
+                            <div class="card-accesorios__container">
+                                <div class="card-accesorios__container--bg">
+                                    <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                                </div>
+                            </div>
+                            <div class="card-accesorios__text">
+                                <h4>Pérgola Venice lorem10</h4>
+                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="card-accesorios">
+                            <div class="card-accesorios__container">
+                                <div class="card-accesorios__container--bg">
+                                    <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                        alt="Pergola Venice">
+                                </div>
+                            </div>
+                            <div class="card-accesorios__text">
+                                <h4>Pérgola Venice</h4>
+                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="card-accesorios">
+                            <div class="card-accesorios__container">
+                                <div class="card-accesorios__container--bg">
+                                    <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                        alt="Pergola Venice">
+                                </div>
+                            </div>
+                            <div class="card-accesorios__text">
+                                <h4>Pérgola Venice</h4>
+                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="card-accesorios">
+                            <div class="card-accesorios__container">
+                                <div class="card-accesorios__container--bg">
+                                    <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                        alt="Pergola Venice">
+                                </div>
+                            </div>
+                            <div class="card-accesorios__text">
+                                <h4>Pérgola Venice</h4>
+                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="card-accesorios">
+                            <div class="card-accesorios__container">
+                                <div class="card-accesorios__container--bg">
+                                    <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                        alt="Pergola Venice">
+                                </div>
+                            </div>
+                            <div class="card-accesorios__text">
+                                <h4>Pérgola Venice</h4>
+                                <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination pagination-accesorios"></div>
+            </div>
+            <div class="swiper-button-prev prev-accesorios"></div>
+            <div class="swiper-button-next next-accesorios"></div>
+            <script src="/dist/vendors/swiper.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    //dynamic style
+                    let swiperStyles = document.createElement('link');
+                    swiperStyles.rel = 'stylesheet'
+                    swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                    document.head.appendChild(swiperStyles);
+
+                    var mySwiper = new Swiper('.accesorios-swiper', {
+                        loop: false,
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+
+                        pagination: {
+                            el: '.pagination-accesorios',
+                            clickable: true,
+                            type: 'bullets',
+                            dynamicBullets: true,
+                            dynamicMainBullets: 3,
+                        },
+
+                        navigation: {
+                            prevEl: '.prev-accesorios',
+                            nextEl: '.next-accesorios',
+                        },
+
+                        breakpoints: {
+                            1050: {
+                                slidesPerView: 4,
+                            },
+                            720: {
+                                slidesPerView: 3,
+                            },
+                            520: {
+                                slidesPerView: 2,
+                            },
+                        }
+                    });
+                })
+            </script>
         </div>
-        <article class="accseorios-slider">
-
-
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-            <a href="#" class="card-accesorios">
-                <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                        <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                </div>
-
-                <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                </div>
-            </a>
-
-        </article>
-        <div class="guias-accseorios-slider">
-            <div data-index="0" class="controls-accseorios-slider"></div>
-            <div data-index="1" class="controls-accseorios-slider"></div>
-            <div data-index="2" class="controls-accseorios-slider d-lg-none"></div>
-            <div data-index="3" class="controls-accseorios-slider d-lg-none"></div>
-            <div data-index="4" class="controls-accseorios-slider d-lg-none"></div>
-        </div>
-
     </div>
 
     <!-- *****FICHA TECNICA***** -->
@@ -647,7 +980,7 @@ export const spaFicha = `
             <h3>FICHA TÉCNICA</h3>
             <div class="ficha-tecnica__dropdowns">
                 <details class="dropdown-card">
-                    <summary>Especificaciones Generales</summary>
+                    <summary class="details_summary">Especificaciones Generales</summary>
                     <div class="details-inner">
                         <ul>
                             <li>
@@ -714,7 +1047,7 @@ export const spaFicha = `
                     </div>
                 </details>
                 <details class="dropdown-card">
-                    <summary>Características</summary>
+                    <summary class="details_summary">Características</summary>
                     <div class="details-inner">
                         <ul>
                             <li>
@@ -781,7 +1114,7 @@ export const spaFicha = `
                     </div>
                 </details>
                 <details class="dropdown-card">
-                    <summary>Opciones</summary>
+                    <summary class="details_summary">Opciones</summary>
                     <div class="details-inner">
                         <ul>
                             <li>
@@ -970,7 +1303,7 @@ export const spaFicha = `
 
     <div class="sticky-btn">
         <a href="#" class="btn-blue">PEDIR PRESUPUESTO</a>
-      </div>
+    </div>
 
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/dist/js/main.js"></script>
