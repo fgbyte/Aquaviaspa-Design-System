@@ -43,7 +43,8 @@ $light: $white;
 $font-family-base: 'Raleway';
 $link-color: $black;
 $grid-breakpoints: (
-  xs: 490px,
+  xs: 0,
+  slider: 490px,
   sm: 576px,
   md: 768px,
   lg: 992px,

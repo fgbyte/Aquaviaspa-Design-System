@@ -63,7 +63,7 @@
     padding-right: $pxMobile;
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: 64px;
+      margin-bottom: 0;
     }
 
     & h3 {
