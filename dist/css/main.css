@@ -15401,11 +15401,6 @@ p {
 .dropdown-card summary::after {
   content: url("/dist/assets/icons/dropdown-card-arrow.svg");
 }
-@media (min-width: 992px) {
-  .dropdown-card summary::after {
-    content: "";
-  }
-}
 .dropdown-card ul {
   padding-left: 0px;
 }

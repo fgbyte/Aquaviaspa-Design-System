@@ -1,12 +1,4 @@
 "use strict";
-document.addEventListener('DOMContentLoaded', function () {
-    var detailsElement = document.querySelectorAll('.dropdown-card');
-    if (window.matchMedia('(min-width: 992px)').matches) {
-        detailsElement.forEach(function (element) {
-            element.toggleAttribute('open');
-        });
-    }
-});
 window.addEventListener('resize', adjustBannerFicha);
 function adjustBannerFicha() {
     var bannerFichaCard = document.querySelector('.banner-ficha__card__img');

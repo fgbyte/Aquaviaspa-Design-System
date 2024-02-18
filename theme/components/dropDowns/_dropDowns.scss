@@ -101,9 +101,9 @@
     &::after {
       content: url("/dist/assets/icons/dropdown-card-arrow.svg");
 
-      @include media-breakpoint-up(lg) {
-        content: "";
-      }
+      // @include media-breakpoint-up(lg) {
+      //   content: "";
+      // }
     }
   }
 
