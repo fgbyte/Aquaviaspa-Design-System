@@ -92,7 +92,6 @@
   }
 }
 
-
 .ficha-documentos__card__btns a {
   @include media-breakpoint-down(lg) {
     width: 100%;
@@ -134,5 +133,87 @@
 }
 
 .ficha-prestaciones {
-    
+  gap: 25px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .ficha-prestaciones__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 24px;
+
+      p {
+        max-width: 720px;
+      }
+    }
+  }
+
+  .prestaciones__filter {
+    padding: 10px 0;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow-x: auto;
+
+    a {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      justify-content: center;
+      gap: 80px;
+    }
+  }
+}
+
+.acabados__title {
+  @extend .ficha-prestaciones__subtitle;
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  @include media-breakpoint-up(lg) {
+    gap: 24px;
+
+    p {
+      max-width: 720px;
+    }
+  }
+}
+
+.ficha-accesorios__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 20px;
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  @include media-breakpoint-up(lg) {
+    gap: 24px;
+
+  }
 }

@@ -16293,7 +16293,7 @@ p {
   }
   .card-prestacion-lite:hover .card-prestacion-lite__sub {
     transition: all 0.4s ease-in-out;
-    height: 80%;
+    height: 84%;
     margin-top: 0px;
   }
   .card-prestacion-lite:hover .card-prestacion-lite__text {
@@ -19813,6 +19813,7 @@ p {
 .acabados {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   padding: 88px 25px;
 }
@@ -20069,6 +20070,86 @@ p {
 
 .swiper-pagination {
   min-width: 250px;
+}
+
+.ficha-prestaciones {
+  gap: 25px;
+}
+@media (min-width: 992px) {
+  .ficha-prestaciones {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.ficha-prestaciones .ficha-prestaciones__subtitle, .ficha-prestaciones .acabados__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 20px;
+}
+.ficha-prestaciones .ficha-prestaciones__subtitle h3, .ficha-prestaciones .acabados__title h3, .ficha-prestaciones .ficha-prestaciones__subtitle .h3, .ficha-prestaciones .acabados__title .h3 {
+  text-align: center;
+}
+.ficha-prestaciones .ficha-prestaciones__subtitle p, .ficha-prestaciones .acabados__title p {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .ficha-prestaciones .ficha-prestaciones__subtitle, .ficha-prestaciones .acabados__title {
+    gap: 24px;
+  }
+  .ficha-prestaciones .ficha-prestaciones__subtitle p, .ficha-prestaciones .acabados__title p {
+    max-width: 720px;
+  }
+}
+.ficha-prestaciones .prestaciones__filter {
+  padding: 10px 0;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-x: auto;
+}
+.ficha-prestaciones .prestaciones__filter a {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .ficha-prestaciones .prestaciones__filter {
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
+.acabados__title h3, .acabados__title .h3 {
+  text-align: center;
+}
+.acabados__title p {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .acabados__title {
+    gap: 24px;
+  }
+  .acabados__title p {
+    max-width: 720px;
+  }
+}
+
+.ficha-accesorios__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 20px;
+}
+.ficha-accesorios__subtitle h3, .ficha-accesorios__subtitle .h3 {
+  text-align: center;
+}
+.ficha-accesorios__subtitle p {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .ficha-accesorios__subtitle {
+    gap: 24px;
+  }
 }
 
 .hidden-card {
