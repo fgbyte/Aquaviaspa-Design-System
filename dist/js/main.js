@@ -30,6 +30,28 @@ function adjustBannerFicha() {
     }
 }
 adjustBannerFicha();
+document.querySelectorAll('.dropdown-card').forEach(function (details) {
+    var summary = details.querySelector('.details_summary');
+    var dropdown = details.querySelector('.details-inner');
+    summary === null || summary === void 0 ? void 0 : summary.addEventListener('click', function (event) {
+        if (details.hasAttribute('open')) {
+            event.preventDefault();
+            dropdown === null || dropdown === void 0 ? void 0 : dropdown.classList.add('details_anim_close');
+        }
+        else {
+            dropdown === null || dropdown === void 0 ? void 0 : dropdown.classList.add('details_anim_open');
+        }
+    });
+    dropdown === null || dropdown === void 0 ? void 0 : dropdown.addEventListener('animationend', function () {
+        if (dropdown.classList.contains('details_anim_close')) {
+            dropdown.classList.remove('details_anim_close');
+            details.removeAttribute('open');
+        }
+        else {
+            dropdown.classList.remove('details_anim_open');
+        }
+    });
+});
 var carouselsTopVentas = document.querySelectorAll(".top-ventas__container");
 var controlsList1 = document.querySelectorAll(".guias-top-ventas");
 carouselsTopVentas.forEach(function (carousel, carouselIndex) {
