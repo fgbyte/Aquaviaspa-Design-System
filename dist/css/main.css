@@ -18611,11 +18611,11 @@ p {
   }
 }
 .details_anim_open {
-  animation: opening 0.3s ease;
+  animation: opening 0.4s ease;
 }
 
 .details_anim_close {
-  animation: closing 0.3s ease;
+  animation: closing 0.4s ease;
 }
 
 .ficha-documentos {

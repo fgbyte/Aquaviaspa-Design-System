@@ -59,9 +59,9 @@
 }
 
 .details_anim_open {
-    animation: opening .3s ease;
+    animation: opening $delay ease;
 }
 
 .details_anim_close {
-    animation: closing .3s ease;
+    animation: closing $delay ease;
 }
