@@ -19735,7 +19735,7 @@ p {
 }
 @media (max-width: 767.98px) {
   .pagination-accesorios {
-    bottom: -5% !important;
+    bottom: 0 !important;
   }
 }
 
@@ -19896,8 +19896,23 @@ p {
   color: #575757;
 }
 
+.slider-large-container--prestaciones {
+  height: 475px;
+}
+@media (min-width: 992px) {
+  .slider-large-container--prestaciones {
+    height: 600px;
+  }
+}
+.slider-large-container--prestaciones .card-prestacion-lite {
+  height: 100%;
+}
+.slider-large-container--prestaciones .pagination-prestaciones {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
 .prestaciones-swiper {
-  background-color: red;
   overflow: hidden;
 }
 

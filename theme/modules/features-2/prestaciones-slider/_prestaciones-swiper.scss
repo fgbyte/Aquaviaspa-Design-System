@@ -1,7 +1,22 @@
 @use "../../../globals";
 @use "../../../mixins";
 
+.slider-large-container--prestaciones {
+  height: 475px;
+  @include media-breakpoint-up(lg) {
+    height: 600px;
+  }
+
+  .card-prestacion-lite {
+    height: 100%;
+  }
+
+  .pagination-prestaciones {
+    position: absolute !important;
+    bottom: 0 !important;
+  }
+}
+
 .prestaciones-swiper {
- background-color: red;
- overflow: hidden;
+  overflow: hidden;
 }

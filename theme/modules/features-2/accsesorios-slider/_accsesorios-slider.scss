@@ -22,7 +22,7 @@
   position: absolute !important;
   bottom: 5% !important;
   @include media-breakpoint-down(md) {
-    bottom: -5% !important;
+    bottom: 0 !important;
     // z-index: 99 !important;
   }
 }
