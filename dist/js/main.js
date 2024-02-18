@@ -280,9 +280,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+var filterLinks = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#fil-".concat(i + 1)); });
+var categories = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#category-".concat(i + 1)); });
 document.addEventListener('DOMContentLoaded', function () {
-    var filterLinks = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#fil-".concat(i + 1)); });
-    var categories = Array.from({ length: 6 }, function (_, i) { return document.querySelector("#category-".concat(i + 1)); });
     filterLinks.forEach(function (link) {
         link === null || link === void 0 ? void 0 : link.addEventListener('click', function (event) {
             if (window.matchMedia("(min-width: ".concat(special, "px)")).matches) {
@@ -673,6 +673,29 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+});
+var fichaCats = Array.from({ length: 6 }, function (_, i) {
+    return document.querySelector("#fichaCat-".concat(i + 1));
+});
+document.addEventListener('DOMContentLoaded', function () {
+    fichaCats.forEach(function (singleCat, index) {
+        if (singleCat instanceof HTMLElement) {
+            singleCat.style.display = index === 0
+                ? 'block'
+                : 'none';
+        }
+    });
+    filterLinks.forEach(function (singleLink, i) {
+        singleLink === null || singleLink === void 0 ? void 0 : singleLink.addEventListener('click', function () {
+            fichaCats.forEach(function (singleCat, j) {
+                if (singleCat instanceof HTMLElement) {
+                    singleCat.style.display = i === j
+                        ? 'block'
+                        : 'none';
+                }
+            });
+        });
+    });
 });
 var mobileMediaQuery = window.matchMedia('(max-width: 768px)');
 var desktopMediaQuery = window.matchMedia('(min-width: 768px)');

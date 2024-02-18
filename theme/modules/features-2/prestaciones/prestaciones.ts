@@ -1,8 +1,9 @@
 //prestaciones module
-document.addEventListener('DOMContentLoaded', () => {
 const filterLinks = Array.from({ length: 6 }, (_, i) => document.querySelector(`#fil-${i + 1}`));
 const categories = Array.from({ length: 6 }, (_, i) => document.querySelector(`#category-${i + 1}`));
 
+
+document.addEventListener('DOMContentLoaded', () => {
 //links logic
 filterLinks.forEach((link) => {
         link?.addEventListener('click', (event) => {
