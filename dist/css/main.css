@@ -20858,6 +20858,23 @@ p {
   width: 100%;
 }
 
+.intro-ficha .intro__container {
+  padding: 60px 0;
+}
+@media (min-width: 992px) {
+  .intro-ficha .intro__container {
+    padding: 85px 0 100px 0;
+  }
+}
+.intro-ficha .swiper-slide {
+  height: auto !important;
+}
+
+.intro-swiper__img {
+  width: 100%;
+  height: 100%;
+}
+
 .py-16 {
   padding-top: 6.4375rem;
   padding-bottom: 2.4375rem;

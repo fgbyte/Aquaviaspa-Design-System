@@ -59,3 +59,23 @@
 .intro-ficha .intro__container__img img {
   width: 100%;
 }
+
+
+//slider intro ficha
+.intro-ficha {
+  .intro__container {
+    padding: 60px 0;
+    @include media-breakpoint-up(lg) {
+      padding: 85px 0 100px 0;
+    }
+  }
+
+  .swiper-slide {
+    height: auto !important;
+  }
+}
+
+.intro-swiper__img {
+  width: 100%;
+  height: 100%;
+}
