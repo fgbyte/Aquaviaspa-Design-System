@@ -19570,7 +19570,7 @@ p {
   }
 }
 .details_anim_open {
-  animation: opening 0.4s ease;
+  animation: opening 0.7s linear;
 }
 
 .details_anim_close {

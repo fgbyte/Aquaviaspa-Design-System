@@ -59,7 +59,7 @@
 }
 
 .details_anim_open {
-    animation: opening $delay ease;
+    animation: opening 0.7s linear;
 }
 
 .details_anim_close {
