@@ -1,7 +1,7 @@
 .swiper-pagination-bullet {
   width: 40px !important;
   height: 6px !important;
-  background-color: #C7C6BE !important;
+  background-color: #c7c6be !important;
   margin-right: 8px !important;
   cursor: pointer !important;
   border-radius: 0 !important;
@@ -34,7 +34,7 @@
   width: auto;
   margin: 0 auto;
   padding-bottom: 50px;
-  
+
   @include media-breakpoint-up(lg) {
     padding-left: 45px;
     padding-right: 45px;
@@ -60,7 +60,6 @@
   width: 100%;
 }
 
-
 //slider intro ficha
 .intro-ficha {
   .intro__container {
@@ -72,6 +71,13 @@
 
   .swiper-slide {
     height: auto !important;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .prev-intro,
+    .next-intro {
+      display: none;
+    }
   }
 }
 
