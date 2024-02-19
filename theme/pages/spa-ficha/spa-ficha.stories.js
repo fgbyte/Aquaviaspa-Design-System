@@ -132,23 +132,24 @@ export const spaFicha = `
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="intro-swiper__img">
-                                <img src="/dist/assets/img/aquavia-spa-amazon-ingorund-kit-remo-1.webp" alt="Made in Europe">
+                                <img src="/dist/assets/img/aquavia-spa-amazon-ingorund-kit-remo-1.webp"
+                                    alt="Made in Europe">
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -435,7 +436,8 @@ export const spaFicha = `
                                                     desde Cervera (70 Km de
                                                     Barcelona), de todos nuestros spas, piscinas contracorriente y cada
                                                     uno de sus
-                                                    componentes.</span></p>
+                                                    componentes.</span>
+                                            </p>
                                             <a class="card-prestacion-lite__text-plus" href="#">
                                                 <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                             </a>
@@ -491,8 +493,8 @@ export const spaFicha = `
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
                                                         height="20.162" viewBox="0 0 9.026 20.162">
                                                         <g id="Grupo_12494" class="link__arrow-svg"
-                                                            data-name="Grupo 12494"
-                                                   div      transform="translate(-326.008 -160.675)">
+                                                            data-name="Grupo 12494" div
+                                                            transform="translate(-326.008 -160.675)">
                                                             <line id="Línea_18" data-name="Línea 18" x1="8.24"
                                                                 y1="10.486" transform="translate(326.401 160.984)"
                                                                 stroke-width="1" />
@@ -524,7 +526,8 @@ export const spaFicha = `
                                                     tradición creativa la convierten en una de las cunas de grandes
                                                     tendencias a
                                                     nivel internacional y en uno de los polos de innovación en
-                                                    Europa.</span></p>
+                                                    Europa.</span>
+                                            </p>
                                             <a class="card-prestacion-lite__text-plus" href="#">
                                                 <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                             </a>
@@ -567,7 +570,8 @@ export const spaFicha = `
                                                     tradición creativa la convierten en una de las cunas de grandes
                                                     tendencias a
                                                     nivel internacional y en uno de los polos de innovación en
-                                                    Europa.</span></p>
+                                                    Europa.</span>
+                                            </p>
                                             <a class="card-prestacion-lite__text-plus" href="#">
                                                 <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                             </a>
@@ -610,7 +614,8 @@ export const spaFicha = `
                                                     tradición creativa la convierten en una de las cunas de grandes
                                                     tendencias a
                                                     nivel internacional y en uno de los polos de innovación en
-                                                    Europa.</span></p>
+                                                    Europa.</span>
+                                            </p>
                                             <a class="card-prestacion-lite__text-plus" href="#">
                                                 <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                             </a>
@@ -708,7 +713,8 @@ export const spaFicha = `
                                                     tradición creativa la convierten en una de las cunas de grandes
                                                     tendencias a
                                                     nivel internacional y en uno de los polos de innovación en
-                                                    Europa.</span></p>
+                                                    Europa.</span>
+                                            </p>
                                             <a class="card-prestacion-lite__text-plus" href="#">
                                                 <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                             </a>
@@ -795,7 +801,8 @@ export const spaFicha = `
                                                     desde Cervera (70 Km de
                                                     Barcelona), de todos nuestros spas, piscinas contracorriente y cada
                                                     uno de sus
-                                                    componentes.</span></p>
+                                                    componentes.</span>
+                                            </p>
                                             <a class="card-prestacion-lite__text-plus" href="#">
                                                 <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
                                             </a>
@@ -851,8 +858,8 @@ export const spaFicha = `
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
                                                         height="20.162" viewBox="0 0 9.026 20.162">
                                                         <g id="Grupo_12494" class="link__arrow-svg"
-                                                            data-name="Grupo 12494"
-                                                   div      transform="translate(-326.008 -160.675)">
+                                                            data-name="Grupo 12494" div
+                                                            transform="translate(-326.008 -160.675)">
                                                             <line id="Línea_18" data-name="Línea 18" x1="8.24"
                                                                 y1="10.486" transform="translate(326.401 160.984)"
                                                                 stroke-width="1" />
@@ -868,7 +875,7 @@ export const spaFicha = `
 
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div id="pagination-prestaciones-2" class="swiper-pagination pagination-prestaciones"></div>
                     </div>
@@ -1023,7 +1030,7 @@ export const spaFicha = `
                 </div>
                 <div id="pagination-accesorios" class="swiper-pagination pagination-accesorios"></div>
             </div>
-            <div id="prev-accesorios"class="swiper-button-prev prev-accesorios"></div>
+            <div id="prev-accesorios" class="swiper-button-prev prev-accesorios"></div>
             <div id="next-accesorios" class="swiper-button-next next-accesorios"></div>
             <script src="/dist/vendors/swiper.min.js"></script>
             <script>

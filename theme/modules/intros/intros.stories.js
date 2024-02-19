@@ -65,40 +65,46 @@ export const introFichaSlider1 = `
                 <div class="swiper swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/aquavia-spa-amazon-ingorund-kit-remo-1.webp"
+                                    alt="Made in Europe">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            <div class="intro-swiper__img">
+                                <img src="/dist/assets/img/pareja-spa-banner-intro.webp" alt="Made in Europe">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-button-prev prev-intro"></div>
                 <div class="swiper-button-next next-intro"></div>
-                
+
                 <div class="swiper-pagination pagination-intro"></div>
             </div>
             <style>
                 @media (max-width: 1420px) {
+
                     .prev-intro,
                     .next-intro {
                         display: none;
                     }
                 }
+
                 .prev-intro {
                     left: -40px;
                 }
+
                 .next-intro {
                     right: -40px;
                 }
@@ -113,6 +119,7 @@ export const introFichaSlider1 = `
                     document.head.appendChild(swiperStyles);
                     //slider logic
                     var swiper = new Swiper('.swiper', {
+                        loop: true,
                         pagination: {
                             el: '.pagination-intro',
                             clickable: true,
