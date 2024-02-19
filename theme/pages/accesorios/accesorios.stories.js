@@ -40,133 +40,138 @@ export const accesorios = `
             <h3>OTROS ACCESORIOS QUE TE PUEDEN INTERESAR</h3>
         </div>
         <div class="slider-large-container">
-          <div class="swiper-container accesorios-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#" class="card-accesorios">
-                  <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                      <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp" alt="Pergola Venice">
-                    </div>
+          <div id="accesorios-swiper" class="swiper-container accesorios-swiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <a href="#" class="card-accesorios">
+                          <div class="card-accesorios__container">
+                              <div class="card-accesorios__container--bg">
+                                  <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                      alt="Pergola Venice">
+                              </div>
+                          </div>
+                          <div class="card-accesorios__text">
+                              <h4>Pérgola Venice</h4>
+                              <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                          </div>
+                      </a>
                   </div>
-                  <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                  <div class="swiper-slide">
+                      <a href="#" class="card-accesorios">
+                          <div class="card-accesorios__container">
+                              <div class="card-accesorios__container--bg">
+                                  <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
+                              </div>
+                          </div>
+                          <div class="card-accesorios__text">
+                              <h4>Pérgola Venice lorem10</h4>
+                              <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                          </div>
+                      </a>
                   </div>
-                </a>
+                  <div class="swiper-slide">
+                      <a href="#" class="card-accesorios">
+                          <div class="card-accesorios__container">
+                              <div class="card-accesorios__container--bg">
+                                  <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                      alt="Pergola Venice">
+                              </div>
+                          </div>
+                          <div class="card-accesorios__text">
+                              <h4>Pérgola Venice</h4>
+                              <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#" class="card-accesorios">
+                          <div class="card-accesorios__container">
+                              <div class="card-accesorios__container--bg">
+                                  <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                      alt="Pergola Venice">
+                              </div>
+                          </div>
+                          <div class="card-accesorios__text">
+                              <h4>Pérgola Venice</h4>
+                              <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#" class="card-accesorios">
+                          <div class="card-accesorios__container">
+                              <div class="card-accesorios__container--bg">
+                                  <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                      alt="Pergola Venice">
+                              </div>
+                          </div>
+                          <div class="card-accesorios__text">
+                              <h4>Pérgola Venice</h4>
+                              <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                          </div>
+                      </a>
+                  </div>
+                  <div class="swiper-slide">
+                      <a href="#" class="card-accesorios">
+                          <div class="card-accesorios__container">
+                              <div class="card-accesorios__container--bg">
+                                  <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp"
+                                      alt="Pergola Venice">
+                              </div>
+                          </div>
+                          <div class="card-accesorios__text">
+                              <h4>Pérgola Venice</h4>
+                              <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                          </div>
+                      </a>
+                  </div>
               </div>
-              <div class="swiper-slide">
-                <a href="#" class="card-accesorios">
-                  <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                      <img src="/dist/assets/img/card-accesorios.webp" alt="Pergola Venice">
-                    </div>
-                  </div>
-                  <div class="card-accesorios__text">
-                    <h4>Pérgola Venice lorem10</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="card-accesorios">
-                  <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                      <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp" alt="Pergola Venice">
-                    </div>
-                  </div>
-                  <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="card-accesorios">
-                  <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                      <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp" alt="Pergola Venice">
-                    </div>
-                  </div>
-                  <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="card-accesorios">
-                  <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                      <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp" alt="Pergola Venice">
-                    </div>
-                  </div>
-                  <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="#" class="card-accesorios">
-                  <div class="card-accesorios__container">
-                    <div class="card-accesorios__container--bg">
-                      <img src="/dist/assets/img/blue-connect-aquavia-spa-2-825x550.webp" alt="Pergola Venice">
-                    </div>
-                  </div>
-                  <div class="card-accesorios__text">
-                    <h4>Pérgola Venice</h4>
-                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-pagination pagination-accesorios"></div>
+              <div id="pagination-accesorios" class="swiper-pagination pagination-accesorios"></div>
           </div>
-          <div class="swiper-button-prev prev-accesorios"></div>
-          <div class="swiper-button-next next-accesorios"></div>
+          <div id="prev-accesorios"class="swiper-button-prev prev-accesorios"></div>
+          <div id="next-accesorios" class="swiper-button-next next-accesorios"></div>
           <script src="/dist/vendors/swiper.min.js"></script>
           <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              //dynamic style
-              let swiperStyles = document.createElement('link');
-              swiperStyles.rel = 'stylesheet'
-              swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
-              document.head.appendChild(swiperStyles);
-      
-              var mySwiper = new Swiper('.accesorios-swiper', {
-                loop: false,
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-      
-                pagination: {
-                  el: '.pagination-accesorios',
-                  clickable: true,
-                  type: 'bullets',
-                  dynamicBullets: true,
-                  dynamicMainBullets: 3,
-                },
-      
-                navigation: {
-                  prevEl: '.prev-accesorios',
-                  nextEl: '.next-accesorios',
-                },
-      
-                breakpoints: {
-                  1050: {
-                    slidesPerView: 4,
-                  },
-                  720: {
-                    slidesPerView: 3,
-                  },
-                  520: {
-                    slidesPerView: 2,
-                  },
-                }
-              });
-            })
+              document.addEventListener('DOMContentLoaded', function () {
+                  //dynamic style
+                  let swiperStyles = document.createElement('link');
+                  swiperStyles.rel = 'stylesheet'
+                  swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
+                  document.head.appendChild(swiperStyles);
+
+                  var accesoriosSwiper = new Swiper('#accesorios-swiper', {
+                      loop: false,
+                      slidesPerView: 1.2,
+                      spaceBetween: 20,
+
+                      pagination: {
+                          el: '#pagination-accesorios',
+                          clickable: true,
+                          type: 'bullets',
+                          dynamicBullets: true,
+                          dynamicMainBullets: 3,
+                      },
+
+                      navigation: {
+                          prevEl: '#prev-accesorios',
+                          nextEl: '#next-accesorios',
+                      },
+
+                      breakpoints: {
+                          1050: {
+                              slidesPerView: 4,
+                          },
+                          720: {
+                              slidesPerView: 3,
+                          },
+                          520: {
+                              slidesPerView: 2,
+                          },
+                      }
+                  });
+              })
           </script>
-        </div>
+      </div>
 
     </div>
     <script src="/dist/js/bootstrap.bundle.min.js"></script>

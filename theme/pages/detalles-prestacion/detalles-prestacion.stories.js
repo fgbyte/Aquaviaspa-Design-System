@@ -221,11 +221,97 @@ export const detalles= `
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="card-prestacion-lite logo-down">
+                        <div class="card-prestacion-lite__container">
+                            <img src="/dist/assets/img/card-barcelona-design.webp" alt="">
+                        </div>
+                        <div class="card-prestacion-lite__sub">
+                            <img class="card-prestacion-lite__sub__logo"
+                                src="/dist/assets/icons/logo-bcn-desing.svg" alt="logo-ue">
+                            <div class="card-prestacion-lite__text">
+                                <p>La fuerte influencia de una de las ciudades más creativas del mundo.
+                                    <span>Barcelona
+                                        es una de las ciudades mundiales del diseño. Su carácter cosmopolita
+                                        y su
+                                        tradición creativa la convierten en una de las cunas de grandes
+                                        tendencias a
+                                        nivel internacional y en uno de los polos de innovación en
+                                        Europa.</span></p>
+                                <a class="card-prestacion-lite__text-plus" href="#">
+                                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                </a>
+                                <a class="link-arrow-grow" href="#">
+                                    <span>Más información</span>
+                                    <div class="d-flex align-items-center container-arrow">
+                                        <div class="link__arrow"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                            height="20.162" viewBox="0 0 9.026 20.162">
+                                            <g id="Grupo_12494" class="link__arrow-svg"
+                                                data-name="Grupo 12494"
+                                                transform="translate(-326.008 -160.675)">
+                                                <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                    y1="10.486" transform="translate(326.401 160.984)"
+                                                    stroke-width="1" />
+                                                <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                    x2="8.24" transform="translate(326.401 171.471)"
+                                                    stroke-width="1" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-prestacion-lite logo-down">
+                        <div class="card-prestacion-lite__container">
+                            <img src="/dist/assets/img/card-barcelona-design.webp" alt="">
+                        </div>
+                        <div class="card-prestacion-lite__sub">
+                            <img class="card-prestacion-lite__sub__logo"
+                                src="/dist/assets/icons/logo-bcn-desing.svg" alt="logo-ue">
+                            <div class="card-prestacion-lite__text">
+                                <p>La fuerte influencia de una de las ciudades más creativas del mundo.
+                                    <span>Barcelona
+                                        es una de las ciudades mundiales del diseño. Su carácter cosmopolita
+                                        y su
+                                        tradición creativa la convierten en una de las cunas de grandes
+                                        tendencias a
+                                        nivel internacional y en uno de los polos de innovación en
+                                        Europa.</span></p>
+                                <a class="card-prestacion-lite__text-plus" href="#">
+                                    <img src="/dist/assets/icons/card-accesorios__text-plus.svg" alt="">
+                                </a>
+                                <a class="link-arrow-grow" href="#">
+                                    <span>Más información</span>
+                                    <div class="d-flex align-items-center container-arrow">
+                                        <div class="link__arrow"></div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7.026"
+                                            height="20.162" viewBox="0 0 9.026 20.162">
+                                            <g id="Grupo_12494" class="link__arrow-svg"
+                                                data-name="Grupo 12494"
+                                                transform="translate(-326.008 -160.675)">
+                                                <line id="Línea_18" data-name="Línea 18" x1="8.24"
+                                                    y1="10.486" transform="translate(326.401 160.984)"
+                                                    stroke-width="1" />
+                                                <line id="Línea_19" data-name="Línea 19" y1="9.029"
+                                                    x2="8.24" transform="translate(326.401 171.471)"
+                                                    stroke-width="1" />
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="pagination-prestaciones" class="swiper-pagination pagination-prestaciones"></div>
         </div>
-        <div id="prev-accesorios" class="swiper-button-prev prev-accesorios"></div>
-        <div id="next-accesorios" class="swiper-button-next next-accesorios"></div>
+        <div id="prev-prestaciones" class="swiper-button-prev prev-accesorios"></div>
+        <div id="next-prestaciones" class="swiper-button-next next-accesorios"></div>
         <script src="/dist/vendors/swiper.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -235,7 +321,7 @@ export const detalles= `
                 swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
                 document.head.appendChild(swiperStyles);
 
-                var mySwiper = new Swiper('#prestaciones-swiper', {
+                var prestacionesSwiper = new Swiper('#prestaciones-swiper', {
                     loop: false,
                     slidesPerView: 1,
                     spaceBetween: 13,
@@ -249,13 +335,16 @@ export const detalles= `
                     },
 
                     navigation: {
-                        prevEl: '#prev-accesorios',
-                        nextEl: '#next-accesorios',
+                        prevEl: '#prev-prestaciones',
+                        nextEl: '#next-prestaciones',
                     },
 
                     breakpoints: {
-                        1100: {
+                        1300: {
                             slidesPerView: 3,
+                        },
+                        1100: {
+                            slidesPerView: 2.2,
                         },
                         805: {
                             slidesPerView: 2,
