@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: flex-end; //abajo
     gap: 25px;
+    z-index: 99;
 
     h1 {
       color: $white;
@@ -52,6 +53,7 @@
       position: absolute;
       bottom: 15%;
       right: 15%;
+      z-index: 99;
 
       h1 {
         color: $white;
@@ -506,4 +508,38 @@
   @include media-breakpoint-up(lg) {
     display: none;
   }
+}
+
+.hero-video {
+  position: relative;
+  .hero-cta__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+  }
+}
+
+.home-cta__video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.video--sm {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.video--lg {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.hero-cta:before {
+  z-index: 99;
 }

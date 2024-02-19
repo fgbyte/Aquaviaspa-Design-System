@@ -1,64 +1,62 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 
-import { bannerHeroCta, bannerHeroFicha, bannerHeroMedium1, bannerHeroShort, bannerHeroMediumVideo, bannerHeroPost, bannerHeroBlog } from "../../../theme/modules/banners/banners.stories"
+import {
+  bannerHeroCta,
+  bannerHeroFicha,
+  bannerHeroMedium1,
+  bannerHeroShort,
+  bannerHeroMediumVideo,
+  bannerHeroPost,
+  bannerHeroBlog,
+  heroCtaVideo1,
+} from "../../../theme/modules/banners/banners.stories";
 
 <Meta title="Modules/Banners/Heros" />
 
 ## Hero CTA Rigth
+
 <Canvas>
- <Story name="Primary">
-  {() => bannerHeroCta
-  }
- </Story>
+  <Story name="Primary">{() => bannerHeroCta}</Story>
+</Canvas>
+
+## Hero CTA Video
+
+<Canvas>
+  <Story name="Hero CTA Video">{() => heroCtaVideo1}</Story>
 </Canvas>
 
 ## Hero Ficha
+
 <Canvas>
- <Story name="Hero Ficha">
-  {() => bannerHeroFicha
-  }
- </Story>
+  <Story name="Hero Ficha">{() => bannerHeroFicha}</Story>
 </Canvas>
 
 ## Hero Medium
+
 <Canvas>
- <Story name="Hero Medium">
-  {() => bannerHeroMedium1
-  }
- </Story>
+  <Story name="Hero Medium">{() => bannerHeroMedium1}</Story>
 </Canvas>
 
 ## Hero Medium Video
-<Canvas>
- <Story name="Hero Medium Video">
-  {() => bannerHeroMediumVideo
-  }
- </Story>
-</Canvas>
 
+<Canvas>
+  <Story name="Hero Medium Video">{() => bannerHeroMediumVideo}</Story>
+</Canvas>
 
 ## Hero Short
-<Canvas>
- <Story name="Hero Short">
-  {() => bannerHeroShort
-  }
- </Story>
-</Canvas>
 
+<Canvas>
+  <Story name="Hero Short">{() => bannerHeroShort}</Story>
+</Canvas>
 
 ## Hero Blog
+
 <Canvas>
- <Story name="Hero Blog">
-  {() => bannerHeroBlog
-  }
- </Story>
+  <Story name="Hero Blog">{() => bannerHeroBlog}</Story>
 </Canvas>
 
-
 ## Hero Posts
+
 <Canvas>
- <Story name="Hero Posts">
-  {() => bannerHeroPost
-  }
- </Story>
+  <Story name="Hero Posts">{() => bannerHeroPost}</Story>
 </Canvas>

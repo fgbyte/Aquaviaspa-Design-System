@@ -18607,6 +18607,7 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   gap: 25px;
+  z-index: 99;
 }
 @media (min-width: 992px) {
   .hero-cta__text {
@@ -18647,6 +18648,7 @@ p {
     position: absolute;
     bottom: 15%;
     right: 15%;
+    z-index: 99;
   }
   .hero-cta__text--lg h1, .hero-cta__text--lg .h1 {
     color: #fff;
@@ -19087,6 +19089,40 @@ p {
   .image-sm {
     display: none;
   }
+}
+
+.hero-video {
+  position: relative;
+}
+.hero-video .hero-cta__text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+}
+
+.home-cta__video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+@media (min-width: 992px) {
+  .video--sm {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .video--lg {
+    display: none;
+  }
+}
+
+.hero-cta:before {
+  z-index: 99;
 }
 
 .section-beneficios {

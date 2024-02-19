@@ -49,6 +49,59 @@ export const bannerHeroCta = `
     </section>
 `
 
+//hero cta video
+export const heroCtaVideo1 = `
+<section id="hero" class="hero-cta hero-cta-home hero-video">
+        <div class="hero-cta__text">
+            <h1>Creating <span>Sensations</span></h1>
+            <button type="button" class="btn-cta btn-cta--sm"><span>DESCÚBRA NUESTROS SPAS</span>
+                <div class="d-flex align-items-center">
+                    <div class="btn-cta__arrow"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
+                        <g id="Grupo_12494" class="btn-cta__arrow-svg" data-name="Grupo 12494"
+                            transform="translate(-326.008 -160.675)">
+                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
+                                transform="translate(326.401 160.984)" stroke-width="1" />
+                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
+                                transform="translate(326.401 171.471)" stroke-width="1" />
+                        </g>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <video class="home-cta__video video--sm" src="https://c.media.kavehome.com/images/home-page-videos/outdoor-24-slide-mobile.mp4?tx=w_auto,ar_16:9,dpr_2" autoplay loop muted type="video/webm"></video>
+        <div class="hero-cta__text--lg">
+            <h1>Creating <span>Sensations</span></h1>
+            <button type="button" class="btn-cta btn-cta--lg"><span>DESCÚBRA NUESTROS SPAS</span>
+                <div class="d-flex align-items-center">
+                    <div class="btn-cta__arrow"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7.026" height="20.162" viewBox="0 0 9.026 20.162">
+                        <g id="Grupo_12494" class="btn-cta__arrow-svg" data-name="Grupo 12494"
+                            transform="translate(-326.008 -160.675)">
+                            <line id="Línea_18" data-name="Línea 18" x1="8.24" y1="10.486"
+                                transform="translate(326.401 160.984)" stroke-width="1" />
+                            <line id="Línea_19" data-name="Línea 19" y1="9.029" x2="8.24"
+                                transform="translate(326.401 171.471)" stroke-width="1" />
+                        </g>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <video class="home-cta__video video--lg" src="https://c.media.kavehome.com/images/home-page-videos/outdoor-24-slide-desktop.mp4?tx=w_auto,ar_16:9,dpr_2" autoplay loop muted type="video/webm"></video>
+        <style>
+            .hero-cta-home {
+                background-image: url(/dist/assets/img/hero-cta-home--sm.webp);
+            }
+    
+            @media (min-width: 992px) {
+                .hero-cta-home {
+                    background-image: url(/dist/assets/img/hero-cta-home--lg.webp);
+                }
+            }
+        </style>
+    </section>
+`
+
 //banner cta left
 export const bannerCtaLeft1 = `
 <style>
