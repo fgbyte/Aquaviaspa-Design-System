@@ -20837,6 +20837,8 @@ p {
 }
 @media (min-width: 992px) {
   .slider-container {
+    padding-left: 45px;
+    padding-right: 45px;
     width: auto;
     min-width: 375px;
     max-width: 600px;
@@ -21138,6 +21140,10 @@ p {
   }
 }
 
+.intro-ficha .intro__container {
+  justify-content: space-between;
+}
+
 .hidden-card {
   display: none;
 }
@@ -21215,6 +21221,7 @@ p {
     padding-top: 105px;
     padding-left: 25px;
     padding-right: 25px;
+    gap: 60px;
   }
 }
 .intro-modulo-la-marca-aquavia .intro__container__text {
@@ -21293,12 +21300,6 @@ p {
 @media (max-width: 991.98px) {
   .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
     width: 25%;
-  }
-}
-
-@media (min-width: 992px) {
-  .intro-ficha .intro__container {
-    gap: 60px;
   }
 }
 

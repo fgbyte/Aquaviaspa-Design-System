@@ -35,6 +35,7 @@
       padding-top: 105px;
       padding-left: $pxMobile;
       padding-right: $pxMobile;
+      gap: 60px;
     }
   }
   & .intro__container__text {
@@ -117,13 +118,6 @@
 .intro-special .intro-special__imgs .imgs__container .intro-img-inside {
   @include media-breakpoint-down(lg) {
     width: 25%;
-  }
-}
-
-
-.intro-ficha .intro__container {
-  @include media-breakpoint-up(lg) {
-    gap: 60px;
   }
 }
 
