@@ -158,23 +158,7 @@ export const spaFicha = `
 
                 <div class="swiper-pagination pagination-intro"></div>
             </div>
-            <style>
-                @media (max-width: 1420px) {
-
-                    .prev-intro,
-                    .next-intro {
-                        display: none;
-                    }
-                }
-
-                .prev-intro {
-                    left: -40px;
-                }
-
-                .next-intro {
-                    right: -40px;
-                }
-            </style>
+           
             <script src="/dist/vendors/swiper.min.js"></script>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
