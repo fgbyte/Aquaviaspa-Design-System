@@ -24,17 +24,16 @@
   }
 }
 
-.prestaciones-slider--detalles {
-  padding-top: 70px;
-  padding-bottom: 70px;
 
-  @include media-breakpoint-up(lg) {
-    padding-top: 128px;
-    padding-bottom: 128px;
+.posts-page {
+  .slider-large-container--prestaciones {
+    padding: 0;
 
-  }
+    #next-prestaciones {
+      display: none;
+    }
+    #prev-prestaciones {
+      display: none;
+    }
 }
-
-.guias-otras-prestaciones-arrow {
-  top: 360px !important;
 }

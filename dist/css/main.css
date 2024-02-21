@@ -21877,19 +21877,14 @@ p {
   }
 }
 
-.prestaciones-slider--detalles {
-  padding-top: 70px;
-  padding-bottom: 70px;
+.posts-page .slider-large-container--prestaciones {
+  padding: 0;
 }
-@media (min-width: 992px) {
-  .prestaciones-slider--detalles {
-    padding-top: 128px;
-    padding-bottom: 128px;
-  }
+.posts-page .slider-large-container--prestaciones #next-prestaciones {
+  display: none;
 }
-
-.guias-otras-prestaciones-arrow {
-  top: 360px !important;
+.posts-page .slider-large-container--prestaciones #prev-prestaciones {
+  display: none;
 }
 
 .textos-legales-banner::after {
