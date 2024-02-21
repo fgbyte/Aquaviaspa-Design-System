@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var accordionMenu = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.accordion-menu');
     var showContentMenu = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.show-content-menu');
     var accordionImg = navbar === null || navbar === void 0 ? void 0 : navbar.querySelectorAll('.accordion-img');
-    if (!banner || !navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop)
+    if (!navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop)
         return;
     menuBurger.forEach(function (element) {
         element.addEventListener('click', function () {
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     function calculateBannerHeight() {
-        var bannerHeight = banner.offsetHeight;
+        var bannerHeight = banner === null || banner === void 0 ? void 0 : banner.offsetHeight;
         var navbarHeight = navbar.offsetHeight;
         return bannerHeight - navbarHeight;
     }

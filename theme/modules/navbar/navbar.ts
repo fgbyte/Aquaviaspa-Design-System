@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const accordionImg = navbar?.querySelectorAll('.accordion-img');
 
 
-  if (!banner || !navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop) return;
+  if (!navLinks || !navLogo || !firstMenuBurger || !menuBurger || !menuSpas || !menuSwimspas || !menuPrestaciones || !closeMenu || !previousMenu || !mainMenu || !spasMenu || !swimspasMenu || !prestacionesMenu || !menuBackdrop) return;
 
   menuBurger.forEach((element) => {
     element.addEventListener('click', function () {
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   function calculateBannerHeight() {
-    const bannerHeight = banner.offsetHeight;
+    const bannerHeight = banner?.offsetHeight;
     const navbarHeight = navbar.offsetHeight;
     return bannerHeight - navbarHeight;
   }
