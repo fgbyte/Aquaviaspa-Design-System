@@ -20883,6 +20883,38 @@ p {
   height: 100%;
 }
 
+.jets {
+  position: relative;
+  max-width: 1470px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.jets-slide {
+  display: flex !important;
+  gap: 10px;
+  flex-direction: row;
+  width: 30vw;
+  padding: 80px;
+}
+
+.acordion-jets {
+  margin-top: 80px;
+}
+
+.jest-img-container {
+  display: flex;
+  width: 100%;
+}
+
+.jets-model {
+  width: 20%;
+}
+
+.jets-spa {
+  height: auto;
+}
+
 .py-16 {
   padding-top: 6.4375rem;
   padding-bottom: 2.4375rem;
