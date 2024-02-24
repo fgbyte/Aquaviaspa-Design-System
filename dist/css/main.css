@@ -20890,14 +20890,6 @@ p {
   margin: 0 auto;
 }
 
-.jets-slide {
-  display: flex !important;
-  gap: 10px;
-  flex-direction: row;
-  width: 30vw;
-  padding: 80px;
-}
-
 .acordion-jets {
   margin-top: 80px;
 }

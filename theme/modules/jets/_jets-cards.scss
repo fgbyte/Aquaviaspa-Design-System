@@ -1,0 +1,20 @@
+@use "../../globals";
+@use "../../mixins";
+
+.acordion-jets {
+    margin-top: 80px;
+}
+
+.jest-img-container {
+    display: flex;
+    width: 100%;
+}
+
+
+.jets-model {
+    width: 20%;
+}
+
+.jets-spa {
+    height: auto;
+}
