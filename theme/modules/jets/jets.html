@@ -50,12 +50,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             //dynamic style
-            let swiperStyles = document.createElement('link');
+            const swiperStyles = document.createElement('link');
             swiperStyles.rel = 'stylesheet'
             swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
             document.head.appendChild(swiperStyles);
             //slider logic
-            var swiper = new Swiper('.swiper', {
+            const swiper = new Swiper('.swiper', {
                 loop: false,
                 pagination: {
                     el: '.pagination-intro',
@@ -68,6 +68,16 @@
                     prevEl: '.prev-intro',
                     nextEl: '.next-intro',
                 }
+            });
+
+            const myControls = document.querySelectorAll('[data-slide-index]');
+
+            myControls.forEach(function(control) {
+              control.addEventListener('click', function() {
+                const slideIndex = control.getAttribute('data-slide-index');
+
+                swiper.slideTo(slideIndex - 1);
+              });
             });
         });
     </script>
