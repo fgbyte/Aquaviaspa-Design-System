@@ -42,12 +42,13 @@
       object-fit: contain;
     }
 
-    & .model-in-spa{
+    & .model-in-spa {
       position: absolute;
-      width: 500px;
-      height: 500px;
+      width: 100%;
+      height: 100%;
       opacity: 1;
-      img{
+
+      img {
         object-fit: cover;
         width: 100%;
         height: 100%;
