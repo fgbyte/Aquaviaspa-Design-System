@@ -20899,7 +20899,7 @@ p {
 @media (min-width: 992px) {
   .jets-card {
     flex-direction: row-reverse;
-    gap: 85px;
+    gap: 40px;
   }
 }
 
@@ -20925,8 +20925,8 @@ p {
 }
 @media (min-width: 992px) {
   .accordion-jets {
-    width: 80%;
-    margin-top: 40px;
+    width: 60%;
+    margin-top: 50px;
   }
 }
 .accordion-jets h2, .accordion-jets .h2 {
@@ -20954,7 +20954,6 @@ p {
 }
 .accordion-jets .accordion-jets-images {
   padding-bottom: 20px;
-  /*  padding-left: 20px; */
   max-width: 320px;
 }
 .accordion-jets .accordion-button:focus {

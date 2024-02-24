@@ -9,7 +9,7 @@
 
   @include media-breakpoint-up(lg) {
       flex-direction: row-reverse;
-      gap: 85px;
+      gap: 40px;
   }
 }
 
@@ -35,9 +35,8 @@
     gap: 17px;
     padding: 20px;
     @include media-breakpoint-up(lg) {
-        width: 80%;
-        // justify-content: flex-end;
-        margin-top: 40px;
+        width: 60%;
+        margin-top: 50px;
     }
   h2 {
     font-size: 23px;
@@ -65,7 +64,6 @@
   }
   .accordion-jets-images{
     padding-bottom: 20px;
-   /*  padding-left: 20px; */
     max-width: 320px;
   }
   .accordion-button:focus {
