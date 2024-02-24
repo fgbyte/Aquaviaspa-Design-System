@@ -20890,20 +20890,22 @@ p {
   margin: 0 auto;
 }
 
-.acordion-jets {
-  margin-top: 80px;
+.jets-card {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
-.jest-img-container {
+.jets-card__imgs {
   display: flex;
   width: 100%;
 }
-
-.jets-model {
+.jets-card__imgs .jets-model {
   width: 20%;
 }
-
-.jets-spa {
+.jets-card__imgs .jets-spa {
+  width: 80%;
   height: auto;
 }
 
@@ -21954,6 +21956,7 @@ p {
 }
 @media (min-width: 992px) {
   .asistente__container {
+    padding-top: 165px;
     gap: 43px;
     overflow-x: auto;
   }

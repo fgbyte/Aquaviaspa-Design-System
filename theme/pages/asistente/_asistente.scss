@@ -11,6 +11,7 @@
     gap: 24px;
 
     @include media-breakpoint-up(lg) {
+      padding-top: 165px;
       gap: 43px;
       overflow-x: auto;
     }
