@@ -42,6 +42,18 @@
       object-fit: contain;
     }
 
+    & .model-in-spa{
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      opacity: 1;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     & .point-plus {
       position: absolute;
       width: 32px;
