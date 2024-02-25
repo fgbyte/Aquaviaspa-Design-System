@@ -1,3 +1,5 @@
+- que las imágenes se ponga 1 sola vez en el HTML
+
 
 ## Cards
 - que cada asiento muestre por defecto la foto del asiento (con todos los jets)
