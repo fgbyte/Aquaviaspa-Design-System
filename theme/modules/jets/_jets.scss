@@ -6,4 +6,30 @@
     @include desk-space;
     padding-left: $pxMobile;
     padding-right: $pxMobile;
+
+    .slider-jets-container {
+        width: 100%;
+        min-width: auto;
+        max-width: none;
+        margin: 0;
+        height: auto;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+
+        .swiper-wrapper {
+            height: auto;
+        }
+
+        #prev-jets {
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+        #next-jets {
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+    }
 }
