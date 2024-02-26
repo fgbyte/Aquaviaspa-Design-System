@@ -23,6 +23,20 @@
 
 
 
+.posts-page {
+
+  .section-slider-accsesorios__header h3 {
+    font-size: 22px !important;
+    text-align: center !important;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 30px !important;
+      text-align: start;
+    }
+  }
+}
+
+
 .banner-posts {
   position: relative;
 }
