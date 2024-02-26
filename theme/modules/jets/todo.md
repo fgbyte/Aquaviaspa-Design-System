@@ -1,5 +1,9 @@
-- que las imágenes se ponga 1 sola vez en el HTML
 
+
+## Slider
+<!-- - que sea tipo fade -->
+- montar las cards con ancho y altura correcta
+- que los plus y las bullets tengan la misma función
 
 ## Cards
 - que cada asiento muestre por defecto la foto del asiento (con todos los jets)
@@ -7,6 +11,3 @@
 - que cada accordion muestre una foto del jet
 - que cuando se cierre el accordion se muestre la original del asiento
 
-## Slider
-- que sea tipo fade
-- que los plus y las bullets tengan la misma función

@@ -20885,9 +20885,15 @@ p {
 
 .jets {
   position: relative;
-  max-width: 1470px;
-  height: 800px;
-  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media (min-width: 992px) {
+  .jets {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1470px;
+  }
 }
 
 .jets-card {

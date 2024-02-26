@@ -3,13 +3,7 @@
 
 .jets {
     position: relative;
-    max-width: $maxW;
-    height: 800px;
-    margin: 0 auto;
+    @include desk-space;
+    padding-left: $pxMobile;
+    padding-right: $pxMobile;
 }
-
-.jets-swiper {}
-
-.swiper-container {}
-
-.jets-swiper-wrapper {}
