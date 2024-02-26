@@ -21663,6 +21663,17 @@ p {
   }
 }
 
+.posts-page .section-slider-accsesorios__header h3, .posts-page .section-slider-accsesorios__header .h3 {
+  font-size: 22px !important;
+  text-align: center !important;
+}
+@media (min-width: 992px) {
+  .posts-page .section-slider-accsesorios__header h3, .posts-page .section-slider-accsesorios__header .h3 {
+    font-size: 30px !important;
+    text-align: start;
+  }
+}
+
 .banner-posts {
   position: relative;
 }
@@ -21924,6 +21935,16 @@ p {
   #pagination-blogpost {
     bottom: 0 !important;
   }
+}
+
+.posts-page .slider-large-container--blogpost {
+  padding: 0;
+}
+.posts-page .slider-large-container--blogpost #next-blogpost {
+  display: none;
+}
+.posts-page .slider-large-container--blogpost #prev-blogpost {
+  display: none;
 }
 
 .banner__text h1, .banner__text .h1 {

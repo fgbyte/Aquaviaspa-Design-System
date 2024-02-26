@@ -66,3 +66,16 @@
     bottom: 0 !important;
   }
 }
+
+.posts-page {
+  .slider-large-container--blogpost {
+    padding: 0;
+
+    #next-blogpost {
+      display: none;
+    }
+    #prev-blogpost {
+      display: none;
+    }
+}
+}
