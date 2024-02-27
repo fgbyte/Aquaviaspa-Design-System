@@ -673,11 +673,14 @@
                                 accordions.forEach((accordion) => { 
                                   accordion.classList.remove('hidden')
                                  }) 
+                                 
                                 allAccordions.forEach((accordion) => {
-                                    accordion.classList.remove('show');
-                                   
+                                    new bootstrap.Collapse(accordion, {
+                                        toggle: false
+                                    }).hide();
                                 });
                             }
+                         
                         }
                     });
 
