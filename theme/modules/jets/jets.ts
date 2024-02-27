@@ -1,13 +1,12 @@
 
-document.querySelectorAll('.accordion-button').forEach(button => {
-  button.addEventListener('click', () => {
-    const accordionBody = button.closest('.accordion-item');
-    const accordionContainer = accordionBody?.closest('.accordion');
+document.querySelectorAll('.accordion-item').forEach(item => {
+  if (item.classList.contains('show')) {
+    const accordionContainer = item.closest('.accordion');
 
-    accordionContainer?.querySelectorAll('.accordion-item').forEach(item => {
-      if (item !== accordionBody) {
-        item.classList.toggle('hidden');
+    accordionContainer?.querySelectorAll('.accordion-item').forEach(siblingItem => {
+      if (siblingItem !== item) {
+        siblingItem.classList.toggle('hidden');
       }
     });
-  });
+  }
 });
