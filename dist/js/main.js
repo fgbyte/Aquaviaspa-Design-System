@@ -383,15 +383,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-document.querySelectorAll('.accordion-item').forEach(function (item) {
-    if (item.classList.contains('show')) {
-        var accordionContainer = item.closest('.accordion');
-        accordionContainer === null || accordionContainer === void 0 ? void 0 : accordionContainer.querySelectorAll('.accordion-item').forEach(function (siblingItem) {
-            if (siblingItem !== item) {
-                siblingItem.classList.toggle('hidden');
+document.querySelectorAll('.accordion-button').forEach(function (button) {
+    button.addEventListener('click', function () {
+        var accordionBody = button.closest('.accordion-item');
+        var accordionContainer = accordionBody === null || accordionBody === void 0 ? void 0 : accordionBody.closest('.accordion');
+        accordionContainer === null || accordionContainer === void 0 ? void 0 : accordionContainer.querySelectorAll('.accordion-item').forEach(function (item) {
+            if (item !== accordionBody) {
+                item.classList.toggle('hidden');
             }
         });
-    }
+    });
 });
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('#navbar');
