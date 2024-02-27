@@ -1,17 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="174" height="581" viewBox="0 0 174 581">
-  <g id="Grupo_14097" data-name="Grupo 14097" transform="translate(-773 -494)">
-    <g id="Grupo_13338" data-name="Grupo 13338">
+  <g id="Grupo_13345" data-name="Grupo 13345" transform="translate(-773 -2061)">
+    <g id="Grupo_13342" data-name="Grupo 13342" transform="translate(0 1567)">
       <rect id="Rectángulo_5366" data-name="Rectángulo 5366" width="174" height="581" transform="translate(773 494)" fill="#fff"/>
       <path id="Trazado_2049" data-name="Trazado 2049" d="M78.494.2Q92.028,5.976,92.32,24.488,86.666,42.741,85.4,47.767,80,59.908,93.5,67.5q36.768,10.778,37.1,31.2,10.231,37.487,4.549,78.933.674,43.052-8.094,55.66,5.243,55.088-12.648,59.2m-4.838-165.575q-8.621,38.505,2.482,89.059Q123.3,283.255,100.3,330.383q-1.026,23.263,6.816,38.947,5.228,19.444-15.469,61.851-2.734,17.129,11.754,24.731,5.535,3.7.619,6.182l-57.078-.624m65.117-314.628a433.8,433.8,0,0,1,0,71.588m9.647-44.5,6.316.739M71.624,227.7l.739,112.832c2.062,7.03,5.158,17.711,0,33.37a127.36,127.36,0,0,0,6.656,30.818q-1.161,27.63-4.8,28.571-.315,7.055,2.956,10.386-3.318,12.208-.739,17.436M58.222,250.562a16.653,16.653,0,0,0,13.452-4.908q6.1,7.1,15.649,4m-15.649,90.4c-6,15.1-3.216,23.473.549,32.191q2.988,6.411-2.906,34.378a52.659,52.659,0,0,0,4.544,26.189m.624,6.886c-.689,2.527-1.4,2.731-2.492,3.98a27.649,27.649,0,0,1,.624,18.085" transform="translate(780.314 546.951)" fill="none" stroke="#000" stroke-width="1"/>
     </g>
-    <g id="Grupo_13339" data-name="Grupo 13339" transform="translate(0 7.672)">
-      <path id="Trazado_2055" data-name="Trazado 2055" d="M7.6,93.366a5.345,5.345,0,1,1-5.345,5.345A5.343,5.343,0,0,1,7.6,93.366" transform="translate(831.525 912.223)" fill="#74d8dd"/>
-      <path id="Trazado_2056" data-name="Trazado 2056" d="M15.451,93.366a5.345,5.345,0,1,1-5.345,5.345,5.343,5.343,0,0,1,5.345-5.345" transform="translate(862.71 912.223)" fill="#74d8dd"/>
-      <path id="Trazado_2057" data-name="Trazado 2057" d="M18.731,31.074A15.425,15.425,0,1,1,3.3,46.5,15.423,15.423,0,0,1,18.731,31.074" transform="translate(835.688 652.805)" fill="#e6e6e6"/>
-      <path id="Trazado_2058" data-name="Trazado 2058" d="M9.7,22.869a9.7,9.7,0,1,1-9.7,9.7,9.7,9.7,0,0,1,9.7-9.7" transform="translate(822.57 620.215)" fill="#e6e6e6"/>
-      <path id="Trazado_2059" data-name="Trazado 2059" d="M18.051,22.869a9.7,9.7,0,1,1-9.7,9.7,9.7,9.7,0,0,1,9.7-9.7" transform="translate(855.76 620.215)" fill="#e6e6e6"/>
-      <path id="Trazado_2060" data-name="Trazado 2060" d="M9.7,41.583a9.7,9.7,0,1,1-9.7,9.7,9.7,9.7,0,0,1,9.7-9.7" transform="translate(822.57 694.545)" fill="#e6e6e6"/>
-      <path id="Trazado_2061" data-name="Trazado 2061" d="M18.051,41.583a9.7,9.7,0,1,1-9.7,9.7,9.7,9.7,0,0,1,9.7-9.7" transform="translate(855.759 694.545)" fill="#e6e6e6"/>
+    <g id="Grupo_13278" data-name="Grupo 13278" transform="translate(0 -2)">
+      <path id="Trazado_2041" data-name="Trazado 2041" d="M99.548,93.366A5.349,5.349,0,1,1,94.2,98.715a5.348,5.348,0,0,1,5.349-5.349" transform="translate(738.107 2488.563)" fill="#74d8dd"/>
+      <path id="Trazado_2042" data-name="Trazado 2042" d="M107.4,93.366a5.349,5.349,0,1,1-5.349,5.349,5.348,5.348,0,0,1,5.349-5.349" transform="translate(769.325 2488.563)" fill="#74d8dd"/>
+      <path id="Trazado_2043" data-name="Trazado 2043" d="M108.978,20.693a9.7,9.7,0,1,1-9.7,9.7,9.707,9.707,0,0,1,9.7-9.7" transform="translate(758.287 2199.6)" fill="#74d8dd"/>
+      <path id="Trazado_2044" data-name="Trazado 2044" d="M108.978,28.989a9.7,9.7,0,1,1-9.7,9.7,9.707,9.707,0,0,1,9.7-9.7" transform="translate(758.287 2232.586)" fill="#74d8dd"/>
+      <path id="Trazado_2045" data-name="Trazado 2045" d="M108.978,37.027a9.7,9.7,0,1,1-9.7,9.7,9.7,9.7,0,0,1,9.7-9.7" transform="translate(758.287 2264.547)" fill="#74d8dd"/>
+      <path id="Trazado_2046" data-name="Trazado 2046" d="M102.313,20.693a9.7,9.7,0,1,1-9.7,9.7,9.707,9.707,0,0,1,9.7-9.7" transform="translate(731.785 2199.6)" fill="#74d8dd"/>
+      <path id="Trazado_2047" data-name="Trazado 2047" d="M102.313,28.989a9.7,9.7,0,1,1-9.7,9.7,9.707,9.707,0,0,1,9.7-9.7" transform="translate(731.785 2232.586)" fill="#74d8dd"/>
+      <path id="Trazado_2048" data-name="Trazado 2048" d="M102.313,37.027a9.7,9.7,0,1,1-9.7,9.7,9.7,9.7,0,0,1,9.7-9.7" transform="translate(731.785 2264.547)" fill="#74d8dd"/>
     </g>
   </g>
 </svg>

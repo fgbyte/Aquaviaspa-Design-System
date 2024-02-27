@@ -7,7 +7,7 @@
 
 ## Cards
 <!-- - que cuando se abra el accordion se muestre una X -->
-- que cada asiento muestre por defecto la foto del asiento (con todos los jets)
+<!-- - que cada asiento muestre por defecto la foto del asiento (con todos los jets) -->
 - que cada accordion muestre una foto del jet
 - que cuando se cierre el accordion se muestre por defecto la foto del asiento (con todos los jets)
 
