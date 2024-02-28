@@ -353,7 +353,7 @@ export const spaFicha = `
                             <img class="jets-model jets-model-accordion-default" src="/dist/assets/jets/home-spa-jets-point-model1.svg" alt="Made in Europe">
                             <!-- Jets imgs en 'none' -->
                             <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model1.1.svg" alt="Made in Europe" style="display: none;">
-                            <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model1.2.svg" alt="Made in Europe" style="display: none;">
+                            <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model1.2.1.svg" alt="Made in Europe" style="display: none;">
                           </div>
                           <div class="jets-spa-container">
                             <img class="jets-spa" src="/dist/assets/jets/jets-n-1.webp" alt="Made in Europe">
