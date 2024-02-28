@@ -62,7 +62,7 @@ export const introFichaSlider1 = `
                 </p>
             </div>
             <div class="slider-container">
-                <div class="swiper swiper-container">
+                <div id="intro-swiper" class="swiper swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="intro-swiper__img">
@@ -87,28 +87,12 @@ export const introFichaSlider1 = `
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-prev prev-intro"></div>
-                <div class="swiper-button-next next-intro"></div>
+                <div id="prev-intro" class="swiper-button-prev"></div>
+                <div id="next-intro" class="swiper-button-next"></div>
 
-                <div class="swiper-pagination pagination-intro"></div>
+                <div id="pagination-intro" class="swiper-pagination"></div>
             </div>
-            <style>
-                @media (max-width: 1420px) {
-
-                    .prev-intro,
-                    .next-intro {
-                        display: none;
-                    }
-                }
-
-                .prev-intro {
-                    left: -40px;
-                }
-
-                .next-intro {
-                    right: -40px;
-                }
-            </style>
+           
             <script src="/dist/vendors/swiper.min.js"></script>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
@@ -118,18 +102,18 @@ export const introFichaSlider1 = `
                     swiperStyles.href = '/dist/vendors/swiper-bundle.min.css'
                     document.head.appendChild(swiperStyles);
                     //slider logic
-                    var swiper = new Swiper('.swiper', {
+                    var swiper = new Swiper('#intro-swiper', {
                         loop: true,
                         pagination: {
-                            el: '.pagination-intro',
+                            el: '#pagination-intro',
                             clickable: true,
                             type: 'bullets',
                             dynamicBullets: true,
                             dynamicMainBullets: 3
                         },
                         navigation: {
-                            prevEl: '.prev-intro',
-                            nextEl: '.next-intro',
+                            prevEl: '#prev-intro',
+                            nextEl: '#next-intro',
                         }
                     });
                 });
