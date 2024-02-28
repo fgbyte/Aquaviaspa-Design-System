@@ -420,22 +420,36 @@ document.querySelectorAll('.accordion-button').forEach(function (button) {
     });
 });
 var jetAsientos = Array.from({ length: 15 }, function (_, i) { return document.querySelector("#jet-".concat(i + 1)); });
-var jetAccordions = Array.from({ length: 15 }, function (_, i) { return document.querySelector("#jet-accordion-".concat(i + 1)); });
+var jetAccordions = Array.from({ length: 30 }, function (_, i) { return document.querySelector("#jet-accordion-".concat(i + 1)); });
 var accordionsOnCards = Array.from({ length: 30 }, function (_, i) { return document.querySelector("#accordion-".concat(i + 1)); });
-function showOnlyAsientos() {
-}
-function hideAllAccordionsJets() {
-    jetAccordions.forEach(function (jet) {
-        jet && hideJet(jet);
-    });
-}
-hideAllAccordionsJets();
+console.log(jetAsientos);
 function hideJet(jet) {
     jet.style.display = 'none';
 }
 function showJet(jet) {
     jet.style.display = 'block';
 }
+function hideJetAsientos() {
+    jetAsientos.forEach(function (jet) {
+        jet && hideJet(jet);
+    });
+}
+function showJetAsientos() {
+    jetAsientos.forEach(function (jet) {
+        jet && showJet(jet);
+    });
+}
+function hideJetAccordions() {
+    jetAccordions.forEach(function (jet) {
+        jet && hideJet(jet);
+    });
+}
+function hideAllJets() {
+    hideJetAsientos();
+    hideJetAccordions();
+}
+hideAllJets();
+showJetAsientos();
 function handleAccordionOpen(index) {
 }
 function handleAccordionClose(index) {
