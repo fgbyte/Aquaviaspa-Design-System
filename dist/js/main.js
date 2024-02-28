@@ -383,6 +383,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+var _a;
+var allModelImages = document.querySelectorAll('.jets-model-accordion');
+var allModelImagesDefault = document.querySelectorAll('.jets-model-accordion-default');
+var allAccordions = document.querySelectorAll('.accordion-button');
+allAccordions === null || allAccordions === void 0 ? void 0 : allAccordions.forEach(function (accordion, index) {
+    accordion.addEventListener('click', function () {
+        allModelImages.forEach(function (image) {
+            image.style.display = 'none';
+        });
+        allModelImagesDefault.forEach(function (image) {
+            image.style.display = 'none';
+        });
+        allModelImages[index].style.display = 'block';
+    });
+});
+(_a = document.querySelectorAll('.accordion-collapse')) === null || _a === void 0 ? void 0 : _a.forEach(function (collapse) {
+    collapse.addEventListener('hidden.bs.collapse', function () {
+        allModelImages.forEach(function (image) {
+            image.style.display = 'none';
+        });
+        allModelImagesDefault.forEach(function (image) {
+            image.style.display = 'block';
+        });
+    });
+});
 document.querySelectorAll('.accordion-button').forEach(function (button) {
     button.addEventListener('click', function () {
         var accordionBody = button.closest('.accordion-item');

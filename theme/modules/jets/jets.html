@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 
-<body>
+<body class="bg-secondary">
     <section class="jets">
         <div class="slider-container slider-jets-container">
             <div id="jets-swiper" class="swiper swiper-container">
@@ -15,10 +15,10 @@
                     <div class="jets-card">
                       <div class="jets-card__imgs">
                         <div class="jets-model-container">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model1.svg" alt="Made in Europe">
+                          <img class="jets-model jets-model-accordion-default" src="/dist/assets/jets/home-spa-jets-point-model1.svg" alt="Made in Europe">
                           <!-- Jets imgs en 'none' -->
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model1.1.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model1.2.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model1.1.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model1.2.svg" alt="Made in Europe" style="display: none;">
                         </div>
                         <div class="jets-spa-container">
                           <img class="jets-spa" src="/dist/assets/jets/jets-n-1.webp" alt="Made in Europe">
@@ -163,11 +163,11 @@
                     <div class="jets-card">
                       <div class="jets-card__imgs">
                         <div class="jets-model-container">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model2.svg" alt="Made in Europe">
+                          <img class="jets-model jets-model-accordion-default" src="/dist/assets/jets/home-spa-jets-point-model2.svg" alt="Made in Europe">
                           <!-- Jets imgs en 'none' -->
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model2.1.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model2.2.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model2.3.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model2.1.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model2.2.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model2.3.svg" alt="Made in Europe" style="display: none;">
                         </div>
                         <div class="jets-spa-container">
                           <img class="jets-spa" src="/dist/assets/jets/jets-n-1.webp" alt="Made in Europe">
@@ -323,11 +323,11 @@
                     <div class="jets-card">
                       <div class="jets-card__imgs">
                         <div class="jets-model-container">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model3.svg" alt="Made in Europe">
+                          <img class="jets-model jets-model-accordion-default" src="/dist/assets/jets/home-spa-jets-point-model3.svg" alt="Made in Europe">
                           <!-- Jets imgs en 'none' -->
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model3.1.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model3.2.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model3.3.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model3.1.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model3.2.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model3.3.svg" alt="Made in Europe" style="display: none;">
                         </div>
                         <div class="jets-spa-container">
                           <img class="jets-spa" src="/dist/assets/jets/jets-n-1.webp" alt="Made in Europe">
@@ -483,11 +483,11 @@
                     <div class="jets-card">
                       <div class="jets-card__imgs">
                         <div class="jets-model-container">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model4.svg" alt="Made in Europe">
+                          <img class="jets-model jets-model-accordion-default" src="/dist/assets/jets/home-spa-jets-point-model4.svg" alt="Made in Europe">
                           <!-- Jets imgs en 'none' -->
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model4.1.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model4.2.svg" alt="Made in Europe" style="display: none;">
-                          <img class="jets-model" src="/dist/assets/jets/home-spa-jets-point-model4.3.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model4.1.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model4.2.svg" alt="Made in Europe" style="display: none;">
+                          <img class="jets-model jets-model-accordion" src="/dist/assets/jets/home-spa-jets-point-model4.3.svg" alt="Made in Europe" style="display: none;">
                         </div>
                         <div class="jets-spa-container">
                           <img class="jets-spa" src="/dist/assets/jets/jets-n-1.webp" alt="Made in Europe">
@@ -674,6 +674,8 @@
                             slideChange: function () {
                                 const allAccordions = document.querySelectorAll('.accordion-collapse');
                                 const accordions = document.querySelectorAll('.accordion-item')
+                                const allModelImages = document.querySelectorAll('.jets-model-accordion')
+                                const allModelImagesDefault = document.querySelectorAll('.jets-model-accordion-default')
 
                                 accordions.forEach((accordion) => {
                                   accordion.classList.remove('hidden')
@@ -684,8 +686,14 @@
                                         toggle: false
                                     }).hide();
                                 });
+                                allModelImages.forEach((images) => { 
+                                  images.style.display = 'none'
+                                 });
+                                 allModelImagesDefault.forEach((images) => { 
+                                  images.style.display = 'block'
+                                 });
                             }
-
+              
                         }
                     });
 
