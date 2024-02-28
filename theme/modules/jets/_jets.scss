@@ -6,6 +6,28 @@
     @include desk-space;
     padding-left: $pxMobile;
     padding-right: $pxMobile;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 100px;
+    @include media-breakpoint-up(lg) {
+        gap: 30px;
+    }
+
+    &__title {
+        align-self: center;
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: $textMedium;
+            line-height: 36px;
+            @include media-breakpoint-up(lg) {
+                font-size: 42px;
+                line-height: 48px;
+                max-width: 550px;
+            }
+        }
+    }
 
     .slider-jets-container {
         width: 100%;
@@ -13,9 +35,12 @@
         max-width: none;
         margin: 0;
         height: auto;
-        padding-bottom: 50px;
         display: flex;
         align-items: center;
+        padding-bottom: 30px;
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 50px;
+        }
 
         .swiper-wrapper {
             height: auto;

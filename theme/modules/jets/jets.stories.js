@@ -1,3 +1,4 @@
+export const jetsModule = `
 <html>
 
 <head>
@@ -8,9 +9,6 @@
 
 <body>
     <section class="jets">
-      <div class="jets__title">
-        <h2>Un masaje pensado para cada parte del cuerpo</h2>
-      </div>
         <div class="slider-container slider-jets-container">
             <div id="jets-swiper" class="swiper swiper-container">
                 <div class="swiper-wrapper">
@@ -157,7 +155,6 @@
                               <img class="accordion-jets-images" src="/dist/assets/jets/Relax-Impact-System.webp" alt="Imagen de los jets">
                             </div>
                           </div>
-                          
                         </div>
                       </div>
                     </div>
@@ -721,3 +718,4 @@
 </body>
 
 </html>
+`

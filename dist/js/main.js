@@ -419,51 +419,6 @@ document.querySelectorAll('.accordion-button').forEach(function (button) {
         });
     });
 });
-var jetAsientos = Array.from({ length: 15 }, function (_, i) { return document.querySelector("#jet-".concat(i + 1)); });
-var jetAccordions = Array.from({ length: 30 }, function (_, i) { return document.querySelector("#jet-accordion-".concat(i + 1)); });
-var accordionsOnCards = Array.from({ length: 30 }, function (_, i) { return document.querySelector("#accordion-".concat(i + 1)); });
-console.log(jetAsientos);
-function hideJet(jet) {
-    jet.style.display = 'none';
-}
-function showJet(jet) {
-    jet.style.display = 'block';
-}
-function hideJetAsientos() {
-    jetAsientos.forEach(function (jet) {
-        jet && hideJet(jet);
-    });
-}
-function showJetAsientos() {
-    jetAsientos.forEach(function (jet) {
-        jet && showJet(jet);
-    });
-}
-function hideJetAccordions() {
-    jetAccordions.forEach(function (jet) {
-        jet && hideJet(jet);
-    });
-}
-function hideAllJets() {
-    hideJetAsientos();
-    hideJetAccordions();
-}
-hideAllJets();
-showJetAsientos();
-function handleAccordionOpen(index) {
-}
-function handleAccordionClose(index) {
-}
-accordionsOnCards.forEach(function (accordion, index) {
-    accordion === null || accordion === void 0 ? void 0 : accordion.addEventListener('click', function () {
-        if ((accordion === null || accordion === void 0 ? void 0 : accordion.ariaExpanded) === 'true') {
-            console.log('open', index);
-        }
-        else {
-            console.log('close', index);
-        }
-    });
-});
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('#navbar');
     var body = document.body;

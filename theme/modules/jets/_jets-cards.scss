@@ -87,6 +87,10 @@
   h2 {
     font-size: 23px;
     font-weight: $textMedium;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      text-align: start;
+    }
   }
 
   .accordion {
