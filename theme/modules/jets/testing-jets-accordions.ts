@@ -2,6 +2,8 @@ const jetAsientos = Array.from({ length: 15 }, (_, i) => document.querySelector(
 const jetAccordions = Array.from({ length: 30 }, (_, i) => document.querySelector(`#jet-accordion-${i + 1}`));
 const accordionsOnCards = Array.from({ length: 30 }, (_, i) => document.querySelector(`#accordion-${i + 1}`));
 
+console.log(jetAsientos)
+
 //* Functions helpers
 // Funciones para ocultar y mostrar jet
 function hideJet(jet: HTMLElement) {
@@ -13,28 +15,37 @@ function showJet(jet: HTMLElement) {
 }
 
 
-//* Applying helpers
+//* Core Functions
 function hideJetAsientos() {
     jetAsientos.forEach((jet) => {
         jet && hideJet(jet as HTMLElement);
     })
 }
-// hideJetAsientos() //👍
+
+function showJetAsientos() {
+    jetAsientos.forEach((jet) => {
+        jet && showJet(jet as HTMLElement);
+    })
+}
+
 
 function hideJetAccordions() {
     jetAccordions.forEach((jet) => {
        jet && hideJet(jet as HTMLElement);
     })
 }
-// hideJetAccordions() //👍
-
 
 //Ocultar TODOS los que existen en el 🌎
 function hideAllJets() {
     hideJetAsientos();
     hideJetAccordions();
 }
-// hideAllJets() //👍
+
+
+//* Applying Functions
+hideAllJets()
+showJetAsientos()
+
 
 
 
@@ -53,6 +64,7 @@ accordionsOnCards.forEach((accordion, index) => {
     accordion?.addEventListener('click', () => {
         if (accordion?.ariaExpanded === 'true') {
             console.log('open', index)
+            // handleAccordionOpen(index)
         } else {
             console.log('close', index)
         }
