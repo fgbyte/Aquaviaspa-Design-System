@@ -43,7 +43,7 @@
 
 //! Configurar Fuentes
 body {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
 blockquote {
@@ -101,4 +101,27 @@ p {
   font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
+}
+
+.posts-page {
+  h1 {
+    font-size: 42px !important;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 32px !important;
+    line-height: 42px;
+    margin: 10px 0 0 0;
+  }
+  h3 {
+    font-size: 24px !important;
+    line-height: 34px;
+    margin: 10px 0 0 0;
+  }
+  p {
+    font-size: 18px !important;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
 }
