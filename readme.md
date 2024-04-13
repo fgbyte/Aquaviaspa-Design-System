@@ -1,15 +1,6 @@
-# Readme First
+Client: https://aquaviaspa.es
 
-## Styling
+Summary:
+Developed a design system using HTML, SCSS, and TypeScript, utilizing StoryBook for component-driven development. Ensured cross-device compatibility through responsive design principles. Enhanced code maintainability and collaboration within the team.
 
-    - Estructura del Project ✅
-    - Importar fuentes ✅
-    - Montar fuentes ✅
-    - crear componentes ✅
-    - crear módulos
-    - crear paginas
-
-## Design
-
-    - componentizar ✅
-    - modulizar ✅
+Coworker to @guillezdev
